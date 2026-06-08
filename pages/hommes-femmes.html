@@ -3,25 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hommes &amp; Femmes – Analyse Genre OCHA Burkina Faso</title>
+<title>Hommes & Femmes – Analyse Genre OCHA Burkina Faso</title>
 <link rel="stylesheet" href="../assets/style.css">
-<style>
-  /* Stacked decision chart labels */
-  .decision-legend { display:flex; flex-wrap:wrap; gap:12px; margin-top:12px; font-size:11px; }
-  .decision-legend span { display:flex; align-items:center; gap:5px; }
-  .decision-legend b { width:10px; height:10px; border-radius:2px; display:inline-block; }
-</style>
 </head>
 <body>
 <div class="app-shell">
 
-<!-- SIDEBAR -->
+<!-- ══ SIDEBAR ══ -->
 <aside class="sidebar">
   <div class="sidebar-logo">
-    <img src="../assets/ocha-logo.png" alt="OCHA Logo">
+    <img src="../assets/ocha-logo.png" alt="OCHA">
     <div>
       <div class="sidebar-logo-title">Analyse Conjointe Genre</div>
-      <div class="sidebar-logo-text">Burkina Faso · 2025</div>
+      <div class="sidebar-logo-sub">Burkina Faso · 2025</div>
     </div>
   </div>
   <div class="sidebar-badge">
@@ -38,23 +32,21 @@
   <nav class="nav-section">
     <div class="nav-section-label">Sections</div>
     <a href="#decision" class="nav-item"><span class="nav-icon">⚖️</span><span class="nav-label">Prise de décision</span></a>
-    <a href="#travail" class="nav-item"><span class="nav-icon">⏱️</span><span class="nav-label">Division du travail</span></a>
+    <a href="#travail"  class="nav-item"><span class="nav-icon">⏱️</span><span class="nav-label">Division du travail</span></a>
     <a href="#subsistance" class="nav-item"><span class="nav-icon">💼</span><span class="nav-label">Moyens de subsistance</span></a>
-    <a href="#carte" class="nav-item"><span class="nav-icon">🗺️</span><span class="nav-label">Analyse géographique</span></a>
+    <a href="#carte"   class="nav-item"><span class="nav-icon">🗺️</span><span class="nav-label">Carte régionale</span></a>
     <a href="#services" class="nav-item"><span class="nav-icon">🏥</span><span class="nav-label">Accès aux services</span></a>
   </nav>
   <div class="sidebar-footer">© 2025 OCHA Burkina Faso<br><a href="https://www.unocha.org/burkina-faso" target="_blank">www.unocha.org</a></div>
 </aside>
 
-<!-- MAIN -->
+<!-- ══ MAIN ══ -->
 <div class="main-content">
 <header class="topbar">
-  <div class="topbar-left">
-    <div class="topbar-breadcrumb">OCHA Burkina Faso &rsaquo; <span>Hommes &amp; Femmes</span></div>
-  </div>
+  <div class="topbar-breadcrumb">OCHA Burkina Faso &rsaquo; <span>Hommes &amp; Femmes</span></div>
   <div class="topbar-right">
-    <span class="topbar-chip">n = 1 827</span>
-    <span class="topbar-chip orange">7 régions</span>
+    <span class="chip chip-blue">n = 1 827</span>
+    <span class="chip chip-blue">7 régions · sept. 2025</span>
   </div>
 </header>
 
@@ -64,25 +56,25 @@
     <div class="page-header-inner">
       <div class="page-header-eyebrow">Enquête Adultes · 632 variables</div>
       <h1>Analyse Genre — Hommes &amp; Femmes</h1>
-      <p>Analyse comparative des dynamiques de genre : prise de décision au sein du ménage, division du travail, accès aux ressources économiques et besoins prioritaires — avant et après la crise.</p>
+      <p>Dynamiques de genre au sein du ménage : prise de décision, division du travail, accès aux ressources économiques et besoins prioritaires — avant et après la crise humanitaire.</p>
       <div class="page-header-chips">
         <span class="header-chip">905 hommes</span>
         <span class="header-chip">922 femmes</span>
         <span class="header-chip">87% zones humanitaires</span>
-        <span class="header-chip">Septembre 2025</span>
+        <span class="header-chip">13% zones non-humanitaires</span>
       </div>
     </div>
   </div>
 
   <!-- KPIs -->
   <div class="kpi-row cols-4">
-    <div class="kpi-card">
+    <div class="kpi-card kpi-red">
       <div class="kpi-icon">⚖️</div>
       <div class="kpi-value">29%</div>
       <div class="kpi-label">Femmes exclues des décisions sur le mariage des enfants</div>
-      <div class="kpi-trend down">4% seulement pour les hommes</div>
+      <div class="kpi-trend down">↑ aggravé depuis la crise</div>
     </div>
-    <div class="kpi-card kpi-orange">
+    <div class="kpi-card">
       <div class="kpi-icon">💧</div>
       <div class="kpi-value">77%</div>
       <div class="kpi-label">Des femmes engagées dans la collecte d'eau</div>
@@ -91,215 +83,152 @@
     <div class="kpi-card kpi-red">
       <div class="kpi-icon">🌾</div>
       <div class="kpi-value">−27pt</div>
-      <div class="kpi-label">Chute agriculture féminine depuis la crise</div>
+      <div class="kpi-label">Chute du travail agricole féminin</div>
       <div class="kpi-trend down">39.6% → 12.3%</div>
     </div>
     <div class="kpi-card kpi-teal">
       <div class="kpi-icon">🏘️</div>
       <div class="kpi-value">69%</div>
-      <div class="kpi-label">Des femmes n'ont pas accès à la terre agricole</div>
+      <div class="kpi-label">Femmes sans accès à la terre agricole</div>
       <div class="kpi-trend warn">vs 52% des hommes</div>
     </div>
   </div>
 
-  <!-- ── PRISE DE DÉCISION ── -->
+  <!-- ── DÉCISION ── -->
   <div id="decision" class="section-label">Prise de décision au sein du ménage</div>
-
   <div class="grid g2">
     <div class="chart-card">
       <div class="chart-card-header">
         <div>
-          <div class="chart-card-title">Niveau de participation aux décisions — Avant la crise</div>
-          <div class="chart-card-subtitle">Répartition par domaine · Femmes uniquement (%)</div>
+          <div class="chart-card-title">Participation aux décisions — Femmes · Avant la crise</div>
+          <div class="chart-card-subtitle">Répartition par domaine (%)</div>
         </div>
       </div>
       <div class="chart-card-body">
-        <div class="chart-wrap" style="height:340px">
-          <canvas id="decisionF" role="img" aria-label="Décisions femmes avant crise"></canvas>
-        </div>
-        <div class="decision-legend">
-          <span><b style="background:#082C55"></b>Décide seule</span>
-          <span><b style="background:#1F69B3"></b>Décision commune</span>
-          <span><b style="background:#5A9AD3"></b>Consultée</span>
-          <span><b style="background:#D0E5F5"></b>Aucune participation</span>
+        <div class="chart-wrap" style="height:310px"><canvas id="decF"></canvas></div>
+        <div class="legend">
+          <div class="legend-item"><div class="legend-dot" style="background:#002E6E"></div>Décide seule</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#009EDB"></div>Décision commune</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#64BDEA"></div>Consultée</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#C5DFEF"></div>Aucune participation</div>
         </div>
       </div>
     </div>
     <div class="chart-card">
       <div class="chart-card-header">
         <div>
-          <div class="chart-card-title">Niveau de participation aux décisions — Après la crise</div>
-          <div class="chart-card-subtitle">Répartition par domaine · Femmes uniquement (%)</div>
+          <div class="chart-card-title">Participation aux décisions — Femmes · Après la crise</div>
+          <div class="chart-card-subtitle">Répartition par domaine (%) — impact de la crise</div>
         </div>
       </div>
       <div class="chart-card-body">
-        <div class="chart-wrap" style="height:340px">
-          <canvas id="decisionFpost" role="img" aria-label="Décisions femmes après crise"></canvas>
+        <div class="chart-wrap" style="height:310px"><canvas id="decFpost"></canvas></div>
+        <div class="legend">
+          <div class="legend-item"><div class="legend-dot" style="background:#002E6E"></div>Décide seule</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#009EDB"></div>Décision commune</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#64BDEA"></div>Consultée</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#C5DFEF"></div>Aucune participation</div>
         </div>
-        <div class="decision-legend">
-          <span><b style="background:#082C55"></b>Décide seule</span>
-          <span><b style="background:#1F69B3"></b>Décision commune</span>
-          <span><b style="background:#5A9AD3"></b>Consultée</span>
-          <span><b style="background:#D0E5F5"></b>Aucune participation</span>
-        </div>
-      </div>
-      <div class="chart-card-footer">
-        <span>La crise a aggravé l'exclusion féminine des décisions</span>
       </div>
     </div>
   </div>
 
-  <div class="grid g3" style="margin-bottom: var(--sp-8);">
-    <div class="stat-hl red" style="border-radius:var(--radius-lg);padding:var(--sp-5);">
-      <div class="stat-hl-value">29.1%</div>
-      <div class="stat-hl-label">des femmes exclues des décisions sur le <strong>mariage des enfants</strong> après la crise (28.9% avant)</div>
-    </div>
-    <div class="stat-hl orange" style="border-radius:var(--radius-lg);padding:var(--sp-5);">
-      <div class="stat-hl-value">16.7%</div>
-      <div class="stat-hl-label">des femmes sans participation sur <strong>l'achat/vente d'actifs</strong> — vs 2.3% des hommes</div>
-    </div>
-    <div class="stat-hl" style="border-radius:var(--radius-lg);padding:var(--sp-5);">
-      <div class="stat-hl-value">13.9%</div>
-      <div class="stat-hl-label">des femmes exclues des décisions sur <strong>le nombre d'enfants</strong> après la crise</div>
-    </div>
+  <div class="grid g3" style="margin-bottom:var(--sp-8)">
+    <div class="stat-hl red"><div class="stat-hl-value">29.1%</div><div class="stat-hl-label">Femmes exclues des décisions sur le <strong>mariage des enfants</strong> après la crise</div></div>
+    <div class="stat-hl"><div class="stat-hl-value">16.7%</div><div class="stat-hl-label">Femmes sans participation sur <strong>l'achat/vente d'actifs</strong> — vs 2.3% des hommes</div></div>
+    <div class="stat-hl dark"><div class="stat-hl-value">13.9%</div><div class="stat-hl-label">Femmes exclues des décisions sur <strong>le nombre d'enfants</strong></div></div>
   </div>
 
-  <!-- ── DIVISION DU TRAVAIL ── -->
+  <!-- ── TRAVAIL ── -->
   <div id="travail" class="section-label">Division du travail au sein du ménage</div>
   <div class="grid g-1-2">
     <div class="chart-card">
       <div class="chart-card-header">
-        <div>
-          <div class="chart-card-title">Radar comparatif H/F</div>
-          <div class="chart-card-subtitle">% engagé par tâche</div>
-        </div>
+        <div><div class="chart-card-title">Radar comparatif H/F</div><div class="chart-card-subtitle">% engagé par tâche</div></div>
       </div>
       <div class="chart-card-body">
-        <div class="chart-wrap" style="height:300px">
-          <canvas id="travailRadar" role="img" aria-label="Radar division travail"></canvas>
-        </div>
+        <div class="chart-wrap" style="height:300px"><canvas id="travailRadar"></canvas></div>
       </div>
     </div>
     <div class="chart-card">
       <div class="chart-card-header">
-        <div>
-          <div class="chart-card-title">Engagement dans les tâches domestiques et productives — Avant la crise</div>
-          <div class="chart-card-subtitle">% déclarant être entièrement ou partiellement engagés</div>
-        </div>
+        <div><div class="chart-card-title">Engagement par tâche — Avant la crise</div><div class="chart-card-subtitle">% entièrement ou partiellement engagés</div></div>
       </div>
       <div class="chart-card-body">
         <ul class="gender-bars" id="travailBars"></ul>
       </div>
-      <div class="chart-card-footer"><span>Source : Q401–Q416 · Enquête H&amp;F</span></div>
     </div>
   </div>
 
-  <!-- ── MOYENS DE SUBSISTANCE ── -->
+  <!-- ── SUBSISTANCE ── -->
   <div id="subsistance" class="section-label">Moyens de subsistance — Impact de la crise</div>
   <div class="grid g2">
     <div class="chart-card">
       <div class="chart-card-header">
-        <div>
-          <div class="chart-card-title">Activité rémunérée principale — Femmes</div>
-          <div class="chart-card-subtitle">Comparaison avant et après la crise (%)</div>
-        </div>
+        <div><div class="chart-card-title">Activité rémunérée — Femmes · Avant vs Maintenant</div></div>
       </div>
       <div class="chart-card-body">
-        <div class="chart-wrap" style="height:270px">
-          <canvas id="subsF" role="img" aria-label="Subsistance femmes"></canvas>
-        </div>
+        <div class="chart-wrap" style="height:260px"><canvas id="subsF"></canvas></div>
         <div class="legend">
-          <div class="legend-item"><div class="legend-dot" style="background:var(--c-orange)"></div>Avant</div>
-          <div class="legend-item"><div class="legend-dot" style="background:var(--c-blue-400)"></div>Maintenant</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--un-red-500)"></div>Avant la crise</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--un-blue-300)"></div>Maintenant</div>
         </div>
       </div>
     </div>
     <div class="chart-card">
       <div class="chart-card-header">
-        <div>
-          <div class="chart-card-title">Activité rémunérée principale — Hommes</div>
-          <div class="chart-card-subtitle">Comparaison avant et après la crise (%)</div>
-        </div>
+        <div><div class="chart-card-title">Activité rémunérée — Hommes · Avant vs Maintenant</div></div>
       </div>
       <div class="chart-card-body">
-        <div class="chart-wrap" style="height:270px">
-          <canvas id="subsH" role="img" aria-label="Subsistance hommes"></canvas>
-        </div>
+        <div class="chart-wrap" style="height:260px"><canvas id="subsH"></canvas></div>
         <div class="legend">
-          <div class="legend-item"><div class="legend-dot" style="background:var(--c-blue-600)"></div>Avant</div>
-          <div class="legend-item"><div class="legend-dot" style="background:var(--c-blue-200)"></div>Maintenant</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--un-blue-800)"></div>Avant la crise</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--un-blue-300)"></div>Maintenant</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Accès à la terre -->
-  <div class="grid g-3-2" style="margin-bottom: var(--sp-8);">
+  <!-- ── CARTE GEOJSON ── -->
+  <div id="carte" class="section-label">Carte du Burkina Faso — Analyse régionale</div>
+  <div class="grid g-1-2" style="margin-bottom:var(--sp-8)">
     <div class="chart-card">
       <div class="chart-card-header">
         <div>
-          <div class="chart-card-title">Accès à la terre et ressources économiques</div>
-          <div class="chart-card-subtitle">% n'ayant pas accès à la terre / n'ayant pas d'argent personnel</div>
-        </div>
-      </div>
-      <div class="chart-card-body">
-        <div class="chart-wrap" style="height:200px">
-          <canvas id="terreChart" role="img" aria-label="Accès terre et ressources"></canvas>
-        </div>
-      </div>
-    </div>
-    <div class="chart-card">
-      <div class="chart-card-header">
-        <div>
-          <div class="chart-card-title">Possession de téléphone portable</div>
-          <div class="chart-card-subtitle">% par membre du ménage</div>
-        </div>
-      </div>
-      <div class="chart-card-body">
-        <div class="chart-wrap" style="height:200px">
-          <canvas id="phoneChart" role="img" aria-label="Possession téléphone"></canvas>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── CARTE ── -->
-  <div id="carte" class="section-label">Analyse géographique — Carte du Burkina Faso</div>
-  <div class="grid g-1-2" style="margin-bottom: var(--sp-8);">
-    <div class="chart-card">
-      <div class="chart-card-header">
-        <div>
-          <div class="chart-card-title">Besoins alimentaires par région</div>
-          <div class="chart-card-subtitle">% ménages citant l'alimentation — cliquez pour détails</div>
+          <div class="chart-card-title">Carte des 13 régions</div>
+          <div class="chart-card-subtitle">Zones enquêtées (7) en bleu · Autres régions en gris · Cliquez pour détails</div>
         </div>
       </div>
       <div class="chart-card-body">
         <div class="map-wrapper">
-          <svg id="burkinaMap" viewBox="0 0 620 520" width="100%"></svg>
+          <svg id="burkinaMap" class="map-svg" viewBox="0 0 560 480"></svg>
           <div class="map-tooltip" id="mapTip"></div>
         </div>
-        <div class="map-legend-bar">
-          <span>69%</span>
-          <div class="bar" style="background:linear-gradient(to right,#C8DCF0,#082C55)"></div>
-          <span>85%</span>
-          <span style="margin-left:8px;color:var(--c-gray-400)">Cliquez sur une région</span>
+        <div class="map-legend">
+          <span>Besoins alimentaires :</span>
+          <div class="map-legend-grad" id="mapLegendGrad" style="background:linear-gradient(to right,#E3EDF6,#002E6E)"></div>
+          <span>69%</span><div class="map-legend-separator"></div><span>85%</span>
+          <span style="margin-left:8px;color:var(--c-gray-500)">⬜ Non enquêtée</span>
+        </div>
+        <div id="mapDetail" class="map-detail">
+          <div class="map-detail-title" id="mdTitle"></div>
+          <div class="map-detail-grid">
+            <div class="map-detail-item"><div class="map-detail-val" id="mdN"></div><div class="map-detail-lbl">répondants</div></div>
+            <div class="map-detail-item"><div class="map-detail-val" id="mdAl"></div><div class="map-detail-lbl">alimentation</div></div>
+            <div class="map-detail-item"><div class="map-detail-val" id="mdSa"></div><div class="map-detail-lbl">santé</div></div>
+            <div class="map-detail-item"><div class="map-detail-val" id="mdAr"></div><div class="map-detail-lbl">argent</div></div>
+          </div>
         </div>
       </div>
     </div>
     <div class="chart-card">
       <div class="chart-card-header">
-        <div>
-          <div class="chart-card-title">Besoins prioritaires par région</div>
-          <div class="chart-card-subtitle">% citant alimentation · classement</div>
-        </div>
+        <div><div class="chart-card-title">Besoins par région enquêtée</div><div class="chart-card-subtitle">% ménages citant l'alimentation comme besoin prioritaire</div></div>
       </div>
       <div class="chart-card-body">
-        <div class="chart-wrap" style="height:250px">
-          <canvas id="regionBar" role="img" aria-label="Besoins par région"></canvas>
-        </div>
-        <div id="regionDetail" style="display:none;margin-top:var(--sp-4);padding:var(--sp-4);background:var(--c-blue-50);border-radius:var(--radius-md);">
-          <div style="font-size:var(--fs-sm);font-weight:700;color:var(--c-blue-800)" id="rdName"></div>
-          <div style="font-size:var(--fs-sm);color:var(--c-gray-600);margin-top:4px" id="rdContent"></div>
+        <div class="chart-wrap" style="height:230px"><canvas id="regionBar"></canvas></div>
+        <div style="margin-top:var(--sp-5)">
+          <div class="chart-wrap" style="height:160px"><canvas id="regionScatter"></canvas></div>
         </div>
       </div>
     </div>
@@ -310,40 +239,30 @@
   <div class="grid g2">
     <div class="chart-card">
       <div class="chart-card-header">
-        <div>
-          <div class="chart-card-title">Services accessibles — Comparaison H/F</div>
-          <div class="chart-card-subtitle">Nombre de répondants déclarant avoir accès</div>
-        </div>
+        <div><div class="chart-card-title">Services accessibles — Femmes vs Hommes</div><div class="chart-card-subtitle">Nombre de répondants déclarant avoir accès</div></div>
       </div>
       <div class="chart-card-body">
-        <div class="chart-wrap" style="height:280px">
-          <canvas id="svcChart" role="img" aria-label="Accès services"></canvas>
-        </div>
+        <div class="chart-wrap" style="height:280px"><canvas id="svcChart"></canvas></div>
         <div class="legend">
-          <div class="legend-item"><div class="legend-dot" style="background:var(--c-orange)"></div>Femmes</div>
-          <div class="legend-item"><div class="legend-dot" style="background:var(--c-blue-600)"></div>Hommes</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--un-red-500)"></div>Femmes</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--un-blue-500)"></div>Hommes</div>
         </div>
       </div>
     </div>
     <div class="chart-card">
       <div class="chart-card-header">
-        <div>
-          <div class="chart-card-title">Accès à la santé et autonomie</div>
-          <div class="chart-card-subtitle">Indicateurs clés de l'accès aux soins et ressources</div>
-        </div>
+        <div><div class="chart-card-title">Obstacles à l'accès aux services</div><div class="chart-card-subtitle">Nombre de citations (réponses multiples)</div></div>
       </div>
       <div class="chart-card-body">
-        <div class="chart-wrap" style="height:180px">
-          <canvas id="santeChart" role="img" aria-label="Santé accès"></canvas>
-        </div>
-        <div style="margin-top:var(--sp-5);display:flex;flex-direction:column;gap:var(--sp-3);">
-          <div class="insight-box warn">
+        <div class="chart-wrap" style="height:260px"><canvas id="obstChart"></canvas></div>
+        <div style="margin-top:var(--sp-4);display:flex;flex-direction:column;gap:var(--sp-3)">
+          <div class="insight warning">
             <span class="insight-icon">⚠️</span>
-            <span>Les femmes signalent davantage le <strong>manque de ressources financières</strong> comme obstacle aux soins (642 vs 613 pour les hommes).</span>
+            <span>Le <strong>manque de ressources financières</strong> est le premier obstacle pour les femmes (642) comme pour les hommes (613).</span>
           </div>
-          <div class="insight-box">
+          <div class="insight info">
             <span class="insight-icon">ℹ️</span>
-            <span>Les hommes signalent plus fréquemment l'<strong>interruption de services</strong> (138 vs 32) et les <strong>services rares</strong> (224 vs 168).</span>
+            <span>Les hommes signalent plus l'<strong>interruption de services</strong> (138 vs 32) — reflet d'une mobilité plus grande.</span>
           </div>
         </div>
       </div>
@@ -363,243 +282,238 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script>
 Chart.defaults.font.family = "'Source Sans 3', Arial, sans-serif";
-Chart.defaults.color = '#4F5560';
-const C = {
-  blue900:'#082C55',blue800:'#104B82',blue700:'#1A5F9E',blue600:'#1F69B3',blue400:'#5A9AD3',blue200:'#A8CAE8',blue50:'#EBF4FB',
-  orange:'#E07B39',orangeLt:'#F5C49A',teal:'#2B8C8C',red:'#C83C3C',gray100:'#E8EBF0',gray50:'#F4F6F9'
-};
+Chart.defaults.color = '#6B7280';
 
-const decDomains = ['Actifs (achat/vente)','Soins de santé','Avoir un enfant','École des enfants','Mariage des enfants'];
+// ── OCHA OFFICIAL COLOURS ──
+const BL = { 900:'#002E6E', 800:'#004987', 700:'#0074B7', 500:'#009EDB', 300:'#64BDEA', 200:'#C5DFEF', 100:'#E3EDF6' };
+const RD = { 900:'#520000', 800:'#780B20', 700:'#A71F36', 500:'#ED1847', 300:'#F3859B', 200:'#F9C0C5', 100:'#F7DFDF' };
+const GR = { 900:'#003425', 800:'#004D35', 700:'#006747', 500:'#338C46', 400:'#72BF44', 200:'#CEE3A0', 100:'#E6EFD0' };
+const GRAY = '#E8EBF0';
 
-/* ── DECISION FEMMES AVANT ── */
-const decFavant = {
-  seul:   [14.0, 14.9, 13.8, 11.7,  9.1],
-  commun: [39.8, 52.4, 54.7, 50.9, 38.7],
-  consul: [29.7, 24.7, 18.4, 24.2, 23.3],
-  aucun:  [16.5,  8.0, 13.1, 13.2, 28.9],
-};
-const decFapr = {
-  seul:   [18.3, 19.2, 17.5, 16.7, 12.3],
-  commun: [37.6, 49.9, 50.5, 48.0, 36.0],
-  consul: [27.3, 22.1, 18.1, 21.9, 22.7],
-  aucun:  [16.7,  8.8, 13.9, 13.3, 29.1],
-};
+// ── DECISION CHARTS ──
+const domains = ['Actifs (achat/vente)','Soins de santé','Avoir un enfant','École des enfants','Mariage des enfants'];
+const decFav  = { seul:[14.0,14.9,13.8,11.7,9.1], commun:[39.8,52.4,54.7,50.9,38.7], consul:[29.7,24.7,18.4,24.2,23.3], aucun:[16.5,8.0,13.1,13.2,28.9] };
+const decFap  = { seul:[18.3,19.2,17.5,16.7,12.3], commun:[37.6,49.9,50.5,48.0,36.0], consul:[27.3,22.1,18.1,21.9,22.7], aucun:[16.7,8.8,13.9,13.3,29.1] };
 
 function makeDecChart(id, data) {
-  return new Chart(document.getElementById(id), {
+  new Chart(document.getElementById(id), {
     type:'bar',
-    data:{
-      labels: decDomains,
-      datasets:[
-        {label:'Décide seule', data:data.seul, backgroundColor:C.blue900, borderRadius:2, borderSkipped:false},
-        {label:'Décision commune', data:data.commun, backgroundColor:C.blue600, borderRadius:2, borderSkipped:false},
-        {label:'Consultée', data:data.consul, backgroundColor:C.blue400, borderRadius:2, borderSkipped:false},
-        {label:'Aucune participation', data:data.aucun, backgroundColor:C.blue200, borderRadius:2, borderSkipped:false},
-      ]
-    },
-    options:{
-      indexAxis:'y', responsive:true, maintainAspectRatio:false,
-      plugins:{legend:{display:false},
-        tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${c.parsed.x}%`}}},
-      scales:{
-        x:{stacked:true,max:100,ticks:{callback:v=>v+'%',font:{size:11}},grid:{color:C.gray100}},
-        y:{stacked:true,grid:{display:false},ticks:{font:{size:12}}}
-      }
-    }
+    data:{ labels:domains, datasets:[
+      { label:'Décide seule',        data:data.seul,   backgroundColor:BL[900], borderRadius:2, borderSkipped:false },
+      { label:'Décision commune',    data:data.commun, backgroundColor:BL[500], borderRadius:2, borderSkipped:false },
+      { label:'Consultée',           data:data.consul, backgroundColor:BL[300], borderRadius:2, borderSkipped:false },
+      { label:'Aucune participation',data:data.aucun,  backgroundColor:BL[200], borderRadius:2, borderSkipped:false },
+    ]},
+    options:{ indexAxis:'y', responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false}, tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${c.parsed.x}%`}} },
+      scales:{ x:{stacked:true,max:100,ticks:{callback:v=>v+'%',font:{size:11}},grid:{color:GRAY}},
+               y:{stacked:true,grid:{display:false},ticks:{font:{size:12}}} }}
   });
 }
-makeDecChart('decisionF', decFavant);
-makeDecChart('decisionFpost', decFapr);
+makeDecChart('decF', decFav);
+makeDecChart('decFpost', decFap);
 
-/* ── TRAVAIL BARS ── */
+// ── TRAVAIL BARS ──
 const travail = [
-  {l:'Cuisine',       h:15, f:88},
-  {l:'Travail ménager', h:32, f:85},
-  {l:'Collecte eau',  h:26, f:77},
-  {l:'Collecte bois', h:23, f:65},
-  {l:'Soins enfants', h:86, f:86},
-  {l:'Élevage',       h:72, f:47},
-  {l:'Agriculture',   h:76, f:69},
-  {l:'Achat nourriture',h:76,f:53},
+  {l:'Cuisine',h:15,f:88},{l:'Travail ménager',h:32,f:85},{l:'Collecte eau',h:26,f:77},
+  {l:'Collecte bois',h:23,f:65},{l:'Soins enfants',h:86,f:86},{l:'Élevage',h:72,f:47},
+  {l:'Agriculture',h:76,f:69},{l:'Achat nourriture',h:76,f:53},
 ];
 const ul = document.getElementById('travailBars');
-travail.forEach(d=>{
-  const li = document.createElement('li');
-  li.className='gbar-item';
-  li.innerHTML=`<div class="gbar-label">${d.l}</div>
-    <div class="gbar-row"><span class="gbar-sex" style="color:var(--c-orange)">Femmes</span>
-      <div class="gbar-bg"><div class="gbar-fill" style="width:${d.f}%;background:var(--c-orange)"></div></div>
-      <span class="gbar-pct" style="color:var(--c-orange)">${d.f}%</span></div>
-    <div class="gbar-row"><span class="gbar-sex" style="color:var(--c-blue-600)">Hommes</span>
-      <div class="gbar-bg"><div class="gbar-fill" style="width:${d.h}%;background:var(--c-blue-600)"></div></div>
-      <span class="gbar-pct" style="color:var(--c-blue-600)">${d.h}%</span></div>`;
+travail.forEach(d => {
+  const li = document.createElement('li'); li.className = 'gbar-item';
+  li.innerHTML = `<div class="gbar-label">${d.l}</div>
+    <div class="gbar-row"><span class="gbar-sex" style="color:${RD[500]}">Femmes</span>
+      <div class="gbar-bg"><div class="gbar-fill" style="width:${d.f}%;background:${RD[500]}"></div></div>
+      <span class="gbar-pct" style="color:${RD[500]}">${d.f}%</span></div>
+    <div class="gbar-row"><span class="gbar-sex" style="color:${BL[500]}">Hommes</span>
+      <div class="gbar-bg"><div class="gbar-fill" style="width:${d.h}%;background:${BL[500]}"></div></div>
+      <span class="gbar-pct" style="color:${BL[500]}">${d.h}%</span></div>`;
   ul.appendChild(li);
 });
 
-/* ── RADAR ── */
+// ── RADAR ──
 new Chart(document.getElementById('travailRadar'),{
   type:'radar',
-  data:{
-    labels:travail.map(d=>d.l),
-    datasets:[
-      {label:'Femmes',data:travail.map(d=>d.f),backgroundColor:'rgba(224,123,57,.15)',borderColor:C.orange,pointBackgroundColor:C.orange,borderWidth:2},
-      {label:'Hommes',data:travail.map(d=>d.h),backgroundColor:'rgba(31,105,179,.15)',borderColor:C.blue600,pointBackgroundColor:C.blue600,borderWidth:2}
-    ]
-  },
-  options:{responsive:true,maintainAspectRatio:false,
-    plugins:{legend:{labels:{font:{size:12},boxWidth:10}}},
-    scales:{r:{min:0,max:100,ticks:{stepSize:25,font:{size:9}},grid:{color:'#DDE4EE'},pointLabels:{font:{size:10}}}}}
+  data:{ labels:travail.map(d=>d.l), datasets:[
+    { label:'Femmes', data:travail.map(d=>d.f), backgroundColor:`${RD[500]}22`, borderColor:RD[500], pointBackgroundColor:RD[500], borderWidth:2 },
+    { label:'Hommes', data:travail.map(d=>d.h), backgroundColor:`${BL[500]}22`, borderColor:BL[500], pointBackgroundColor:BL[500], borderWidth:2 }
+  ]},
+  options:{ responsive:true,maintainAspectRatio:false,
+    plugins:{ legend:{labels:{font:{size:12},boxWidth:10}} },
+    scales:{ r:{ min:0,max:100, ticks:{stepSize:25,font:{size:9}}, grid:{color:'#DDE4EE'}, pointLabels:{font:{size:10}} }} }
 });
 
-/* ── SUBSISTANCE ── */
-function makeSubsChart(id, avant, apres, colorA, colorB) {
+// ── SUBSISTANCE ──
+function makeSubs(id, avant, apres, cA, cB) {
   new Chart(document.getElementById(id),{
     type:'bar',
-    data:{
-      labels:['Agriculture','Petit commerce','Sans activité','Travail journalier','Élevage','Jardin'],
-      datasets:[
-        {label:'Avant',data:avant,backgroundColor:colorA,borderRadius:4},
-        {label:'Maintenant',data:apres,backgroundColor:colorB,borderRadius:4}
-      ]
-    },
-    options:{responsive:true,maintainAspectRatio:false,
+    data:{ labels:['Agriculture','Petit commerce','Sans activité','Travail journalier','Élevage','Jardin'],
+           datasets:[ {label:'Avant',data:avant,backgroundColor:cA,borderRadius:4}, {label:'Maintenant',data:apres,backgroundColor:cB,borderRadius:4} ] },
+    options:{ responsive:true,maintainAspectRatio:false,
       plugins:{legend:{display:false}},
-      scales:{x:{grid:{display:false},ticks:{font:{size:11}}},
-        y:{max:55,ticks:{callback:v=>v+'%',font:{size:11}},grid:{color:C.gray100}}}}
+      scales:{x:{grid:{display:false},ticks:{font:{size:11}}},y:{max:55,ticks:{callback:v=>v+'%'},grid:{color:GRAY}}} }
   });
 }
-makeSubsChart('subsF',[39.6,30.6,14.4,7.7,4.3,3.1],[12.3,32.3,36.7,11.1,0.8,2.0],C.orange,'#F5C49A');
-makeSubsChart('subsH',[50.3,19.1,4.0,17.3,8.3,0.9],[24.5,20.4,20.8,18.6,5.4,1.0],C.blue600,C.blue200);
+makeSubs('subsF',[39.6,30.6,14.4,7.7,4.3,3.1],[12.3,32.3,36.7,11.1,0.8,2.0], RD[500], BL[300]);
+makeSubs('subsH',[50.3,19.1,4.0,17.3,8.3,0.9],[24.5,20.4,20.8,18.6,5.4,1.0], BL[800], BL[300]);
 
-/* ── TERRE ── */
-new Chart(document.getElementById('terreChart'),{
-  type:'bar',
-  data:{
-    labels:['Sans accès à la terre','Sans argent personnel'],
-    datasets:[
-      {label:'Femmes',data:[69,52],backgroundColor:C.orange,borderRadius:4},
-      {label:'Hommes',data:[51.7,38],backgroundColor:C.blue600,borderRadius:4}
-    ]
-  },
-  options:{responsive:true,maintainAspectRatio:false,
-    plugins:{legend:{labels:{font:{size:12},boxWidth:10}}},
-    scales:{x:{grid:{display:false}},y:{max:80,ticks:{callback:v=>v+'%'},grid:{color:C.gray100}}}}
-});
-
-/* ── TELEPHONE ── */
-new Chart(document.getElementById('phoneChart'),{
-  type:'doughnut',
-  data:{
-    labels:['Mari','Femme','Fils','Fille'],
-    datasets:[{data:[78,42,35,18],backgroundColor:[C.blue900,C.orange,C.blue400,'#F5C49A'],borderWidth:2,borderColor:'#fff'}]
-  },
-  options:{responsive:true,maintainAspectRatio:false,cutout:'60%',
-    plugins:{legend:{position:'right',labels:{font:{size:12},boxWidth:10}}}}
-});
-
-/* ── CARTE BURKINA ── */
-const rData = {
-  yaadga: {n:337,al:83,sa:68,ea:15,ar:38,name:'Yaadga (Nord)'},
-  koulse: {n:317,al:85,sa:70,ea:18,ar:40,name:'Koulsé (Centre-Nord)'},
-  liptako:{n:274,al:85,sa:72,ea:22,ar:44,name:'Liptako (Est)'},
-  nakambe:{n:298,al:72,sa:65,ea:20,ar:42,name:'Nakambé (Centre-Sud)'},
-  kadiogo:{n:237,al:69,sa:60,ea:12,ar:35,name:'Kadiogo (Centre)'},
-  goulmou:{n:198,al:80,sa:66,ea:17,ar:41,name:'Goulmou (Centre-Est)'},
-  bankui: {n:166,al:74,sa:64,ea:14,ar:37,name:'Bankui (Boucle Mouhoun)'},
+// ══ CARTE GEOJSON D3 ══════════════════════════════════════════════
+const surveyData = {
+  kadiogo:      { n:237, al:69, sa:60, ea:12, ar:35, name:'Centre (Kadiogo)' },
+  goulmou:      { n:198, al:80, sa:66, ea:17, ar:41, name:'Centre-Est (Goulmou)' },
+  koulse:       { n:317, al:85, sa:70, ea:18, ar:40, name:'Centre-Nord (Koulsé)' },
+  nakambe:      { n:298, al:72, sa:65, ea:20, ar:42, name:'Centre-Sud (Nakambé)' },
+  liptako:      { n:274, al:85, sa:72, ea:22, ar:44, name:'Est (Liptako)' },
+  yaadga:       { n:337, al:83, sa:68, ea:15, ar:38, name:'Nord (Yaadga)' },
+  bankui:       { n:166, al:74, sa:64, ea:14, ar:37, name:'Boucle du Mouhoun (Bankui)' },
 };
 
-const rPaths = [
-  {id:'bankui', d:'M 85,115 L 195,125 L 215,158 L 205,242 L 172,282 L 108,280 L 68,248 L 58,188 Z', cx:135,cy:198},
-  {id:'yaadga', d:'M 195,55 L 325,55 L 345,88 L 335,152 L 312,162 L 258,172 L 208,162 L 188,132 L 178,88 Z', cx:260,cy:112},
-  {id:'koulse', d:'M 258,172 L 312,162 L 362,178 L 372,235 L 342,262 L 290,268 L 253,248 L 238,212 Z', cx:305,cy:215},
-  {id:'liptako',d:'M 372,178 L 485,168 L 525,220 L 515,292 L 462,312 L 400,302 L 370,272 L 360,232 Z', cx:442,cy:242},
-  {id:'kadiogo',d:'M 228,278 L 253,248 L 290,268 L 302,302 L 290,338 L 253,342 L 222,318 Z', cx:258,cy:298},
-  {id:'nakambe',d:'M 253,248 L 342,262 L 362,312 L 340,372 L 288,388 L 238,372 L 218,322 L 228,278 Z', cx:290,cy:318},
-  {id:'goulmou',d:'M 362,312 L 462,312 L 492,382 L 462,442 L 390,452 L 338,422 L 332,372 Z', cx:412,cy:378},
-];
-
-const colorScale = d3.scaleSequential([65,90], d3.interpolate('#C8DCF0','#082C55'));
+const colorScale = d3.scaleSequential([65, 88], d3.interpolate(BL[200], BL[900]));
 const svg = d3.select('#burkinaMap');
+const W = 560, H = 480;
 const tip = document.getElementById('mapTip');
 const mapCont = svg.node().parentElement;
 
-svg.selectAll('.map-region').data(rPaths).enter().append('path')
-  .attr('class','map-region')
-  .attr('d',d=>d.d)
-  .attr('fill',d=>colorScale(rData[d.id].al))
-  .attr('stroke','white').attr('stroke-width',1.8)
-  .on('mousemove',function(ev,d){
-    const rd=rData[d.id]; const r=mapCont.getBoundingClientRect();
-    tip.style.display='block';
-    tip.style.left=(ev.clientX-r.left+14)+'px';
-    tip.style.top=(ev.clientY-r.top-12)+'px';
-    tip.innerHTML=`<strong>${rd.name}</strong><br>n = ${rd.n} répondants<br>Alimentation : ${rd.al}%<br>Santé : ${rd.sa}%<br>Eau : ${rd.ea}% · Argent : ${rd.ar}%`;
+// Load GeoJSON from file (relative path)
+fetch('../assets/burkina-regions.geojson')
+  .then(r => r.json())
+  .then(geoData => {
+    const proj = d3.geoMercator().fitSize([W - 20, H - 20], geoData).translate([W/2, H/2]);
+    const path = d3.geoPath().projection(proj);
+
+    // Draw regions
+    svg.selectAll('.map-region')
+      .data(geoData.features)
+      .enter().append('path')
+      .attr('class', d => {
+        const sid = d.properties.survey_id;
+        return 'map-region' + (d.properties.surveyed ? '' : ' not-surveyed');
+      })
+      .attr('d', path)
+      .attr('fill', d => {
+        if (!d.properties.surveyed) return '#CDD2DA';
+        return colorScale(surveyData[d.properties.survey_id].al);
+      })
+      .on('mousemove', function(event, d) {
+        if (!d.properties.surveyed) return;
+        const sd = surveyData[d.properties.survey_id];
+        const rect = mapCont.getBoundingClientRect();
+        tip.style.display = 'block';
+        tip.style.left = (event.clientX - rect.left + 16) + 'px';
+        tip.style.top  = (event.clientY - rect.top - 14) + 'px';
+        tip.innerHTML = `<div class="map-tooltip-title">${sd.name}</div>
+          <div class="map-tooltip-row"><span>Répondants</span><span class="map-tooltip-val">${sd.n}</span></div>
+          <div class="map-tooltip-row"><span>Alimentation</span><span class="map-tooltip-val">${sd.al}%</span></div>
+          <div class="map-tooltip-row"><span>Santé</span><span class="map-tooltip-val">${sd.sa}%</span></div>
+          <div class="map-tooltip-row"><span>Argent</span><span class="map-tooltip-val">${sd.ar}%</span></div>`;
+      })
+      .on('mouseleave', () => tip.style.display = 'none')
+      .on('click', function(event, d) {
+        if (!d.properties.surveyed) return;
+        const sd = surveyData[d.properties.survey_id];
+        svg.selectAll('.map-region.selected').classed('selected', false);
+        d3.select(this).classed('selected', true);
+        const det = document.getElementById('mapDetail');
+        det.classList.add('visible');
+        document.getElementById('mdTitle').textContent = sd.name + ' — ' + sd.n + ' répondants';
+        document.getElementById('mdN').textContent  = sd.n;
+        document.getElementById('mdAl').textContent = sd.al + '%';
+        document.getElementById('mdSa').textContent = sd.sa + '%';
+        document.getElementById('mdAr').textContent = sd.ar + '%';
+      });
+
+    // Region labels (surveyed only)
+    svg.selectAll('.map-lbl')
+      .data(geoData.features.filter(d => d.properties.surveyed))
+      .enter().append('text')
+      .attr('class','map-label-text')
+      .attr('transform', d => `translate(${path.centroid(d)})`)
+      .attr('text-anchor','middle').attr('dominant-baseline','middle')
+      .attr('font-size','11').attr('fill', d => {
+        const al = surveyData[d.properties.survey_id].al;
+        return al > 80 ? '#E3EDF6' : '#002E6E';
+      })
+      .text(d => surveyData[d.properties.survey_id].al + '%');
+
+    // North arrow
+    svg.append('text').attr('x', W - 22).attr('y', 30).attr('text-anchor','middle').attr('font-size','18').attr('fill','#8A92A0').text('N');
+    svg.append('text').attr('x', W - 22).attr('y', 18).attr('text-anchor','middle').attr('font-size','16').attr('fill','#8A92A0').text('↑');
   })
-  .on('mouseleave',()=>tip.style.display='none')
-  .on('click',function(ev,d){
-    const rd=rData[d.id];
-    document.getElementById('regionDetail').style.display='block';
-    document.getElementById('rdName').textContent=rd.name+' · n='+rd.n;
-    document.getElementById('rdContent').innerHTML=
-      `Alimentation <b>${rd.al}%</b> · Santé <b>${rd.sa}%</b> · Eau <b>${rd.ea}%</b> · Argent <b>${rd.ar}%</b>`;
-    svg.selectAll('.map-region').attr('opacity',.6);
-    d3.select(this).attr('opacity',1).attr('stroke','#E07B39').attr('stroke-width',2.5);
+  .catch(() => {
+    // Fallback text if file not found
+    svg.append('text').attr('x',W/2).attr('y',H/2).attr('text-anchor','middle')
+      .attr('font-size','14').attr('fill','#666').text('Placez burkina-regions.geojson dans assets/');
   });
 
-svg.selectAll('.map-lbl').data(rPaths).enter().append('text')
-  .attr('x',d=>d.cx).attr('y',d=>d.cy)
-  .attr('text-anchor','middle').attr('dominant-baseline','middle')
-  .attr('font-size','12').attr('font-weight','700')
-  .attr('font-family','Source Sans 3,Arial')
-  .attr('fill',d=>rData[d.id].al>80?'#EBF4FB':'#104B82')
-  .attr('pointer-events','none')
-  .text(d=>rData[d.id].al+'%');
-
-svg.append('text').attr('x',570).attr('y',40).attr('font-size','16').attr('fill','#8A92A0').attr('text-anchor','middle').text('N');
-svg.append('text').attr('x',570).attr('y',26).attr('font-size','16').attr('fill','#8A92A0').attr('text-anchor','middle').text('↑');
-
-/* ── REGION BAR ── */
+// ── REGION BAR ──
 new Chart(document.getElementById('regionBar'),{
   type:'bar',
   data:{
     labels:['Koulsé','Liptako','Yaadga','Goulmou','Bankui','Nakambé','Kadiogo'],
-    datasets:[{label:'% Alimentation',data:[85,85,83,80,74,72,69],
-      backgroundColor:['#082C55','#082C55','#1F69B3','#3880C4','#5A9AD3','#6FAEDF','#A8CAE8'],
-      borderRadius:5}]
+    datasets:[{
+      label:'% Alimentation',
+      data:[85,85,83,80,74,72,69],
+      backgroundColor:[BL[900],BL[900],BL[800],BL[700],BL[500],BL[300],BL[200]],
+      borderRadius:4
+    }]
   },
-  options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
-    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.x}%`}}},
-    scales:{x:{max:100,ticks:{callback:v=>v+'%'},grid:{color:C.gray100}},y:{grid:{display:false},ticks:{font:{size:12}}}}}
+  options:{ indexAxis:'y',responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false}},
+    scales:{x:{max:100,ticks:{callback:v=>v+'%'},grid:{color:GRAY}},y:{grid:{display:false},ticks:{font:{size:12}}}} }
 });
 
-/* ── SERVICES ── */
+// ── BUBBLE SCATTER (n vs al besoin) ──
+new Chart(document.getElementById('regionScatter'),{
+  type:'bubble',
+  data:{ datasets:[{
+    label:'Régions',
+    data:Object.values(surveyData).map(r=>({x:r.n,y:r.al,r:8})),
+    backgroundColor:`${BL[500]}BB`,
+    borderColor:BL[700],
+    borderWidth:1.5
+  }]},
+  options:{ responsive:true,maintainAspectRatio:false,
+    plugins:{ legend:{display:false}, tooltip:{callbacks:{
+      label:c=>{
+        const r=Object.values(surveyData)[c.dataIndex];
+        return `${r.name}: n=${r.n}, alim=${r.al}%`;
+      }
+    }}},
+    scales:{
+      x:{ title:{display:true,text:'Nombre de répondants',font:{size:11}}, grid:{color:GRAY} },
+      y:{ min:65,max:90, title:{display:true,text:'% Alimentation',font:{size:11}}, ticks:{callback:v=>v+'%'}, grid:{color:GRAY} }
+    }
+  }
+});
+
+// ── SERVICES ──
 new Chart(document.getElementById('svcChart'),{
   type:'bar',
   data:{
     labels:['Eau potable','Éducation','Sécurité','Protection','Abris','Santé (SSR)','Latrines','Moyens subsistance','Santé mentale'],
     datasets:[
-      {label:'Femmes',data:[623,574,556,507,506,417,476,242,160],backgroundColor:C.orange,borderRadius:3},
-      {label:'Hommes',data:[633,570,437,437,448,332,518,169,189],backgroundColor:C.blue600,borderRadius:3}
+      {label:'Femmes',data:[623,574,556,507,506,417,476,242,160],backgroundColor:RD[500],borderRadius:3},
+      {label:'Hommes',data:[633,570,437,437,448,332,518,169,189],backgroundColor:BL[500],borderRadius:3}
     ]
   },
-  options:{responsive:true,maintainAspectRatio:false,
+  options:{ responsive:true,maintainAspectRatio:false,
     plugins:{legend:{display:false}},
-    scales:{x:{grid:{display:false},ticks:{font:{size:10}}},y:{grid:{color:C.gray100},ticks:{font:{size:11}}}}}
+    scales:{x:{grid:{display:false},ticks:{font:{size:10}}},y:{grid:{color:GRAY}}} }
 });
 
-/* ── SANTE ── */
-new Chart(document.getElementById('santeChart'),{
+new Chart(document.getElementById('obstChart'),{
   type:'bar',
   data:{
-    labels:['Accès sûr à la santé','Accès à la terre'],
+    labels:['Manque ressources financières','Faible niveau éducation','Services rares','Emplacement impratique','VBG','Accès refusé famille','Sécurité sur sites','Services interrompus'],
     datasets:[
-      {label:'Femmes',data:[95.1,31],backgroundColor:C.orange,borderRadius:4},
-      {label:'Hommes',data:[91.3,48.3],backgroundColor:C.blue600,borderRadius:4}
+      {label:'Femmes',data:[642,420,168,79,83,65,35,32],backgroundColor:RD[500],borderRadius:3},
+      {label:'Hommes',data:[613,367,224,129,87,95,86,138],backgroundColor:BL[500],borderRadius:3}
     ]
   },
-  options:{responsive:true,maintainAspectRatio:false,
+  options:{ indexAxis:'y',responsive:true,maintainAspectRatio:false,
     plugins:{legend:{labels:{font:{size:12},boxWidth:10}}},
-    scales:{x:{grid:{display:false}},y:{max:100,ticks:{callback:v=>v+'%'},grid:{color:C.gray100}}}}
+    scales:{x:{grid:{color:GRAY}},y:{grid:{display:false},ticks:{font:{size:11}}}} }
 });
 </script>
 </body>
