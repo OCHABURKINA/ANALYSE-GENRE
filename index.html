@@ -185,8 +185,8 @@
             <canvas id="besoinsChart" role="img" aria-label="Besoins prioritaires par genre"></canvas>
           </div>
           <div class="legend">
-            <div class="legend-item"><div class="legend-dot" style="background:var(--c-orange)"></div>Femmes</div>
-            <div class="legend-item"><div class="legend-dot" style="background:var(--c-blue-600)"></div>Hommes</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--un-red-500)"></div>Femmes</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--un-blue-500)"></div>Hommes</div>
           </div>
         </div>
         <div class="chart-card-footer">
@@ -235,8 +235,8 @@
             <canvas id="subsistanceF" role="img" aria-label="Subsistance femmes avant après"></canvas>
           </div>
           <div class="legend">
-            <div class="legend-item"><div class="legend-dot" style="background:var(--c-orange)"></div>Avant la crise</div>
-            <div class="legend-item"><div class="legend-dot" style="background:var(--c-blue-400)"></div>Maintenant</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--un-red-500)"></div>Avant la crise</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--un-blue-300)"></div>Maintenant</div>
           </div>
         </div>
         <div class="chart-card-footer">
@@ -296,8 +296,8 @@
             <canvas id="servicesChart" role="img" aria-label="Accès services"></canvas>
           </div>
           <div class="legend" style="margin-top:var(--sp-3);">
-            <div class="legend-item"><div class="legend-dot" style="background:var(--c-orange)"></div>Femmes</div>
-            <div class="legend-item"><div class="legend-dot" style="background:var(--c-blue-600)"></div>Hommes</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--un-red-500)"></div>Femmes</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--un-blue-500)"></div>Hommes</div>
           </div>
         </div>
       </div>
@@ -331,11 +331,14 @@
 <script>
 /* ── PALETTE ── */
 const C = {
-  blue900:'#082C55', blue800:'#104B82', blue600:'#1F69B3', blue400:'#5A9AD3', blue200:'#A8CAE8', blue50:'#EBF4FB',
-  orange:'#E07B39', orangeLt:'#F5C49A', teal:'#2B8C8C', tealLt:'#88CCCC',
-  red:'#C83C3C', green:'#3A7D44', purple:'#6B4FA0',
-  gray100:'#E8EBF0', gray200:'#CDD2DA'
+  blue900:'#002E6E', blue800:'#004987', blue700:'#0074B7', blue500:'#009EDB',
+  blue300:'#64BDEA', blue200:'#C5DFEF', blue100:'#E3EDF6',
+  red900:'#520000', red700:'#A71F36', red500:'#ED1847', red300:'#F3859B', red100:'#F7DFDF',
+  green900:'#003425', green700:'#006747', green500:'#338C46', green400:'#72BF44', green100:'#E6EFD0',
+  gray100:'#E8EBF0'
 };
+// Semantic shortcuts
+const [FEMALE,MALE] = [C.red500, C.blue500];
 
 Chart.defaults.font.family = "'Source Sans 3', Arial, sans-serif";
 Chart.defaults.color = '#4F5560';
@@ -347,9 +350,9 @@ new Chart(document.getElementById('besoinsChart'), {
     labels: ['Alimentation','Soins de santé','Argent','Moyens subsistance','Éducation','Logement','Protection','Eau','Hygiène'],
     datasets: [
       { label: 'Femmes', data: [76.2,66.9,41.0,26.4,26.5,23.2,12.6,20.7,9.1],
-        backgroundColor: C.orange, borderRadius: 4, borderSkipped: false },
+        backgroundColor: FEMALE, borderRadius: 4, borderSkipped: false },
       { label: 'Hommes', data: [81.5,70.2,42.3,27.4,23.8,24.5,14.7,15.6,6.2],
-        backgroundColor: C.blue600, borderRadius: 4, borderSkipped: false }
+        backgroundColor: MALE, borderRadius: 4, borderSkipped: false }
     ]
   },
   options: {
@@ -369,7 +372,7 @@ new Chart(document.getElementById('participChart'), {
   data: {
     labels: ['Femmes', 'Hommes'],
     datasets: [
-      { label: 'Participent', data: [29.6, 54.7], backgroundColor: [C.orange, C.blue600], borderRadius: 6 },
+      { label: 'Participent', data: [29.6, 54.7], backgroundColor: [FEMALE, MALE], borderRadius: 6 },
       { label: 'Ne participent pas', data: [70.4, 45.3], backgroundColor: [C.gray100, C.gray100], borderRadius: 6 }
     ]
   },
@@ -389,8 +392,8 @@ new Chart(document.getElementById('subsistanceF'), {
   data: {
     labels: ['Agriculture','Petit commerce','Sans activité','Travail journalier','Élevage','Jardin familial'],
     datasets: [
-      { label: 'Avant la crise', data: [39.6,30.6,14.4,7.7,4.3,3.1], backgroundColor: C.orange, borderRadius: 3 },
-      { label: 'Maintenant', data: [12.3,32.3,36.7,11.1,0.8,2.0], backgroundColor: C.blue400, borderRadius: 3 }
+      { label: 'Avant la crise', data: [39.6,30.6,14.4,7.7,4.3,3.1], backgroundColor: FEMALE, borderRadius: 3 },
+      { label: 'Maintenant', data: [12.3,32.3,36.7,11.1,0.8,2.0], backgroundColor: C.blue300, borderRadius: 3 }
     ]
   },
   options: {
@@ -409,8 +412,8 @@ new Chart(document.getElementById('regionChart'), {
   data: {
     labels: ['Yaadga','Koulsé','Nakambé','Liptako','Kadiogo','Goulmou','Bankui'],
     datasets: [
-      { label: 'Adultes (H&F)', data: [337,317,298,274,237,198,166], backgroundColor: C.blue600, borderRadius: 3 },
-      { label: 'Jeunes (F&G)',  data: [347,309,292,224,276,251,165], backgroundColor: C.teal, borderRadius: 3 }
+      { label: 'Adultes (H&F)', data: [337,317,298,274,237,198,166], backgroundColor: MALE, borderRadius: 3 },
+      { label: 'Jeunes (F&G)',  data: [347,309,292,224,276,251,165], backgroundColor: C.green700, borderRadius: 3 }
     ]
   },
   options: {
@@ -448,8 +451,8 @@ new Chart(document.getElementById('servicesChart'), {
   data: {
     labels: svcLabels,
     datasets: [
-      { label: 'Femmes', data: svcF, backgroundColor: C.orange, borderRadius: 3 },
-      { label: 'Hommes', data: svcH, backgroundColor: C.blue600, borderRadius: 3 }
+      { label: 'Femmes', data: svcF, backgroundColor: FEMALE, borderRadius: 3 },
+      { label: 'Hommes', data: svcH, backgroundColor: MALE, borderRadius: 3 }
     ]
   },
   options: {
@@ -468,8 +471,8 @@ new Chart(document.getElementById('obstaclesChart'), {
   data: {
     labels: ['Manque ressources financières','Faible niveau d\'éducation','Services rares','Services interrompus','Emplacement non pratique','VBG','Sécurité sur sites','Accès famille refusé'],
     datasets: [
-      { label: 'Femmes', data: [642,420,168,32,79,83,35,65], backgroundColor: C.orange, borderRadius: 3 },
-      { label: 'Hommes', data: [613,367,224,138,129,87,86,95], backgroundColor: C.blue600, borderRadius: 3 }
+      { label: 'Femmes', data: [642,420,168,32,79,83,35,65], backgroundColor: FEMALE, borderRadius: 3 },
+      { label: 'Hommes', data: [613,367,224,138,129,87,86,95], backgroundColor: MALE, borderRadius: 3 }
     ]
   },
   options: {
