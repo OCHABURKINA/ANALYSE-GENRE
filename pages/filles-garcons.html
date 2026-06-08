@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Filles & Garçons — Analyse Genre OCHA Burkina Faso</title>
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/expert-visualization.css">
 </head>
 <body>
 <div class="app-shell">
@@ -17,6 +18,7 @@
     <a href="hommes-femmes.html" class="nav-item"><span class="nav-icon">👥</span><span class="nav-label">Hommes &amp; Femmes</span><span class="nav-count">1 827</span></a>
     <a href="filles-garcons.html" class="nav-item active"><span class="nav-icon">🎓</span><span class="nav-label">Filles &amp; Garçons</span><span class="nav-count">1 864</span></a>
     <a href="odf.html" class="nav-item"><span class="nav-icon">🏢</span><span class="nav-label">Organisations ODF</span><span class="nav-count">89</span></a>
+    <a href="comparaison.html" class="nav-item"><span class="nav-icon">📊</span><span class="nav-label">Comparaison H/F · Jeunes</span></a>
   </nav>
   <nav class="nav-section">
     <div class="nav-section-label">Sections</div>
@@ -192,6 +194,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.12.0/dist/pptxgen.bundle.js"></script>
 <script src="../assets/charts.js"></script>
 <script src="../assets/burkina-data.js"></script>
 <script src="../assets/map.js"></script>
@@ -240,23 +243,29 @@ new Chart(document.getElementById('perceptionChart'),{type:'bar',data:{
 
 /* ══ CARTE PDI GEOJSON ══ */
 const pdiData = {
-  kadiogo:{al:22,name:'Centre (Kadiogo)',   metrics:{'Jeunes':276,'PDI':'22%'}},
-  goulmou:{al:38,name:'Centre-Est (Goulmou)',metrics:{'Jeunes':251,'PDI':'38%'}},
-  koulse: {al:35,name:'Centre-Nord (Koulsé)',metrics:{'Jeunes':309,'PDI':'35%'}},
-  nakambe:{al:30,name:'Centre-Sud (Nakambé)',metrics:{'Jeunes':292,'PDI':'30%'}},
-  liptako:{al:42,name:'Est (Liptako)',      metrics:{'Jeunes':224,'PDI':'42%'}},
-  yaadga: {al:28,name:'Nord (Yaadga)',      metrics:{'Jeunes':347,'PDI':'28%'}},
-  bankui: {al:20,name:'Boucle du Mouhoun', metrics:{'Jeunes':165,'PDI':'20%'}},
+  kadiogo:{al:22,jeunes:276,name:'Centre (Kadiogo)',   metrics:{'Jeunes':276,'PDI':'22%'}},
+  goulmou:{al:38,jeunes:251,name:'Centre-Est (Goulmou)',metrics:{'Jeunes':251,'PDI':'38%'}},
+  koulse: {al:35,jeunes:309,name:'Centre-Nord (Koulsé)',metrics:{'Jeunes':309,'PDI':'35%'}},
+  nakambe:{al:30,jeunes:292,name:'Centre-Sud (Nakambé)',metrics:{'Jeunes':292,'PDI':'30%'}},
+  liptako:{al:42,jeunes:224,name:'Est (Liptako)',      metrics:{'Jeunes':224,'PDI':'42%'}},
+  yaadga: {al:28,jeunes:347,name:'Nord (Yaadga)',      metrics:{'Jeunes':347,'PDI':'28%'}},
+  bankui: {al:20,jeunes:165,name:'Boucle du Mouhoun', metrics:{'Jeunes':165,'PDI':'20%'}},
 };
 
 renderOchaMap({
   svgId: 'mapFG',
   tooltipId: 'mapTipFG',
+  title: 'Carte officielle — % Jeunes PDI par région',
+  exportName: 'analyse_genre_filles_garcons_carte_pdi',
   dataByRegion: pdiData,
   colorMetric: 'al',
   colorRange: [18, 45],
   colorScale: d3.scaleSequential([18,45], d3.interpolate('#FFEAD5', '#70200C')),
-  labelFormat: v => v + '%'
+  labelFormat: v => v + '%',
+  metrics: [
+    {key:'al', label:'Jeunes PDI (%)', range:[18,45], scale:d3.scaleSequential([18,45], d3.interpolate('#FFEAD5', '#70200C')), labelFormat:v=>v+'%'},
+    {key:'jeunes', label:'Nombre de jeunes', range:[150,350], labelFormat:v=>v}
+  ]
 });
 
 new Chart(document.getElementById('residenceChart'),{type:'bar',data:{
