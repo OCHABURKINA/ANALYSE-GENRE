@@ -193,6 +193,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script src="../assets/charts.js"></script>
+<script src="../assets/burkina-data.js"></script>
 <script src="../assets/map.js"></script>
 <script>
 new Chart(document.getElementById('instructionChart'),{type:'bar',data:{
@@ -254,43 +255,56 @@ const W=580, H=500;
 const tipFG = document.getElementById('mapTipFG');
 const colPDI = d3.scaleSequential([18,45], d3.interpolate(OCHA.or7, OCHA.or1));
 
-fetch('../assets/burkina-adm1.geojson')
-  .then(r=>r.json())
-  .then(geo=>{
-    const proj = d3.geoMercator().fitSize([W-10,H-10],geo).translate([W/2,H/2]);
-    const path = d3.geoPath().projection(proj);
-    const cont = svgFG.node().parentElement;
-    const g = svgFG.append('g');
+/* ══ CARTE PDI — GeoJSON embarqué, no fetch ══ */
+(function(){
+  const geo  = BURKINA_GEOJSON;
+  const proj = d3.geoMercator().fitExtent([[12,12],[W-12,H-12]], geo);
+  const path = d3.geoPath().projection(proj);
+  const cont = svgFG.node().parentElement;
+  const g    = svgFG.append('g');
 
-    g.selectAll('.map-region').data(geo.features).enter().append('path')
-      .attr('class', d=>'map-region'+(d.properties.surveyed&&pdiData[d.properties.id]?'':' not-surveyed'))
-      .attr('d',path)
-      .attr('fill', d=>{
-        const sd = pdiData[d.properties.id];
-        return (d.properties.surveyed && sd) ? colPDI(sd.al) : OCHA.sl6;
-      })
-      .on('mousemove',function(ev,d){
-        const sd=pdiData[d.properties.id]; if(!sd) return;
-        const r=cont.getBoundingClientRect();
-        tipFG.style.display='block';
-        tipFG.style.left=(ev.clientX-r.left+16)+'px';
-        tipFG.style.top=(ev.clientY-r.top-14)+'px';
-        tipFG.innerHTML=`<div class="map-tooltip-title">${sd.name}</div>`+
-          Object.entries(sd.metrics).map(([k,v])=>`<div class="map-tooltip-row"><span>${k}</span><span class="map-tooltip-val">${v}</span></div>`).join('');
-      })
-      .on('mouseleave',()=>tipFG.style.display='none');
+  g.selectAll('.map-region')
+    .data(geo.features).enter().append('path')
+    .attr('class', d => {
+      const sid = d.properties.survey_id;
+      return 'map-region' + (sid && pdiData[sid] ? '' : ' not-surveyed');
+    })
+    .attr('d', path)
+    .attr('fill', d => {
+      const sid = d.properties.survey_id;
+      const sd  = sid && pdiData[sid];
+      return sd ? colPDI(sd.al) : OCHA.sl6;
+    })
+    .on('mousemove', function(ev, d) {
+      const sid = d.properties.survey_id;
+      const sd  = sid && pdiData[sid];
+      if (!sd) return;
+      const r = cont.getBoundingClientRect();
+      let tx = ev.clientX - r.left + 16;
+      if (tx + 220 > r.width) tx = ev.clientX - r.left - 220;
+      tipFG.style.display = 'block';
+      tipFG.style.left = tx + 'px';
+      tipFG.style.top  = (ev.clientY - r.top - 14) + 'px';
+      tipFG.innerHTML = `<div class="map-tooltip-title">${sd.name}</div>` +
+        Object.entries(sd.metrics)
+          .map(([k,v]) => `<div class="map-tooltip-row"><span>${k}</span><span class="map-tooltip-val">${v}</span></div>`)
+          .join('');
+    })
+    .on('mouseleave', () => { tipFG.style.display = 'none'; });
 
-    g.selectAll('.map-lbl').data(geo.features.filter(d=>d.properties.surveyed&&pdiData[d.properties.id])).enter()
-      .append('text').attr('class','map-label-text')
-      .attr('transform',d=>`translate(${path.centroid(d)})`)
-      .attr('text-anchor','middle').attr('dominant-baseline','middle')
-      .attr('font-size','11').attr('font-weight','700')
-      .attr('fill',d=>pdiData[d.properties.id].al>32?OCHA.or7:OCHA.or1)
-      .text(d=>pdiData[d.properties.id].al+'%');
+  g.selectAll('.map-lbl')
+    .data(geo.features.filter(d => d.properties.survey_id && pdiData[d.properties.survey_id]))
+    .enter().append('text')
+    .attr('class','map-label-text')
+    .attr('transform', d => `translate(${path.centroid(d)})`)
+    .attr('text-anchor','middle').attr('dominant-baseline','middle')
+    .attr('font-size','11').attr('font-weight','700').attr('pointer-events','none')
+    .attr('fill', d => pdiData[d.properties.survey_id].al > 32 ? OCHA.or7 : OCHA.or1)
+    .text(d => pdiData[d.properties.survey_id].al + '%');
 
-    svgFG.append('text').attr('x',W-20).attr('y',28).attr('text-anchor','middle').attr('font-size','16').attr('fill',OCHA.sl4).text('N');
-    svgFG.append('text').attr('x',W-20).attr('y',16).attr('text-anchor','middle').attr('font-size','15').attr('fill',OCHA.sl4).text('↑');
-  });
+  svgFG.append('text').attr('x',W-18).attr('y',26).attr('text-anchor','middle').attr('font-size','15').attr('fill',OCHA.sl4).attr('pointer-events','none').text('N');
+  svgFG.append('text').attr('x',W-18).attr('y',14).attr('text-anchor','middle').attr('font-size','14').attr('fill',OCHA.sl4).attr('pointer-events','none').text('↑');
+})();
 
 new Chart(document.getElementById('residenceChart'),{type:'bar',data:{
   labels:['Hôtes (1 227)','PDI (632)','Retour (5)'],
