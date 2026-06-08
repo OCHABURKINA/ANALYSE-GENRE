@@ -1,0 +1,28 @@
+/* Expert visualization layer */
+.map-wrapper { position: relative; }
+.map-toolbar {
+  display:flex; flex-wrap:wrap; gap:8px; align-items:end; margin:0 0 12px 0;
+  padding:10px; background:#f8fafc; border:1px solid #e5e7eb; border-radius:12px;
+}
+.map-control { display:flex; flex-direction:column; gap:4px; font-size:11px; color:#64748b; font-weight:700; }
+.map-control select {
+  min-width:150px; height:34px; padding:0 10px; border:1px solid #cbd5e1; border-radius:9px; background:white; color:#0f172a;
+}
+.map-btn {
+  height:34px; border:1px solid #cbd5e1; border-radius:9px; background:white; color:#0f172a;
+  font-weight:700; padding:0 11px; cursor:pointer;
+}
+.map-btn:hover { background:#eef6fb; border-color:#93c5fd; }
+.map-btn-primary { background:#002E6E; color:white; border-color:#002E6E; }
+.map-btn-primary:hover { background:#004b96; color:white; }
+.map-region { stroke:#fff; stroke-width:1.1; cursor:pointer; transition:opacity .2s ease, stroke-width .2s ease; }
+.map-region:hover { stroke:#111827; stroke-width:1.6; }
+.map-region.dimmed { opacity:.18; }
+.map-region.selected { stroke:#111827; stroke-width:2.2; opacity:1; }
+.map-label-text.dimmed { opacity:.15; }
+.comparison-panel { margin-top: var(--sp-8); }
+.comparison-table { width:100%; border-collapse:collapse; font-size:13px; }
+.comparison-table th,.comparison-table td { padding:10px 12px; border-bottom:1px solid #e5e7eb; text-align:left; }
+.comparison-table th { color:#002E6E; background:#f8fafc; font-weight:800; }
+.data-actions { display:flex; gap:8px; flex-wrap:wrap; margin:12px 0; }
+@media (max-width: 760px) { .map-control, .map-control select { width:100%; } .map-btn { flex:1; } }
