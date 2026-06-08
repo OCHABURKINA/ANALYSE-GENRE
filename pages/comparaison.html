@@ -14,11 +14,11 @@
   <div class="sidebar-badge"><strong>3 691</strong> répondants · <strong>7</strong> régions<br>Collecte : Septembre 2025</div>
   <nav class="nav-section">
     <div class="nav-section-label">Navigation</div>
-    <a href="../index.html" class="nav-item"><span class="nav-icon">🏠</span><span class="nav-label">Vue d'ensemble</span></a>
-    <a href="hommes-femmes.html" class="nav-item"><span class="nav-icon">👥</span><span class="nav-label">Hommes &amp; Femmes</span></a>
-    <a href="filles-garcons.html" class="nav-item"><span class="nav-icon">🎓</span><span class="nav-label">Filles &amp; Garçons</span></a>
-    <a href="odf.html" class="nav-item"><span class="nav-icon">🏢</span><span class="nav-label">Organisations ODF</span></a>
-    <a href="comparaison.html" class="nav-item active"><span class="nav-icon">📊</span><span class="nav-label">Comparaison H/F · Jeunes</span></a>
+    <a href="../index.html" class="nav-item"><span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="white"></span><span class="nav-label">Vue d'ensemble</span></a>
+    <a href="hommes-femmes.html" class="nav-item"><span class="nav-icon" data-ocha-icon="affected-population" data-ocha-color="white"></span><span class="nav-label">Hommes &amp; Femmes</span></a>
+    <a href="filles-garcons.html" class="nav-item"><span class="nav-icon" data-ocha-icon="education" data-ocha-color="white"></span><span class="nav-label">Filles &amp; Garçons</span></a>
+    <a href="odf.html" class="nav-item"><span class="nav-icon" data-ocha-icon="coordination" data-ocha-color="white"></span><span class="nav-label">Organisations ODF</span></a>
+    <a href="comparaison.html" class="nav-item active"><span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="white"></span><span class="nav-label">Comparaison H/F · Jeunes</span></a>
   </nav>
   <div class="sidebar-footer">© 2025 OCHA Burkina Faso<br><a href="https://www.unocha.org/burkina-faso" target="_blank">unocha.org</a></div>
 </aside>
@@ -51,7 +51,7 @@
         <button class="map-btn" id="downloadCSV">Télécharger CSV</button>
         <button class="map-btn map-btn-primary" id="downloadPPTX">Exporter PowerPoint</button>
       </div>
-      <div class="insight info"><span class="insight-icon">ℹ️</span><div>Le filtre province est prévu pour <strong>bfa_admin2.geojson</strong>. Il sera activé dès que les indicateurs provinciaux seront structurés dans le même format que les régions.</div></div>
+      <div class="insight info"><span class="insight-icon" data-ocha-icon="information-management" data-ocha-color="white"></span><div>Le filtre province est prévu pour <strong>bfa_admin2.geojson</strong>. Il sera activé dès que les indicateurs provinciaux seront structurés dans le même format que les régions.</div></div>
     </div>
   </div>
 
@@ -98,10 +98,10 @@ function avg(data,k){return Math.round(data.reduce((s,r)=>s+r[k],0)/data.length*
 function render(){
  const data=rows();
  document.getElementById('kpiBox').innerHTML = `
-  <div class="kpi-card kv-bl3"><div class="kpi-icon">👥</div><div class="kpi-value">${data.reduce((s,r)=>s+r.adultes,0)}</div><div class="kpi-label">Adultes</div><div class="kpi-sub">échantillon filtré</div></div>
-  <div class="kpi-card kv-or4"><div class="kpi-icon">🎓</div><div class="kpi-value">${data.reduce((s,r)=>s+r.jeunes,0)}</div><div class="kpi-label">Jeunes</div><div class="kpi-sub">échantillon filtré</div></div>
-  <div class="kpi-card kv-or1"><div class="kpi-icon">🍲</div><div class="kpi-value">${avg(data,'alim')}%</div><div class="kpi-label">Besoin alimentaire moyen</div><div class="kpi-sub">adultes</div></div>
-  <div class="kpi-card kv-bl2"><div class="kpi-icon">🏕️</div><div class="kpi-value">${avg(data,'pdi')}%</div><div class="kpi-label">Jeunes PDI moyen</div><div class="kpi-sub">12–17 ans</div></div>`;
+  <div class="kpi-card kv-bl3"><div class="kpi-icon" data-ocha-icon="affected-population" data-ocha-color="UN-blue"></div><div class="kpi-value">${data.reduce((s,r)=>s+r.adultes,0)}</div><div class="kpi-label">Adultes</div><div class="kpi-sub">échantillon filtré</div></div>
+  <div class="kpi-card kv-or4"><div class="kpi-icon" data-ocha-icon="education" data-ocha-color="UN-blue"></div><div class="kpi-value">${data.reduce((s,r)=>s+r.jeunes,0)}</div><div class="kpi-label">Jeunes</div><div class="kpi-sub">échantillon filtré</div></div>
+  <div class="kpi-card kv-or1"><div class="kpi-icon" data-ocha-icon="food-security" data-ocha-color="UN-blue"></div><div class="kpi-value">${avg(data,'alim')}%</div><div class="kpi-label">Besoin alimentaire moyen</div><div class="kpi-sub">adultes</div></div>
+  <div class="kpi-card kv-bl2"><div class="kpi-icon" data-ocha-icon="internally-displaced" data-ocha-color="UN-blue"></div><div class="kpi-value">${avg(data,'pdi')}%</div><div class="kpi-label">Jeunes PDI moyen</div><div class="kpi-sub">12–17 ans</div></div>`;
  document.getElementById('comparisonRows').innerHTML=data.map(r=>`<tr><td>${r.region}</td><td>${r.adultes}</td><td>${r.alim}%</td><td>${r.sante}%</td><td>${r.jeunes}</td><td>${r.pdi}%</td></tr>`).join('');
  const labels=data.map(r=>r.region.replace(' (','\n('));
  const needsCfg={type:'bar',data:{labels,datasets:[{label:'Alimentation',data:data.map(r=>r.alim),backgroundColor:OCHA.bl2,borderRadius:4},{label:'Santé',data:data.map(r=>r.sante),backgroundColor:OCHA.bl4,borderRadius:4},{label:'Argent',data:data.map(r=>r.argent),backgroundColor:OCHA.or4,borderRadius:4}]},options:{responsive:true,maintainAspectRatio:false,plugins:{tooltip:{...tooltipStyle()}},scales:{x:{grid:{display:false},ticks:tickStyle(10)},y:{max:100,ticks:{...tickStyle(),callback:v=>v+'%'},grid:chartGrid()}}}};
