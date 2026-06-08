@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Hommes & Femmes — Analyse Genre OCHA Burkina Faso</title>
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/expert-visualization.css">
 </head>
 <body>
 <div class="app-shell">
@@ -17,6 +18,7 @@
     <a href="hommes-femmes.html" class="nav-item active"><span class="nav-icon">👥</span><span class="nav-label">Hommes &amp; Femmes</span><span class="nav-count">1 827</span></a>
     <a href="filles-garcons.html" class="nav-item"><span class="nav-icon">🎓</span><span class="nav-label">Filles &amp; Garçons</span><span class="nav-count">1 864</span></a>
     <a href="odf.html" class="nav-item"><span class="nav-icon">🏢</span><span class="nav-label">Organisations ODF</span><span class="nav-count">89</span></a>
+    <a href="comparaison.html" class="nav-item"><span class="nav-icon">📊</span><span class="nav-label">Comparaison H/F · Jeunes</span></a>
   </nav>
   <nav class="nav-section">
     <div class="nav-section-label">Sections</div>
@@ -211,6 +213,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.12.0/dist/pptxgen.bundle.js"></script>
 <script src="../assets/charts.js"></script>
 <script src="../assets/burkina-data.js"></script>
 <script src="../assets/map.js"></script>
@@ -307,10 +310,18 @@ renderOchaMap({
   svgId: 'burkinaMap',
   tooltipId: 'mapTip',
   detailId: 'mapDetail',
+  title: 'Carte officielle — 13 régions du Burkina Faso',
+  exportName: 'analyse_genre_hommes_femmes_carte_regionale',
   dataByRegion: surveyData,
   colorMetric: 'al',
   colorRange: [65, 88],
   labelFormat: v => v + '%',
+  metrics: [
+    {key:'al', label:'Besoin alimentaire (%)', range:[65,88], labelFormat:v=>v+'%'},
+    {key:'sa', label:'Besoin santé (%)', range:[55,75], labelFormat:v=>v+'%'},
+    {key:'ar', label:'Besoin argent (%)', range:[30,48], labelFormat:v=>v+'%'},
+    {key:'n',  label:'Nombre de répondants', range:[150,350], labelFormat:v=>v}
+  ]
 });
 
 /* ── REGION BAR ── */
