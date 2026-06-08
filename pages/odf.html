@@ -154,7 +154,7 @@
         <div class="chart-wrap" style="height:280px">
           <canvas id="finChart" role="img" aria-label="Financement ODF"></canvas>
         </div>
-        <div class="insight-box alert" style="margin-top:var(--sp-4)">
+        <div class="insight alert" style="margin-top:var(--sp-4)">
           <span class="insight-icon">⚠️</span>
           <span><strong>79 des 89 organisations</strong> utilisent leurs fonds propres — révélant une dépendance préoccupante aux ressources internes dans un contexte de crise.</span>
         </div>
@@ -171,23 +171,23 @@
         <ul class="progress-list">
           <li class="progress-item">
             <span class="progress-label">Manque de financement</span>
-            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:92%;background:var(--c-orange)"></div></div>
-            <span class="progress-value" style="color:var(--c-orange)">92%</span>
+            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:92%;background:var(--un-red-500)"></div></div>
+            <span class="progress-value" style="color:var(--un-red-500)">92%</span>
           </li>
           <li class="progress-item">
             <span class="progress-label">Insuffisance ressources matérielles</span>
-            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:78%;background:var(--c-orange)"></div></div>
-            <span class="progress-value" style="color:var(--c-orange)">78%</span>
+            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:78%;background:var(--un-red-500)"></div></div>
+            <span class="progress-value" style="color:var(--un-red-500)">78%</span>
           </li>
           <li class="progress-item">
             <span class="progress-label">Compétences et connaissances limitées</span>
-            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:65%;background:var(--c-blue-600)"></div></div>
-            <span class="progress-value" style="color:var(--c-blue-600)">65%</span>
+            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:65%;background:var(--un-blue-500)"></div></div>
+            <span class="progress-value" style="color:var(--un-blue-500)">65%</span>
           </li>
           <li class="progress-item">
             <span class="progress-label">Faible accès aux informations</span>
-            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:55%;background:var(--c-blue-600)"></div></div>
-            <span class="progress-value" style="color:var(--c-blue-600)">55%</span>
+            <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:55%;background:var(--un-blue-500)"></div></div>
+            <span class="progress-value" style="color:var(--un-blue-500)">55%</span>
           </li>
           <li class="progress-item">
             <span class="progress-label">Risques sécuritaires élevés</span>
@@ -228,7 +228,7 @@
             <div class="stat-hl-value">61</div>
             <div class="stat-hl-label">Impact significatif</div>
           </div>
-          <div class="stat-hl orange" style="border-radius:var(--radius-md)">
+          <div class="stat-hl dark" style="border-radius:var(--radius-md)">
             <div class="stat-hl-value">26</div>
             <div class="stat-hl-label">Impact moyen</div>
           </div>
@@ -297,15 +297,15 @@
           <canvas id="satisfactionChart" role="img" aria-label="Satisfaction coordination"></canvas>
         </div>
         <div style="margin-top:var(--sp-5);display:flex;flex-direction:column;gap:var(--sp-3);">
-          <div class="insight-box warn">
+          <div class="insight warning">
             <span class="insight-icon">📌</span>
             <span><strong>Principale barrière :</strong> Manque d'accès aux informations sur la tenue des réunions de coordination (cité par ~58% des ODF moyennement satisfaites).</span>
           </div>
-          <div class="insight-box">
+          <div class="insight info">
             <span class="insight-icon">📌</span>
             <span>La <strong>stratégie de localisation</strong> reste insuffisamment appliquée — les ODF réclament un quota de financement dédié aux structures locales.</span>
           </div>
-          <div class="insight-box alert">
+          <div class="insight alert">
             <span class="insight-icon">📌</span>
             <span><strong>Manque de ressources</strong> humaines et financières pour participer activement aux réunions de clusters.</span>
           </div>
@@ -327,15 +327,20 @@
 <script>
 Chart.defaults.font.family="'Source Sans 3', Arial, sans-serif";
 Chart.defaults.color='#4F5560';
-const C={orange:'#E07B39',orangeLt:'#F5C49A',blue:'#1F69B3',blue900:'#082C55',blue400:'#5A9AD3',blue200:'#A8CAE8',
-  teal:'#2B8C8C',tealLt:'#88CCCC',red:'#C83C3C',purple:'#6B4FA0',gray100:'#E8EBF0'};
+const C={
+  blue900:'#002E6E',blue800:'#004987',blue700:'#0074B7',blue500:'#009EDB',blue300:'#64BDEA',blue200:'#C5DFEF',blue100:'#E3EDF6',
+  red900:'#520000',red700:'#A71F36',red500:'#ED1847',red300:'#F3859B',red100:'#F7DFDF',
+  green900:'#003425',green700:'#006747',green500:'#338C46',green400:'#72BF44',
+  gray100:'#E8EBF0'
+};
+const ORANGE=C.red700;
 
 /* ── RESEAUX ── */
 new Chart(document.getElementById('reseauxChart'),{
   type:'bar',
   data:{
     labels:['Coord. org. féminines','SPONG','GT ÉGIAH','Autres réseaux'],
-    datasets:[{data:[82,31,68,45],backgroundColor:[C.orange,C.blue,C.teal,C.purple],borderRadius:5}]
+    datasets:[{data:[82,31,68,45],backgroundColor:[C.red500,C.blue,C.green700,C.purple],borderRadius:5}]
   },
   options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
     plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.x} organisations`}}},
@@ -351,7 +356,7 @@ new Chart(document.getElementById('themeRadar'),{
       label:'Nb. organisations',
       data:[75,67,60,48,50,50,34,27,40,33],
       backgroundColor:'rgba(224,123,57,.15)',
-      borderColor:C.orange,pointBackgroundColor:C.orange,borderWidth:2
+      borderColor:C.red500,pointBackgroundColor:C.red500,borderWidth:2
     }]
   },
   options:{responsive:true,maintainAspectRatio:false,
@@ -396,7 +401,7 @@ new Chart(document.getElementById('impactNiveauChart'),{
   type:'doughnut',
   data:{
     labels:['Impact significatif (68%)','Impact moyen (29%)','Pas d\'impact (2%)'],
-    datasets:[{data:[61,26,2],backgroundColor:[C.red,C.orange,C.teal],borderWidth:2,borderColor:'#fff'}]
+    datasets:[{data:[61,26,2],backgroundColor:[C.red,C.red500,C.green700],borderWidth:2,borderColor:'#fff'}]
   },
   options:{responsive:true,maintainAspectRatio:false,cutout:'62%',
     plugins:{legend:{position:'right',labels:{font:{size:12},boxWidth:10,padding:8}}}}
@@ -407,7 +412,7 @@ new Chart(document.getElementById('consoGenreChart'),{
   type:'bar',
   data:{
     labels:['Accès réduit','Moins de personnel genre','Réponse humanitaire moins sensible','Leadership féminin réduit','Difficulté plaidoyer','Moins d\'intérêt bailleurs','Autres'],
-    datasets:[{data:[64,48,52,35,40,30,18],backgroundColor:C.orange,borderRadius:4}]
+    datasets:[{data:[64,48,52,35,40,30,18],backgroundColor:C.red500,borderRadius:4}]
   },
   options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
     plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.x} organisations`}}},
@@ -420,7 +425,7 @@ new Chart(document.getElementById('renforcementChart'),{
   data:{
     labels:['Renforcement capacités','Mobilisation ressources','Réseautage org. féminines','Visibilité des actions','Accès à l\'information','Sécurité du personnel','Participation coordination','Données et évidences genre'],
     datasets:[
-      {label:'Fortement exprimé',data:[85,78,72,65,58,50,48,35],backgroundColor:C.orange,borderRadius:3},
+      {label:'Fortement exprimé',data:[85,78,72,65,58,50,48,35],backgroundColor:C.red500,borderRadius:3},
     ]
   },
   options:{responsive:true,maintainAspectRatio:false,
@@ -450,7 +455,7 @@ new Chart(document.getElementById('satisfactionChart'),{
   type:'doughnut',
   data:{
     labels:['Très satisfaisant (12%)','Satisfaisant (35%)','Moyennement satisfaisant (42%)','Peu satisfaisant (11%)'],
-    datasets:[{data:[12,35,42,11],backgroundColor:[C.teal,C.blue,C.orange,C.red],borderWidth:2,borderColor:'#fff'}]
+    datasets:[{data:[12,35,42,11],backgroundColor:[C.green700,C.blue,C.red500,C.red],borderWidth:2,borderColor:'#fff'}]
   },
   options:{responsive:true,maintainAspectRatio:false,cutout:'60%',
     plugins:{legend:{position:'right',labels:{font:{size:11},boxWidth:10,padding:6}}}}
