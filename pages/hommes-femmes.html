@@ -330,7 +330,7 @@ new Chart(document.getElementById('bubbleRegion'),{type:'bubble',data:{datasets:
     hoverBackgroundColor:OCHA.or4+'99',hoverBorderColor:OCHA.or2}
 ]},options:{responsive:true,maintainAspectRatio:false,
   plugins:{legend:{display:false},tooltip:{...tooltipStyle(),callbacks:{
-    label:c=>{const r=Object.values(surveyData)[c.dataIndex];return `${r.name}: n=${r.n}, alim=${r.al}%`;}
+    label:c=>{const r=Object.values(surveyData)[c.dataIndex];return `${r.label}: n=${r.n}, alim=${r.al}%`;}
   }}},
   scales:{
     x:{title:{display:true,text:'Nombre de répondants',font:{size:11},color:OCHA.sl3},ticks:tickStyle(),grid:chartGrid()},
