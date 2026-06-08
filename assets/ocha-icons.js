@@ -1,106 +1,92 @@
-/* ================================================================
-   OCHA Humanitarian Icons — intégration robuste avec fallback
-   - Remplace les emojis par des icônes SVG quand elles chargent.
-   - Si une URL échoue, l'emoji original reste visible.
-   ================================================================ */
-(function(){
-  const BASES = [
-    'https://raw.githubusercontent.com/UN-OCHA/humanitarian-icons/main/SVG/UN%20blue/',
-    'https://raw.githubusercontent.com/UN-OCHA/humanitarian-icons/main/SVG/UN%20Blue/',
-    'https://raw.githubusercontent.com/UN-OCHA/humanitarian-icons/main/SVG/blue/',
-    'https://un-ocha.github.io/humanitarian-icons/SVG/UN%20blue/'
-  ];
+/* ============================================================
+   OCHA Humanitarian Icons — intégration directe depuis GitHub
+   Source officielle : https://github.com/UN-OCHA/humanitarian-icons
+   ============================================================ */
 
-  const iconMap = {
-    '🏠':['analysis','home','humanitarian-programme-cycle'],
-    '👥':['affected-population','people-affected','population','people'],
-    '🎓':['education','school'],
-    '🏢':['ngo-office','office','coordination'],
-    '📊':['analysis','assessment','information-management'],
-    '⚖️':['gender','protection'],
-    '⏱️':['time','calendar'],
-    '💼':['livelihood','early-recovery'],
-    '🗺️':['map','access'],
-    '🏥':['health'],
-    '📚':['education'],
-    '💍':['protection','gender-based-violence'],
-    '🏕️':['internally-displaced','displaced-population','camp-coordination-and-camp-management'],
-    '🛡️':['protection'],
-    '💧':['water-sanitation-and-hygiene','wash','water'],
-    '🌾':['agriculture','food-security'],
-    '🏘️':['shelter','housing'],
-    '⚠️':['alert','warning-error','hazard'],
-    '📉':['analysis','assessment'],
-    '✅':['check','affected-population'],
-    '📍':['location','map'],
-    '📅':['calendar'],
-    '💰':['cash-transfer','cash','funding'],
-    '⚡':['response','emergency-telecommunications'],
-    '🤝':['partnership','coordination'],
-    '🍲':['food-security','nutrition'],
-    'ℹ️':['information-management','information'],
-    '📌':['information-management','information']
-  };
+const OCHA_ICON_BASE =
+  "https://raw.githubusercontent.com/UN-OCHA/humanitarian-icons/main/SVG";
 
-  function candidates(names){
-    const out=[];
-    names.forEach(n=>{
-      const variants = [n, n.replace(/-/g,'_'), n.replace(/-/g,' '), n.toLowerCase(), n.replace(/(^|[-_\s])\w/g, s=>s.toUpperCase())];
-      variants.forEach(v=>BASES.forEach(b=>out.push(b + encodeURIComponent(v).replace(/%2F/g,'/') + '.svg')));
-    });
-    return [...new Set(out)];
-  }
+const OCHA_ICONS = {
+  home: "Analysis",
+  overview: "Analysis",
+  analysis: "Analysis",
+  comparison: "Analysis",
 
-  function makeFallback(text, cls){
-    const span=document.createElement('span');
-    span.className='icon-fallback';
-    span.textContent=text;
-    return span;
-  }
+  people: "Affected population",
+  population: "Affected population",
+  respondents: "Affected population",
 
-  function tryImage(urls, emoji, cls, done){
-    let i=0;
-    const img=document.createElement('img');
-    img.className=cls || 'ocha-icon';
-    img.alt='';
-    img.loading='lazy';
-    img.onload=()=>done(img);
-    img.onerror=()=>{
-      i++;
-      if(i<urls.length){ img.src=urls[i]; }
-      else { done(makeFallback(emoji, cls)); }
-    };
-    img.src=urls[i];
-  }
+  gender: "Gender",
+  women: "Woman",
+  men: "Man",
+  girls: "Children",
+  boys: "Children",
+  children: "Children",
 
-  function inferClass(el){
-    if(el.classList.contains('kpi-icon')) return 'ocha-icon-lg';
-    return 'ocha-icon';
-  }
+  odf: "Group",
+  organization: "Coordination",
+  coordination: "Coordination",
 
-  function replaceIconContainer(el){
-    if(el.dataset.ochaProcessed==='1') return;
-    const raw=(el.textContent||'').trim();
-    const emoji=Object.keys(iconMap).find(e=>raw === e || raw.startsWith(e));
-    if(!emoji) return;
-    el.dataset.ochaProcessed='1';
-    const label=raw.replace(emoji,'').trim();
-    const cls=inferClass(el);
-    tryImage(candidates(iconMap[emoji]), emoji, cls, node=>{
-      el.textContent='';
-      el.appendChild(node);
-      if(label && el.classList.contains('header-chip')) el.appendChild(document.createTextNode(' ' + label));
-    });
-  }
+  decision: "Leadership",
+  work: "Livelihood",
+  livelihood: "Livelihood",
+  employment: "Livelihood",
 
-  function run(){
-    document.querySelectorAll('.nav-icon,.kpi-icon,.insight-icon,.header-chip').forEach(replaceIconContainer);
-  }
+  education: "Education",
+  school: "Education",
 
-  window.OCHAIcon = function(name, variant='UN-blue', cls='ocha-icon'){
-    const safe = String(name||'analysis').toLowerCase();
-    return `<img class="${cls}" src="https://raw.githubusercontent.com/UN-OCHA/humanitarian-icons/main/SVG/UN%20blue/${safe}.svg" alt="" loading="lazy" onerror="this.style.display='none'">`;
-  };
+  marriage: "Gender",
+  protection: "Protection",
+  gbv: "Gender-based violence",
+  vbg: "Gender-based violence",
 
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', run); else run();
-})();
+  displacement: "Internally displaced",
+  pdi: "Internally displaced",
+  shelter: "Shelter",
+
+  health: "Health",
+  wash: "Water sanitation and hygiene",
+  water: "Water sanitation and hygiene",
+
+  food: "Food security",
+  nutrition: "Nutrition",
+  cash: "Cash transfer",
+  finance: "Cash transfer",
+
+  map: "Map",
+  report: "Report",
+  download: "Download",
+  data: "Data",
+  filter: "Filter",
+  warning: "Alert",
+  info: "Information"
+};
+
+function ochaIconUrl(iconKey, color = "UN Blue") {
+  const iconName = OCHA_ICONS[iconKey] || iconKey || "Analysis";
+  const safeColor = encodeURIComponent(color);
+  const safeName = encodeURIComponent(iconName + ".svg");
+  return `${OCHA_ICON_BASE}/${safeColor}/${safeName}`;
+}
+
+function ochaIcon(iconKey, color = "UN Blue", extraClass = "") {
+  return `
+    <img
+      class="ocha-icon ${extraClass}"
+      src="${ochaIconUrl(iconKey, color)}"
+      alt=""
+      loading="lazy"
+      onerror="this.onerror=null;this.src='${ochaIconUrl("analysis", color)}';"
+    >
+  `;
+}
+
+/* Remplacement automatique des éléments avec data-ocha-icon */
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("[data-ocha-icon]").forEach(el => {
+    const key = el.getAttribute("data-ocha-icon");
+    const color = el.getAttribute("data-ocha-color") || "UN Blue";
+    const size = el.getAttribute("data-ocha-size") || "";
+    el.innerHTML = ochaIcon(key, color, size);
+  });
+});
