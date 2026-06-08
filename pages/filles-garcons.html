@@ -105,8 +105,8 @@
           <canvas id="instructionChart" role="img" aria-label="Instruction par genre"></canvas>
         </div>
         <div class="legend">
-          <div class="legend-item"><div class="legend-dot" style="background:var(--c-teal)"></div>Filles</div>
-          <div class="legend-item"><div class="legend-dot" style="background:var(--c-blue-600)"></div>Garçons</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--un-blue-700)"></div>Filles</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--un-blue-500)"></div>Garçons</div>
         </div>
       </div>
     </div>
@@ -121,7 +121,7 @@
         <div class="chart-wrap" style="height:240px">
           <canvas id="raisonsChart" role="img" aria-label="Raisons non-scolarisation"></canvas>
         </div>
-        <div class="insight-box warn" style="margin-top:var(--sp-4)">
+        <div class="insight warning" style="margin-top:var(--sp-4)">
           <span class="insight-icon">⚠️</span>
           <span>Le <strong>mariage précoce/forcé</strong> est cité uniquement par les filles (41) comme raison d'absence scolaire — absent chez les garçons.</span>
         </div>
@@ -170,7 +170,7 @@
           <canvas id="perceptionChart" role="img" aria-label="Perception mariage forcé"></canvas>
         </div>
         <div class="grid g2" style="margin-top:var(--sp-4);gap:var(--sp-3);">
-          <div class="stat-hl teal" style="border-radius:var(--radius-md)">
+          <div class="stat-hl green" style="border-radius:var(--radius-md)">
             <div class="stat-hl-value">97.0%</div>
             <div class="stat-hl-label">Filles : mariage enfants inacceptable</div>
           </div>
@@ -195,14 +195,10 @@
       </div>
       <div class="chart-card-body">
         <div class="map-wrapper">
-          <svg id="mapFG" viewBox="0 0 620 490" width="100%"></svg>
+          <svg id="mapFG" class="map-svg" viewBox="0 0 560 480"></svg>
           <div class="map-tooltip" id="mapTipFG"></div>
         </div>
-        <div class="map-legend-bar">
-          <span>20%</span>
-          <div class="bar" style="background:linear-gradient(to right,#E0F4F4,#0A4040)"></div>
-          <span>42%</span>
-        </div>
+        <div class="map-legend" style="margin-top:var(--sp-2)"><span>PDI 20%</span><div class="map-legend-grad" style="background:linear-gradient(to right,#E6EFD0,#003425)"></div><span>42%</span></div>
       </div>
     </div>
     <div class="chart-card">
@@ -269,7 +265,7 @@
         <div class="chart-wrap" style="height:160px">
           <canvas id="vbgVictimes" role="img" aria-label="VBG victimes"></canvas>
         </div>
-        <div class="insight-box alert" style="margin-top:var(--sp-4)">
+        <div class="insight alert" style="margin-top:var(--sp-4)">
           <span class="insight-icon">🛡️</span>
           <span>Les <strong>garçons</strong> déclarent plus de victimisation directe (9.8%) que les filles (3.9%). Les filles sont davantage exposées aux violences psychologiques.</span>
         </div>
@@ -340,7 +336,14 @@
 <script>
 Chart.defaults.font.family="'Source Sans 3', Arial, sans-serif";
 Chart.defaults.color='#4F5560';
-const C={teal:'#2B8C8C',tealLt:'#88CCCC',tealBg:'#E0F4F4',blue:'#1F69B3',blue400:'#5A9AD3',orange:'#E07B39',red:'#C83C3C',gray100:'#E8EBF0',darkTeal:'#0A4040'};
+const C={
+  blue900:'#002E6E',blue800:'#004987',blue700:'#0074B7',blue500:'#009EDB',blue300:'#64BDEA',blue200:'#C5DFEF',blue100:'#E3EDF6',
+  red900:'#520000',red700:'#A71F36',red500:'#ED1847',red300:'#F3859B',red100:'#F7DFDF',
+  green900:'#003425',green700:'#006747',green500:'#338C46',green400:'#72BF44',green200:'#CEE3A0',green100:'#E6EFD0',
+  gray100:'#E8EBF0'
+};
+// Semantic aliases
+const FEMALE=C.red500, MALE=C.blue500, TEAL=C.green700, TEAL_LT=C.green400, GRAY=C.gray100;
 
 /* ── INSTRUCTION ── */
 new Chart(document.getElementById('instructionChart'),{
@@ -348,8 +351,8 @@ new Chart(document.getElementById('instructionChart'),{
   data:{
     labels:['Secondaire','Primaire','Aucun','Post-primaire','Alphabétisation','Coranique'],
     datasets:[
-      {label:'Filles',data:[37.9,23.0,18.3,16.8,3.0,1.0],backgroundColor:C.teal,borderRadius:4},
-      {label:'Garçons',data:[32.8,23.7,26.4,12.9,2.6,1.5],backgroundColor:C.blue,borderRadius:4}
+      {label:'Filles',data:[37.9,23.0,18.3,16.8,3.0,1.0],backgroundColor:C.green700,borderRadius:4},
+      {label:'Garçons',data:[32.8,23.7,26.4,12.9,2.6,1.5],backgroundColor:MALE,borderRadius:4}
     ]
   },
   options:{responsive:true,maintainAspectRatio:false,
@@ -364,8 +367,8 @@ new Chart(document.getElementById('raisonsChart'),{
   data:{
     labels:['Manque moyens','Autres','Insécurité','Travail/charges','Mariage précoce','Distance école'],
     datasets:[
-      {label:'Filles',data:[193,106,77,47,41,11],backgroundColor:C.teal,borderRadius:3},
-      {label:'Garçons',data:[263,0,0,160,0,0],backgroundColor:C.blue,borderRadius:3}
+      {label:'Filles',data:[193,106,77,47,41,11],backgroundColor:C.green700,borderRadius:3},
+      {label:'Garçons',data:[263,0,0,160,0,0],backgroundColor:MALE,borderRadius:3}
     ]
   },
   options:{responsive:true,maintainAspectRatio:false,
@@ -402,9 +405,9 @@ new Chart(document.getElementById('perceptionChart'),{
   data:{
     labels:['Mariage forcé — Filles','Mariage forcé — Garçons','Mariage enfants — Filles','Mariage enfants — Garçons'],
     datasets:[
-      {label:'Inacceptable',data:[94.6,94.1,97.0,92.9],backgroundColor:C.teal,borderRadius:3},
-      {label:'Cela dépend',data:[3.0,5.1,2.1,5.1],backgroundColor:C.orange,borderRadius:3},
-      {label:'Acceptable',data:[2.4,0.8,0.9,2.0],backgroundColor:C.red,borderRadius:3}
+      {label:'Inacceptable',data:[94.6,94.1,97.0,92.9],backgroundColor:C.green700,borderRadius:3},
+      {label:'Cela dépend',data:[3.0,5.1,2.1,5.1],backgroundColor:C.red500,borderRadius:3},
+      {label:'Acceptable',data:[2.4,0.8,0.9,2.0],backgroundColor:C.red500,borderRadius:3}
     ]
   },
   options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
@@ -413,39 +416,65 @@ new Chart(document.getElementById('perceptionChart'),{
 });
 
 /* ── CARTE FG ── */
-const rFG=[
-  {id:'bankui', pdi:20,n:165,name:'Bankui',d:'M 85,115 L 195,125 L 215,158 L 205,242 L 172,282 L 108,280 L 68,248 L 58,188 Z',cx:135,cy:198},
-  {id:'yaadga', pdi:28,n:347,name:'Yaadga',d:'M 195,55 L 325,55 L 345,88 L 335,152 L 312,162 L 258,172 L 208,162 L 188,132 L 178,88 Z',cx:260,cy:112},
-  {id:'koulse', pdi:35,n:309,name:'Koulsé',d:'M 258,172 L 312,162 L 362,178 L 372,235 L 342,262 L 290,268 L 253,248 L 238,212 Z',cx:305,cy:215},
-  {id:'liptako',pdi:42,n:224,name:'Liptako',d:'M 372,178 L 485,168 L 525,220 L 515,292 L 462,312 L 400,302 L 370,272 L 360,232 Z',cx:442,cy:242},
-  {id:'kadiogo',pdi:22,n:276,name:'Kadiogo',d:'M 228,278 L 253,248 L 290,268 L 302,302 L 290,338 L 253,342 L 222,318 Z',cx:258,cy:298},
-  {id:'nakambe',pdi:30,n:292,name:'Nakambé',d:'M 253,248 L 342,262 L 362,312 L 340,372 L 288,388 L 238,372 L 218,322 L 228,278 Z',cx:290,cy:318},
-  {id:'goulmou',pdi:38,n:251,name:'Goulmou',d:'M 362,312 L 462,312 L 492,382 L 462,442 L 390,452 L 338,422 L 332,372 Z',cx:412,cy:378},
-];
-const colorFG=d3.scaleSequential([18,45],d3.interpolate('#E0F4F4','#0A4040'));
-const svgFG=d3.select('#mapFG');const tipFG=document.getElementById('mapTipFG');const mapFGC=svgFG.node().parentElement;
-svgFG.selectAll('.map-region').data(rFG).enter().append('path')
-  .attr('class','map-region').attr('d',d=>d.d)
-  .attr('fill',d=>colorFG(d.pdi)).attr('stroke','white').attr('stroke-width',1.8)
-  .on('mousemove',function(ev,d){
-    const r=mapFGC.getBoundingClientRect();
-    tipFG.style.display='block';
-    tipFG.style.left=(ev.clientX-r.left+14)+'px';
-    tipFG.style.top=(ev.clientY-r.top-12)+'px';
-    tipFG.innerHTML=`<strong>${d.name}</strong><br>n = ${d.n} jeunes<br>PDI : <b style="color:#88CCCC">${d.pdi}%</b>`;
-  }).on('mouseleave',()=>tipFG.style.display='none');
-svgFG.selectAll('.map-lbl').data(rFG).enter().append('text')
-  .attr('x',d=>d.cx).attr('y',d=>d.cy)
-  .attr('text-anchor','middle').attr('dominant-baseline','middle')
-  .attr('font-size','13').attr('font-weight','700').attr('font-family','Source Sans 3,Arial')
-  .attr('fill',d=>d.pdi>32?'#E0F4F4':'#0A4040').attr('pointer-events','none')
-  .text(d=>d.pdi+'%');
+// ══ CARTE GEOJSON PDI ══
+const pdiData = {
+  kadiogo:'22', goulmou:'38', koulse:'35', nakambe:'30',
+  liptako:'42', yaadga:'28', bankui:'20'
+};
+const pdiNum = { kadiogo:22, goulmou:38, koulse:35, nakambe:30, liptako:42, yaadga:28, bankui:20 };
+const pdiN   = { kadiogo:276, goulmou:251, koulse:309, nakambe:292, liptako:224, yaadga:347, bankui:165 };
+const pdiNames = { kadiogo:'Centre (Kadiogo)', goulmou:'Centre-Est (Goulmou)', koulse:'Centre-Nord (Koulsé)',
+  nakambe:'Centre-Sud (Nakambé)', liptako:'Est (Liptako)', yaadga:'Nord (Yaadga)', bankui:'Boucle du Mouhoun (Bankui)' };
+
+const colorPDI = d3.scaleSequential([18, 45], d3.interpolate(C.green100, C.green900));
+const svgFG = d3.select('#mapFG');
+const tipFG = document.getElementById('mapTipFG');
+const W2=560, H2=480;
+
+fetch('../assets/burkina-regions.geojson')
+  .then(r=>r.json())
+  .then(geo=>{
+    const proj = d3.geoMercator().fitSize([W2-20,H2-20],geo).translate([W2/2,H2/2]);
+    const pathFn = d3.geoPath().projection(proj);
+    const mapCont = svgFG.node().parentElement;
+
+    svgFG.selectAll('.map-region').data(geo.features).enter().append('path')
+      .attr('class', d => 'map-region' + (d.properties.surveyed?'':' not-surveyed'))
+      .attr('d', pathFn)
+      .attr('fill', d => {
+        if (!d.properties.surveyed) return '#CDD2DA';
+        return colorPDI(pdiNum[d.properties.survey_id]);
+      })
+      .on('mousemove', function(ev,d){
+        if (!d.properties.surveyed) return;
+        const sid = d.properties.survey_id;
+        const r = mapCont.getBoundingClientRect();
+        tipFG.style.display='block';
+        tipFG.style.left=(ev.clientX-r.left+14)+'px';
+        tipFG.style.top=(ev.clientY-r.top-12)+'px';
+        tipFG.innerHTML=`<div class="map-tooltip-title">${pdiNames[sid]}</div>
+          <div class="map-tooltip-row"><span>Jeunes</span><span class="map-tooltip-val">${pdiN[sid]}</span></div>
+          <div class="map-tooltip-row"><span>PDI</span><span class="map-tooltip-val">${pdiNum[sid]}%</span></div>`;
+      })
+      .on('mouseleave',()=>tipFG.style.display='none');
+
+    svgFG.selectAll('.map-lbl').data(geo.features.filter(d=>d.properties.surveyed)).enter()
+      .append('text').attr('class','map-label-text')
+      .attr('transform',d=>`translate(${pathFn.centroid(d)})`)
+      .attr('text-anchor','middle').attr('dominant-baseline','middle')
+      .attr('font-size','11')
+      .attr('fill',d=>pdiNum[d.properties.survey_id]>32?C.green100:C.green900)
+      .text(d=>pdiNum[d.properties.survey_id]+'%');
+
+    svgFG.append('text').attr('x',W2-22).attr('y',28).attr('text-anchor','middle').attr('font-size','16').attr('fill','#8A92A0').text('N');
+    svgFG.append('text').attr('x',W2-22).attr('y',16).attr('text-anchor','middle').attr('font-size','16').attr('fill','#8A92A0').text('↑');
+  });
 
 /* ── RESIDENCE ── */
 new Chart(document.getElementById('residenceChart'),{
   type:'bar',
   data:{labels:['Hôtes','PDI','Retour volontaire'],
-    datasets:[{data:[1227,632,5],backgroundColor:[C.blue,C.orange,C.teal],borderRadius:5}]},
+    datasets:[{data:[1227,632,5],backgroundColor:[C.blue,C.red500,C.green700],borderRadius:5}]},
   options:{responsive:true,maintainAspectRatio:false,
     plugins:{legend:{display:false}},
     scales:{x:{grid:{display:false}},y:{grid:{color:C.gray100}}}}
@@ -453,7 +482,7 @@ new Chart(document.getElementById('residenceChart'),{
 new Chart(document.getElementById('zoneChart'),{
   type:'doughnut',
   data:{labels:['Zone urbaine (79%)','Zone rurale (21%)'],
-    datasets:[{data:[1466,398],backgroundColor:[C.blue,C.teal],borderWidth:2,borderColor:'#fff'}]},
+    datasets:[{data:[1466,398],backgroundColor:[C.blue,C.green700],borderWidth:2,borderColor:'#fff'}]},
   options:{responsive:true,maintainAspectRatio:false,cutout:'60%',
     plugins:{legend:{position:'right',labels:{font:{size:12},boxWidth:10}}}}
 });
@@ -462,14 +491,14 @@ new Chart(document.getElementById('zoneChart'),{
 new Chart(document.getElementById('conflitChart'),{
   type:'doughnut',
   data:{labels:['Attaques fréquentes (>1/sem.)','Attaques sporadiques','Pas d\'attaques'],
-    datasets:[{data:[365,164,103],backgroundColor:[C.red,C.orange,C.teal],borderWidth:2,borderColor:'#fff'}]},
+    datasets:[{data:[365,164,103],backgroundColor:[C.red,C.red500,C.green700],borderWidth:2,borderColor:'#fff'}]},
   options:{responsive:true,maintainAspectRatio:false,cutout:'55%',
     plugins:{legend:{position:'right',labels:{font:{size:11},boxWidth:10,padding:8}}}}
 });
 new Chart(document.getElementById('destructionChart'),{
   type:'bar',
   data:{labels:['Légèrement endommagée','Partiellement endommagée','Aucun dommage','Complètement détruite'],
-    datasets:[{data:[241,196,109,86],backgroundColor:[C.orange,'#C83C3C',C.teal,'#8B0000'],borderRadius:4}]},
+    datasets:[{data:[241,196,109,86],backgroundColor:[C.red500,'#C83C3C',C.green700,'#8B0000'],borderRadius:4}]},
   options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
     plugins:{legend:{display:false}},
     scales:{x:{grid:{color:C.gray100}},y:{grid:{display:false},ticks:{font:{size:11}}}}}
@@ -480,7 +509,7 @@ new Chart(document.getElementById('vbgVictimes'),{
   type:'bar',
   data:{labels:['Filles','Garçons'],
     datasets:[
-      {label:'Victimes',data:[3.9,9.8],backgroundColor:[C.teal,C.blue],borderRadius:5},
+      {label:'Victimes',data:[3.9,9.8],backgroundColor:[C.green700,C.blue],borderRadius:5},
       {label:'Non victimes',data:[96.1,90.2],backgroundColor:[C.gray100,C.gray100],borderRadius:5}
     ]},
   options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
@@ -491,8 +520,8 @@ new Chart(document.getElementById('vbgTypes'),{
   type:'bar',
   data:{labels:['Physique','Psychologique/émotionnelle','Exploitation','Économique','Autre'],
     datasets:[
-      {label:'Filles',data:[8,18,8,5,1],backgroundColor:C.teal,borderRadius:3},
-      {label:'Garçons',data:[62,30,16,16,7],backgroundColor:C.blue,borderRadius:3}
+      {label:'Filles',data:[8,18,8,5,1],backgroundColor:C.green700,borderRadius:3},
+      {label:'Garçons',data:[62,30,16,16,7],backgroundColor:MALE,borderRadius:3}
     ]},
   options:{responsive:true,maintainAspectRatio:false,
     plugins:{legend:{labels:{font:{size:12},boxWidth:10}}},
@@ -504,8 +533,8 @@ new Chart(document.getElementById('emploiChart'),{
   type:'bar',
   data:{labels:['Élève','Sans emploi','Secteur informel','En apprentissage','Agro-sylvo-pastoral','Secteur formel'],
     datasets:[
-      {label:'Filles',data:[33,35,16,10,4,1],backgroundColor:C.teal,borderRadius:3},
-      {label:'Garçons',data:[41,26,20,8,4,2],backgroundColor:C.blue,borderRadius:3}
+      {label:'Filles',data:[33,35,16,10,4,1],backgroundColor:C.green700,borderRadius:3},
+      {label:'Garçons',data:[41,26,20,8,4,2],backgroundColor:MALE,borderRadius:3}
     ]},
   options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
     plugins:{legend:{labels:{font:{size:12},boxWidth:10}}},
@@ -514,14 +543,14 @@ new Chart(document.getElementById('emploiChart'),{
 new Chart(document.getElementById('menageChart'),{
   type:'doughnut',
   data:{labels:['Chef masculin (79.5%)','Chef féminin (20.5%)'],
-    datasets:[{data:[1481,383],backgroundColor:[C.blue,C.teal],borderWidth:2,borderColor:'#fff'}]},
+    datasets:[{data:[1481,383],backgroundColor:[C.blue,C.green700],borderWidth:2,borderColor:'#fff'}]},
   options:{responsive:true,maintainAspectRatio:false,cutout:'62%',
     plugins:{legend:{position:'right',labels:{font:{size:12},boxWidth:10}}}}
 });
 new Chart(document.getElementById('foncierChart'),{
   type:'bar',
   data:{labels:['Propriétaire','Locataire'],
-    datasets:[{data:[1246,618],backgroundColor:[C.blue,C.tealLt],borderRadius:5}]},
+    datasets:[{data:[1246,618],backgroundColor:[C.blue,C.green700Lt],borderRadius:5}]},
   options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
     plugins:{legend:{display:false}},
     scales:{x:{grid:{color:C.gray100}},y:{grid:{display:false}}}}
