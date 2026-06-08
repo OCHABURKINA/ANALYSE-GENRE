@@ -233,3 +233,46 @@ strong{font-weight:900;color:var(--bl-1)}
   .gbar-label{grid-row:auto}
   .gbar-row{grid-template-columns:74px minmax(120px,1fr) 46px}
 }
+/* OCHA Humanitarian Icons */
+.ocha-icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.ocha-icon-sm {
+  width: 18px;
+  height: 18px;
+}
+
+.ocha-icon-md {
+  width: 24px;
+  height: 24px;
+}
+
+.ocha-icon-lg {
+  width: 34px;
+  height: 34px;
+}
+
+.nav-icon,
+.kpi-icon,
+.insight-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kpi-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: #E3EDF6;
+}
+
+.kpi-icon .ocha-icon {
+  width: 28px;
+  height: 28px;
+}
