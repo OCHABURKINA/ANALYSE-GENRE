@@ -120,7 +120,7 @@
         </div>
         <div class="map-legend">
           <span>PDI faible</span>
-          <div class="map-legend-grad" style="background:linear-gradient(to right,#FFEAD5,#70200C)"></div>
+          <div class="map-legend-grad" style="background:linear-gradient(to right,#E3EDF6,#002E6E)"></div>
           <span>PDI élevé</span>
           <span style="margin-left:var(--sp-3);color:var(--sl-4)">⬜ Non enquêtée</span>
         </div>
@@ -195,6 +195,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.12.0/dist/pptxgen.bundle.js"></script>
+<script src="../assets/ocha-icons.js"></script>
 <script src="../assets/charts.js"></script>
 <script src="../assets/burkina-data.js"></script>
 <script src="../assets/map.js"></script>
@@ -260,10 +261,10 @@ renderOchaMap({
   dataByRegion: pdiData,
   colorMetric: 'al',
   colorRange: [18, 45],
-  colorScale: d3.scaleSequential([18,45], d3.interpolate('#FFEAD5', '#70200C')),
+  colorScale: d3.scaleSequential([18,45], d3.interpolate('#E3EDF6', '#002E6E')),
   labelFormat: v => v + '%',
   metrics: [
-    {key:'al', label:'Jeunes PDI (%)', range:[18,45], scale:d3.scaleSequential([18,45], d3.interpolate('#FFEAD5', '#70200C')), labelFormat:v=>v+'%'},
+    {key:'al', label:'Jeunes PDI (%)', range:[18,45], scale:d3.scaleSequential([18,45], d3.interpolate('#E3EDF6', '#002E6E')), labelFormat:v=>v+'%'},
     {key:'jeunes', label:'Nombre de jeunes', range:[150,350], labelFormat:v=>v}
   ]
 });
