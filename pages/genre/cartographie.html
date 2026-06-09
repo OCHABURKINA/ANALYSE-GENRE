@@ -71,13 +71,13 @@ function normalizeIconKey(key) {
 }
 
 function normalizeColor(color) {
-  const c = String(color || "UN Blue").trim().toLowerCase();
+  const c = String(color || "UN-Blue").trim().toLowerCase();
 
   if (c === "white" || c === "blanc") return "White";
   if (c === "black" || c === "noir") return "Black";
-  if (c === "blue" || c === "unblue" || c === "un blue" || c === "bleu") return "UN Blue";
+  if (c === "blue" || c === "unblue" || c === "un-blue" || c === "bleu") return "UN-Blue";
 
-  return "UN Blue";
+  return "UN-Blue";
 }
 
 function ochaIconName(key) {
@@ -85,7 +85,7 @@ function ochaIconName(key) {
   return OCHA_ICON_MAP[normalizedKey] || "Analysis";
 }
 
-function ochaIconUrl(key, color = "UN Blue") {
+function ochaIconUrl(key, color = "UN-Blue") {
   const iconColor = encodeURIComponent(normalizeColor(color));
   const iconFile = encodeURIComponent(ochaIconName(key) + ".svg");
 
@@ -95,7 +95,7 @@ function ochaIconUrl(key, color = "UN Blue") {
 function renderOchaIcons() {
   document.querySelectorAll("[data-ocha-icon]").forEach(el => {
     const icon = el.getAttribute("data-ocha-icon") || "analysis";
-    const color = el.getAttribute("data-ocha-color") || "UN Blue";
+    const color = el.getAttribute("data-ocha-color") || "UN-Blue";
     const alt = el.getAttribute("aria-label") || "";
 
     const primary = ochaIconUrl(icon, color);
