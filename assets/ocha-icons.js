@@ -1,8 +1,14 @@
+/* ============================================================
+   OCHA Humanitarian Icons — GitHub officiel
+   Dossiers valides : UN-blue, white, black
+   ============================================================ */
+
 const OCHA_ICON_BASE =
   "https://raw.githubusercontent.com/UN-OCHA/humanitarian-icons/main/SVG";
 
 const OCHA_ICON_MAP = {
   home: "Analysis",
+  overview: "Analysis",
   analysis: "Analysis",
   data: "Data",
   report: "Report",
@@ -15,7 +21,6 @@ const OCHA_ICON_MAP = {
   respondents: "Affected-population",
 
   gender: "Gender",
-  sex: "Sex",
   women: "Gender",
   men: "Gender",
   girls: "Children",
@@ -35,11 +40,14 @@ const OCHA_ICON_MAP = {
   shelter: "Shelter",
   livelihood: "Livelihood",
   cash: "Cash-transfer",
-  partnership: "Partnership",
 
   pdi: "Internally-displaced",
   displacement: "Internally-displaced",
 
+  organisation: "Group",
+  organization: "Group",
+  organisations: "Group",
+  organizations: "Group",
   odf: "Group",
   group: "Group",
   coordination: "Coordination",
@@ -48,13 +56,16 @@ const OCHA_ICON_MAP = {
   leadership: "Leadership",
   accountability: "Assessment",
   assessment: "Assessment",
+  localisation: "Coordination",
+  localization: "Coordination",
 
   community: "Community-engagement",
+  partnership: "Partnership",
   feedback: "Feedback",
-  information: "Information",
-  info: "Information",
   warning: "Warning-Error",
-  alert: "Alert"
+  alert: "Alert",
+  info: "Information",
+  information: "Information"
 };
 
 function normalizeIconKey(key) {
@@ -89,13 +100,15 @@ function renderOchaIcons() {
   document.querySelectorAll("[data-ocha-icon]").forEach(el => {
     const icon = el.getAttribute("data-ocha-icon") || "analysis";
     const color = el.getAttribute("data-ocha-color") || "UN-blue";
+    const alt = el.getAttribute("aria-label") || "";
+
     const primary = getOchaIconUrl(icon, color);
     const fallback = getOchaIconUrl("analysis", color);
 
     el.innerHTML = `
       <img
         src="${primary}"
-        alt=""
+        alt="${alt}"
         loading="lazy"
         onerror="this.onerror=null;this.src='${fallback}';"
       >
