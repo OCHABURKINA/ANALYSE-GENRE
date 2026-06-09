@@ -1,1 +1,415 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Coordination — Analyse Organisations</title><link rel="stylesheet" href="../../assets/style.css"></head><body><div class="app-shell"><aside class="sidebar org"><div class="sidebar-logo"><img src="../../assets/ocha-logo.png" alt="OCHA"><div><div class="sidebar-logo-title">Coordination</div><div class="sidebar-logo-sub">Clusters et mécanismes</div></div></div><nav class="nav-section"><a href="index.html" class="nav-item"><span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="White"></span><span class="nav-label">Vue d'ensemble</span></a><a href="coordination.html" class="nav-item active"><span class="nav-icon" data-ocha-icon="coordination" data-ocha-color="White"></span><span class="nav-label">Coordination</span></a><a href="redevabilite-genre.html" class="nav-item"><span class="nav-icon" data-ocha-icon="assessment" data-ocha-color="White"></span><span class="nav-label">Redevabilité Genre</span></a></nav></aside><div class="main-content"><header class="topbar"><div class="topbar-breadcrumb">Analyse Organisations <span class="sep">›</span> Coordination</div></header><main class="page-body"><section class="page-header org"><div class="page-header-inner"><h1>Participation aux mécanismes de coordination</h1><p>Participation des ODF aux clusters, sous-clusters, réseaux et groupes de travail.</p></div></section><div class="chart-card"><div class="chart-card-header"><div><div class="chart-card-title">Participation aux cadres de coordination</div><div class="chart-card-subtitle">% des ODF participantes</div></div></div><div class="chart-card-body"><div class="chart-wrap" style="height:420px"><canvas id="coord"></canvas></div></div></div></main></div></div><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script><script src="../../assets/ocha-icons.js"></script><script src="../../assets/charts.js"></script><script src="../../assets/dashboard-data.js"></script><script>new Chart(document.getElementById('coord'),{type:'bar',data:{labels:DASHBOARD.odf.coordination.labels,datasets:[{data:DASHBOARD.odf.coordination.values,backgroundColor:BLUE_RAMP.concat(BLUE_RAMP),borderRadius:4}]},options:baseBarOptions({horizontal:true,percent:true,max:80,legend:false})});</script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Coordination | Analyse Organisations</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+
+<body>
+<div class="app-shell">
+
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <img src="../../assets/ocha-logo.png" alt="OCHA">
+    <div>
+      <div class="sidebar-logo-title">Analyse Organisations</div>
+      <div class="sidebar-logo-sub">Coordination humanitaire</div>
+    </div>
+  </div>
+
+  <div class="sidebar-badge">
+    Cadres de coordination · accès à l'information · participation ODF
+  </div>
+
+  <nav class="nav-section">
+    <div class="nav-section-label">Analyse Organisations</div>
+
+    <a href="index.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="White"></span>
+      <span class="nav-label">Vue d'ensemble</span>
+    </a>
+
+    <a href="odf.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="odf" data-ocha-color="White"></span>
+      <span class="nav-label">ODF</span>
+      <span class="nav-count">89</span>
+    </a>
+
+    <a href="coordination.html" class="nav-item active">
+      <span class="nav-icon" data-ocha-icon="coordination" data-ocha-color="White"></span>
+      <span class="nav-label">Coordination</span>
+    </a>
+
+    <a href="clusters.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="cluster" data-ocha-color="White"></span>
+      <span class="nav-label">Clusters</span>
+    </a>
+
+    <a href="redevabilite-genre.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="assessment" data-ocha-color="White"></span>
+      <span class="nav-label">Redevabilité genre</span>
+    </a>
+  </nav>
+
+  <nav class="nav-section">
+    <div class="nav-section-label">Sections</div>
+
+    <a href="#participation" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="community" data-ocha-color="White"></span>
+      <span class="nav-label">Participation</span>
+    </a>
+
+    <a href="#barrieres" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="information" data-ocha-color="White"></span>
+      <span class="nav-label">Barrières</span>
+    </a>
+
+    <a href="#satisfaction" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="feedback" data-ocha-color="White"></span>
+      <span class="nav-label">Satisfaction</span>
+    </a>
+
+    <a href="#actions" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="report" data-ocha-color="White"></span>
+      <span class="nav-label">Actions</span>
+    </a>
+  </nav>
+</aside>
+
+<div class="main-content">
+
+<header class="topbar">
+  <div class="topbar-breadcrumb">
+    Analyse Organisations <span class="sep">›</span>
+    <span class="current">Coordination</span>
+  </div>
+  <div class="topbar-right">
+    <span class="chip">ODF</span>
+    <span class="chip">Mécanismes humanitaires</span>
+  </div>
+</header>
+
+<main class="page-body">
+
+<section class="page-header organisations">
+  <div class="page-header-inner">
+    <div class="page-header-eyebrow">Coordination humanitaire et localisation</div>
+    <h1>Participation des ODF aux mécanismes de coordination</h1>
+    <p>
+      Cette page analyse la participation des ODF aux mécanismes de coordination humanitaire,
+      les espaces auxquels elles accèdent, les barrières rencontrées et les conditions nécessaires
+      pour renforcer leur influence dans la réponse.
+    </p>
+
+    <div class="page-header-chips">
+      <span class="header-chip">84% participent à des cadres</span>
+      <span class="header-chip">18% ne connaissent pas les mécanismes</span>
+      <span class="header-chip">Accès à l'information</span>
+      <span class="header-chip">Localisation</span>
+    </div>
+  </div>
+</section>
+
+<section class="section-label">Indicateurs clés de coordination</section>
+
+<section class="kpi-row c4">
+
+  <div class="kpi-card kpi-org">
+    <div class="kpi-icon" data-ocha-icon="coordination" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">84%</div>
+    <div class="kpi-label">ODF participant à des cadres de coordination</div>
+    <div class="kpi-sub">Cadres humanitaires ou gestion de crise</div>
+  </div>
+
+  <div class="kpi-card kpi-org">
+    <div class="kpi-icon" data-ocha-icon="information" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">18%</div>
+    <div class="kpi-label">ODF ne connaissant pas les mécanismes existants</div>
+    <div class="kpi-sub">Besoin d'information ciblée</div>
+  </div>
+
+  <div class="kpi-card kpi-org">
+    <div class="kpi-icon" data-ocha-icon="feedback" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">42%</div>
+    <div class="kpi-label">Satisfaction moyenne envers la coordination</div>
+    <div class="kpi-sub">Appréciation des ODF</div>
+  </div>
+
+  <div class="kpi-card kpi-org">
+    <div class="kpi-icon" data-ocha-icon="gender" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">46%</div>
+    <div class="kpi-label">Mécanismes consultant les organisations de femmes</div>
+    <div class="kpi-sub">Cadre IASC genre</div>
+  </div>
+
+</section>
+
+<section id="participation" class="section-label">Participation par mécanisme</section>
+
+<section class="grid g2">
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title">Participation des ODF aux mécanismes</div>
+        <div class="chart-card-subtitle">Niveau de participation par cadre ou cluster</div>
+      </div>
+    </div>
+
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:390px">
+        <canvas id="coordinationParticipationChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title">Lecture stratégique</div>
+        <div class="chart-card-subtitle">ODF et gouvernance humanitaire</div>
+      </div>
+    </div>
+
+    <div class="chart-card-body">
+
+      <div class="insight info">
+        <span class="insight-icon" data-ocha-icon="coordination" data-ocha-color="UN Blue"></span>
+        <div>
+          Les ODF sont davantage présentes dans les espaces de protection, VBG, PEAS et genre
+          que dans les mécanismes plus larges de coordination intersectorielle.
+        </div>
+      </div>
+
+      <div class="insight info" style="margin-top:14px">
+        <span class="insight-icon" data-ocha-icon="information" data-ocha-color="UN Blue"></span>
+        <div>
+          L'accès limité à l'information sur les réunions reste une barrière majeure à une participation régulière et influente.
+        </div>
+      </div>
+
+      <div class="insight info" style="margin-top:14px">
+        <span class="insight-icon" data-ocha-icon="leadership" data-ocha-color="UN Blue"></span>
+        <div>
+          La participation ne doit pas seulement être quantitative : elle doit permettre aux ODF d'influencer les priorités, les analyses et les allocations.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<section id="satisfaction" class="section-label">Satisfaction et qualité de participation</section>
+
+<section class="grid g2">
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title">Satisfaction envers les mécanismes de coordination</div>
+        <div class="chart-card-subtitle">Appréciation des ODF</div>
+      </div>
+    </div>
+
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:270px">
+        <canvas id="coordinationSatisfactionChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title">Barrières à la participation</div>
+        <div class="chart-card-subtitle">Principaux facteurs limitants</div>
+      </div>
+    </div>
+
+    <div class="chart-card-body">
+
+      <div class="insight info">
+        <span class="insight-icon" data-ocha-icon="information" data-ocha-color="UN Blue"></span>
+        <div>
+          Manque d'accès aux informations sur la tenue des réunions de coordination.
+        </div>
+      </div>
+
+      <div class="insight info" style="margin-top:14px">
+        <span class="insight-icon" data-ocha-icon="cash" data-ocha-color="UN Blue"></span>
+        <div>
+          Manque de ressources humaines et financières pour participer régulièrement aux cadres de coordination.
+        </div>
+      </div>
+
+      <div class="insight info" style="margin-top:14px">
+        <span class="insight-icon" data-ocha-icon="leadership" data-ocha-color="UN Blue"></span>
+        <div>
+          Faible capacité d'influence dans certains espaces, même lorsque la participation est formellement ouverte.
+        </div>
+      </div>
+
+      <div class="insight info" style="margin-top:14px">
+        <span class="insight-icon" data-ocha-icon="community" data-ocha-color="UN Blue"></span>
+        <div>
+          La stratégie de localisation devrait inclure des quotas, des rôles formels et des mécanismes de co-leadership pour les ODF.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<section id="barrieres" class="section-label">Coordination et localisation</section>
+
+<section class="grid g3">
+
+  <div class="stat-hl">
+    <div class="stat-hl-value">Sous-Cluster VBG</div>
+    <div class="stat-hl-label">Premier espace de participation des ODF</div>
+  </div>
+
+  <div class="stat-hl">
+    <div class="stat-hl-value">Réseau PEAS</div>
+    <div class="stat-hl-label">Cadre important pour la prévention et redevabilité</div>
+  </div>
+
+  <div class="stat-hl">
+    <div class="stat-hl-value">GT EGIAH</div>
+    <div class="stat-hl-label">Espace stratégique pour l'intégration du genre</div>
+  </div>
+
+</section>
+
+<section class="grid g2">
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title">Besoins essentiels pour une participation efficace</div>
+        <div class="chart-card-subtitle">Renforcement institutionnel et opérationnel</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:350px">
+        <canvas id="capacityNeedsChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title">Implications pour les clusters et OCHA</div>
+        <div class="chart-card-subtitle">Actions prioritaires</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+
+      <ul class="progress-list">
+        <li class="progress-item">
+          <span class="progress-label">Partager les invitations et comptes rendus</span>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:90%"></div></div>
+          <span class="progress-value">Priorité</span>
+        </li>
+
+        <li class="progress-item">
+          <span class="progress-label">Faciliter la participation financièrement</span>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:85%"></div></div>
+          <span class="progress-value">Élevée</span>
+        </li>
+
+        <li class="progress-item">
+          <span class="progress-label">Institutionnaliser le co-leadership</span>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:75%"></div></div>
+          <span class="progress-value">Élevée</span>
+        </li>
+
+        <li class="progress-item">
+          <span class="progress-label">Former les ODF aux standards humanitaires</span>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:70%"></div></div>
+          <span class="progress-value">Moyenne</span>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</section>
+
+<section id="actions" class="section-label">Recommandations opérationnelles</section>
+
+<section class="grid g3">
+
+  <div class="insight info">
+    <span class="insight-icon" data-ocha-icon="coordination" data-ocha-color="UN Blue"></span>
+    <div>
+      Créer un mécanisme formel d'information régulière des ODF sur les réunions, décisions et opportunités de financement.
+    </div>
+  </div>
+
+  <div class="insight info">
+    <span class="insight-icon" data-ocha-icon="leadership" data-ocha-color="UN Blue"></span>
+    <div>
+      Mettre en place des quotas de participation et des rôles de co-facilitation pour les ODF dans les groupes de travail pertinents.
+    </div>
+  </div>
+
+  <div class="insight info">
+    <span class="insight-icon" data-ocha-icon="cash" data-ocha-color="UN Blue"></span>
+    <div>
+      Prévoir des budgets permettant la participation effective des ODF : transport, connectivité, temps de travail et accompagnement technique.
+    </div>
+  </div>
+
+</section>
+
+</main>
+
+<footer class="page-footer">
+  <span>Analyse Organisations · Coordination</span>
+  <span>Source : Rapport Analyse Conjointe Genre · Mars 2026</span>
+</footer>
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="../../assets/dashboard-data.js"></script>
+<script src="../../assets/charts.js"></script>
+<script src="../../assets/ocha-icons.js"></script>
+
+<script>
+const D = DASHBOARD_DATA;
+
+/* Participation coordination */
+createHorizontalBarChart(
+  "coordinationParticipationChart",
+  D.organisations.coordinationParticipation.labels,
+  D.organisations.coordinationParticipation.values,
+  OCHA.blue2
+);
+
+/* Satisfaction */
+createDonutChart(
+  "coordinationSatisfactionChart",
+  D.organisations.coordinationSatisfaction.labels,
+  D.organisations.coordinationSatisfaction.values,
+  [OCHA.blue2, OCHA.blue4, OCHA.blue5, OCHA.blue6]
+);
+
+/* Besoins capacités */
+createHorizontalBarChart(
+  "capacityNeedsChart",
+  D.organisations.capacityNeeds.labels,
+  D.organisations.capacityNeeds.values,
+  OCHA.blue2
+);
+</script>
+
+</body>
+</html>
