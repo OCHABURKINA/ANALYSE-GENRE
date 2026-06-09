@@ -1,18 +1,475 @@
-/* Shared chart utilities - OCHA Blue + Purple */
+/* ============================================================
+   Analyse Conjointe Genre Burkina Faso
+   Charts.js
+   ============================================================ */
+
 const OCHA = {
-  dark:'#002E6E', bl1:'#002E6E', bl2:'#004987', bl3:'#0074B7', bl4:'#009EDB', bl5:'#64BDEA', bl6:'#C5DFEF', bl7:'#E3EDF6',
-  pr1:'#3E125B', pr2:'#5B2C86', pr3:'#763F98', pr4:'#A05FB4', pr5:'#BD8CBF', pr6:'#D5B4D6', pr7:'#E4D7E8',
-  black:'#000000', white:'#FFFFFF', sl2:'#1F2937', sl3:'#475569', sl4:'#64748B', sl6:'#E2E8F0', sl7:'#F8FAFC',
-  female:'#763F98', male:'#0074B7', girls:'#A05FB4', boys:'#004987', org:'#0074B7'
+
+  /* -------------------------------
+     Palette Organisations (Bleu)
+  -------------------------------- */
+
+  blueDark: "#002E6E",
+  blue1: "#004987",
+  blue2: "#0074B7",
+  blue3: "#009EDB",
+  blue4: "#64BDEA",
+  blue5: "#C5DFEF",
+  blue6: "#E3EDF6",
+
+  /* -------------------------------
+     Palette Genre (Violet)
+  -------------------------------- */
+
+  purpleDark: "#3E125B",
+  purple1: "#5B2C86",
+  purple2: "#763F98",
+  purple3: "#A05FB4",
+  purple4: "#BD8CBF",
+  purple5: "#D5B4D6",
+  purple6: "#E4D7E8",
+
+  /* -------------------------------
+     Couleurs génériques
+  -------------------------------- */
+
+  white: "#FFFFFF",
+  black: "#000000",
+
+  female: "#763F98",
+  male: "#0074B7",
+
+  girl: "#A05FB4",
+  boy: "#64BDEA"
 };
-const BLUE_RAMP=[OCHA.bl7,OCHA.bl6,OCHA.bl5,OCHA.bl4,OCHA.bl3,OCHA.bl2,OCHA.bl1];
-const PURPLE_RAMP=[OCHA.pr7,OCHA.pr6,OCHA.pr5,OCHA.pr4,OCHA.pr3,OCHA.pr2,OCHA.pr1];
-const MIX_14=[OCHA.bl1,OCHA.bl2,OCHA.bl3,OCHA.bl4,OCHA.bl5,OCHA.bl6,OCHA.pr2,OCHA.pr3,OCHA.pr4,OCHA.pr5,OCHA.pr6,OCHA.bl2,OCHA.bl3,OCHA.pr3];
-function chartGrid(){return {color:'rgba(0,46,110,.10)',drawBorder:false};}
-function tickStyle(size=11){return {color:OCHA.sl3,font:{family:'Source Sans 3, Segoe UI, Arial, sans-serif',size:size,weight:'600'}};}
-function tooltipStyle(){return {backgroundColor:'#FFFFFF',titleColor:OCHA.bl1,bodyColor:OCHA.sl2,borderColor:'rgba(0,46,110,.18)',borderWidth:1,padding:10,displayColors:true};}
-const valueLabelsPlugin={id:'valueLabels',afterDatasetsDraw(chart,args,opts){if(!opts||opts.display===false)return;const{ctx}=chart;ctx.save();ctx.font=`700 ${opts.fontSize||11}px Source Sans 3, Segoe UI, Arial`;ctx.fillStyle=opts.color||OCHA.bl1;ctx.textAlign='center';ctx.textBaseline='bottom';chart.data.datasets.forEach((ds,i)=>{const meta=chart.getDatasetMeta(i);if(meta.hidden)return;meta.data.forEach((el,j)=>{const val=ds.data[j];if(val==null)return;let p=el.tooltipPosition();const suffix=opts.suffix||'';ctx.fillText(`${val}${suffix}`,p.x,p.y-4);});});ctx.restore();}};
-if(window.Chart){Chart.register(valueLabelsPlugin);Chart.defaults.font.family='Source Sans 3, Segoe UI, Arial, sans-serif';Chart.defaults.color=OCHA.sl2;}
-function baseBarOptions({horizontal=false, percent=false, stacked=false, max=null, legend=true, labels=true}={}){
-  return {indexAxis:horizontal?'y':'x',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:legend,labels:{boxWidth:10,font:{size:12,weight:'700'}}},tooltip:{...tooltipStyle()},valueLabels:{display:labels,suffix:percent?'%':'',fontSize:10}},scales:{x:{stacked,grid:horizontal?chartGrid():{display:false},ticks:{...tickStyle(),callback:percent&&!horizontal? v=>v+'%':undefined},max:horizontal?max:null},y:{stacked,max:horizontal?null:max,grid:horizontal?{display:false}:chartGrid(),ticks:{...tickStyle(),callback:percent&&horizontal? v=>v+'%':undefined}}}};
+
+/* ============================================================
+   Style global ChartJS
+   ============================================================ */
+
+Chart.defaults.font.family =
+"Source Sans Pro, Segoe UI, Arial";
+
+Chart.defaults.font.size = 12;
+
+Chart.defaults.color = "#2C3E50";
+
+Chart.defaults.plugins.legend.labels.boxWidth = 16;
+
+Chart.defaults.plugins.legend.labels.usePointStyle = true;
+
+/* ============================================================
+   Grilles
+   ============================================================ */
+
+function chartGrid() {
+
+  return {
+    color: "rgba(0,0,0,.08)",
+    drawBorder: false
+  };
+
+}
+
+function tickStyle(size=12){
+
+  return {
+    color:"#475569",
+    font:{
+      size:size,
+      weight:"600"
+    }
+  };
+
+}
+
+/* ============================================================
+   Tooltip élégant
+   ============================================================ */
+
+function tooltipStyle(){
+
+  return {
+
+    backgroundColor:"#FFFFFF",
+
+    titleColor:"#002E6E",
+
+    bodyColor:"#000000",
+
+    borderColor:"#C5DFEF",
+
+    borderWidth:1,
+
+    cornerRadius:10,
+
+    padding:12,
+
+    displayColors:true
+
+  };
+
+}
+
+/* ============================================================
+   Plugin labels automatiques
+   ============================================================ */
+
+const valueLabelsPlugin = {
+
+  id: 'valueLabelsPlugin',
+
+  afterDatasetsDraw(chart){
+
+    const ctx = chart.ctx;
+
+    chart.data.datasets.forEach((dataset,i)=>{
+
+      const meta =
+      chart.getDatasetMeta(i);
+
+      meta.data.forEach((bar,index)=>{
+
+        let value =
+        dataset.data[index];
+
+        ctx.save();
+
+        ctx.fillStyle =
+        "#002E6E";
+
+        ctx.font =
+        "bold 11px Source Sans Pro";
+
+        ctx.textAlign =
+        "center";
+
+        ctx.fillText(
+
+          value+"%",
+
+          bar.x,
+
+          bar.y-8
+
+        );
+
+        ctx.restore();
+
+      });
+
+    });
+
+  }
+
+};
+
+Chart.register(
+valueLabelsPlugin
+);
+
+/* ============================================================
+   Barres H/F
+   ============================================================ */
+
+function createGenderBarChart(
+canvasId,
+labels,
+women,
+men
+){
+
+  return new Chart(
+
+    document.getElementById(canvasId),
+
+    {
+
+      type:"bar",
+
+      data:{
+
+        labels,
+
+        datasets:[
+
+          {
+            label:"Femmes",
+            data:women,
+            backgroundColor:
+            OCHA.purple2,
+            borderRadius:6
+          },
+
+          {
+            label:"Hommes",
+            data:men,
+            backgroundColor:
+            OCHA.blue2,
+            borderRadius:6
+          }
+
+        ]
+
+      },
+
+      options:{
+
+        responsive:true,
+
+        maintainAspectRatio:false,
+
+        plugins:{
+
+          tooltip:
+          tooltipStyle(),
+
+          legend:{
+            position:"top"
+          }
+
+        },
+
+        scales:{
+
+          x:{
+            grid:{
+              display:false
+            },
+            ticks:tickStyle()
+          },
+
+          y:{
+            max:100,
+            ticks:{
+              callback:v=>v+"%",
+              ...tickStyle()
+            },
+            grid:chartGrid()
+          }
+
+        }
+
+      }
+
+    }
+
+  );
+
+}
+
+/* ============================================================
+   Barres horizontales longues
+   ============================================================ */
+
+function createHorizontalBarChart(
+canvasId,
+labels,
+values,
+color
+){
+
+  return new Chart(
+
+    document.getElementById(canvasId),
+
+    {
+
+      type:"bar",
+
+      data:{
+
+        labels,
+
+        datasets:[{
+
+          data:values,
+
+          backgroundColor:
+          color,
+
+          borderRadius:8,
+
+          barThickness:18
+
+        }]
+
+      },
+
+      options:{
+
+        indexAxis:'y',
+
+        responsive:true,
+
+        maintainAspectRatio:false,
+
+        plugins:{
+
+          legend:{
+            display:false
+          },
+
+          tooltip:
+          tooltipStyle()
+
+        },
+
+        scales:{
+
+          x:{
+            beginAtZero:true,
+            max:100,
+            ticks:{
+              callback:v=>v+"%",
+              ...tickStyle()
+            },
+            grid:chartGrid()
+          },
+
+          y:{
+            grid:{
+              display:false
+            },
+            ticks:tickStyle()
+          }
+
+        }
+
+      }
+
+    }
+
+  );
+
+}
+
+/* ============================================================
+   Radar
+   ============================================================ */
+
+function createRadarChart(
+canvasId,
+labels,
+values,
+color
+){
+
+  return new Chart(
+
+    document.getElementById(canvasId),
+
+    {
+
+      type:"radar",
+
+      data:{
+
+        labels,
+
+        datasets:[{
+
+          data:values,
+
+          backgroundColor:
+          color+"33",
+
+          borderColor:
+          color,
+
+          pointBackgroundColor:
+          color,
+
+          pointRadius:4
+
+        }]
+
+      },
+
+      options:{
+
+        responsive:true,
+
+        maintainAspectRatio:false,
+
+        plugins:{
+
+          legend:{
+            display:false
+          },
+
+          tooltip:
+          tooltipStyle()
+
+        }
+
+      }
+
+    }
+
+  );
+
+}
+
+/* ============================================================
+   Donut
+   ============================================================ */
+
+function createDonutChart(
+canvasId,
+labels,
+values,
+colors
+){
+
+  return new Chart(
+
+    document.getElementById(canvasId),
+
+    {
+
+      type:"doughnut",
+
+      data:{
+
+        labels,
+
+        datasets:[{
+
+          data:values,
+
+          backgroundColor:
+          colors,
+
+          borderWidth:0
+
+        }]
+
+      },
+
+      options:{
+
+        cutout:"65%",
+
+        responsive:true,
+
+        maintainAspectRatio:false,
+
+        plugins:{
+
+          tooltip:
+          tooltipStyle(),
+
+          legend:{
+            position:"bottom"
+          }
+
+        }
+
+      }
+
+    }
+
+  );
+
 }
