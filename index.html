@@ -1,10 +1,9 @@
-```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Analyse Conjointe Genre 2025 — OCHA Burkina Faso</title>
+  <title>Contexte de l’étude — Analyse Conjointe Genre Burkina Faso 2025</title>
 
   <link rel="stylesheet" href="assets/style.css" />
 
@@ -24,126 +23,203 @@
       box-shadow: 0 4px 12px rgba(0,0,0,.12);
     }
 
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 26px;
+    .context-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 22px;
+      margin-bottom: 26px;
     }
 
-    .hero-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      padding: 12px 18px;
-      border-radius: 999px;
-      font-weight: 900;
+    .context-card {
       background: #ffffff;
-      color: #0074B7;
-      box-shadow: 0 8px 20px rgba(0,0,0,.12);
-      transition: .2s ease;
+      border: 1px solid rgba(0,46,110,.10);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 6px 18px rgba(15,23,42,.07);
     }
 
-    .hero-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 14px 30px rgba(0,0,0,.18);
+    .context-card h2,
+    .context-card h3 {
+      margin: 0 0 12px;
+      color: #002E6E;
+      font-weight: 900;
+      line-height: 1.1;
     }
 
-    .hero-btn.secondary {
-      background: rgba(255,255,255,.16);
-      color: #ffffff;
-      border: 1px solid rgba(255,255,255,.28);
+    .context-card p {
+      margin: 0 0 12px;
+      color: #334155;
+      font-weight: 600;
     }
 
-    .hero-btn [data-ocha-icon],
-    .portal-card-icon,
-    .nav-icon,
-    .kpi-icon,
-    .insight-icon {
+    .context-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .context-list-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 12px;
+      background: #F8FAFC;
+      border: 1px solid rgba(0,46,110,.08);
+      border-radius: 14px;
+    }
+
+    .context-list-icon {
+      width: 28px;
+      height: 28px;
+      flex: 0 0 28px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
     }
 
-    .hero-btn [data-ocha-icon] img,
-    .portal-card-icon img,
-    .nav-icon img,
-    .kpi-icon img,
-    .insight-icon img {
+    .context-list-icon img {
       width: 100%;
       height: 100%;
       object-fit: contain;
-      display: block;
     }
 
-    .portal-card {
-      transition: .22s ease;
-    }
-
-    .portal-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 24px 60px rgba(15,23,42,.18);
-    }
-
-    .portal-card-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 18px;
-    }
-
-    .portal-card-icon {
-      width: 52px;
-      height: 52px;
-    }
-
-    .portal-card-badge {
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.18);
-      color: #ffffff;
-      font-size: 12px;
-      font-weight: 900;
-    }
-
-    .kpi-mini-grid {
-      display: grid;
-      grid-template-columns: repeat(6,minmax(0,1fr));
-      gap: 12px;
-      margin-bottom: 28px;
-    }
-
-    .kpi-mini {
-      background: #ffffff;
-      border: 1px solid rgba(0,46,110,.10);
-      border-radius: 18px;
-      padding: 14px;
-      box-shadow: 0 4px 14px rgba(15,23,42,.06);
-    }
-
-    .kpi-mini-value {
-      font-size: 24px;
-      line-height: 1;
+    .context-list-title {
       font-weight: 900;
       color: #002E6E;
     }
 
-    .kpi-mini-label {
-      margin-top: 6px;
-      font-size: 12px;
-      font-weight: 800;
+    .context-list-text {
+      font-size: 13px;
       color: #475569;
+      font-weight: 600;
+    }
+
+    .partner-grid {
+      display: grid;
+      grid-template-columns: repeat(4,minmax(0,1fr));
+      gap: 14px;
+      margin-bottom: 26px;
+    }
+
+    .partner-card {
+      background: #ffffff;
+      border: 1px solid rgba(0,46,110,.10);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 4px 14px rgba(15,23,42,.06);
+      min-height: 128px;
+    }
+
+    .partner-card .partner-icon {
+      width: 34px;
+      height: 34px;
+      margin-bottom: 12px;
+      display: inline-flex;
+    }
+
+    .partner-card .partner-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .partner-title {
+      font-weight: 900;
+      color: #002E6E;
+      margin-bottom: 5px;
+    }
+
+    .partner-text {
+      color: #475569;
+      font-size: 13px;
+      font-weight: 650;
+      line-height: 1.35;
+    }
+
+    .access-grid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+
+    .access-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 22px;
+      padding: 24px;
+      color: #ffffff;
+      box-shadow: 0 14px 34px rgba(15,23,42,.12);
+      transition: .22s ease;
+    }
+
+    .access-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 22px 52px rgba(15,23,42,.18);
+    }
+
+    .access-card.gender {
+      background: linear-gradient(135deg,#3E125B,#763F98);
+    }
+
+    .access-card.org {
+      background: linear-gradient(135deg,#002E6E,#0074B7);
+    }
+
+    .access-card h2 {
+      margin: 0 0 10px;
+      font-size: 28px;
+      font-weight: 900;
+    }
+
+    .access-card p {
+      margin: 0 0 18px;
+      color: rgba(255,255,255,.88);
+      font-weight: 650;
+    }
+
+    .access-icon {
+      width: 46px;
+      height: 46px;
+      margin-bottom: 15px;
+      display: inline-flex;
+    }
+
+    .access-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .access-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 15px;
+      border-radius: 999px;
+      background: #ffffff;
+      color: #0074B7;
+      font-weight: 900;
+    }
+
+    .access-card.gender .access-link {
+      color: #3E125B;
     }
 
     @media(max-width:1100px){
-      .kpi-mini-grid {
-        grid-template-columns: repeat(3,minmax(0,1fr));
+      .context-grid,
+      .access-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .partner-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
       }
     }
 
     @media(max-width:700px){
-      .kpi-mini-grid {
-        grid-template-columns: repeat(2,minmax(0,1fr));
+      .partner-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -160,7 +236,6 @@
         alt="OCHA"
         onerror="this.style.display='none';document.getElementById('brandFallback').style.display='flex';"
       />
-
       <div id="brandFallback" class="brand-fallback">OCHA</div>
 
       <div>
@@ -170,17 +245,17 @@
     </div>
 
     <div class="sidebar-badge">
-      <strong>3 681</strong> personnes enquêtées<br />
-      <strong>7</strong> régions · <strong>89</strong> ODF<br />
-      Collecte : Septembre 2025
+      <strong>Page d’entrée</strong><br />
+      Contexte · Acteurs · Appui technique<br />
+      Analyse Genre & Organisationnelle
     </div>
 
     <nav class="nav-section">
-      <div class="nav-section-label">Portail</div>
+      <div class="nav-section-label">Navigation</div>
 
       <a href="index.html" class="nav-item active">
         <span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="white"></span>
-        <span class="nav-label">Vue d'ensemble</span>
+        <span class="nav-label">Contexte de l’étude</span>
       </a>
 
       <a href="pages/genre/index.html" class="nav-item">
@@ -190,39 +265,31 @@
 
       <a href="pages/organisations/index.html" class="nav-item">
         <span class="nav-icon" data-ocha-icon="coordination" data-ocha-color="white"></span>
-        <span class="nav-label">Analyse Organisations</span>
+        <span class="nav-label">Analyse Organisationnelle</span>
       </a>
     </nav>
 
     <nav class="nav-section">
-      <div class="nav-section-label">Accès rapide</div>
+      <div class="nav-section-label">Accès direct</div>
 
       <a href="pages/genre/femmes-hommes.html" class="nav-item">
         <span class="nav-icon" data-ocha-icon="gender" data-ocha-color="white"></span>
         <span class="nav-label">Femmes &amp; Hommes</span>
-        <span class="nav-count">1 827</span>
       </a>
 
       <a href="pages/genre/filles-garcons.html" class="nav-item">
         <span class="nav-icon" data-ocha-icon="children" data-ocha-color="white"></span>
         <span class="nav-label">Filles &amp; Garçons</span>
-        <span class="nav-count">1 864</span>
-      </a>
-
-      <a href="pages/genre/moyens-subsistance.html" class="nav-item">
-        <span class="nav-icon" data-ocha-icon="livelihood" data-ocha-color="white"></span>
-        <span class="nav-label">Moyens de subsistance</span>
-      </a>
-
-      <a href="pages/genre/protection-vbg.html" class="nav-item">
-        <span class="nav-icon" data-ocha-icon="protection" data-ocha-color="white"></span>
-        <span class="nav-label">Protection &amp; VBG</span>
       </a>
 
       <a href="pages/organisations/odf.html" class="nav-item">
         <span class="nav-icon" data-ocha-icon="odf" data-ocha-color="white"></span>
         <span class="nav-label">ODF</span>
-        <span class="nav-count">89</span>
+      </a>
+
+      <a href="pages/organisations/redevabilite-genre.html" class="nav-item">
+        <span class="nav-icon" data-ocha-icon="assessment" data-ocha-color="white"></span>
+        <span class="nav-label">Redevabilité genre</span>
       </a>
     </nav>
 
@@ -238,12 +305,12 @@
     <header class="topbar">
       <div class="topbar-breadcrumb">
         OCHA Burkina Faso <span class="sep">›</span>
-        <span class="current">Portail principal</span>
+        <span class="current">Contexte de l’étude</span>
       </div>
 
       <div class="topbar-right">
         <span class="chip">Analyse Conjointe Genre</span>
-        <span class="chip">Mars 2026</span>
+        <span class="chip">Burkina Faso 2025</span>
       </div>
     </header>
 
@@ -251,191 +318,201 @@
 
       <section class="page-header">
         <div class="page-header-inner">
-          <div class="page-header-eyebrow">Burkina Faso · Analyse Conjointe Genre</div>
+          <div class="page-header-eyebrow">Contexte institutionnel et analytique</div>
 
-          <h1>Plateforme d'analyse genre et organisations humanitaires</h1>
+          <h1>Analyse conjointe genre au Burkina Faso</h1>
 
           <p>
-            Un portail interactif pour explorer les résultats de l'analyse conjointe genre conduite dans sept régions du Burkina Faso.
-            La plateforme distingue l'analyse des populations affectées et l'analyse des organisations, des ODF et des mécanismes de coordination humanitaire.
+            Cette plateforme présente une analyse conjointe genre conduite dans un contexte humanitaire complexe au Burkina Faso.
+            Elle vise à renforcer la compréhension des besoins différenciés des femmes, hommes, filles et garçons, ainsi que le rôle
+            des organisations et mécanismes humanitaires dans l’intégration du genre.
           </p>
 
           <div class="page-header-chips">
             <span class="header-chip">3 681 personnes enquêtées</span>
-            <span class="header-chip">1 827 adultes</span>
-            <span class="header-chip">1 864 adolescents</span>
-            <span class="header-chip">89 ODF</span>
+            <span class="header-chip">7 régions couvertes</span>
+            <span class="header-chip">89 ODF consultées</span>
             <span class="header-chip">148 acteurs humanitaires</span>
-            <span class="header-chip">7 régions</span>
-          </div>
-
-          <div class="hero-actions">
-            <a class="hero-btn" href="pages/genre/index.html">
-              <span data-ocha-icon="gender" data-ocha-color="UN-blue" style="width:22px;height:22px"></span>
-              Explorer l'analyse genre
-            </a>
-
-            <a class="hero-btn secondary" href="pages/organisations/index.html">
-              <span data-ocha-icon="coordination" data-ocha-color="white" style="width:22px;height:22px"></span>
-              Explorer les organisations
-            </a>
+            <span class="header-chip">Appui technique OCHA</span>
           </div>
         </div>
       </section>
 
-      <section class="kpi-mini-grid">
-        <div class="kpi-mini">
-          <div class="kpi-mini-value">3 681</div>
-          <div class="kpi-mini-label">Personnes enquêtées</div>
-        </div>
+      <section class="context-grid">
 
-        <div class="kpi-mini">
-          <div class="kpi-mini-value">1 827</div>
-          <div class="kpi-mini-label">Adultes</div>
-        </div>
-
-        <div class="kpi-mini">
-          <div class="kpi-mini-value">1 864</div>
-          <div class="kpi-mini-label">Adolescents</div>
-        </div>
-
-        <div class="kpi-mini">
-          <div class="kpi-mini-value">1 300</div>
-          <div class="kpi-mini-label">PDI</div>
-        </div>
-
-        <div class="kpi-mini">
-          <div class="kpi-mini-value">2 391</div>
-          <div class="kpi-mini-label">Hôtes</div>
-        </div>
-
-        <div class="kpi-mini">
-          <div class="kpi-mini-value">89</div>
-          <div class="kpi-mini-label">ODF</div>
-        </div>
-      </section>
-
-      <section class="portal-grid">
-
-        <article class="portal-card gender">
-          <div class="portal-card-top">
-            <span class="portal-card-icon" data-ocha-icon="gender" data-ocha-color="white"></span>
-            <span class="portal-card-badge">Population affectée</span>
-          </div>
-
-          <h2>Analyse Genre</h2>
-
+        <article class="context-card">
+          <h2>Pourquoi cette étude ?</h2>
           <p>
-            Femmes, hommes, filles, garçons, PDI et communautés hôtes : rôles sociaux, besoins prioritaires,
-            éducation, santé, protection, VBG, WASH, moyens de subsistance et prise de décision.
+            La crise humanitaire au Burkina Faso affecte différemment les femmes, les hommes, les filles et les garçons.
+            Les déplacements, l’insécurité, la pression économique, l’accès limité aux services essentiels et les risques de protection
+            renforcent les inégalités existantes.
+          </p>
+          <p>
+            L’analyse conjointe genre permet d’éclairer la planification humanitaire, l’intégration transversale du genre,
+            la priorisation des interventions, la redevabilité envers les populations affectées et l’appui aux organisations locales.
           </p>
 
-          <a class="portal-link" href="pages/genre/index.html">
-            Ouvrir l'analyse genre →
-          </a>
-        </article>
+          <div class="context-list">
+            <div class="context-list-item">
+              <span class="context-list-icon" data-ocha-icon="assessment" data-ocha-color="UN-blue"></span>
+              <div>
+                <div class="context-list-title">Objectif analytique</div>
+                <div class="context-list-text">
+                  Produire des données probantes sur les besoins, les contraintes, les risques et les capacités selon le sexe, l’âge et le statut de déplacement.
+                </div>
+              </div>
+            </div>
 
-        <article class="portal-card organisations">
-          <div class="portal-card-top">
-            <span class="portal-card-icon" data-ocha-icon="coordination" data-ocha-color="white"></span>
-            <span class="portal-card-badge">ODF · Coordination</span>
+            <div class="context-list-item">
+              <span class="context-list-icon" data-ocha-icon="gender" data-ocha-color="UN-blue"></span>
+              <div>
+                <div class="context-list-title">Objectif genre</div>
+                <div class="context-list-text">
+                  Identifier les écarts entre femmes, hommes, filles et garçons afin d’orienter une réponse plus inclusive et sensible au genre.
+                </div>
+              </div>
+            </div>
+
+            <div class="context-list-item">
+              <span class="context-list-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>
+              <div>
+                <div class="context-list-title">Objectif coordination</div>
+                <div class="context-list-text">
+                  Appuyer les clusters, groupes de travail, ODF et partenaires humanitaires dans l’utilisation des données genre pour la décision.
+                </div>
+              </div>
+            </div>
           </div>
-
-          <h2>Analyse Organisations</h2>
-
-          <p>
-            Organisations Dirigées par des Femmes, mécanismes de coordination, leadership féminin, localisation,
-            redevabilité genre et intégration du genre dans les clusters.
-          </p>
-
-          <a class="portal-link" href="pages/organisations/index.html">
-            Ouvrir l'analyse organisations →
-          </a>
         </article>
+
+        <aside class="context-card">
+          <h3>Couverture de l’analyse</h3>
+
+          <div class="context-list">
+            <div class="context-list-item">
+              <span class="context-list-icon" data-ocha-icon="people" data-ocha-color="UN-blue"></span>
+              <div>
+                <div class="context-list-title">3 681 personnes enquêtées</div>
+                <div class="context-list-text">Adultes et adolescents dans les zones couvertes.</div>
+              </div>
+            </div>
+
+            <div class="context-list-item">
+              <span class="context-list-icon" data-ocha-icon="map" data-ocha-color="UN-blue"></span>
+              <div>
+                <div class="context-list-title">7 régions couvertes</div>
+                <div class="context-list-text">Bankui, Goulmou, Kadiogo, Koulsé, Liptako, Nakambé et Yaadga.</div>
+              </div>
+            </div>
+
+            <div class="context-list-item">
+              <span class="context-list-icon" data-ocha-icon="odf" data-ocha-color="UN-blue"></span>
+              <div>
+                <div class="context-list-title">89 ODF consultées</div>
+                <div class="context-list-text">Analyse du leadership féminin, financement et participation à la coordination.</div>
+              </div>
+            </div>
+
+            <div class="context-list-item">
+              <span class="context-list-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>
+              <div>
+                <div class="context-list-title">148 acteurs humanitaires</div>
+                <div class="context-list-text">Sondage auprès des acteurs et mécanismes de coordination.</div>
+              </div>
+            </div>
+          </div>
+        </aside>
 
       </section>
 
-      <section class="section-label gender">Messages clés issus du rapport</section>
+      <section class="section-label">Acteurs impliqués</section>
+
+      <section class="partner-grid">
+
+        <div class="partner-card">
+          <span class="partner-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>
+          <div class="partner-title">OCHA Burkina Faso</div>
+          <div class="partner-text">
+            Appui à la coordination humanitaire, à l’intégration du genre et à l’utilisation des résultats pour la planification.
+          </div>
+        </div>
+
+        <div class="partner-card">
+          <span class="partner-icon" data-ocha-icon="gender" data-ocha-color="UN-blue"></span>
+          <div class="partner-title">Gender Advisor</div>
+          <div class="partner-text">
+            Appui technique à l’analyse genre, à la structuration des résultats et à la valorisation des données pour les mécanismes humanitaires.
+          </div>
+        </div>
+
+        <div class="partner-card">
+          <span class="partner-icon" data-ocha-icon="group" data-ocha-color="UN-blue"></span>
+          <div class="partner-title">CERFODES</div>
+          <div class="partner-text">
+            Contribution à la conduite de l’étude, à la collecte, à l’analyse et à la consolidation des données.
+          </div>
+        </div>
+
+        <div class="partner-card">
+          <span class="partner-icon" data-ocha-icon="assessment" data-ocha-color="UN-blue"></span>
+          <div class="partner-title">Clusters et partenaires</div>
+          <div class="partner-text">
+            Participation aux consultations, au sondage, aux entretiens et à l’identification des priorités sectorielles.
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section-label">Donateurs et partenaires de soutien</section>
 
       <section class="grid g3">
-
-        <div class="insight warning">
-          <span class="insight-icon" data-ocha-icon="livelihood" data-ocha-color="UN-blue"></span>
-          <div>
-            <strong>64,1 % des ménages</strong> déclarent un déséquilibre entre revenus et besoins essentiels.
-          </div>
-        </div>
-
-        <div class="insight warning">
-          <span class="insight-icon" data-ocha-icon="water" data-ocha-color="UN-blue"></span>
-          <div>
-            <strong>77 % des femmes</strong> sont engagées dans la collecte d'eau contre 26 % des hommes.
-          </div>
-        </div>
-
-        <div class="insight info">
-          <span class="insight-icon" data-ocha-icon="education" data-ocha-color="UN-blue"></span>
-          <div>
-            <strong>26,4 % des garçons</strong> de 12–17 ans ne sont pas scolarisés contre 18,3 % des filles.
-          </div>
-        </div>
 
         <div class="insight info">
           <span class="insight-icon" data-ocha-icon="cash" data-ocha-color="UN-blue"></span>
           <div>
-            <strong>89 % des ODF</strong> se financent principalement sur fonds propres.
+            Les ressources mobilisées pour cette analyse contribuent à renforcer une réponse humanitaire fondée sur des données probantes et sensibles au genre.
           </div>
         </div>
 
         <div class="insight info">
-          <span class="insight-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>
+          <span class="insight-icon" data-ocha-icon="partnership" data-ocha-color="UN-blue"></span>
           <div>
-            <strong>77 % des mécanismes</strong> collectent des données ventilées par sexe, âge et handicap.
+            L’analyse s’inscrit dans une dynamique de collaboration entre acteurs humanitaires, organisations de femmes, clusters et mécanismes de coordination.
           </div>
         </div>
 
-        <div class="insight warning">
-          <span class="insight-icon" data-ocha-icon="protection" data-ocha-color="UN-blue"></span>
+        <div class="insight info">
+          <span class="insight-icon" data-ocha-icon="report" data-ocha-color="UN-blue"></span>
           <div>
-            Les risques de protection et de VBG restent liés aux activités quotidiennes : eau, bois, mobilité et accès aux services.
+            Les résultats sont destinés à soutenir la planification, le plaidoyer, la priorisation des besoins et la redevabilité envers les populations affectées.
           </div>
         </div>
 
       </section>
 
-      <section class="section-label">Visualisations globales</section>
+      <section class="section-label">Accéder aux deux analyses</section>
 
-      <section class="grid g2">
+      <section class="access-grid">
 
-        <div class="chart-card">
-          <div class="chart-card-header">
-            <div>
-              <div class="chart-card-title">Répondants par région</div>
-              <div class="chart-card-subtitle">Adultes et adolescents enquêtés dans les sept régions couvertes</div>
-            </div>
-          </div>
+        <article class="access-card gender">
+          <span class="access-icon" data-ocha-icon="gender" data-ocha-color="white"></span>
+          <h2>Analyse Genre</h2>
+          <p>
+            Résultats concernant les femmes, hommes, filles, garçons, PDI et communautés hôtes :
+            besoins, éducation, santé, protection, VBG, WASH, moyens de subsistance et prise de décision.
+          </p>
+          <a href="pages/genre/index.html" class="access-link">Ouvrir l’analyse genre →</a>
+        </article>
 
-          <div class="chart-card-body">
-            <div class="chart-wrap" style="height:320px">
-              <canvas id="regionalRespondentsChart"></canvas>
-            </div>
-          </div>
-        </div>
-
-        <div class="chart-card">
-          <div class="chart-card-header">
-            <div>
-              <div class="chart-card-title gender">Besoins prioritaires adultes</div>
-              <div class="chart-card-subtitle">Comparaison femmes et hommes — pourcentage de répondants</div>
-            </div>
-          </div>
-
-          <div class="chart-card-body">
-            <div class="chart-wrap" style="height:320px">
-              <canvas id="priorityNeedsChart"></canvas>
-            </div>
-          </div>
-        </div>
+        <article class="access-card org">
+          <span class="access-icon" data-ocha-icon="coordination" data-ocha-color="white"></span>
+          <h2>Analyse Organisationnelle</h2>
+          <p>
+            Résultats concernant les ODF, les acteurs humanitaires, les clusters, la coordination,
+            le leadership féminin, la localisation et la redevabilité genre.
+          </p>
+          <a href="pages/organisations/index.html" class="access-link">Ouvrir l’analyse organisationnelle →</a>
+        </article>
 
       </section>
 
@@ -443,138 +520,14 @@
 
     <footer class="page-footer">
       <span>© 2025 OCHA Burkina Faso · Analyse Conjointe Genre</span>
-      <span>Palette OCHA Blue + Secondary Purple · Humanitarian Icons</span>
+      <span>Contexte · Analyse Genre · Analyse Organisationnelle</span>
       <a href="https://www.unocha.org/burkina-faso" target="_blank">unocha.org</a>
     </footer>
 
   </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
-<script src="assets/dashboard-data.js"></script>
-<script src="assets/charts.js"></script>
-
-<script>
-  (function () {
-    const BASE = "https://raw.githubusercontent.com/UN-OCHA/humanitarian-icons/main/SVG";
-
-    const ICONS = {
-      analysis: "Analysis",
-      gender: "Gender",
-      children: "Children",
-      coordination: "Coordination",
-      livelihood: "Livelihood",
-      water: "Potable-water",
-      education: "Education",
-      cash: "Cash-transfer",
-      protection: "Protection",
-      people: "Affected-population",
-      odf: "Group",
-      map: "Map",
-      report: "Report",
-      data: "Data"
-    };
-
-    function cleanKey(key) {
-      return String(key || "analysis")
-        .trim()
-        .toLowerCase()
-        .replace(/\s+/g, "")
-        .replace(/-/g, "")
-        .replace(/_/g, "");
-    }
-
-    function folderName(color) {
-      const c = String(color || "UN-blue").trim().toLowerCase();
-
-      if (c === "white" || c === "blanc") return "white";
-      if (c === "black" || c === "noir") return "black";
-
-      return "UN-blue";
-    }
-
-    function iconFile(key) {
-      return ICONS[cleanKey(key)] || "Analysis";
-    }
-
-    function iconUrl(key, color) {
-      return `${BASE}/${folderName(color)}/${encodeURIComponent(iconFile(key) + ".svg")}`;
-    }
-
-    function renderIcons() {
-      document.querySelectorAll("[data-ocha-icon]").forEach(el => {
-        const icon = el.getAttribute("data-ocha-icon") || "analysis";
-        const color = el.getAttribute("data-ocha-color") || "UN-blue";
-        const fallback = iconUrl("analysis", color);
-
-        el.innerHTML = `
-          <img
-            src="${iconUrl(icon, color)}"
-            alt=""
-            loading="lazy"
-            onerror="this.onerror=null;this.src='${fallback}';"
-          >
-        `;
-      });
-    }
-
-    document.addEventListener("DOMContentLoaded", renderIcons);
-    renderIcons();
-  })();
-</script>
-
-<script>
-  const regionLabels = DASHBOARD_DATA.regions.map(r => r.name);
-  const adultValues = DASHBOARD_DATA.regions.map(r => r.adults);
-  const adolescentValues = DASHBOARD_DATA.regions.map(r => r.adolescents);
-
-  new Chart(document.getElementById("regionalRespondentsChart"), {
-    type: "bar",
-    data: {
-      labels: regionLabels,
-      datasets: [
-        {
-          label: "Adultes",
-          data: adultValues,
-          backgroundColor: OCHA.blue2,
-          borderRadius: 8
-        },
-        {
-          label: "Adolescents",
-          data: adolescentValues,
-          backgroundColor: OCHA.purple2,
-          borderRadius: 8
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        tooltip: tooltipStyle(),
-        legend: { position: "top" }
-      },
-      scales: {
-        x: {
-          grid: { display: false },
-          ticks: tickStyle()
-        },
-        y: {
-          grid: chartGrid(),
-          ticks: tickStyle()
-        }
-      }
-    }
-  });
-
-  createGenderBarChart(
-    "priorityNeedsChart",
-    DASHBOARD_DATA.needs.adultPriorityNeedsBySex.labels,
-    DASHBOARD_DATA.needs.adultPriorityNeedsBySex.women,
-    DASHBOARD_DATA.needs.adultPriorityNeedsBySex.men
-  );
-</script>
+<script src="assets/ocha-icons.js"></script>
 
 </body>
 </html>
-```
