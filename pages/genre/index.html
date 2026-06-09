@@ -3,520 +3,218 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
 <title>Analyse Genre | Burkina Faso 2025</title>
-
 <link rel="stylesheet" href="../../assets/style.css">
 
+<style>
+.brand-fallback{
+  width:54px;height:54px;border-radius:14px;background:#fff;color:#0074B7;
+  display:none;align-items:center;justify-content:center;font-weight:900;
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
+}
+</style>
 </head>
 
 <body>
-
 <div class="app-shell">
 
-<!-- =========================================
-     SIDEBAR
-========================================== -->
-
 <aside class="sidebar">
+  <div class="sidebar-logo">
+    <img src="../../assets/ocha-logo.png" alt="OCHA"
+         onerror="this.style.display='none';document.getElementById('brandFallbackGenre').style.display='flex';">
+    <div id="brandFallbackGenre" class="brand-fallback">OCHA</div>
 
-<div class="sidebar-logo">
+    <div>
+      <div class="sidebar-logo-title">Analyse Genre</div>
+      <div class="sidebar-logo-sub">Burkina Faso 2025</div>
+    </div>
+  </div>
 
-<img src="../../assets/ocha-logo.png" alt="OCHA">
+  <div class="sidebar-badge">
+    <strong>1 827 adultes</strong><br>
+    <strong>1 864 adolescents</strong><br>
+    Analyse Femmes · Hommes · Filles · Garçons
+  </div>
 
-<div>
+  <nav class="nav-section">
+    <div class="nav-section-label">Analyse Genre</div>
 
-<div class="sidebar-logo-title">
-Analyse Genre
-</div>
+    <a href="index.html" class="nav-item active">
+      <span class="nav-icon" data-ocha-icon="gender" data-ocha-color="white"></span>
+      <span class="nav-label">Vue d'ensemble</span>
+    </a>
 
-<div class="sidebar-logo-sub">
-Burkina Faso 2025
-</div>
+    <a href="femmes-hommes.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="gender" data-ocha-color="white"></span>
+      <span class="nav-label">Femmes &amp; Hommes</span>
+    </a>
 
-</div>
+    <a href="filles-garcons.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="children" data-ocha-color="white"></span>
+      <span class="nav-label">Filles &amp; Garçons</span>
+    </a>
 
-</div>
+    <a href="moyens-subsistance.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="livelihood" data-ocha-color="white"></span>
+      <span class="nav-label">Moyens de subsistance</span>
+    </a>
 
-<div class="sidebar-badge">
+    <a href="protection-vbg.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="protection" data-ocha-color="white"></span>
+      <span class="nav-label">Protection &amp; VBG</span>
+    </a>
 
-<strong>1 827 adultes</strong><br>
-<strong>1 864 adolescents</strong><br>
-Analyse Femmes · Hommes · Filles · Garçons
-
-</div>
-
-<nav class="nav-section">
-
-<div class="nav-section-label">
-ANALYSE GENRE
-</div>
-
-<a href="index.html" class="nav-item active">
-<span class="nav-icon"
-data-ocha-icon="gender"
-data-ocha-color="White"></span>
-
-<span class="nav-label">
-Vue d'ensemble
-</span>
-</a>
-
-<a href="femmes-hommes.html" class="nav-item">
-
-<span class="nav-icon"
-data-ocha-icon="gender"
-data-ocha-color="White"></span>
-
-<span class="nav-label">
-Femmes & Hommes
-</span>
-
-</a>
-
-<a href="filles-garcons.html" class="nav-item">
-
-<span class="nav-icon"
-data-ocha-icon="children"
-data-ocha-color="White"></span>
-
-<span class="nav-label">
-Filles & Garçons
-</span>
-
-</a>
-
-<a href="moyens-subsistance.html" class="nav-item">
-
-<span class="nav-icon"
-data-ocha-icon="livelihood"
-data-ocha-color="White"></span>
-
-<span class="nav-label">
-Moyens de subsistance
-</span>
-
-</a>
-
-<a href="protection-vbg.html" class="nav-item">
-
-<span class="nav-icon"
-data-ocha-icon="protection"
-data-ocha-color="White"></span>
-
-<span class="nav-label">
-Protection & VBG
-</span>
-
-</a>
-
-<a href="cartographie.html" class="nav-item">
-
-<span class="nav-icon"
-data-ocha-icon="map"
-data-ocha-color="White"></span>
-
-<span class="nav-label">
-Cartographie
-</span>
-
-</a>
-
-</nav>
-
+    <a href="cartographie.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="map" data-ocha-color="white"></span>
+      <span class="nav-label">Cartographie</span>
+    </a>
+  </nav>
 </aside>
-
-<!-- =========================================
-     MAIN
-========================================== -->
 
 <div class="main-content">
 
 <header class="topbar">
-
-<div class="topbar-breadcrumb">
-
-Analyse Conjointe Genre
-
-<span class="sep">›</span>
-
-<span class="current">
-Analyse Genre
-</span>
-
-</div>
-
+  <div class="topbar-breadcrumb">
+    Analyse Conjointe Genre <span class="sep">›</span>
+    <span class="current">Analyse Genre</span>
+  </div>
 </header>
 
 <main class="page-body">
 
-<!-- HERO -->
-
 <section class="page-header gender">
+  <div class="page-header-inner">
+    <div class="page-header-eyebrow">Analyse des populations affectées</div>
+    <h1>Femmes, Hommes, Filles et Garçons</h1>
+    <p>
+      Cette section présente les impacts différenciés de la crise sur les femmes, les hommes,
+      les filles et les garçons dans les sept régions couvertes par l'étude.
+    </p>
 
-<div class="page-header-inner">
-
-<div class="page-header-eyebrow">
-ANALYSE DES POPULATIONS AFFECTÉES
-</div>
-
-<h1>
-Femmes, Hommes, Filles et Garçons
-</h1>
-
-<p>
-
-Cette section présente les impacts différenciés
-de la crise sur les femmes, les hommes,
-les filles et les garçons dans les sept régions
-couvertes par l'étude.
-
-</p>
-
-<div class="page-header-chips">
-
-<span class="header-chip">
-922 Femmes
-</span>
-
-<span class="header-chip">
-905 Hommes
-</span>
-
-<span class="header-chip">
-874 Filles
-</span>
-
-<span class="header-chip">
-990 Garçons
-</span>
-
-<span class="header-chip">
-1300 PDI
-</span>
-
-<span class="header-chip">
-2391 Hôtes
-</span>
-
-</div>
-
-</div>
-
+    <div class="page-header-chips">
+      <span class="header-chip">922 Femmes</span>
+      <span class="header-chip">905 Hommes</span>
+      <span class="header-chip">874 Filles</span>
+      <span class="header-chip">990 Garçons</span>
+      <span class="header-chip">1 300 PDI</span>
+      <span class="header-chip">2 391 Hôtes</span>
+    </div>
+  </div>
 </section>
 
-<!-- KPI -->
-
-<section class="section-label gender">
-
-Indicateurs clés
-
-</section>
+<section class="section-label gender">Indicateurs clés</section>
 
 <section class="kpi-row c4">
+  <div class="kpi-card kpi-gender">
+    <div class="kpi-icon" data-ocha-icon="people" data-ocha-color="UN-blue"></div>
+    <div class="kpi-value">3 681</div>
+    <div class="kpi-label">Personnes enquêtées</div>
+  </div>
 
-<div class="kpi-card kpi-gender">
+  <div class="kpi-card kpi-gender">
+    <div class="kpi-icon" data-ocha-icon="gender" data-ocha-color="UN-blue"></div>
+    <div class="kpi-value">1 827</div>
+    <div class="kpi-label">Adultes</div>
+  </div>
 
-<div class="kpi-icon"
-data-ocha-icon="people"
-data-ocha-color="UN Blue">
-</div>
+  <div class="kpi-card kpi-gender">
+    <div class="kpi-icon" data-ocha-icon="children" data-ocha-color="UN-blue"></div>
+    <div class="kpi-value">1 864</div>
+    <div class="kpi-label">Adolescents</div>
+  </div>
 
-<div class="kpi-value">
-3681
-</div>
-
-<div class="kpi-label">
-Personnes enquêtées
-</div>
-
-</div>
-
-<div class="kpi-card kpi-gender">
-
-<div class="kpi-icon"
-data-ocha-icon="gender"
-data-ocha-color="UN Blue">
-</div>
-
-<div class="kpi-value">
-1827
-</div>
-
-<div class="kpi-label">
-Adultes
-</div>
-
-</div>
-
-<div class="kpi-card kpi-gender">
-
-<div class="kpi-icon"
-data-ocha-icon="children"
-data-ocha-color="UN Blue">
-</div>
-
-<div class="kpi-value">
-1864
-</div>
-
-<div class="kpi-label">
-Adolescents
-</div>
-
-</div>
-
-<div class="kpi-card kpi-gender">
-
-<div class="kpi-icon"
-data-ocha-icon="map"
-data-ocha-color="UN Blue">
-</div>
-
-<div class="kpi-value">
-7
-</div>
-
-<div class="kpi-label">
-Régions couvertes
-</div>
-
-</div>
-
+  <div class="kpi-card kpi-gender">
+    <div class="kpi-icon" data-ocha-icon="map" data-ocha-color="UN-blue"></div>
+    <div class="kpi-value">7</div>
+    <div class="kpi-label">Régions couvertes</div>
+  </div>
 </section>
 
-<!-- INSIGHTS -->
-
-<section class="section-label gender">
-
-Messages clés
-
-</section>
+<section class="section-label gender">Messages clés</section>
 
 <section class="grid g2">
+  <div class="insight">
+    <span class="insight-icon" data-ocha-icon="livelihood" data-ocha-color="UN-blue"></span>
+    <div><strong>64,1 %</strong> des ménages déclarent un déséquilibre entre revenus et besoins essentiels.</div>
+  </div>
 
-<div class="insight">
+  <div class="insight">
+    <span class="insight-icon" data-ocha-icon="water" data-ocha-color="UN-blue"></span>
+    <div><strong>77 %</strong> des femmes participent à la collecte d'eau contre 26 % des hommes.</div>
+  </div>
 
-<span class="insight-icon"
-data-ocha-icon="livelihood"
-data-ocha-color="UN Blue">
-</span>
+  <div class="insight">
+    <span class="insight-icon" data-ocha-icon="education" data-ocha-color="UN-blue"></span>
+    <div>Les garçons présentent un niveau de déscolarisation plus élevé que les filles.</div>
+  </div>
 
-<div>
-
-<strong>64,1 %</strong> des ménages déclarent
-un déséquilibre entre revenus et besoins essentiels.
-
-</div>
-
-</div>
-
-<div class="insight">
-
-<span class="insight-icon"
-data-ocha-icon="water"
-data-ocha-color="UN Blue">
-</span>
-
-<div>
-
-<strong>77 %</strong> des femmes participent
-à la collecte d'eau contre 26 % des hommes.
-
-</div>
-
-</div>
-
-<div class="insight">
-
-<span class="insight-icon"
-data-ocha-icon="education"
-data-ocha-color="UN Blue">
-</span>
-
-<div>
-
-Les garçons présentent un niveau de
-déscolarisation plus élevé que les filles.
-
-</div>
-
-</div>
-
-<div class="insight">
-
-<span class="insight-icon"
-data-ocha-icon="protection"
-data-ocha-color="UN Blue">
-</span>
-
-<div>
-
-Les risques de protection sont fortement
-liés à la mobilité, à la collecte du bois
-et à l'accès aux services.
-
-</div>
-
-</div>
-
+  <div class="insight">
+    <span class="insight-icon" data-ocha-icon="protection" data-ocha-color="UN-blue"></span>
+    <div>Les risques de protection sont fortement liés à la mobilité, à la collecte du bois et à l'accès aux services.</div>
+  </div>
 </section>
 
-<!-- GRAPHIQUES -->
-
-<section class="section-label gender">
-
-Visualisations principales
-
-</section>
+<section class="section-label gender">Visualisations principales</section>
 
 <section class="grid g2">
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Besoins prioritaires</div>
+        <div class="chart-card-subtitle">Comparaison Femmes / Hommes</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:350px">
+        <canvas id="priorityNeedsChart"></canvas>
+      </div>
+    </div>
+  </div>
 
-<div class="chart-card">
-
-<div class="chart-card-header">
-
-<div>
-
-<div class="chart-card-title gender">
-Besoins prioritaires
-</div>
-
-<div class="chart-card-subtitle">
-
-Comparaison Femmes / Hommes
-
-</div>
-
-</div>
-
-</div>
-
-<div class="chart-card-body">
-
-<div class="chart-wrap"
-style="height:350px">
-
-<canvas id="priorityNeedsChart">
-</canvas>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="chart-card">
-
-<div class="chart-card-header">
-
-<div>
-
-<div class="chart-card-title gender">
-Division du travail
-</div>
-
-<div class="chart-card-subtitle">
-
-Tâches domestiques et productives
-
-</div>
-
-</div>
-
-</div>
-
-<div class="chart-card-body">
-
-<div class="chart-wrap"
-style="height:350px">
-
-<canvas id="rolesChart">
-</canvas>
-
-</div>
-
-</div>
-
-</div>
-
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Division du travail</div>
+        <div class="chart-card-subtitle">Tâches domestiques et productives</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:350px">
+        <canvas id="rolesChart"></canvas>
+      </div>
+    </div>
+  </div>
 </section>
 
 </main>
 
 <footer class="page-footer">
-
-<span>
-Analyse Genre Burkina Faso 2025
-</span>
-
-<span>
-OCHA · ONU Femmes
-</span>
-
+  <span>Analyse Genre Burkina Faso 2025</span>
+  <span>OCHA · ONU Femmes</span>
 </footer>
 
 </div>
-
 </div>
 
-<!-- =========================================
-     JS
-========================================== -->
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
-
 <script src="../../assets/dashboard-data.js"></script>
-
 <script src="../../assets/charts.js"></script>
-
 <script src="../../assets/ocha-icons.js"></script>
 
 <script>
-
-/* Besoins prioritaires */
-
 createGenderBarChart(
-
-"priorityNeedsChart",
-
-DASHBOARD_DATA
-.needs
-.adultPriorityNeedsBySex
-.labels,
-
-DASHBOARD_DATA
-.needs
-.adultPriorityNeedsBySex
-.women,
-
-DASHBOARD_DATA
-.needs
-.adultPriorityNeedsBySex
-.men
-
+  "priorityNeedsChart",
+  DASHBOARD_DATA.needs.adultPriorityNeedsBySex.labels,
+  DASHBOARD_DATA.needs.adultPriorityNeedsBySex.women,
+  DASHBOARD_DATA.needs.adultPriorityNeedsBySex.men
 );
-
-/* Division du travail */
 
 createHorizontalBarChart(
-
-"rolesChart",
-
-DASHBOARD_DATA
-.householdRoles
-.tasks
-.map(t=>t.task),
-
-DASHBOARD_DATA
-.householdRoles
-.tasks
-.map(t=>t.women),
-
-OCHA.purple2
-
+  "rolesChart",
+  DASHBOARD_DATA.householdRoles.tasks.map(t => t.task),
+  DASHBOARD_DATA.householdRoles.tasks.map(t => t.women),
+  OCHA.purple2
 );
-
 </script>
 
 </body>
