@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -54,6 +55,27 @@
       border: 1px solid rgba(255,255,255,.28);
     }
 
+    .hero-btn [data-ocha-icon],
+    .portal-card-icon,
+    .nav-icon,
+    .kpi-icon,
+    .insight-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-btn [data-ocha-icon] img,
+    .portal-card-icon img,
+    .nav-icon img,
+    .kpi-icon img,
+    .insight-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
     .portal-card {
       transition: .22s ease;
     }
@@ -73,15 +95,6 @@
     .portal-card-icon {
       width: 52px;
       height: 52px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .portal-card-icon img {
-      width: 52px;
-      height: 52px;
-      object-fit: contain;
     }
 
     .portal-card-badge {
@@ -166,17 +179,17 @@
       <div class="nav-section-label">Portail</div>
 
       <a href="index.html" class="nav-item active">
-        <span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="White"></span>
+        <span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="white"></span>
         <span class="nav-label">Vue d'ensemble</span>
       </a>
 
       <a href="pages/genre/index.html" class="nav-item">
-        <span class="nav-icon" data-ocha-icon="gender" data-ocha-color="White"></span>
+        <span class="nav-icon" data-ocha-icon="gender" data-ocha-color="white"></span>
         <span class="nav-label">Analyse Genre</span>
       </a>
 
       <a href="pages/organisations/index.html" class="nav-item">
-        <span class="nav-icon" data-ocha-icon="coordination" data-ocha-color="White"></span>
+        <span class="nav-icon" data-ocha-icon="coordination" data-ocha-color="white"></span>
         <span class="nav-label">Analyse Organisations</span>
       </a>
     </nav>
@@ -185,29 +198,29 @@
       <div class="nav-section-label">Accès rapide</div>
 
       <a href="pages/genre/femmes-hommes.html" class="nav-item">
-        <span class="nav-icon" data-ocha-icon="gender" data-ocha-color="White"></span>
+        <span class="nav-icon" data-ocha-icon="gender" data-ocha-color="white"></span>
         <span class="nav-label">Femmes &amp; Hommes</span>
         <span class="nav-count">1 827</span>
       </a>
 
       <a href="pages/genre/filles-garcons.html" class="nav-item">
-        <span class="nav-icon" data-ocha-icon="children" data-ocha-color="White"></span>
+        <span class="nav-icon" data-ocha-icon="children" data-ocha-color="white"></span>
         <span class="nav-label">Filles &amp; Garçons</span>
         <span class="nav-count">1 864</span>
       </a>
 
       <a href="pages/genre/moyens-subsistance.html" class="nav-item">
-        <span class="nav-icon" data-ocha-icon="livelihood" data-ocha-color="White"></span>
+        <span class="nav-icon" data-ocha-icon="livelihood" data-ocha-color="white"></span>
         <span class="nav-label">Moyens de subsistance</span>
       </a>
 
       <a href="pages/genre/protection-vbg.html" class="nav-item">
-        <span class="nav-icon" data-ocha-icon="protection" data-ocha-color="White"></span>
+        <span class="nav-icon" data-ocha-icon="protection" data-ocha-color="white"></span>
         <span class="nav-label">Protection &amp; VBG</span>
       </a>
 
       <a href="pages/organisations/odf.html" class="nav-item">
-        <span class="nav-icon" data-ocha-icon="odf" data-ocha-color="White"></span>
+        <span class="nav-icon" data-ocha-icon="odf" data-ocha-color="white"></span>
         <span class="nav-label">ODF</span>
         <span class="nav-count">89</span>
       </a>
@@ -258,12 +271,12 @@
 
           <div class="hero-actions">
             <a class="hero-btn" href="pages/genre/index.html">
-              <span data-ocha-icon="gender" data-ocha-color="UN Blue" style="width:22px;height:22px"></span>
+              <span data-ocha-icon="gender" data-ocha-color="UN-blue" style="width:22px;height:22px"></span>
               Explorer l'analyse genre
             </a>
 
             <a class="hero-btn secondary" href="pages/organisations/index.html">
-              <span data-ocha-icon="coordination" data-ocha-color="White" style="width:22px;height:22px"></span>
+              <span data-ocha-icon="coordination" data-ocha-color="white" style="width:22px;height:22px"></span>
               Explorer les organisations
             </a>
           </div>
@@ -306,7 +319,7 @@
 
         <article class="portal-card gender">
           <div class="portal-card-top">
-            <span class="portal-card-icon" data-ocha-icon="gender" data-ocha-color="White"></span>
+            <span class="portal-card-icon" data-ocha-icon="gender" data-ocha-color="white"></span>
             <span class="portal-card-badge">Population affectée</span>
           </div>
 
@@ -324,7 +337,7 @@
 
         <article class="portal-card organisations">
           <div class="portal-card-top">
-            <span class="portal-card-icon" data-ocha-icon="coordination" data-ocha-color="White"></span>
+            <span class="portal-card-icon" data-ocha-icon="coordination" data-ocha-color="white"></span>
             <span class="portal-card-badge">ODF · Coordination</span>
           </div>
 
@@ -347,42 +360,42 @@
       <section class="grid g3">
 
         <div class="insight warning">
-          <span class="insight-icon" data-ocha-icon="livelihood" data-ocha-color="UN Blue"></span>
+          <span class="insight-icon" data-ocha-icon="livelihood" data-ocha-color="UN-blue"></span>
           <div>
             <strong>64,1 % des ménages</strong> déclarent un déséquilibre entre revenus et besoins essentiels.
           </div>
         </div>
 
         <div class="insight warning">
-          <span class="insight-icon" data-ocha-icon="water" data-ocha-color="UN Blue"></span>
+          <span class="insight-icon" data-ocha-icon="water" data-ocha-color="UN-blue"></span>
           <div>
             <strong>77 % des femmes</strong> sont engagées dans la collecte d'eau contre 26 % des hommes.
           </div>
         </div>
 
         <div class="insight info">
-          <span class="insight-icon" data-ocha-icon="education" data-ocha-color="UN Blue"></span>
+          <span class="insight-icon" data-ocha-icon="education" data-ocha-color="UN-blue"></span>
           <div>
             <strong>26,4 % des garçons</strong> de 12–17 ans ne sont pas scolarisés contre 18,3 % des filles.
           </div>
         </div>
 
         <div class="insight info">
-          <span class="insight-icon" data-ocha-icon="cash" data-ocha-color="UN Blue"></span>
+          <span class="insight-icon" data-ocha-icon="cash" data-ocha-color="UN-blue"></span>
           <div>
             <strong>89 % des ODF</strong> se financent principalement sur fonds propres.
           </div>
         </div>
 
         <div class="insight info">
-          <span class="insight-icon" data-ocha-icon="coordination" data-ocha-color="UN Blue"></span>
+          <span class="insight-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>
           <div>
             <strong>77 % des mécanismes</strong> collectent des données ventilées par sexe, âge et handicap.
           </div>
         </div>
 
         <div class="insight warning">
-          <span class="insight-icon" data-ocha-icon="protection" data-ocha-color="UN Blue"></span>
+          <span class="insight-icon" data-ocha-icon="protection" data-ocha-color="UN-blue"></span>
           <div>
             Les risques de protection et de VBG restent liés aux activités quotidiennes : eau, bois, mobilité et accès aux services.
           </div>
@@ -442,75 +455,72 @@
 <script src="assets/charts.js"></script>
 
 <script>
-(function () {
-  const BASE = "https://raw.githubusercontent.com/UN-OCHA/humanitarian-icons/main/SVG";
+  (function () {
+    const BASE = "https://raw.githubusercontent.com/UN-OCHA/humanitarian-icons/main/SVG";
 
-  const MAP = {
-    analysis: "Analysis",
-    gender: "Gender",
-    children: "Children",
-    coordination: "Coordination",
-    livelihood: "Livelihood",
-    water: "Water sanitation and hygiene",
-    education: "Education",
-    cash: "Cash transfer",
-    protection: "Protection",
-    people: "Affected population",
-    odf: "Group",
-    map: "Map",
-    report: "Report",
-    data: "Data"
-  };
+    const ICONS = {
+      analysis: "Analysis",
+      gender: "Gender",
+      children: "Children",
+      coordination: "Coordination",
+      livelihood: "Livelihood",
+      water: "Potable-water",
+      education: "Education",
+      cash: "Cash-transfer",
+      protection: "Protection",
+      people: "Affected-population",
+      odf: "Group",
+      map: "Map",
+      report: "Report",
+      data: "Data"
+    };
 
-  function normalizeKey(key) {
-    return String(key || "analysis")
-      .trim()
-      .toLowerCase()
-      .replace(/\s+/g, "")
-      .replace(/-/g, "")
-      .replace(/_/g, "");
-  }
+    function cleanKey(key) {
+      return String(key || "analysis")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, "")
+        .replace(/-/g, "")
+        .replace(/_/g, "");
+    }
 
-  function normalizeColor(color) {
-    const c = String(color || "UN Blue").trim().toLowerCase();
+    function folderName(color) {
+      const c = String(color || "UN-blue").trim().toLowerCase();
 
-    if (c === "white" || c === "blanc") return "White";
-    if (c === "black" || c === "noir") return "Black";
-    if (c === "blue" || c === "unblue" || c === "un blue" || c === "bleu") return "UN Blue";
+      if (c === "white" || c === "blanc") return "white";
+      if (c === "black" || c === "noir") return "black";
 
-    return "UN Blue";
-  }
+      return "UN-blue";
+    }
 
-  function iconName(key) {
-    return MAP[normalizeKey(key)] || "Analysis";
-  }
+    function iconFile(key) {
+      return ICONS[cleanKey(key)] || "Analysis";
+    }
 
-  function iconUrl(key, color) {
-    const safeColor = encodeURIComponent(normalizeColor(color));
-    const safeIcon = encodeURIComponent(iconName(key) + ".svg");
-    return `${BASE}/${safeColor}/${safeIcon}`;
-  }
+    function iconUrl(key, color) {
+      return `${BASE}/${folderName(color)}/${encodeURIComponent(iconFile(key) + ".svg")}`;
+    }
 
-  function renderIcons() {
-    document.querySelectorAll("[data-ocha-icon]").forEach(el => {
-      const icon = el.getAttribute("data-ocha-icon") || "analysis";
-      const color = el.getAttribute("data-ocha-color") || "UN Blue";
-      const fallback = iconUrl("analysis", color);
+    function renderIcons() {
+      document.querySelectorAll("[data-ocha-icon]").forEach(el => {
+        const icon = el.getAttribute("data-ocha-icon") || "analysis";
+        const color = el.getAttribute("data-ocha-color") || "UN-blue";
+        const fallback = iconUrl("analysis", color);
 
-      el.innerHTML = `
-        <img
-          src="${iconUrl(icon, color)}"
-          alt=""
-          loading="lazy"
-          onerror="this.onerror=null;this.src='${fallback}';"
-        >
-      `;
-    });
-  }
+        el.innerHTML = `
+          <img
+            src="${iconUrl(icon, color)}"
+            alt=""
+            loading="lazy"
+            onerror="this.onerror=null;this.src='${fallback}';"
+          >
+        `;
+      });
+    }
 
-  document.addEventListener("DOMContentLoaded", renderIcons);
-  renderIcons();
-})();
+    document.addEventListener("DOMContentLoaded", renderIcons);
+    renderIcons();
+  })();
 </script>
 
 <script>
@@ -567,3 +577,4 @@
 
 </body>
 </html>
+```
