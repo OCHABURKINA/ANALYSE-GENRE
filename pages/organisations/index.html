@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Analyse Organisations | ODF & Coordination</title>
 <link rel="stylesheet" href="../../assets/style.css">
+
+<style>
+.brand-fallback{
+  width:54px;height:54px;border-radius:14px;background:#fff;color:#0074B7;
+  display:none;align-items:center;justify-content:center;font-weight:900;
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
+}
+</style>
 </head>
 
 <body>
@@ -12,7 +20,10 @@
 
 <aside class="sidebar">
   <div class="sidebar-logo">
-    <img src="../../assets/ocha-logo.png" alt="OCHA">
+    <img src="../../assets/ocha-logo.png" alt="OCHA"
+         onerror="this.style.display='none';document.getElementById('brandFallbackOrg').style.display='flex';">
+    <div id="brandFallbackOrg" class="brand-fallback">OCHA</div>
+
     <div>
       <div class="sidebar-logo-title">Analyse Organisations</div>
       <div class="sidebar-logo-sub">ODF · Coordination · Clusters</div>
@@ -29,28 +40,28 @@
     <div class="nav-section-label">Analyse Organisations</div>
 
     <a href="index.html" class="nav-item active">
-      <span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="White"></span>
+      <span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="white"></span>
       <span class="nav-label">Vue d'ensemble</span>
     </a>
 
     <a href="odf.html" class="nav-item">
-      <span class="nav-icon" data-ocha-icon="odf" data-ocha-color="White"></span>
+      <span class="nav-icon" data-ocha-icon="odf" data-ocha-color="white"></span>
       <span class="nav-label">ODF</span>
       <span class="nav-count">89</span>
     </a>
 
     <a href="coordination.html" class="nav-item">
-      <span class="nav-icon" data-ocha-icon="coordination" data-ocha-color="White"></span>
+      <span class="nav-icon" data-ocha-icon="coordination" data-ocha-color="white"></span>
       <span class="nav-label">Coordination</span>
     </a>
 
     <a href="clusters.html" class="nav-item">
-      <span class="nav-icon" data-ocha-icon="cluster" data-ocha-color="White"></span>
+      <span class="nav-icon" data-ocha-icon="cluster" data-ocha-color="white"></span>
       <span class="nav-label">Clusters</span>
     </a>
 
     <a href="redevabilite-genre.html" class="nav-item">
-      <span class="nav-icon" data-ocha-icon="assessment" data-ocha-color="White"></span>
+      <span class="nav-icon" data-ocha-icon="assessment" data-ocha-color="white"></span>
       <span class="nav-label">Redevabilité genre</span>
     </a>
   </nav>
@@ -59,12 +70,12 @@
     <div class="nav-section-label">Retour</div>
 
     <a href="../../index.html" class="nav-item">
-      <span class="nav-icon" data-ocha-icon="home" data-ocha-color="White"></span>
+      <span class="nav-icon" data-ocha-icon="home" data-ocha-color="white"></span>
       <span class="nav-label">Portail principal</span>
     </a>
 
     <a href="../genre/index.html" class="nav-item">
-      <span class="nav-icon" data-ocha-icon="gender" data-ocha-color="White"></span>
+      <span class="nav-icon" data-ocha-icon="gender" data-ocha-color="white"></span>
       <span class="nav-label">Analyse Genre</span>
     </a>
   </nav>
@@ -107,89 +118,72 @@
 <section class="section-label">Indicateurs institutionnels clés</section>
 
 <section class="kpi-row c4">
-
   <div class="kpi-card kpi-org">
-    <div class="kpi-icon" data-ocha-icon="odf" data-ocha-color="UN Blue"></div>
+    <div class="kpi-icon" data-ocha-icon="odf" data-ocha-color="UN-blue"></div>
     <div class="kpi-value">89</div>
     <div class="kpi-label">Organisations dirigées par des femmes enquêtées</div>
     <div class="kpi-sub">Leadership féminin documenté</div>
   </div>
 
   <div class="kpi-card kpi-org">
-    <div class="kpi-icon" data-ocha-icon="leadership" data-ocha-color="UN Blue"></div>
+    <div class="kpi-icon" data-ocha-icon="leadership" data-ocha-color="UN-blue"></div>
     <div class="kpi-value">97%</div>
     <div class="kpi-label">ODF avec leadership féminin supérieur à 50%</div>
     <div class="kpi-sub">Gouvernance interne</div>
   </div>
 
   <div class="kpi-card kpi-org">
-    <div class="kpi-icon" data-ocha-icon="cash" data-ocha-color="UN Blue"></div>
+    <div class="kpi-icon" data-ocha-icon="cash" data-ocha-color="UN-blue"></div>
     <div class="kpi-value">89%</div>
     <div class="kpi-label">ODF dépendant des fonds propres</div>
     <div class="kpi-sub">Vulnérabilité financière</div>
   </div>
 
   <div class="kpi-card kpi-org">
-    <div class="kpi-icon" data-ocha-icon="coordination" data-ocha-color="UN Blue"></div>
+    <div class="kpi-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></div>
     <div class="kpi-value">84%</div>
     <div class="kpi-label">ODF participant à des cadres de coordination</div>
     <div class="kpi-sub">Participation institutionnelle</div>
   </div>
-
 </section>
 
 <section class="section-label">Messages clés organisationnels</section>
 
 <section class="grid g3">
-
   <div class="insight info">
-    <span class="insight-icon" data-ocha-icon="leadership" data-ocha-color="UN Blue"></span>
-    <div>
-      Les ODF constituent un levier stratégique pour renforcer l'approche genre, la localisation et l'ancrage communautaire de la réponse.
-    </div>
+    <span class="insight-icon" data-ocha-icon="leadership" data-ocha-color="UN-blue"></span>
+    <div>Les ODF constituent un levier stratégique pour renforcer l'approche genre, la localisation et l'ancrage communautaire de la réponse.</div>
   </div>
 
   <div class="insight info">
-    <span class="insight-icon" data-ocha-icon="cash" data-ocha-color="UN Blue"></span>
-    <div>
-      <strong>52%</strong> des ODF n'ont pas reçu de financement humanitaire entre 2023 et 2025.
-    </div>
+    <span class="insight-icon" data-ocha-icon="cash" data-ocha-color="UN-blue"></span>
+    <div><strong>52%</strong> des ODF n'ont pas reçu de financement humanitaire entre 2023 et 2025.</div>
   </div>
 
   <div class="insight info">
-    <span class="insight-icon" data-ocha-icon="coordination" data-ocha-color="UN Blue"></span>
-    <div>
-      <strong>18%</strong> des ODF déclarent ne pas connaître les mécanismes de coordination existants.
-    </div>
+    <span class="insight-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>
+    <div><strong>18%</strong> des ODF déclarent ne pas connaître les mécanismes de coordination existants.</div>
   </div>
 
   <div class="insight info">
-    <span class="insight-icon" data-ocha-icon="assessment" data-ocha-color="UN Blue"></span>
-    <div>
-      <strong>77%</strong> des mécanismes collectent des données ventilées par sexe, âge et handicap.
-    </div>
+    <span class="insight-icon" data-ocha-icon="assessment" data-ocha-color="UN-blue"></span>
+    <div><strong>77%</strong> des mécanismes collectent des données ventilées par sexe, âge et handicap.</div>
   </div>
 
   <div class="insight info">
-    <span class="insight-icon" data-ocha-icon="gender" data-ocha-color="UN Blue"></span>
-    <div>
-      <strong>46%</strong> consultent régulièrement les organisations locales de promotion des droits des femmes.
-    </div>
+    <span class="insight-icon" data-ocha-icon="gender" data-ocha-color="UN-blue"></span>
+    <div><strong>46%</strong> consultent régulièrement les organisations locales de promotion des droits des femmes.</div>
   </div>
 
   <div class="insight info">
-    <span class="insight-icon" data-ocha-icon="children" data-ocha-color="UN Blue"></span>
-    <div>
-      Seulement <strong>23%</strong> consultent des organisations dirigées par des adolescentes.
-    </div>
+    <span class="insight-icon" data-ocha-icon="children" data-ocha-color="UN-blue"></span>
+    <div>Seulement <strong>23%</strong> consultent des organisations dirigées par des adolescentes.</div>
   </div>
-
 </section>
 
 <section class="section-label">Visualisations principales</section>
 
 <section class="grid g2">
-
   <div class="chart-card">
     <div class="chart-card-header">
       <div>
@@ -218,11 +212,9 @@
       </div>
     </div>
   </div>
-
 </section>
 
 <section class="grid g2">
-
   <div class="chart-card">
     <div class="chart-card-header">
       <div>
@@ -250,7 +242,6 @@
       <ul class="progress-list" id="iascList"></ul>
     </div>
   </div>
-
 </section>
 
 </main>
@@ -271,7 +262,6 @@
 <script>
 const D = DASHBOARD_DATA;
 
-/* Domaines ODF */
 createHorizontalBarChart(
   "odfSectorsChart",
   D.organisations.sectors.labels,
@@ -279,7 +269,6 @@ createHorizontalBarChart(
   OCHA.blue2
 );
 
-/* Financement */
 createHorizontalBarChart(
   "fundingChart",
   D.organisations.fundingSources.labels,
@@ -287,7 +276,6 @@ createHorizontalBarChart(
   OCHA.blue2
 );
 
-/* Coordination */
 createHorizontalBarChart(
   "coordinationChart",
   D.organisations.coordinationParticipation.labels,
@@ -295,7 +283,6 @@ createHorizontalBarChart(
   OCHA.blue2
 );
 
-/* Redevabilité IASC */
 const I = D.humanitarianCoordination.iascGenderAccountability;
 
 const iascRows = [
