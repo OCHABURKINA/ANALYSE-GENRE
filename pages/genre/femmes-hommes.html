@@ -1,1 +1,581 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Femmes & Hommes — Analyse Genre</title><link rel="stylesheet" href="../../assets/style.css"></head><body><div class="app-shell"><aside class="sidebar gender"><div class="sidebar-logo"><img src="../../assets/ocha-logo.png" alt="OCHA"><div><div class="sidebar-logo-title">Femmes & Hommes</div><div class="sidebar-logo-sub">Analyse adulte · n=1 827</div></div></div><nav class="nav-section"><div class="nav-section-label">Analyse Genre</div><a href="index.html" class="nav-item"><span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="White"></span><span class="nav-label">Vue d'ensemble</span></a><a href="femmes-hommes.html" class="nav-item active"><span class="nav-icon" data-ocha-icon="gender" data-ocha-color="White"></span><span class="nav-label">Femmes & Hommes</span></a><a href="filles-garcons.html" class="nav-item"><span class="nav-icon" data-ocha-icon="children" data-ocha-color="White"></span><span class="nav-label">Filles & Garçons</span></a><a href="moyens-subsistance.html" class="nav-item"><span class="nav-icon" data-ocha-icon="livelihood" data-ocha-color="White"></span><span class="nav-label">Moyens de subsistance</span></a></nav><div class="sidebar-footer"><a href="../../index.html">← Retour au portail</a></div></aside><div class="main-content"><header class="topbar gender"><div class="topbar-breadcrumb">Analyse Genre <span class="sep">›</span> Femmes & Hommes</div></header><main class="page-body"><section class="page-header gender"><div class="page-header-inner"><div class="page-header-eyebrow">Adultes · 18 ans et plus</div><h1>Dynamiques de genre chez les femmes et les hommes</h1><p>Prise de décision, division du travail, besoins prioritaires et accès aux ressources productives.</p></div></section><div class="kpi-row c4"><div class="kpi-card gender"><div class="kpi-icon" data-ocha-icon="gender"></div><div class="kpi-value">922</div><div class="kpi-label">Femmes</div></div><div class="kpi-card"><div class="kpi-icon" data-ocha-icon="gender"></div><div class="kpi-value">905</div><div class="kpi-label">Hommes</div></div><div class="kpi-card gender"><div class="kpi-icon" data-ocha-icon="water"></div><div class="kpi-value">77%</div><div class="kpi-label">Femmes engagées dans la collecte d'eau</div></div><div class="kpi-card gender"><div class="kpi-icon" data-ocha-icon="livelihood"></div><div class="kpi-value">−27pt</div><div class="kpi-label">Baisse du travail agricole féminin</div></div></div><div class="grid g-1-2"><div class="chart-card gender"><div class="chart-card-header"><div><div class="chart-card-title">Radar des tâches</div><div class="chart-card-subtitle">% engagé par tâche</div></div></div><div class="chart-card-body"><div class="chart-wrap" style="height:330px"><canvas id="radar"></canvas></div></div></div><div class="chart-card gender"><div class="chart-card-header"><div><div class="chart-card-title">Engagement par tâche — avant la crise</div><div class="chart-card-subtitle">Barres alignées pour lecture comparative</div></div></div><div class="chart-card-body"><ul class="gender-bars" id="bars"></ul></div></div></div></main></div></div><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script><script src="../../assets/ocha-icons.js"></script><script src="../../assets/charts.js"></script><script src="../../assets/dashboard-data.js"></script><script>const t=DASHBOARD.workBefore;new Chart(document.getElementById('radar'),{type:'radar',data:{labels:t.map(d=>d.label),datasets:[{label:'Femmes',data:t.map(d=>d.women),backgroundColor:OCHA.female+'25',borderColor:OCHA.female,pointBackgroundColor:OCHA.female},{label:'Hommes',data:t.map(d=>d.men),backgroundColor:OCHA.male+'25',borderColor:OCHA.male,pointBackgroundColor:OCHA.male}]},options:{responsive:true,maintainAspectRatio:false,plugins:{tooltip:{...tooltipStyle()}},scales:{r:{min:0,max:100,grid:{color:OCHA.sl6},pointLabels:{color:OCHA.sl2,font:{size:11,weight:'700'}},ticks:{stepSize:25}}}}});document.getElementById('bars').innerHTML=t.map(d=>`<li class="gbar-item"><div class="gbar-label">${d.label}</div><div class="gbar-lines"><div class="gbar-row"><span class="gbar-sex" style="color:${OCHA.female}">Femmes</span><div class="gbar-bg"><div class="gbar-fill" style="width:${d.women}%;background:${OCHA.female}"></div></div><span class="gbar-pct" style="color:${OCHA.female}">${d.women}%</span></div><div class="gbar-row"><span class="gbar-sex" style="color:${OCHA.male}">Hommes</span><div class="gbar-bg"><div class="gbar-fill" style="width:${d.men}%;background:${OCHA.male}"></div></div><span class="gbar-pct" style="color:${OCHA.male}">${d.men}%</span></div></div></li>`).join('');</script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Femmes & Hommes | Analyse Genre</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+
+<body>
+<div class="app-shell">
+
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <img src="../../assets/ocha-logo.png" alt="OCHA">
+    <div>
+      <div class="sidebar-logo-title">Analyse Genre</div>
+      <div class="sidebar-logo-sub">Femmes & Hommes</div>
+    </div>
+  </div>
+
+  <div class="sidebar-badge">
+    <strong>1 827</strong> adultes enquêtés<br>
+    <strong>922</strong> femmes · <strong>905</strong> hommes
+  </div>
+
+  <nav class="nav-section">
+    <div class="nav-section-label">Analyse Genre</div>
+
+    <a href="index.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="White"></span>
+      <span class="nav-label">Vue d'ensemble</span>
+    </a>
+
+    <a href="femmes-hommes.html" class="nav-item active">
+      <span class="nav-icon" data-ocha-icon="gender" data-ocha-color="White"></span>
+      <span class="nav-label">Femmes & Hommes</span>
+    </a>
+
+    <a href="filles-garcons.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="children" data-ocha-color="White"></span>
+      <span class="nav-label">Filles & Garçons</span>
+    </a>
+
+    <a href="moyens-subsistance.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="livelihood" data-ocha-color="White"></span>
+      <span class="nav-label">Moyens de subsistance</span>
+    </a>
+
+    <a href="protection-vbg.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="protection" data-ocha-color="White"></span>
+      <span class="nav-label">Protection & VBG</span>
+    </a>
+  </nav>
+
+  <nav class="nav-section">
+    <div class="nav-section-label">Sections</div>
+
+    <a href="#besoins" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="food" data-ocha-color="White"></span>
+      <span class="nav-label">Besoins</span>
+    </a>
+
+    <a href="#decision" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="leadership" data-ocha-color="White"></span>
+      <span class="nav-label">Décision</span>
+    </a>
+
+    <a href="#travail" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="livelihood" data-ocha-color="White"></span>
+      <span class="nav-label">Division du travail</span>
+    </a>
+
+    <a href="#services" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="health" data-ocha-color="White"></span>
+      <span class="nav-label">Services</span>
+    </a>
+  </nav>
+</aside>
+
+<div class="main-content">
+
+<header class="topbar">
+  <div class="topbar-breadcrumb">
+    Analyse Genre <span class="sep">›</span>
+    <span class="current">Femmes & Hommes</span>
+  </div>
+  <div class="topbar-right">
+    <span class="chip">n = 1 827</span>
+    <span class="chip">Septembre 2025</span>
+  </div>
+</header>
+
+<main class="page-body">
+
+<section class="page-header gender">
+  <div class="page-header-inner">
+    <div class="page-header-eyebrow">Analyse adultes · 18 ans et plus</div>
+    <h1>Femmes & Hommes</h1>
+    <p>
+      Cette page analyse les écarts entre femmes et hommes adultes en matière de besoins prioritaires,
+      prise de décision, division du travail, moyens de subsistance, accès aux services et participation communautaire.
+    </p>
+    <div class="page-header-chips">
+      <span class="header-chip">922 femmes</span>
+      <span class="header-chip">905 hommes</span>
+      <span class="header-chip">7 régions</span>
+      <span class="header-chip">Communautés hôtes et PDI</span>
+    </div>
+  </div>
+</section>
+
+<section class="kpi-row c4">
+  <div class="kpi-card kpi-gender">
+    <div class="kpi-icon" data-ocha-icon="gender" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">29,1%</div>
+    <div class="kpi-label">Femmes exclues des décisions sur le mariage des enfants</div>
+    <div class="kpi-sub">Après la crise</div>
+  </div>
+
+  <div class="kpi-card kpi-gender">
+    <div class="kpi-icon" data-ocha-icon="water" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">77%</div>
+    <div class="kpi-label">Femmes engagées dans la collecte d'eau</div>
+    <div class="kpi-sub">contre 26% des hommes</div>
+  </div>
+
+  <div class="kpi-card kpi-gender">
+    <div class="kpi-icon" data-ocha-icon="livelihood" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">−27,3 pt</div>
+    <div class="kpi-label">Baisse du travail agricole féminin</div>
+    <div class="kpi-sub">39,6% → 12,3%</div>
+  </div>
+
+  <div class="kpi-card kpi-gender">
+    <div class="kpi-icon" data-ocha-icon="cash" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">63,4%</div>
+    <div class="kpi-label">Femmes signalant un faible accès au crédit</div>
+    <div class="kpi-sub">contre 61,4% des hommes</div>
+  </div>
+</section>
+
+<section id="besoins" class="section-label gender">Besoins prioritaires</section>
+
+<section class="grid g2">
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Besoins prioritaires par sexe</div>
+        <div class="chart-card-subtitle">Pourcentage de répondants citant le besoin parmi leurs priorités</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:330px">
+        <canvas id="needsChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Participation communautaire</div>
+        <div class="chart-card-subtitle">Participation aux décisions communautaires</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:180px">
+        <canvas id="communityChart"></canvas>
+      </div>
+
+      <div class="insight" style="margin-top:18px">
+        <span class="insight-icon" data-ocha-icon="community" data-ocha-color="UN Blue"></span>
+        <div>
+          La participation communautaire reste fortement sexuée : 29,6% des femmes participent contre 54,7% des hommes.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="decision" class="section-label gender">Prise de décision au sein du ménage</section>
+
+<section class="grid g2">
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Participation des femmes avant la crise</div>
+        <div class="chart-card-subtitle">Répartition par domaine de décision</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:320px">
+        <canvas id="decisionBeforeChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Participation des femmes après la crise</div>
+        <div class="chart-card-subtitle">Évolution de l'autonomie décisionnelle</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:320px">
+        <canvas id="decisionAfterChart"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="grid g3">
+  <div class="stat-hl or1">
+    <div class="stat-hl-value">29,1%</div>
+    <div class="stat-hl-label">Femmes sans participation dans les décisions sur le mariage des enfants après la crise</div>
+  </div>
+
+  <div class="stat-hl or2">
+    <div class="stat-hl-value">16,7%</div>
+    <div class="stat-hl-label">Femmes sans participation dans l'achat ou la vente d'actifs</div>
+  </div>
+
+  <div class="stat-hl or3">
+    <div class="stat-hl-value">13,9%</div>
+    <div class="stat-hl-label">Femmes sans participation dans les décisions sur le nombre d'enfants</div>
+  </div>
+</section>
+
+<section id="travail" class="section-label gender">Division du travail</section>
+
+<section class="grid g-1-2">
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Radar comparatif</div>
+        <div class="chart-card-subtitle">% d'engagement par tâche</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:330px">
+        <canvas id="rolesRadarChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Engagement par tâche</div>
+        <div class="chart-card-subtitle">Femmes et hommes — tâches domestiques et productives</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <ul class="gender-bars" id="genderBars"></ul>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section-label gender">Moyens de subsistance et accès aux ressources</section>
+
+<section class="grid g2">
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Activités économiques des femmes</div>
+        <div class="chart-card-subtitle">Avant la crise et situation actuelle</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:280px">
+        <canvas id="womenLivelihoodChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Activités économiques des hommes</div>
+        <div class="chart-card-subtitle">Avant la crise et situation actuelle</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:280px">
+        <canvas id="menLivelihoodChart"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="grid g2">
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Défis liés aux moyens de subsistance</div>
+        <div class="chart-card-subtitle">Femmes vs hommes</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:300px">
+        <canvas id="livelihoodChallengesChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Lecture analytique</div>
+        <div class="chart-card-subtitle">Synthèse issue du rapport</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <div class="insight">
+        <span class="insight-icon" data-ocha-icon="cash" data-ocha-color="UN Blue"></span>
+        <div>
+          Le faible accès au crédit et aux services de soutien concerne 63,4% des femmes et 61,4% des hommes.
+        </div>
+      </div>
+
+      <div class="insight" style="margin-top:12px">
+        <span class="insight-icon" data-ocha-icon="livelihood" data-ocha-color="UN Blue"></span>
+        <div>
+          L'agriculture féminine recule fortement avec la crise, tandis que l'inactivité économique progresse.
+        </div>
+      </div>
+
+      <div class="insight" style="margin-top:12px">
+        <span class="insight-icon" data-ocha-icon="protection" data-ocha-color="UN Blue"></span>
+        <div>
+          Les contraintes économiques et les risques sécuritaires interagissent avec les normes de genre.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="page-footer">
+  <span>Analyse Genre · Femmes & Hommes</span>
+  <span>Source : CERFODES, enquête terrain septembre 2025</span>
+</footer>
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="../../assets/dashboard-data.js"></script>
+<script src="../../assets/charts.js"></script>
+<script src="../../assets/ocha-icons.js"></script>
+
+<script>
+const D = DASHBOARD_DATA;
+
+/* Besoins prioritaires */
+createGenderBarChart(
+  "needsChart",
+  D.needs.adultPriorityNeedsBySex.labels,
+  D.needs.adultPriorityNeedsBySex.women,
+  D.needs.adultPriorityNeedsBySex.men
+);
+
+/* Participation communautaire */
+new Chart(document.getElementById("communityChart"), {
+  type: "bar",
+  data: {
+    labels: ["Femmes", "Hommes"],
+    datasets: [
+      {
+        label: "Participent",
+        data: [
+          D.decisionMaking.communityParticipation.women,
+          D.decisionMaking.communityParticipation.men
+        ],
+        backgroundColor: [OCHA.purple2, OCHA.blue2],
+        borderRadius: 8
+      },
+      {
+        label: "Ne participent pas",
+        data: [
+          D.decisionMaking.communityParticipation.womenNotParticipating,
+          D.decisionMaking.communityParticipation.menNotParticipating
+        ],
+        backgroundColor: [OCHA.purple6, OCHA.blue6],
+        borderRadius: 8
+      }
+    ]
+  },
+  options: {
+    indexAxis: "y",
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      tooltip: tooltipStyle(),
+      legend: { position: "bottom" }
+    },
+    scales: {
+      x: {
+        stacked: true,
+        max: 100,
+        ticks: { ...tickStyle(), callback: v => v + "%" },
+        grid: chartGrid()
+      },
+      y: {
+        stacked: true,
+        grid: { display: false },
+        ticks: tickStyle()
+      }
+    }
+  }
+});
+
+/* Décision */
+function decisionChart(canvasId, decisionData) {
+  new Chart(document.getElementById(canvasId), {
+    type: "bar",
+    data: {
+      labels: D.decisionMaking.domains,
+      datasets: [
+        { label: "Décide seule", data: decisionData.alone, backgroundColor: OCHA.purpleDark, borderRadius: 4 },
+        { label: "Décision commune", data: decisionData.joint, backgroundColor: OCHA.purple2, borderRadius: 4 },
+        { label: "Consultée", data: decisionData.consulted, backgroundColor: OCHA.purple4, borderRadius: 4 },
+        { label: "Aucune participation", data: decisionData.none, backgroundColor: OCHA.purple6, borderRadius: 4 }
+      ]
+    },
+    options: {
+      indexAxis: "y",
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        tooltip: tooltipStyle(),
+        legend: { position: "bottom" }
+      },
+      scales: {
+        x: {
+          stacked: true,
+          max: 100,
+          ticks: { ...tickStyle(), callback: v => v + "%" },
+          grid: chartGrid()
+        },
+        y: {
+          stacked: true,
+          grid: { display: false },
+          ticks: tickStyle(11)
+        }
+      }
+    }
+  });
+}
+
+decisionChart("decisionBeforeChart", D.decisionMaking.womenBeforeCrisis);
+decisionChart("decisionAfterChart", D.decisionMaking.womenAfterCrisis);
+
+/* Radar rôles */
+new Chart(document.getElementById("rolesRadarChart"), {
+  type: "radar",
+  data: {
+    labels: D.householdRoles.tasks.map(t => t.task),
+    datasets: [
+      {
+        label: "Femmes",
+        data: D.householdRoles.tasks.map(t => t.women),
+        backgroundColor: OCHA.purple2 + "30",
+        borderColor: OCHA.purple2,
+        pointBackgroundColor: OCHA.purple2,
+        borderWidth: 2
+      },
+      {
+        label: "Hommes",
+        data: D.householdRoles.tasks.map(t => t.men),
+        backgroundColor: OCHA.blue2 + "25",
+        borderColor: OCHA.blue2,
+        pointBackgroundColor: OCHA.blue2,
+        borderWidth: 2
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      tooltip: tooltipStyle(),
+      legend: { position: "bottom" }
+    },
+    scales: {
+      r: {
+        min: 0,
+        max: 100,
+        ticks: { stepSize: 25, color: "#64748B" },
+        grid: { color: "rgba(0,0,0,.10)" },
+        pointLabels: { color: "#334155", font: { size: 11, weight: "700" } }
+      }
+    }
+  }
+});
+
+/* Barres longues H/F */
+const ul = document.getElementById("genderBars");
+
+D.householdRoles.tasks.forEach(t => {
+  const li = document.createElement("li");
+  li.className = "gbar-item";
+  li.innerHTML = `
+    <div class="gbar-label">${t.task}</div>
+    <div>
+      <div class="gbar-row">
+        <span class="gbar-sex" style="color:${OCHA.purple2}">Femmes</span>
+        <div class="gbar-bg">
+          <div class="gbar-fill" style="width:${t.women}%;background:${OCHA.purple2}"></div>
+        </div>
+        <span class="gbar-pct" style="color:${OCHA.purple2}">${t.women}%</span>
+      </div>
+      <div class="gbar-row">
+        <span class="gbar-sex" style="color:${OCHA.blue2}">Hommes</span>
+        <div class="gbar-bg">
+          <div class="gbar-fill" style="width:${t.men}%;background:${OCHA.blue2}"></div>
+        </div>
+        <span class="gbar-pct" style="color:${OCHA.blue2}">${t.men}%</span>
+      </div>
+    </div>
+  `;
+  ul.appendChild(li);
+});
+
+/* Activités économiques */
+function livelihoodChart(canvasId, sourceData, mainColor) {
+  new Chart(document.getElementById(canvasId), {
+    type: "bar",
+    data: {
+      labels: sourceData.labels,
+      datasets: [
+        {
+          label: "Avant la crise",
+          data: sourceData.beforeCrisis,
+          backgroundColor: mainColor,
+          borderRadius: 6
+        },
+        {
+          label: "Maintenant",
+          data: sourceData.current,
+          backgroundColor: OCHA.blue4,
+          borderRadius: 6
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        tooltip: tooltipStyle(),
+        legend: { position: "bottom" }
+      },
+      scales: {
+        x: { grid: { display: false }, ticks: tickStyle(11) },
+        y: {
+          max: 55,
+          ticks: { ...tickStyle(), callback: v => v + "%" },
+          grid: chartGrid()
+        }
+      }
+    }
+  });
+}
+
+livelihoodChart("womenLivelihoodChart", D.livelihoods.womenEconomicActivities, OCHA.purple2);
+livelihoodChart("menLivelihoodChart", D.livelihoods.menEconomicActivities, OCHA.blue2);
+
+/* Défis moyens de subsistance */
+createGenderBarChart(
+  "livelihoodChallengesChart",
+  D.livelihoods.challengesBySex.labels,
+  D.livelihoods.challengesBySex.women,
+  D.livelihoods.challengesBySex.men
+);
+</script>
+
+</body>
+</html>
