@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coordination · Analyse Organisationnelle</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+
+<body data-section="organisations" data-page="coordination">
+  <div class="app-shell">
+    <aside class="sidebar" data-site-sidebar></aside>
+
+    <main class="main-area">
+      <header class="topbar" data-site-topbar></header>
+
+      <section class="page-body">
+        <header class="page-header">
+          <div class="page-header-inner" style="background:linear-gradient(135deg,#002E6E 0%,#004987 60%,#0074B7 100%);">
+            <h1>Coordination</h1>
+            <p>
+              Analyse de la participation des organisations de femmes aux mécanismes de coordination,
+              aux espaces de décision et aux processus de planification humanitaire.
+            </p>
+          </div>
+        </header>
+
+        <section class="kpi-grid">
+          <article class="kpi-card">
+            <div class="kpi-label">Mécanismes suivis</div>
+            <div class="kpi-value">4</div>
+          </article>
+
+          <article class="kpi-card">
+            <div class="kpi-label">ODF ciblées</div>
+            <div class="kpi-value">89</div>
+          </article>
+
+          <article class="kpi-card">
+            <div class="kpi-label">Axes de participation</div>
+            <div class="kpi-value">5</div>
+          </article>
+        </section>
+
+        <section class="chart-card">
+          <div class="chart-card-header">
+            <h2>Participation aux mécanismes de coordination</h2>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="coordinationChart"></canvas>
+          </div>
+        </section>
+
+        <section class="chart-card">
+          <div class="chart-card-header">
+            <h2>Facteurs limitant la participation</h2>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="coordinationBarriersChart"></canvas>
+          </div>
+        </section>
+
+        <section class="card-grid" style="margin-top:18px;">
+          <article class="context-card" style="padding:20px;">
+            <h3>Constat clé</h3>
+            <p>
+              La participation effective des ODF exige des mécanismes adaptés :
+              information accessible, invitation systématique, prise de parole sécurisée
+              et reconnaissance de leur expertise locale.
+            </p>
+          </article>
+
+          <article class="context-card" style="padding:20px;">
+            <h3>Implication opérationnelle</h3>
+            <p>
+              Les clusters et groupes de travail peuvent renforcer la qualité de la réponse
+              en intégrant les ODF dans l’analyse, la planification et le suivi.
+            </p>
+          </article>
+
+          <article class="context-card" style="padding:20px;">
+            <h3>Priorité</h3>
+            <p>
+              Mettre en place un mécanisme régulier de consultation et de feedback
+              entre ODF, coordination humanitaire et acteurs sectoriels.
+            </p>
+          </article>
+        </section>
+      </section>
+
+      <footer class="page-footer" data-site-footer></footer>
+    </main>
+  </div>
+
+  <script src="../../assets/ocha-icons.js"></script>
+  <script src="../../assets/layout.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <script src="../../assets/dashboard-data.js"></script>
+  <script src="../../assets/charts.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      createDonutChart(
+        "coordinationChart",
+        [
+          "Participation régulière",
+          "Participation occasionnelle",
+          "Non-participation",
+          "Information insuffisante"
+        ],
+        [0, 0, 0, 0],
+        [OCHA.blue2, OCHA.blue4, OCHA.purple3, OCHA.blue6],
+        {
+          ariaLabel: "Participation des ODF aux mécanismes de coordination",
+          unit: "%",
+          legendPosition: "bottom"
+        }
+      );
+
+      createHorizontalBarChart(
+        "coordinationBarriersChart",
+        [
+          "Manque d’information",
+          "Contraintes de mobilité",
+          "Faible accès numérique",
+          "Manque de ressources",
+          "Barrières institutionnelles"
+        ],
+        [0, 0, 0, 0, 0],
+        OCHA.blue2,
+        {
+          ariaLabel: "Facteurs limitant la participation aux mécanismes de coordination",
+          label: "Pourcentage",
+          unit: "%",
+          max: 100,
+          showLabels: true
+        }
+      );
+    });
+  </script>
+</body>
+</html>
