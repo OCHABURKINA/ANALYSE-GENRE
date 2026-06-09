@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Clusters | Analyse Organisations</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+
+<body>
+<div class="app-shell">
+
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <img src="../../assets/ocha-logo.png" alt="OCHA">
+    <div>
+      <div class="sidebar-logo-title">Analyse Organisations</div>
+      <div class="sidebar-logo-sub">Clusters & Groupes de travail</div>
+    </div>
+  </div>
+
+  <div class="sidebar-badge">
+    Intégration du genre dans les clusters,<br>
+    AoR et groupes de travail humanitaires
+  </div>
+
+  <nav class="nav-section">
+    <div class="nav-section-label">Analyse Organisations</div>
+
+    <a href="index.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="White"></span>
+      <span class="nav-label">Vue d'ensemble</span>
+    </a>
+
+    <a href="odf.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="odf" data-ocha-color="White"></span>
+      <span class="nav-label">ODF</span>
+      <span class="nav-count">89</span>
+    </a>
+
+    <a href="coordination.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="coordination" data-ocha-color="White"></span>
+      <span class="nav-label">Coordination</span>
+    </a>
+
+    <a href="clusters.html" class="nav-item active">
+      <span class="nav-icon" data-ocha-icon="cluster" data-ocha-color="White"></span>
+      <span class="nav-label">Clusters</span>
+    </a>
+
+    <a href="redevabilite-genre.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="assessment" data-ocha-color="White"></span>
+      <span class="nav-label">Redevabilité genre</span>
+    </a>
+  </nav>
+</aside>
+
+<div class="main-content">
+
+<header class="topbar">
+  <div class="topbar-breadcrumb">
+    Analyse Organisations <span class="sep">›</span>
+    <span class="current">Clusters</span>
+  </div>
+  <div class="topbar-right">
+    <span class="chip">Clusters</span>
+    <span class="chip">AoR</span>
+    <span class="chip">Groupes de travail</span>
+  </div>
+</header>
+
+<main class="page-body">
+
+<section class="page-header organisations">
+  <div class="page-header-inner">
+    <div class="page-header-eyebrow">Coordination sectorielle</div>
+    <h1>Intégration du genre dans les clusters et groupes de travail</h1>
+    <p>
+      Cette page synthétise les progrès et lacunes des mécanismes de coordination humanitaire
+      dans la prise en compte de l'égalité de genre, de l'inclusion, de la participation des femmes
+      et des données ventilées dans la réponse humanitaire.
+    </p>
+
+    <div class="page-header-chips">
+      <span class="header-chip">13 mécanismes répondants</span>
+      <span class="header-chip">69% ont un point focal genre</span>
+      <span class="header-chip">77% collectent des données ventilées</span>
+      <span class="header-chip">54% suivi ponctuel genre</span>
+    </div>
+  </div>
+</section>
+
+<section class="section-label">Performance des mécanismes</section>
+
+<section class="kpi-row c4">
+
+  <div class="kpi-card kpi-org">
+    <div class="kpi-icon" data-ocha-icon="coordination" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">13 / 17</div>
+    <div class="kpi-label">Mécanismes ayant répondu au sondage</div>
+    <div class="kpi-sub">Clusters, AoR et groupes de travail</div>
+  </div>
+
+  <div class="kpi-card kpi-org">
+    <div class="kpi-icon" data-ocha-icon="gender" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">69%</div>
+    <div class="kpi-label">Disposent d'un point focal genre</div>
+    <div class="kpi-sub">Rôle souvent insuffisamment institutionnalisé</div>
+  </div>
+
+  <div class="kpi-card kpi-org">
+    <div class="kpi-icon" data-ocha-icon="data" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">77%</div>
+    <div class="kpi-label">Collectent des données sexe, âge et handicap</div>
+    <div class="kpi-sub">SADDD pour la planification</div>
+  </div>
+
+  <div class="kpi-card kpi-org">
+    <div class="kpi-icon" data-ocha-icon="assessment" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">39%</div>
+    <div class="kpi-label">Assurent un suivi cohérent sensible au genre</div>
+    <div class="kpi-sub">Lacune critique</div>
+  </div>
+
+</section>
+
+<section class="section-label">Lecture par fonction du cycle humanitaire</section>
+
+<section class="grid g2">
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title">Indicateurs genre dans les mécanismes</div>
+        <div class="chart-card-subtitle">% des mécanismes atteignant chaque indicateur</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:420px">
+        <canvas id="clusterGenderChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title">Forces et lacunes</div>
+        <div class="chart-card-subtitle">Synthèse analytique</div>
+      </div>
+    </div>
+
+    <div class="chart-card-body">
+
+      <div class="insight info">
+        <span class="insight-icon" data-ocha-icon="assessment" data-ocha-color="UN Blue"></span>
+        <div>
+          L'intégration du genre dans les évaluations est relativement forte : 93% des mécanismes
+          incluent des questions liées au genre.
+        </div>
+      </div>
+
+      <div class="insight info" style="margin-top:14px">
+        <span class="insight-icon" data-ocha-icon="data" data-ocha-color="UN Blue"></span>
+        <div>
+          La collecte de données ventilées est une avancée importante, mais elle doit être suivie
+          d'une analyse systématique pour orienter la priorisation.
+        </div>
+      </div>
+
+      <div class="insight info" style="margin-top:14px">
+        <span class="insight-icon" data-ocha-icon="feedback" data-ocha-color="UN Blue"></span>
+        <div>
+          Le suivi sensible au genre reste insuffisant : seulement 39% assurent un suivi cohérent
+          avec des indicateurs sensibles au genre.
+        </div>
+      </div>
+
+      <div class="insight info" style="margin-top:14px">
+        <span class="insight-icon" data-ocha-icon="children" data-ocha-color="UN Blue"></span>
+        <div>
+          La consultation des organisations dirigées par des adolescentes est très faible : 23%.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<section class="section-label">Fonctions prioritaires à renforcer</section>
+
+<section class="grid g3">
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title">Évaluation des besoins</div>
+        <div class="chart-card-subtitle">Questions genre et données ventilées</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <ul class="progress-list">
+        <li class="progress-item">
+          <span class="progress-label">Questions genre</span>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:93%"></div></div>
+          <span class="progress-value">93%</span>
+        </li>
+        <li class="progress-item">
+          <span class="progress-label">Données SADDD</span>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:77%"></div></div>
+          <span class="progress-value">77%</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title">Participation</div>
+        <div class="chart-card-subtitle">Consultation des femmes, filles et organisations</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <ul class="progress-list">
+        <li class="progress-item">
+          <span class="progress-label">Femmes/filles VBG</span>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:69%"></div></div>
+          <span class="progress-value">69%</span>
+        </li>
+        <li class="progress-item">
+          <span class="progress-label">Organisations femmes</span>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:46%"></div></div>
+          <span class="progress-value">46%</span>
+        </li>
+        <li class="progress-item">
+          <span class="progress-label">Organisations adolescentes</span>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:23%"></div></div>
+          <span class="progress-value">23%</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title">Suivi et redevabilité</div>
+        <div class="chart-card-subtitle">Indicateurs et monitoring genre</div>
+      </div>
+    </div>
+    <div class="chart-card-body">
+      <ul class="progress-list">
+        <li class="progress-item">
+          <span class="progress-label">Suivi cohérent</span>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:39%"></div></div>
+          <span class="progress-value">39%</span>
+        </li>
+        <li class="progress-item">
+          <span class="progress-label">Suivi ponctuel</span>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:54%"></div></div>
+          <span class="progress-value">54%</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<section class="section-label">Recommandations pour les clusters</section>
+
+<section class="grid g3">
+
+  <div class="insight info">
+    <span class="insight-icon" data-ocha-icon="data" data-ocha-color="UN Blue"></span>
+    <div>
+      Passer de la simple collecte de données ventilées à une analyse sectorielle et intersectorielle des écarts de genre.
+    </div>
+  </div>
+
+  <div class="insight info">
+    <span class="insight-icon" data-ocha-icon="gender" data-ocha-color="UN Blue"></span>
+    <div>
+      Donner aux points focaux genre un mandat clair, du temps dédié et un rôle formel dans les décisions de cluster.
+    </div>
+  </div>
+
+  <div class="insight info">
+    <span class="insight-icon" data-ocha-icon="assessment" data-ocha-color="UN Blue"></span>
+    <div>
+      Intégrer des indicateurs sensibles au genre dans les cadres de suivi HNRP, les 3W/4W et les tableaux de bord sectoriels.
+    </div>
+  </div>
+
+  <div class="insight info">
+    <span class="insight-icon" data-ocha-icon="community" data-ocha-color="UN Blue"></span>
+    <div>
+      Organiser des consultations régulières avec les ODF, les groupes de femmes, les adolescentes et les groupes vulnérables.
+    </div>
+  </div>
+
+  <div class="insight info">
+    <span class="insight-icon" data-ocha-icon="cash" data-ocha-color="UN Blue"></span>
+    <div>
+      Budgétiser les adaptations nécessaires à une réponse inclusive : accessibilité, consultations séparées, sécurité, traduction et garde d'enfants.
+    </div>
+  </div>
+
+  <div class="insight info">
+    <span class="insight-icon" data-ocha-icon="coordination" data-ocha-color="UN Blue"></span>
+    <div>
+      Renforcer le lien entre GT EGIAH, AoR VBG, clusters et ODF pour assurer une intégration transversale du genre.
+    </div>
+  </div>
+
+</section>
+
+</main>
+
+<footer class="page-footer">
+  <span>Analyse Organisations · Clusters</span>
+  <span>Source : Rapport Analyse Conjointe Genre · Mars 2026</span>
+</footer>
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="../../assets/dashboard-data.js"></script>
+<script src="../../assets/charts.js"></script>
+<script src="../../assets/ocha-icons.js"></script>
+
+<script>
+const I = DASHBOARD_DATA.humanitarianCoordination.iascGenderAccountability;
+
+createHorizontalBarChart(
+  "clusterGenderChart",
+  [
+    "Questions genre dans les évaluations",
+    "Genre priorité stratégique",
+    "Données sexe, âge, handicap",
+    "Consultation femmes/filles VBG",
+    "Point focal genre",
+    "Suivi ponctuel sensible au genre",
+    "Consultation organisations femmes",
+    "Suivi cohérent sensible au genre",
+    "Consultation organisations adolescentes"
+  ],
+  [
+    I.includeGenderQuestionsInAssessments,
+    I.genderAsStrategicPriority,
+    I.collectSexAgeDisabilityData,
+    I.consultWomenAndGirlsForGbgRiskMitigation,
+    I.haveGenderFocalPoint,
+    I.occasionalGenderSensitiveMonitoring,
+    I.consultWomenRightsOrganizations,
+    I.coherentGenderSensitiveMonitoring,
+    I.consultAdolescentGirlLedOrganizations
+  ],
+  OCHA.blue2
+);
+</script>
+
+</body>
+</html>
