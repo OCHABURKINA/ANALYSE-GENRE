@@ -1,13 +1,41 @@
-# Installation
+# ANALYSE-GENRE
 
-1. Garder votre fichier `assets/ocha-logo.png`.
-2. Copier/remplacer tous les fichiers de ce dossier dans votre dépôt GitHub `ANALYSE-GENRE`.
-3. Vérifier que GitHub Pages pointe vers la branche `main`.
-4. Faire Ctrl+F5 après publication.
+Plateforme web statique pour la présentation de l’Analyse Conjointe Genre au Burkina Faso 2025.
 
-## Structure
-- `index.html` : portail principal.
-- `pages/genre/` : analyse des populations affectées.
-- `pages/organisations/` : analyse des organisations, ODF et coordination.
-- `assets/dashboard-data.js` : données structurées pour les graphiques.
-- `assets/ocha-icons.js` : intégration directe des icônes OCHA depuis GitHub.
+## Installation
+
+1. Conserver le fichier logo dans :
+
+   ```text
+   assets/ocha-logo.png
+
+Copier ou remplacer tous les fichiers du projet dans votre dépôt GitHub :
+
+ANALYSE-GENRE
+
+Vérifier que l’arborescence respecte la structure suivante :
+
+ANALYSE-GENRE/
+├── index.html
+├── assets/
+│   ├── ocha-logo.png
+│   ├── ocha-icons.js
+│   ├── layout.js
+│   ├── charts.js
+│   ├── map.js
+│   ├── dashboard-data.js
+│   ├── burkina-data.js
+│   └── style.css
+└── pages/
+    ├── genre/
+    │   ├── index.html
+    │   ├── femmes-hommes.html
+    │   ├── filles-garcons.html
+    │   ├── moyens-subsistance.html
+    │   └── protection-vbg.html
+    └── organisations/
+        ├── index.html
+        ├── odf.html
+        ├── coordination.html
+        ├── clusters.html
+        └── redevabilite-genre.html
