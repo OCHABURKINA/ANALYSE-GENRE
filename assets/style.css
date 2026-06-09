@@ -1245,3 +1245,146 @@ strong {
     align-items: flex-start;
   }
 }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  --ocha-dark: #002E6E;
+  --ocha-blue: #0074B7;
+  --ocha-primary: #009EDB;
+  --ocha-light: #64BDEA;
+  --ocha-pale: #C5DFEF;
+  --ocha-bg: #E3EDF6;
+
+  --gender-dark: #3E125B;
+  --gender-1: #5B2C86;
+  --gender-2: #763F98;
+  --gender-3: #A05FB4;
+  --gender-4: #BD8CBF;
+  --gender-5: #D5B4D6;
+  --gender-6: #E4D7E8;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif !important;
+  background: linear-gradient(180deg, #F8FAFC 0%, #EEF5FA 100%);
+}
+
+.sidebar,
+.topbar {
+  background: var(--ocha-blue) !important;
+}
+
+.nav-icon img,
+.kpi-icon img,
+.insight-icon img,
+.partner-icon img,
+.context-list-icon img,
+.top-nav-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.topbar {
+  min-height: 74px;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.topbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.topbar-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 38px;
+  padding: 0 13px;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 13px;
+  background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.22);
+  transition: .18s ease;
+}
+
+.topbar-nav a:hover {
+  background: #fff;
+  color: var(--ocha-blue);
+  transform: translateY(-1px);
+}
+
+.topbar-nav a.active {
+  background: #fff;
+  color: var(--ocha-blue);
+}
+
+.top-nav-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.context-grid,
+.partner-grid {
+  margin-bottom: 28px;
+}
+
+.context-card,
+.partner-card,
+.kpi-card,
+.chart-card,
+.insight {
+  border-radius: 22px !important;
+  box-shadow: 0 8px 24px rgba(15,23,42,.07) !important;
+}
+
+.page-header {
+  border-radius: 28px !important;
+}
+
+.access-grid,
+.portal-grid {
+  display: none !important;
+}
+
+.brand-fallback {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: #fff;
+  color: var(--ocha-blue);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+}
+
+@media(max-width: 900px) {
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px 18px;
+  }
+
+  .topbar-nav {
+    width: 100%;
+  }
+
+  .topbar-nav a {
+    flex: 1;
+    justify-content: center;
+  }
+}
