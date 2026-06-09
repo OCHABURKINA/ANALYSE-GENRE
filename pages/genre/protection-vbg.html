@@ -1,1 +1,623 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Protection / VBG — Analyse Genre</title><link rel="stylesheet" href="../../assets/style.css"></head><body><div class="app-shell"><aside class="sidebar gender"><div class="sidebar-logo"><img src="../../assets/ocha-logo.png" alt="OCHA"><div><div class="sidebar-logo-title">Protection / VBG</div><div class="sidebar-logo-sub">Risques et accès aux services</div></div></div><nav class="nav-section"><a href="index.html" class="nav-item"><span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="White"></span><span class="nav-label">Vue d'ensemble</span></a><a href="protection-vbg.html" class="nav-item active"><span class="nav-icon" data-ocha-icon="vbg" data-ocha-color="White"></span><span class="nav-label">Protection / VBG</span></a></nav></aside><div class="main-content"><header class="topbar gender"><div class="topbar-breadcrumb">Analyse Genre <span class="sep">›</span> Protection / VBG</div></header><main class="page-body"><section class="page-header gender"><div class="page-header-inner"><h1>Protection et violences basées sur le genre</h1><p>Cette page prépare l'intégration complète des données VBG, PEAS, risques, espaces sûrs, recours et connaissance des services.</p></div></section><div class="grid g3"><div class="insight gender"><span class="insight-icon" data-ocha-icon="vbg"></span><div><strong>Priorité :</strong> intégrer les lieux de risque, mécanismes de recours et connaissance des structures VBG par région.</div></div><div class="insight gender"><span class="insight-icon" data-ocha-icon="protection"></span><div><strong>Lecture genre :</strong> croiser sexe, âge, statut de résidence et handicap.</div></div><div class="insight gender"><span class="insight-icon" data-ocha-icon="assessment"></span><div><strong>Action :</strong> produire un indice synthétique de risque de protection par région.</div></div></div><div class="chart-card gender"><div class="chart-card-header"><div><div class="chart-card-title">Risques VBG liés aux moyens de subsistance par région</div><div class="chart-card-subtitle">Indicateur proxy disponible dans le rapport (%)</div></div></div><div class="chart-card-body"><div class="chart-wrap" style="height:320px"><canvas id="gbvReg"></canvas></div></div></div></main></div></div><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script><script src="../../assets/ocha-icons.js"></script><script src="../../assets/charts.js"></script><script src="../../assets/dashboard-data.js"></script><script>new Chart(document.getElementById('gbvReg'),{type:'bar',data:{labels:DASHBOARD.regions.map(r=>r.name),datasets:[{label:'VBG',data:DASHBOARD.regions.map(r=>r.gbv),backgroundColor:OCHA.pr3,borderRadius:4},{label:'EAS',data:DASHBOARD.regions.map(r=>r.eas),backgroundColor:OCHA.pr5,borderRadius:4}]},options:baseBarOptions({percent:true,max:20})});</script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Protection & VBG | Analyse Genre</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+
+<body>
+<div class="app-shell">
+
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <img src="../../assets/ocha-logo.png" alt="OCHA">
+    <div>
+      <div class="sidebar-logo-title">Analyse Genre</div>
+      <div class="sidebar-logo-sub">Protection & VBG</div>
+    </div>
+  </div>
+
+  <div class="sidebar-badge">
+    Protection · VBG · PEAS · Risques quotidiens
+  </div>
+
+  <nav class="nav-section">
+    <div class="nav-section-label">Analyse Genre</div>
+
+    <a href="index.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="White"></span>
+      <span class="nav-label">Vue d'ensemble</span>
+    </a>
+
+    <a href="femmes-hommes.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="gender" data-ocha-color="White"></span>
+      <span class="nav-label">Femmes & Hommes</span>
+    </a>
+
+    <a href="filles-garcons.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="children" data-ocha-color="White"></span>
+      <span class="nav-label">Filles & Garçons</span>
+    </a>
+
+    <a href="moyens-subsistance.html" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="livelihood" data-ocha-color="White"></span>
+      <span class="nav-label">Moyens de subsistance</span>
+    </a>
+
+    <a href="protection-vbg.html" class="nav-item active">
+      <span class="nav-icon" data-ocha-icon="protection" data-ocha-color="White"></span>
+      <span class="nav-label">Protection & VBG</span>
+    </a>
+  </nav>
+
+  <nav class="nav-section">
+    <div class="nav-section-label">Sections</div>
+
+    <a href="#vbg" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="gbv" data-ocha-color="White"></span>
+      <span class="nav-label">VBG</span>
+    </a>
+
+    <a href="#risques" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="protection" data-ocha-color="White"></span>
+      <span class="nav-label">Contextes à risque</span>
+    </a>
+
+    <a href="#adolescents" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="children" data-ocha-color="White"></span>
+      <span class="nav-label">Adolescents</span>
+    </a>
+
+    <a href="#services" class="nav-item">
+      <span class="nav-icon" data-ocha-icon="health" data-ocha-color="White"></span>
+      <span class="nav-label">Services</span>
+    </a>
+  </nav>
+</aside>
+
+<div class="main-content">
+
+<header class="topbar">
+  <div class="topbar-breadcrumb">
+    Analyse Genre <span class="sep">›</span>
+    <span class="current">Protection & VBG</span>
+  </div>
+  <div class="topbar-right">
+    <span class="chip">VBG · PEAS</span>
+    <span class="chip">Approche protection</span>
+  </div>
+</header>
+
+<main class="page-body">
+
+<section class="page-header gender">
+  <div class="page-header-inner">
+    <div class="page-header-eyebrow">Protection transversale et VBG</div>
+    <h1>Protection, violences basées sur le genre et risques quotidiens</h1>
+    <p>
+      Cette page présente les principaux risques de protection identifiés dans le rapport : violences basées sur le genre,
+      risques associés aux activités de subsistance, aux points d'eau, aux espaces domestiques, aux écoles, aux marchés,
+      aux latrines et aux services humanitaires.
+    </p>
+
+    <div class="page-header-chips">
+      <span class="header-chip">3 750 cas VBG pris en charge</span>
+      <span class="header-chip">87% femmes</span>
+      <span class="header-chip">11% filles</span>
+      <span class="header-chip">Janv.–sept. 2025</span>
+    </div>
+  </div>
+</section>
+
+<section id="vbg" class="section-label gender">Indicateurs clés de protection</section>
+
+<section class="kpi-row c4">
+
+  <div class="kpi-card kpi-gender">
+    <div class="kpi-icon" data-ocha-icon="gbv" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">3 750</div>
+    <div class="kpi-label">Cas de VBG pris en charge</div>
+    <div class="kpi-sub">Janvier–septembre 2025</div>
+  </div>
+
+  <div class="kpi-card kpi-gender">
+    <div class="kpi-icon" data-ocha-icon="women" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">87%</div>
+    <div class="kpi-label">Des cas pris en charge concernent des femmes</div>
+    <div class="kpi-sub">Données AoR VBG</div>
+  </div>
+
+  <div class="kpi-card kpi-gender">
+    <div class="kpi-icon" data-ocha-icon="children" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">11%</div>
+    <div class="kpi-label">Des cas pris en charge concernent des filles</div>
+    <div class="kpi-sub">Données AoR VBG</div>
+  </div>
+
+  <div class="kpi-card kpi-gender">
+    <div class="kpi-icon" data-ocha-icon="protection" data-ocha-color="UN Blue"></div>
+    <div class="kpi-value">40,5%</div>
+    <div class="kpi-label">Répondants ne sachant pas localiser les contextes de VBG</div>
+    <div class="kpi-sub">Signe possible de sous-déclaration</div>
+  </div>
+
+</section>
+
+<section id="risques" class="section-label gender">Contextes de survenance des VBG</section>
+
+<section class="grid g2">
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Contextes de survenance des VBG</div>
+        <div class="chart-card-subtitle">Pourcentage de répondants citant chaque contexte</div>
+      </div>
+    </div>
+
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:360px">
+        <canvas id="gbvContextsChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Lecture protection</div>
+        <div class="chart-card-subtitle">Risques intégrés dans les activités quotidiennes</div>
+      </div>
+    </div>
+
+    <div class="chart-card-body">
+
+      <div class="insight">
+        <span class="insight-icon" data-ocha-icon="shelter" data-ocha-color="UN Blue"></span>
+        <div>
+          Le domicile est le premier contexte cité de survenance des VBG avec <strong>32,1%</strong>.
+        </div>
+      </div>
+
+      <div class="insight" style="margin-top:14px">
+        <span class="insight-icon" data-ocha-icon="livelihood" data-ocha-color="UN Blue"></span>
+        <div>
+          La brousse lors du ramassage du bois est citée par <strong>32%</strong> des répondants.
+        </div>
+      </div>
+
+      <div class="insight" style="margin-top:14px">
+        <span class="insight-icon" data-ocha-icon="water" data-ocha-color="UN Blue"></span>
+        <div>
+          Les points d'eau sont cités par <strong>19,9%</strong>, confirmant le lien entre WASH, mobilité et protection.
+        </div>
+      </div>
+
+      <div class="insight" style="margin-top:14px">
+        <span class="insight-icon" data-ocha-icon="education" data-ocha-color="UN Blue"></span>
+        <div>
+          L'école est citée par <strong>15,5%</strong>, ce qui justifie l'intégration systématique de la protection dans l'éducation.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<section id="adolescents" class="section-label gender">Protection des adolescentes et adolescents</section>
+
+<section class="grid g2">
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Victimisation récente des adolescents</div>
+        <div class="chart-card-subtitle">Violence subie au cours des six derniers mois</div>
+      </div>
+    </div>
+
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:240px">
+        <canvas id="victimisationChart"></canvas>
+      </div>
+
+      <div class="insight" style="margin-top:18px">
+        <span class="insight-icon" data-ocha-icon="children" data-ocha-color="UN Blue"></span>
+        <div>
+          Les garçons déclarent davantage de victimisation directe, tandis que les filles sont exposées à des risques spécifiques liés au mariage précoce, à l'exploitation et aux violences psychologiques.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Types de violences déclarées</div>
+        <div class="chart-card-subtitle">Nombre de cas déclarés par sexe</div>
+      </div>
+    </div>
+
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:300px">
+        <canvas id="violenceTypesChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="grid g2">
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Perception du mariage forcé et précoce</div>
+        <div class="chart-card-subtitle">Niveau d'acceptabilité selon les adolescents</div>
+      </div>
+    </div>
+
+    <div class="chart-card-body">
+      <div class="chart-wrap" style="height:280px">
+        <canvas id="forcedMarriageChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Risques et redevabilité</div>
+        <div class="chart-card-subtitle">Implications pour la réponse</div>
+      </div>
+    </div>
+
+    <div class="chart-card-body">
+
+      <div class="insight">
+        <span class="insight-icon" data-ocha-icon="feedback" data-ocha-color="UN Blue"></span>
+        <div>
+          La forte proportion de réponses « ne sait pas » sur les contextes de VBG peut signaler des tabous,
+          une peur de représailles ou une sous-déclaration.
+        </div>
+      </div>
+
+      <div class="insight" style="margin-top:14px">
+        <span class="insight-icon" data-ocha-icon="protection" data-ocha-color="UN Blue"></span>
+        <div>
+          Les programmes multisectoriels doivent intégrer la prévention des VBG dans les points d'eau,
+          les latrines, les marchés, les écoles et les espaces domestiques.
+        </div>
+      </div>
+
+      <div class="insight" style="margin-top:14px">
+        <span class="insight-icon" data-ocha-icon="community" data-ocha-color="UN Blue"></span>
+        <div>
+          Les mécanismes communautaires doivent être adaptés aux femmes, filles, hommes et garçons,
+          avec des canaux sûrs, confidentiels et accessibles.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<section id="services" class="section-label gender">Santé mentale, SSR et accès aux services</section>
+
+<section class="grid g3">
+
+  <div class="stat-hl or1">
+    <div class="stat-hl-value">66%</div>
+    <div class="stat-hl-label">Adultes déclarant des difficultés en santé mentale</div>
+  </div>
+
+  <div class="stat-hl or2">
+    <div class="stat-hl-value">70%</div>
+    <div class="stat-hl-label">Répondants ne recevant aucun soutien psychosocial</div>
+  </div>
+
+  <div class="stat-hl or3">
+    <div class="stat-hl-value">45,8%</div>
+    <div class="stat-hl-label">Adolescents déclarant ne pas avoir accès aux services de SSR</div>
+  </div>
+
+</section>
+
+<section class="grid g2">
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Santé mentale</div>
+        <div class="chart-card-subtitle">Principaux indicateurs</div>
+      </div>
+    </div>
+
+    <div class="chart-card-body">
+      <ul class="progress-list">
+        <li class="progress-item">
+          <span class="progress-label">Adultes avec difficultés</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width:66%;background:var(--gender-2)"></div>
+          </div>
+          <span class="progress-value">66%</span>
+        </li>
+
+        <li class="progress-item">
+          <span class="progress-label">Hommes</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width:66.9%;background:var(--ocha-blue)"></div>
+          </div>
+          <span class="progress-value">66,9%</span>
+        </li>
+
+        <li class="progress-item">
+          <span class="progress-label">Femmes</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width:65.1%;background:var(--gender-2)"></div>
+          </div>
+          <span class="progress-value">65,1%</span>
+        </li>
+
+        <li class="progress-item">
+          <span class="progress-label">PDI</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width:72.6%;background:var(--gender-dark)"></div>
+          </div>
+          <span class="progress-value">72,6%</span>
+        </li>
+
+        <li class="progress-item">
+          <span class="progress-label">Sans soutien psychosocial</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width:70%;background:var(--gender-1)"></div>
+          </div>
+          <span class="progress-value">70%</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header">
+      <div>
+        <div class="chart-card-title gender">Santé sexuelle et reproductive</div>
+        <div class="chart-card-subtitle">Non-accès aux services SSR</div>
+      </div>
+    </div>
+
+    <div class="chart-card-body">
+      <ul class="progress-list">
+        <li class="progress-item">
+          <span class="progress-label">Population totale</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width:29.8%;background:var(--gender-2)"></div>
+          </div>
+          <span class="progress-value">29,8%</span>
+        </li>
+
+        <li class="progress-item">
+          <span class="progress-label">PDI</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width:38.8%;background:var(--gender-dark)"></div>
+          </div>
+          <span class="progress-value">38,8%</span>
+        </li>
+
+        <li class="progress-item">
+          <span class="progress-label">Hôtes</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width:24.8%;background:var(--ocha-blue)"></div>
+          </div>
+          <span class="progress-value">24,8%</span>
+        </li>
+
+        <li class="progress-item">
+          <span class="progress-label">Adolescents</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width:45.8%;background:var(--gender-2)"></div>
+          </div>
+          <span class="progress-value">45,8%</span>
+        </li>
+
+        <li class="progress-item">
+          <span class="progress-label">Adolescents PDI</span>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width:53%;background:var(--gender-dark)"></div>
+          </div>
+          <span class="progress-value">53%</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<section class="section-label gender">Implications programmatiques</section>
+
+<section class="grid g3">
+
+  <div class="insight">
+    <span class="insight-icon" data-ocha-icon="protection" data-ocha-color="UN Blue"></span>
+    <div>
+      Intégrer systématiquement la réduction des risques VBG dans WASH, abris, santé, éducation, sécurité alimentaire et moyens de subsistance.
+    </div>
+  </div>
+
+  <div class="insight">
+    <span class="insight-icon" data-ocha-icon="health" data-ocha-color="UN Blue"></span>
+    <div>
+      Renforcer l'accès aux services SSR et psychosociaux, particulièrement pour les PDI et les adolescents.
+    </div>
+  </div>
+
+  <div class="insight">
+    <span class="insight-icon" data-ocha-icon="feedback" data-ocha-color="UN Blue"></span>
+    <div>
+      Développer des mécanismes de plainte, feedback et référencement confidentiels, accessibles et sensibles au genre.
+    </div>
+  </div>
+
+</section>
+
+</main>
+
+<footer class="page-footer">
+  <span>Analyse Genre · Protection & VBG</span>
+  <span>Source : Rapport Analyse Conjointe Genre · Mars 2026</span>
+</footer>
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="../../assets/dashboard-data.js"></script>
+<script src="../../assets/charts.js"></script>
+<script src="../../assets/ocha-icons.js"></script>
+
+<script>
+const D = DASHBOARD_DATA;
+
+/* Contextes VBG */
+createHorizontalBarChart(
+  "gbvContextsChart",
+  D.protection.gbvRiskContexts.labels,
+  D.protection.gbvRiskContexts.values,
+  OCHA.purple2
+);
+
+/* Victimisation adolescents */
+new Chart(document.getElementById("victimisationChart"), {
+  type: "bar",
+  data: {
+    labels: D.protection.violenceVictimsAdolescents.labels,
+    datasets: [
+      {
+        label: "Victimes",
+        data: D.protection.violenceVictimsAdolescents.victims,
+        backgroundColor: [OCHA.purple2, OCHA.blue2],
+        borderRadius: 8
+      },
+      {
+        label: "Non victimes",
+        data: D.protection.violenceVictimsAdolescents.nonVictims,
+        backgroundColor: [OCHA.purple6, OCHA.blue6],
+        borderRadius: 8
+      }
+    ]
+  },
+  options: {
+    indexAxis: "y",
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      tooltip: tooltipStyle(),
+      legend: { position: "bottom" }
+    },
+    scales: {
+      x: {
+        stacked: true,
+        max: 100,
+        ticks: { ...tickStyle(), callback: v => v + "%" },
+        grid: chartGrid()
+      },
+      y: {
+        stacked: true,
+        grid: { display: false },
+        ticks: tickStyle()
+      }
+    }
+  }
+});
+
+/* Types violence */
+new Chart(document.getElementById("violenceTypesChart"), {
+  type: "bar",
+  data: {
+    labels: D.protection.violenceTypesAdolescents.labels,
+    datasets: [
+      {
+        label: "Filles",
+        data: D.protection.violenceTypesAdolescents.girls,
+        backgroundColor: OCHA.purple2,
+        borderRadius: 6
+      },
+      {
+        label: "Garçons",
+        data: D.protection.violenceTypesAdolescents.boys,
+        backgroundColor: OCHA.blue2,
+        borderRadius: 6
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      tooltip: tooltipStyle(),
+      legend: { position: "bottom" }
+    },
+    scales: {
+      x: { grid: { display: false }, ticks: tickStyle(11) },
+      y: { grid: chartGrid(), ticks: tickStyle() }
+    }
+  }
+});
+
+/* Perception mariage forcé */
+new Chart(document.getElementById("forcedMarriageChart"), {
+  type: "bar",
+  data: {
+    labels: D.protection.perceptionForcedMarriage.labels,
+    datasets: [
+      {
+        label: "Inacceptable",
+        data: D.protection.perceptionForcedMarriage.unacceptable,
+        backgroundColor: OCHA.purple2,
+        borderRadius: 6
+      },
+      {
+        label: "Cela dépend",
+        data: D.protection.perceptionForcedMarriage.depends,
+        backgroundColor: OCHA.purple5,
+        borderRadius: 6
+      },
+      {
+        label: "Acceptable",
+        data: D.protection.perceptionForcedMarriage.acceptable,
+        backgroundColor: OCHA.blue5,
+        borderRadius: 6
+      }
+    ]
+  },
+  options: {
+    indexAxis: "y",
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      tooltip: tooltipStyle(),
+      legend: { position: "bottom" }
+    },
+    scales: {
+      x: {
+        stacked: true,
+        max: 100,
+        ticks: { ...tickStyle(), callback: v => v + "%" },
+        grid: chartGrid()
+      },
+      y: {
+        stacked: true,
+        grid: { display: false },
+        ticks: tickStyle(10)
+      }
+    }
+  }
+});
+</script>
+
+</body>
+</html>
