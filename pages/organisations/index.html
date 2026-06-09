@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vue d’ensemble · Analyse Organisationnelle</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+
+<body data-section="organisations" data-page="overview">
+  <div class="app-shell">
+    <aside class="sidebar" data-site-sidebar></aside>
+
+    <main class="main-area">
+      <header class="topbar" data-site-topbar></header>
+
+      <section class="page-body">
+        <header class="page-header">
+          <div class="page-header-inner" style="background:linear-gradient(135deg,#002E6E 0%,#0074B7 72%,#009EDB 100%);">
+            <h1>Analyse Organisationnelle</h1>
+            <p>
+              Vue d’ensemble des organisations de femmes, de la coordination humanitaire,
+              de la participation aux clusters et de la redevabilité genre.
+            </p>
+          </div>
+        </header>
+
+        <section class="kpi-grid">
+          <article class="kpi-card">
+            <div class="kpi-label">Organisations de femmes</div>
+            <div class="kpi-value">89</div>
+          </article>
+
+          <article class="kpi-card">
+            <div class="kpi-label">Axes organisationnels</div>
+            <div class="kpi-value">4</div>
+          </article>
+
+          <article class="kpi-card">
+            <div class="kpi-label">Régions couvertes</div>
+            <div class="kpi-value">7</div>
+          </article>
+        </section>
+
+        <section class="chart-card">
+          <div class="chart-card-header">
+            <h2>Domaines d’analyse organisationnelle</h2>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="overviewOrgChart"></canvas>
+          </div>
+        </section>
+
+        <section class="card-grid" style="margin-top:18px;">
+          <article class="context-card" style="padding:20px;">
+            <h3>ODF 89</h3>
+            <p>
+              Cartographie et analyse des organisations de femmes impliquées dans la réponse,
+              la mobilisation communautaire et le plaidoyer local.
+            </p>
+          </article>
+
+          <article class="context-card" style="padding:20px;">
+            <h3>Coordination</h3>
+            <p>
+              Analyse de la participation des organisations locales aux mécanismes de coordination
+              et aux espaces de décision humanitaire.
+            </p>
+          </article>
+
+          <article class="context-card" style="padding:20px;">
+            <h3>Clusters</h3>
+            <p>
+              Suivi de l’intégration du genre dans les clusters et de l’accès des organisations
+              féminines aux groupes sectoriels.
+            </p>
+          </article>
+        </section>
+      </section>
+
+      <footer class="page-footer" data-site-footer></footer>
+    </main>
+  </div>
+
+  <script src="../../assets/ocha-icons.js"></script>
+  <script src="../../assets/layout.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <script src="../../assets/dashboard-data.js"></script>
+  <script src="../../assets/charts.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      createDonutChart(
+        "overviewOrgChart",
+        ["ODF", "Coordination", "Clusters", "Redevabilité genre"],
+        [89, 0, 0, 0],
+        [OCHA.purple2, OCHA.blue2, OCHA.blue3, OCHA.purple4],
+        {
+          ariaLabel: "Graphique des domaines d’analyse organisationnelle",
+          unit: "",
+          legendPosition: "bottom"
+        }
+      );
+    });
+  </script>
+</body>
+</html>
