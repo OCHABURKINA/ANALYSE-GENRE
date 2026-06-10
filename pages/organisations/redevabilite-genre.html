@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Redevabilité genre | Analyse Organisationnelle</title><link rel="stylesheet" href="../../assets/style.css"></head>
+<body>
+<div class="app-shell">
+<aside class="sidebar">
+<div class="sidebar-logo"><img src="../../assets/ocha-logo.png" alt="OCHA" onerror="this.style.display='none';document.getElementById('bo4').style.display='flex';"><div id="bo4" class="brand-fallback">OCHA</div><div><div class="sidebar-logo-title">Analyse Organisationnelle</div><div class="sidebar-logo-sub">Redevabilité genre</div></div></div>
+<div class="sidebar-badge">Cadre IASC · Genre · Suivi</div>
+<nav class="nav-section">
+<div class="nav-section-label">Organisationnel</div>
+<a href="index.html" class="nav-item"><span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="white"></span><span>Analyse Organisationnelle</span></a>
+<a href="odf.html" class="nav-item"><span class="nav-icon" data-ocha-icon="odf" data-ocha-color="white"></span><span>ODF</span></a>
+<a href="coordination.html" class="nav-item"><span class="nav-icon" data-ocha-icon="coordination" data-ocha-color="white"></span><span>Coordination</span></a>
+<a href="clusters.html" class="nav-item"><span class="nav-icon" data-ocha-icon="cluster" data-ocha-color="white"></span><span>Clusters</span></a>
+<a href="redevabilite-genre.html" class="nav-item active"><span class="nav-icon" data-ocha-icon="assessment" data-ocha-color="white"></span><span>Redevabilité genre</span></a>
+</nav>
+</aside>
+<div class="main-content">
+<header class="topbar"><div class="topbar-breadcrumb">Analyse Organisationnelle <span class="sep">›</span> Redevabilité genre</div><nav class="topbar-nav"><a href="../../index.html"><span class="top-nav-icon" data-ocha-icon="analysis" data-ocha-color="UN-blue"></span>Contexte</a><a href="../genre/index.html"><span class="top-nav-icon" data-ocha-icon="gender" data-ocha-color="UN-blue"></span>Analyse Genre</a><a href="index.html" class="active"><span class="top-nav-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>Analyse Organisationnelle</a></nav></header>
+<main class="page-body">
+<section class="page-header organisations"><div class="page-header-inner"><div class="page-header-eyebrow">Cadre de redevabilité genre</div><h1>Redevabilité genre dans les mécanismes humanitaires</h1><p>Cette page synthétise les indicateurs du cadre IASC genre : données ventilées, points focaux, consultations, intégration dans les évaluations et suivi.</p><div class="page-header-chips"><span class="header-chip">77% données ventilées</span><span class="header-chip">85% priorité genre</span><span class="header-chip">39% suivi cohérent</span></div></div></section>
+<section class="kpi-row c4">
+<div class="kpi-card"><span class="kpi-icon" data-ocha-icon="data" data-ocha-color="UN-blue"></span><div class="kpi-value">77%</div><div class="kpi-label">Données ventilées</div></div>
+<div class="kpi-card"><span class="kpi-icon" data-ocha-icon="gender" data-ocha-color="UN-blue"></span><div class="kpi-value">85%</div><div class="kpi-label">Genre priorité stratégique</div></div>
+<div class="kpi-card"><span class="kpi-icon" data-ocha-icon="assessment" data-ocha-color="UN-blue"></span><div class="kpi-value">93%</div><div class="kpi-label">Questions genre évaluations</div></div>
+<div class="kpi-card"><span class="kpi-icon" data-ocha-icon="feedback" data-ocha-color="UN-blue"></span><div class="kpi-value">39%</div><div class="kpi-label">Suivi cohérent genre</div></div>
+</section>
+<section class="grid g2">
+<div class="chart-card"><div class="chart-card-header"><div><div class="chart-card-title">Performance IASC genre</div><div class="chart-card-subtitle">% des mécanismes répondants</div></div></div><div class="chart-card-body"><div class="chart-wrap" style="height:360px"><canvas id="iascChart"></canvas></div></div></div>
+<div class="chart-card"><div class="chart-card-header"><div><div class="chart-card-title">Lacunes prioritaires</div><div class="chart-card-subtitle">Écarts à combler</div></div></div><div class="chart-card-body"><ul class="progress-list"><li class="progress-item"><span class="progress-label">Organisations adolescentes</span><div class="progress-bar-bg"><div class="progress-bar-fill" style="width:77%"></div></div><span class="progress-value">Faible</span></li><li class="progress-item"><span class="progress-label">Suivi cohérent</span><div class="progress-bar-bg"><div class="progress-bar-fill" style="width:61%"></div></div><span class="progress-value">Faible</span></li><li class="progress-item"><span class="progress-label">Organisations femmes</span><div class="progress-bar-bg"><div class="progress-bar-fill" style="width:54%"></div></div><span class="progress-value">Moyen</span></li></ul></div></div>
+</section>
+<section class="grid g3"><div class="analysis-card"><h3>De la donnée à l’action</h3><p>La collecte de données ventilées doit être transformée en analyse, priorisation et allocation sectorielle.</p></div><div class="analysis-card"><h3>Consultation</h3><p>Les consultations avec les organisations de femmes et d’adolescentes doivent devenir systématiques.</p></div><div class="analysis-card"><h3>Suivi</h3><p>Les clusters doivent intégrer des indicateurs sensibles au genre dans leurs cadres de suivi.</p></div></section>
+</main><footer class="page-footer"><span>Analyse Organisationnelle · Redevabilité genre</span><span>Source : cadre IASC genre</span></footer>
+</div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script><script src="../../assets/dashboard-data.js"></script><script src="../../assets/charts.js"></script><script src="../../assets/ocha-icons.js"></script><script>const O=DASHBOARD_DATA.organisations;createHorizontalBarChart("iascChart",O.iasc.labels,O.iasc.values,OCHA.blue);</script>
+</body></html>
