@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Femmes & Hommes | Analyse Genre</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<div class="app-shell">
+
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <img src="../../assets/ocha-logo.png" alt="OCHA" onerror="this.style.display='none';document.getElementById('bf1').style.display='flex';">
+    <div id="bf1" class="brand-fallback">OCHA</div>
+    <div><div class="sidebar-logo-title">Analyse Genre</div><div class="sidebar-logo-sub">Femmes & Hommes</div></div>
+  </div>
+
+  <div class="sidebar-badge"><strong>1 827</strong> adultes<br><strong>922</strong> femmes · <strong>905</strong> hommes</div>
+
+  <nav class="nav-section">
+    <div class="nav-section-label">Analyse Genre</div>
+    <a href="index.html" class="nav-item"><span class="nav-icon" data-ocha-icon="gender" data-ocha-color="white"></span><span>Analyse Genre</span></a>
+    <a href="femmes-hommes.html" class="nav-item active"><span class="nav-icon" data-ocha-icon="gender" data-ocha-color="white"></span><span>Femmes & Hommes</span></a>
+    <a href="filles-garcons.html" class="nav-item"><span class="nav-icon" data-ocha-icon="children" data-ocha-color="white"></span><span>Filles & Garçons</span></a>
+    <a href="moyens-subsistance.html" class="nav-item"><span class="nav-icon" data-ocha-icon="livelihood" data-ocha-color="white"></span><span>Moyens de subsistance</span></a>
+    <a href="protection-vbg.html" class="nav-item"><span class="nav-icon" data-ocha-icon="protection" data-ocha-color="white"></span><span>Protection & VBG</span></a>
+  </nav>
+</aside>
+
+<div class="main-content">
+<header class="topbar">
+  <div class="topbar-breadcrumb">Analyse Genre <span class="sep">›</span> Femmes & Hommes</div>
+  <nav class="topbar-nav">
+    <a href="../../index.html"><span class="top-nav-icon" data-ocha-icon="analysis" data-ocha-color="UN-blue"></span>Contexte</a>
+    <a href="index.html" class="active"><span class="top-nav-icon" data-ocha-icon="gender" data-ocha-color="UN-blue"></span>Analyse Genre</a>
+    <a href="../organisations/index.html"><span class="top-nav-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>Analyse Organisationnelle</a>
+  </nav>
+</header>
+
+<main class="page-body">
+<section class="page-header gender">
+  <div class="page-header-inner">
+    <div class="page-header-eyebrow">Adultes · 18 ans et plus</div>
+    <h1>Femmes & Hommes</h1>
+    <p>Analyse comparative des besoins prioritaires, rôles sociaux, participation communautaire, prise de décision et accès aux ressources.</p>
+    <div class="page-header-chips">
+      <span class="header-chip">922 femmes</span><span class="header-chip">905 hommes</span><span class="header-chip">7 régions</span>
+    </div>
+  </div>
+</section>
+
+<section class="kpi-row c4">
+  <div class="kpi-card kpi-gender"><span class="kpi-icon" data-ocha-icon="water" data-ocha-color="UN-blue"></span><div class="kpi-value">77%</div><div class="kpi-label">Femmes collectant l’eau</div><div class="kpi-sub">contre 26% des hommes</div></div>
+  <div class="kpi-card kpi-gender"><span class="kpi-icon" data-ocha-icon="cash" data-ocha-color="UN-blue"></span><div class="kpi-value">63,4%</div><div class="kpi-label">Femmes avec faible accès au crédit</div></div>
+  <div class="kpi-card kpi-gender"><span class="kpi-icon" data-ocha-icon="community" data-ocha-color="UN-blue"></span><div class="kpi-value">29,6%</div><div class="kpi-label">Participation communautaire des femmes</div></div>
+  <div class="kpi-card kpi-gender"><span class="kpi-icon" data-ocha-icon="livelihood" data-ocha-color="UN-blue"></span><div class="kpi-value">64,1%</div><div class="kpi-label">Revenus insuffisants</div></div>
+</section>
+
+<section class="section-label gender">Besoins et rôles</section>
+
+<section class="grid g2">
+  <div class="chart-card">
+    <div class="chart-card-header"><div><div class="chart-card-title gender">Besoins prioritaires</div><div class="chart-card-subtitle">Femmes vs hommes</div></div></div>
+    <div class="chart-card-body"><div class="chart-wrap" style="height:300px"><canvas id="needsChart"></canvas></div></div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-card-header"><div><div class="chart-card-title gender">Division du travail</div><div class="chart-card-subtitle">% femmes engagées par tâche</div></div></div>
+    <div class="chart-card-body"><div class="chart-wrap" style="height:300px"><canvas id="rolesChart"></canvas></div></div>
+  </div>
+</section>
+
+<section class="section-label gender">Lecture analytique</section>
+<section class="grid g3">
+  <div class="analysis-card gender"><h3>Charge domestique</h3><p>Les femmes restent fortement impliquées dans la cuisine, le ménage, la collecte d’eau et la collecte du bois, ce qui augmente la charge non rémunérée.</p></div>
+  <div class="analysis-card gender"><h3>Accès économique</h3><p>L’accès au crédit, au soutien productif et à la terre demeure une contrainte importante pour la résilience économique.</p></div>
+  <div class="analysis-card gender"><h3>Participation</h3><p>La participation communautaire des femmes reste inférieure à celle des hommes, limitant leur influence dans les décisions locales.</p></div>
+</section>
+</main>
+
+<footer class="page-footer"><span>Analyse Genre · Femmes & Hommes</span><span>Source : enquête terrain</span></footer>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="../../assets/dashboard-data.js"></script>
+<script src="../../assets/charts.js"></script>
+<script src="../../assets/ocha-icons.js"></script>
+<script>
+const G=DASHBOARD_DATA.genre;
+createGenderBarChart("needsChart",G.priorityNeeds.labels,G.priorityNeeds.women,G.priorityNeeds.men);
+createHorizontalBarChart("rolesChart",G.roles.map(d=>d.task),G.roles.map(d=>d.women),OCHA.purple);
+</script>
+</body>
+</html>
