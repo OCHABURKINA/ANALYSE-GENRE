@@ -893,3 +893,17 @@ img {
     height: 300px;
   }
 }
+.chart-medium {
+  height: 280px;
+}
+
+.chart-large {
+  height: 320px;
+}
+
+@media(max-width: 860px) {
+  .chart-medium,
+  .chart-large {
+    height: 300px;
+  }
+}
