@@ -1568,12 +1568,22 @@ a{text-decoration:none;color:inherit}
     grid-template-columns: 1fr !important;
   }
 
-  .hero-text {
-    padding: 28px !important;
-    min-height: auto !important;
-  }
+  .hero-text{
+    min-height:220px;
+    padding:35px 50px;
+}
 
   .burkina-map-box {
     min-height: 260px;
   }
+}
+.hero-kpi-row{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:12px;
+    margin-bottom:24px;
+}
+.metric-card{
+    min-height:110px;
+    padding:16px;
 }
