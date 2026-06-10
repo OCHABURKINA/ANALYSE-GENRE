@@ -1228,3 +1228,179 @@ a{text-decoration:none;color:inherit}
     padding: 18px;
   }
 }
+/* ============================================================
+   Ajustements portail principal — palette OCHA officielle
+   UN Blue Primary #009EDB · Black · White
+   ============================================================ */
+
+:root {
+  --ocha-primary-page: #009EDB;
+  --ocha-black: #000000;
+  --ocha-white: #FFFFFF;
+}
+
+/* Largeur globale de la première page */
+.institutional-main {
+  max-width: 1440px !important;
+  padding: 24px 30px 38px !important;
+}
+
+/* Bandeau bleu plus large horizontalement */
+.hero-modern,
+.hero-modern-full {
+  width: 100% !important;
+  margin-bottom: 14px !important;
+}
+
+.hero-modern-full .hero-text,
+.hero-text {
+  width: 100% !important;
+  min-height: 340px !important;
+  border-radius: 24px !important;
+  background:
+    linear-gradient(135deg, #009EDB 0%, #0074B7 58%, #002E6E 100%) !important;
+  box-shadow: 0 16px 38px rgba(0, 158, 219, .22) !important;
+}
+
+/* Texte du bandeau */
+.hero-text h1 {
+  max-width: 1080px !important;
+  color: #FFFFFF !important;
+}
+
+.hero-text p {
+  max-width: 1120px !important;
+  color: rgba(255,255,255,.92) !important;
+}
+
+.eyebrow {
+  color: rgba(255,255,255,.82) !important;
+}
+
+/* Supprime les boutons Analyse Genre / Analyse Organisationnelle dans le bandeau */
+.hero-actions,
+.landing-actions {
+  display: none !important;
+}
+
+/* KPI sous le bandeau en carrés arrondis */
+.hero-kpi-row {
+  display: grid !important;
+  grid-template-columns: repeat(4, 132px) !important;
+  gap: 14px !important;
+  justify-content: start !important;
+  margin: 0 0 28px !important;
+}
+
+/* Si le conteneur reste appelé hero-metrics */
+.hero-metrics {
+  display: grid !important;
+  grid-template-columns: repeat(4, 132px) !important;
+  gap: 14px !important;
+  margin: 0 0 28px !important;
+}
+
+/* Box KPI carrée */
+.metric-card,
+.metric-card.compact,
+.hero-stat {
+  width: 132px !important;
+  height: 112px !important;
+  min-height: 112px !important;
+  padding: 16px 14px !important;
+  border-radius: 18px !important;
+  background: #FFFFFF !important;
+  border: 1px solid rgba(0, 158, 219, .22) !important;
+  border-left: 5px solid #009EDB !important;
+  box-shadow: 0 8px 18px rgba(0,0,0,.06) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+/* Chiffres KPI */
+.metric-card strong,
+.metric-card.compact strong,
+.hero-stat-value {
+  display: block !important;
+  color: #000000 !important;
+  font-size: 28px !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+  letter-spacing: -.02em !important;
+}
+
+/* Libellés KPI */
+.metric-card span,
+.metric-card.compact span,
+.hero-stat-label {
+  display: block !important;
+  margin-top: 8px !important;
+  color: #334155 !important;
+  font-size: 10.5px !important;
+  line-height: 1.25 !important;
+  font-weight: 800 !important;
+}
+
+/* Navigation et éléments institutionnels palette OCHA */
+.institutional-nav a:hover,
+.institutional-nav a.active {
+  background: #009EDB !important;
+  color: #FFFFFF !important;
+}
+
+.btn-primary {
+  background: #009EDB !important;
+  color: #FFFFFF !important;
+}
+
+.btn-secondary {
+  background: #FFFFFF !important;
+  color: #000000 !important;
+}
+
+/* Cartes et titres */
+.section-heading::before {
+  background: #009EDB !important;
+}
+
+.main-card,
+.message-card,
+.actor-card,
+.info-card {
+  border-color: rgba(0, 158, 219, .14) !important;
+}
+
+.main-card,
+.message-card {
+  border-left-color: #009EDB !important;
+}
+
+.message-card.purple {
+  border-left-color: #009EDB !important;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+  .hero-kpi-row,
+  .hero-metrics {
+    grid-template-columns: repeat(2, 132px) !important;
+  }
+}
+
+@media(max-width: 520px) {
+  .hero-kpi-row,
+  .hero-metrics {
+    grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+  }
+
+  .metric-card,
+  .metric-card.compact,
+  .hero-stat {
+    width: 100% !important;
+  }
+
+  .hero-text {
+    min-height: auto !important;
+  }
+}
