@@ -1,121 +1,271 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Analyse Organisationnelle | ODF & Coordination</title>
-<link rel="stylesheet" href="../../assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Analyse Organisationnelle | ODF & Coordination</title>
+  <link rel="stylesheet" href="../../assets/style.css" />
 </head>
 
 <body>
 <div class="app-shell">
 
-<aside class="sidebar">
-  <div class="sidebar-logo">
-    <img src="../../assets/ocha-logo.png" alt="OCHA"
-      onerror="this.style.display='none';document.getElementById('brandFallbackOrg').style.display='flex';">
-    <div id="brandFallbackOrg" class="brand-fallback">OCHA</div>
-    <div>
-      <div class="sidebar-logo-title">Analyse Organisationnelle</div>
-      <div class="sidebar-logo-sub">ODF · Coordination</div>
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <img
+        src="../../assets/ocha-logo.png"
+        alt="OCHA"
+        onerror="this.style.display='none';document.getElementById('brandFallbackOrg').style.display='flex';"
+      />
+      <div id="brandFallbackOrg" class="brand-fallback">OCHA</div>
+
+      <div>
+        <div class="sidebar-logo-title">Analyse Organisationnelle</div>
+        <div class="sidebar-logo-sub">ODF · Coordination · Redevabilité</div>
+      </div>
     </div>
-  </div>
 
-  <div class="sidebar-badge">
-    <strong>89</strong> ODF enquêtées<br>
-    <strong>148</strong> acteurs humanitaires<br>
-    <strong>13 / 17</strong> mécanismes répondants
-  </div>
-
-  <nav class="nav-section">
-    <div class="nav-section-label">Organisationnel</div>
-    <a href="index.html" class="nav-item active"><span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="white"></span><span>Analyse Organisationnelle</span></a>
-    <a href="odf.html" class="nav-item"><span class="nav-icon" data-ocha-icon="odf" data-ocha-color="white"></span><span>ODF</span><span class="nav-count">89</span></a>
-    <a href="coordination.html" class="nav-item"><span class="nav-icon" data-ocha-icon="coordination" data-ocha-color="white"></span><span>Coordination</span></a>
-    <a href="clusters.html" class="nav-item"><span class="nav-icon" data-ocha-icon="cluster" data-ocha-color="white"></span><span>Clusters</span></a>
-    <a href="redevabilite-genre.html" class="nav-item"><span class="nav-icon" data-ocha-icon="assessment" data-ocha-color="white"></span><span>Redevabilité genre</span></a>
-  </nav>
-</aside>
-
-<div class="main-content">
-
-<header class="topbar">
-  <div class="topbar-breadcrumb">Analyse Conjointe Genre <span class="sep">›</span> Analyse Organisationnelle</div>
-  <nav class="topbar-nav">
-    <a href="../../index.html"><span class="top-nav-icon" data-ocha-icon="analysis" data-ocha-color="UN-blue"></span>Contexte</a>
-    <a href="../genre/index.html"><span class="top-nav-icon" data-ocha-icon="gender" data-ocha-color="UN-blue"></span>Analyse Genre</a>
-    <a href="index.html" class="active"><span class="top-nav-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>Analyse Organisationnelle</a>
-  </nav>
-</header>
-
-<main class="page-body">
-
-<section class="page-header organisations">
-  <div class="page-header-inner">
-    <div class="page-header-eyebrow">ODF · Coordination · Redevabilité genre</div>
-    <h1>Analyse des organisations et mécanismes humanitaires</h1>
-    <p>Cette section analyse le rôle des organisations dirigées par des femmes, leurs contraintes, leur financement, leur participation à la coordination et l’intégration du genre dans les mécanismes humanitaires.</p>
-    <div class="page-header-chips">
-      <span class="header-chip">89 ODF</span>
-      <span class="header-chip">148 acteurs humanitaires</span>
-      <span class="header-chip">84 % participation coordination</span>
-      <span class="header-chip">77 % données ventilées</span>
+    <div class="sidebar-badge">
+      <strong>89</strong> ODF enquêtées<br />
+      <strong>148</strong> acteurs humanitaires<br />
+      <strong>13 / 17</strong> mécanismes répondants
     </div>
+
+    <nav class="nav-section">
+      <div class="nav-section-label">Organisationnel</div>
+
+      <a href="index.html" class="nav-item active">
+        <span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="white"></span>
+        <span>Vue d’ensemble</span>
+      </a>
+
+      <a href="odf.html" class="nav-item">
+        <span class="nav-icon" data-ocha-icon="odf" data-ocha-color="white"></span>
+        <span>ODF</span>
+        <span class="nav-count">89</span>
+      </a>
+
+      <a href="coordination.html" class="nav-item">
+        <span class="nav-icon" data-ocha-icon="coordination" data-ocha-color="white"></span>
+        <span>Coordination</span>
+      </a>
+
+      <a href="clusters.html" class="nav-item">
+        <span class="nav-icon" data-ocha-icon="cluster" data-ocha-color="white"></span>
+        <span>Clusters</span>
+      </a>
+
+      <a href="redevabilite-genre.html" class="nav-item">
+        <span class="nav-icon" data-ocha-icon="assessment" data-ocha-color="white"></span>
+        <span>Redevabilité genre</span>
+      </a>
+    </nav>
+  </aside>
+
+  <div class="main-content">
+
+    <header class="topbar">
+      <div class="topbar-breadcrumb">
+        Analyse Conjointe Genre <span class="sep">›</span> Analyse Organisationnelle
+      </div>
+
+      <nav class="topbar-nav">
+        <a href="../../index.html">
+          <span class="top-nav-icon" data-ocha-icon="analysis" data-ocha-color="UN-blue"></span>
+          Contexte
+        </a>
+
+        <a href="../genre/index.html">
+          <span class="top-nav-icon" data-ocha-icon="gender" data-ocha-color="UN-blue"></span>
+          Analyse Genre
+        </a>
+
+        <a href="index.html" class="active">
+          <span class="top-nav-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>
+          Analyse Organisationnelle
+        </a>
+      </nav>
+    </header>
+
+    <main class="page-body">
+
+      <section class="page-header organisations">
+        <div class="page-header-inner">
+          <div class="page-header-eyebrow">ODF · Coordination · Redevabilité genre</div>
+
+          <h1>Analyse des organisations et mécanismes humanitaires</h1>
+
+          <p>
+            Cette section analyse le rôle des organisations dirigées par des femmes, leurs contraintes,
+            leur financement, leur participation aux cadres de coordination et l’intégration du genre
+            dans les mécanismes humanitaires.
+          </p>
+
+          <div class="page-header-chips">
+            <span class="header-chip">89 ODF</span>
+            <span class="header-chip">148 acteurs humanitaires</span>
+            <span class="header-chip">84 % participation coordination</span>
+            <span class="header-chip">77 % données ventilées</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="kpi-row c4">
+        <div class="kpi-card">
+          <span class="kpi-icon" data-ocha-icon="odf" data-ocha-color="UN-blue"></span>
+          <div class="kpi-value">89</div>
+          <div class="kpi-label">ODF enquêtées</div>
+          <div class="kpi-sub">Organisations dirigées par des femmes</div>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-icon" data-ocha-icon="leadership" data-ocha-color="UN-blue"></span>
+          <div class="kpi-value">97%</div>
+          <div class="kpi-label">Leadership féminin</div>
+          <div class="kpi-sub">Supérieur à 50 %</div>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-icon" data-ocha-icon="cash" data-ocha-color="UN-blue"></span>
+          <div class="kpi-value">89%</div>
+          <div class="kpi-label">Fonds propres</div>
+          <div class="kpi-sub">Source principale de financement</div>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>
+          <div class="kpi-value">84%</div>
+          <div class="kpi-label">Participation coordination</div>
+          <div class="kpi-sub">ODF actives dans des cadres formels</div>
+        </div>
+      </section>
+
+      <section class="section-label">Résultats organisationnels prioritaires</section>
+
+      <section class="grid g3">
+        <div class="insight">
+          <span class="insight-icon" data-ocha-icon="cash" data-ocha-color="UN-blue"></span>
+          <div>
+            <strong>52 %</strong> des ODF n’ont reçu aucun financement humanitaire entre 2023 et 2025.
+          </div>
+        </div>
+
+        <div class="insight">
+          <span class="insight-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>
+          <div>
+            <strong>18 %</strong> des ODF déclarent ne pas connaître les mécanismes de coordination existants.
+          </div>
+        </div>
+
+        <div class="insight">
+          <span class="insight-icon" data-ocha-icon="children" data-ocha-color="UN-blue"></span>
+          <div>
+            Seulement <strong>23 %</strong> des mécanismes consultent des organisations dirigées par des adolescentes.
+          </div>
+        </div>
+      </section>
+
+      <section class="section-label">Visualisations analytiques</section>
+
+      <section class="grid g2">
+        <article class="chart-card">
+          <div class="chart-card-header">
+            <div>
+              <div class="chart-card-title">Domaines d’intervention des ODF</div>
+              <div class="chart-card-subtitle">Nombre d’organisations actives par secteur</div>
+            </div>
+          </div>
+
+          <div class="chart-card-body">
+            <div class="chart-wrap chart-large">
+              <canvas id="sectorChart"></canvas>
+            </div>
+          </div>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-card-header">
+            <div>
+              <div class="chart-card-title">Sources de financement</div>
+              <div class="chart-card-subtitle">Nombre d’ODF par source déclarée</div>
+            </div>
+          </div>
+
+          <div class="chart-card-body">
+            <div class="chart-wrap chart-large">
+              <canvas id="fundingChart"></canvas>
+            </div>
+          </div>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-card-header">
+            <div>
+              <div class="chart-card-title">Participation à la coordination</div>
+              <div class="chart-card-subtitle">Principaux mécanismes fréquentés par les ODF</div>
+            </div>
+          </div>
+
+          <div class="chart-card-body">
+            <div class="chart-wrap chart-large">
+              <canvas id="coordChart"></canvas>
+            </div>
+          </div>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-card-header">
+            <div>
+              <div class="chart-card-title">Redevabilité genre IASC</div>
+              <div class="chart-card-subtitle">% des mécanismes atteignant l’indicateur</div>
+            </div>
+          </div>
+
+          <div class="chart-card-body">
+            <div class="chart-wrap chart-large">
+              <canvas id="iascChart"></canvas>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-label">Lecture stratégique</section>
+
+      <section class="grid g3">
+        <article class="analysis-card">
+          <h3>Localisation</h3>
+          <p>
+            Les ODF sont proches des communautés et jouent un rôle central dans l’identification des besoins,
+            la remontée d’informations et l’ancrage communautaire de la réponse. Leur potentiel reste toutefois
+            limité par l’accès insuffisant au financement.
+          </p>
+        </article>
+
+        <article class="analysis-card">
+          <h3>Coordination</h3>
+          <p>
+            La participation existe, mais elle doit être renforcée par un meilleur accès à l’information,
+            aux ressources, aux espaces de décision et aux mécanismes de co-leadership.
+          </p>
+        </article>
+
+        <article class="analysis-card">
+          <h3>Redevabilité genre</h3>
+          <p>
+            Les mécanismes collectent davantage de données ventilées, mais la consultation des organisations
+            de femmes et d’adolescentes reste insuffisante pour orienter une réponse pleinement sensible au genre.
+          </p>
+        </article>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <span>Analyse Organisationnelle · ODF & Coordination</span>
+      <span>Source : Rapport Analyse Conjointe Genre</span>
+    </footer>
+
   </div>
-</section>
-
-<section class="kpi-row c4">
-  <div class="kpi-card"><span class="kpi-icon" data-ocha-icon="odf" data-ocha-color="UN-blue"></span><div class="kpi-value">89</div><div class="kpi-label">ODF enquêtées</div></div>
-  <div class="kpi-card"><span class="kpi-icon" data-ocha-icon="leadership" data-ocha-color="UN-blue"></span><div class="kpi-value">97%</div><div class="kpi-label">Leadership féminin > 50%</div></div>
-  <div class="kpi-card"><span class="kpi-icon" data-ocha-icon="cash" data-ocha-color="UN-blue"></span><div class="kpi-value">89%</div><div class="kpi-label">Dépendance aux fonds propres</div></div>
-  <div class="kpi-card"><span class="kpi-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span><div class="kpi-value">84%</div><div class="kpi-label">Participation coordination</div></div>
-</section>
-
-<section class="section-label">Résultats organisationnels prioritaires</section>
-
-<section class="grid g3">
-  <div class="insight"><span class="insight-icon" data-ocha-icon="cash" data-ocha-color="UN-blue"></span><div><strong>52 %</strong> des ODF n’ont reçu aucun financement humanitaire entre 2023 et 2025.</div></div>
-  <div class="insight"><span class="insight-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span><div><strong>18 %</strong> des ODF ne connaissent pas les mécanismes de coordination existants.</div></div>
-  <div class="insight"><span class="insight-icon" data-ocha-icon="children" data-ocha-color="UN-blue"></span><div><strong>23 %</strong> seulement consultent des organisations dirigées par des adolescentes.</div></div>
-</section>
-
-<section class="section-label">Visualisations analytiques</section>
-
-<section class="grid g2">
-  <div class="chart-card">
-    <div class="chart-card-header"><div><div class="chart-card-title">Domaines d’intervention des ODF</div><div class="chart-card-subtitle">Nombre d’organisations actives</div></div></div>
-    <div class="chart-card-body"><div class="chart-wrap" style="height:300px"><canvas id="sectorChart"></canvas></div></div>
-  </div>
-
-  <div class="chart-card">
-    <div class="chart-card-header"><div><div class="chart-card-title">Sources de financement</div><div class="chart-card-subtitle">Nombre d’ODF par source</div></div></div>
-    <div class="chart-card-body"><div class="chart-wrap" style="height:300px"><canvas id="fundingChart"></canvas></div></div>
-  </div>
-
-  <div class="chart-card">
-    <div class="chart-card-header"><div><div class="chart-card-title">Participation à la coordination</div><div class="chart-card-subtitle">Principaux mécanismes</div></div></div>
-    <div class="chart-card-body"><div class="chart-wrap" style="height:300px"><canvas id="coordChart"></canvas></div></div>
-  </div>
-
-  <div class="chart-card">
-    <div class="chart-card-header"><div><div class="chart-card-title">Redevabilité genre IASC</div><div class="chart-card-subtitle">% des mécanismes atteignant l’indicateur</div></div></div>
-    <div class="chart-card-body"><div class="chart-wrap" style="height:300px"><canvas id="iascChart"></canvas></div></div>
-  </div>
-</section>
-
-<section class="section-label">Lecture stratégique</section>
-
-<section class="grid g3">
-  <div class="analysis-card"><h3>Localisation</h3><p>Les ODF sont proches des communautés et jouent un rôle central dans l’identification des besoins, mais leur financement reste très limité.</p></div>
-  <div class="analysis-card"><h3>Coordination</h3><p>La participation existe, mais elle doit être renforcée par un meilleur accès à l’information, aux ressources et aux espaces de décision.</p></div>
-  <div class="analysis-card"><h3>Redevabilité genre</h3><p>Les mécanismes collectent davantage de données ventilées, mais la consultation des organisations de femmes et d’adolescentes reste insuffisante.</p></div>
-</section>
-
-</main>
-
-<footer class="page-footer"><span>Analyse Organisationnelle · ODF & Coordination</span><span>Source : Rapport Analyse Conjointe Genre</span></footer>
-
-</div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
@@ -124,12 +274,35 @@
 <script src="../../assets/ocha-icons.js"></script>
 
 <script>
-const O = DASHBOARD_DATA.organisations;
+  const O = DASHBOARD_DATA.organisations;
 
-createHorizontalBarChart("sectorChart", O.sectors.labels, O.sectors.values, OCHA.blue);
-createHorizontalBarChart("fundingChart", O.funding.labels, O.funding.values, OCHA.blue);
-createHorizontalBarChart("coordChart", O.coordination.labels, O.coordination.values, OCHA.blue);
-createHorizontalBarChart("iascChart", O.iasc.labels, O.iasc.values, OCHA.blue);
+  createHorizontalBarChart(
+    "sectorChart",
+    O.sectors.labels,
+    O.sectors.values,
+    OCHA.blue
+  );
+
+  createHorizontalBarChart(
+    "fundingChart",
+    O.funding.labels,
+    O.funding.values,
+    OCHA.blue
+  );
+
+  createHorizontalBarChart(
+    "coordChart",
+    O.coordination.labels,
+    O.coordination.values,
+    OCHA.blue
+  );
+
+  createHorizontalBarChart(
+    "iascChart",
+    O.iasc.labels,
+    O.iasc.values,
+    OCHA.blue
+  );
 </script>
 
 </body>
