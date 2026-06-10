@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Coordination | Analyse Organisationnelle</title><link rel="stylesheet" href="../../assets/style.css"></head>
+<body>
+<div class="app-shell">
+<aside class="sidebar">
+<div class="sidebar-logo"><img src="../../assets/ocha-logo.png" alt="OCHA" onerror="this.style.display='none';document.getElementById('bo2').style.display='flex';"><div id="bo2" class="brand-fallback">OCHA</div><div><div class="sidebar-logo-title">Analyse Organisationnelle</div><div class="sidebar-logo-sub">Coordination</div></div></div>
+<div class="sidebar-badge">Participation · information · influence</div>
+<nav class="nav-section">
+<div class="nav-section-label">Organisationnel</div>
+<a href="index.html" class="nav-item"><span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="white"></span><span>Analyse Organisationnelle</span></a>
+<a href="odf.html" class="nav-item"><span class="nav-icon" data-ocha-icon="odf" data-ocha-color="white"></span><span>ODF</span></a>
+<a href="coordination.html" class="nav-item active"><span class="nav-icon" data-ocha-icon="coordination" data-ocha-color="white"></span><span>Coordination</span></a>
+<a href="clusters.html" class="nav-item"><span class="nav-icon" data-ocha-icon="cluster" data-ocha-color="white"></span><span>Clusters</span></a>
+<a href="redevabilite-genre.html" class="nav-item"><span class="nav-icon" data-ocha-icon="assessment" data-ocha-color="white"></span><span>Redevabilité genre</span></a>
+</nav>
+</aside>
+<div class="main-content">
+<header class="topbar"><div class="topbar-breadcrumb">Analyse Organisationnelle <span class="sep">›</span> Coordination</div><nav class="topbar-nav"><a href="../../index.html"><span class="top-nav-icon" data-ocha-icon="analysis" data-ocha-color="UN-blue"></span>Contexte</a><a href="../genre/index.html"><span class="top-nav-icon" data-ocha-icon="gender" data-ocha-color="UN-blue"></span>Analyse Genre</a><a href="index.html" class="active"><span class="top-nav-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>Analyse Organisationnelle</a></nav></header>
+<main class="page-body">
+<section class="page-header organisations"><div class="page-header-inner"><div class="page-header-eyebrow">Coordination humanitaire</div><h1>Participation des ODF aux mécanismes</h1><p>Analyse des cadres de coordination fréquentés par les ODF, des barrières d’accès à l’information et des leviers pour renforcer leur influence.</p><div class="page-header-chips"><span class="header-chip">84% participent</span><span class="header-chip">18% ne connaissent pas les mécanismes</span></div></div></section>
+<section class="kpi-row c4">
+<div class="kpi-card"><span class="kpi-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span><div class="kpi-value">84%</div><div class="kpi-label">ODF participant à la coordination</div></div>
+<div class="kpi-card"><span class="kpi-icon" data-ocha-icon="information" data-ocha-color="UN-blue"></span><div class="kpi-value">18%</div><div class="kpi-label">ODF non informées</div></div>
+<div class="kpi-card"><span class="kpi-icon" data-ocha-icon="gender" data-ocha-color="UN-blue"></span><div class="kpi-value">46%</div><div class="kpi-label">Consultation organisations femmes</div></div>
+<div class="kpi-card"><span class="kpi-icon" data-ocha-icon="children" data-ocha-color="UN-blue"></span><div class="kpi-value">23%</div><div class="kpi-label">Consultation organisations adolescentes</div></div>
+</section>
+<section class="grid g2">
+<div class="chart-card"><div class="chart-card-header"><div><div class="chart-card-title">Participation par mécanisme</div><div class="chart-card-subtitle">ODF participantes</div></div></div><div class="chart-card-body"><div class="chart-wrap" style="height:330px"><canvas id="coordChart"></canvas></div></div></div>
+<div class="chart-card"><div class="chart-card-header"><div><div class="chart-card-title">Priorités d’amélioration</div><div class="chart-card-subtitle">Actions recommandées</div></div></div><div class="chart-card-body"><ul class="progress-list"><li class="progress-item"><span class="progress-label">Information régulière</span><div class="progress-bar-bg"><div class="progress-bar-fill" style="width:90%"></div></div><span class="progress-value">Critique</span></li><li class="progress-item"><span class="progress-label">Co-leadership</span><div class="progress-bar-bg"><div class="progress-bar-fill" style="width:75%"></div></div><span class="progress-value">Élevée</span></li><li class="progress-item"><span class="progress-label">Financement participation</span><div class="progress-bar-bg"><div class="progress-bar-fill" style="width:85%"></div></div><span class="progress-value">Élevée</span></li></ul></div></div>
+</section>
+<section class="grid g3"><div class="analysis-card"><h3>Participation</h3><p>La présence des ODF doit évoluer vers une influence réelle sur les priorités, décisions et allocations.</p></div><div class="analysis-card"><h3>Information</h3><p>Le manque d’information sur les réunions demeure une barrière majeure.</p></div><div class="analysis-card"><h3>Localisation</h3><p>Les mécanismes doivent intégrer des rôles formels pour les ODF.</p></div></section>
+</main><footer class="page-footer"><span>Analyse Organisationnelle · Coordination</span><span>Source : rapport d’analyse</span></footer>
+</div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script><script src="../../assets/dashboard-data.js"></script><script src="../../assets/charts.js"></script><script src="../../assets/ocha-icons.js"></script><script>const O=DASHBOARD_DATA.organisations;createHorizontalBarChart("coordChart",O.coordination.labels,O.coordination.values,OCHA.blue);</script>
+</body></html>
