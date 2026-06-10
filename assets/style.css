@@ -921,3 +921,102 @@ img {
     height: 300px;
   }
 }
+/* ============================================================
+   STRUCTURE DES PAGES ANALYTIQUES
+============================================================ */
+
+.structured-page {
+  background: linear-gradient(180deg, #F8FAFC 0%, #EEF5FA 100%);
+}
+
+.compact-hero .page-header-inner {
+  padding: 22px 26px;
+}
+
+.compact-hero h1 {
+  font-size: 27px;
+}
+
+.compact-hero p {
+  max-width: 1120px;
+}
+
+.compact-kpis .kpi-card {
+  min-height: 105px;
+}
+
+.structured-grid {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.intro-grid {
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr);
+}
+
+.narrative-card,
+.priority-card {
+  padding: 18px;
+}
+
+.narrative-card h2,
+.priority-card h2 {
+  margin: 0 0 10px;
+  color: var(--ocha-dark);
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.narrative-card p {
+  margin: 0 0 10px;
+  color: #334155;
+  font-size: 12px;
+  line-height: 1.62;
+  font-weight: 500;
+}
+
+.gender-border {
+  border-left: 5px solid var(--gender-2);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.wide-chart {
+  min-height: 390px;
+}
+
+.chart-medium {
+  height: 280px;
+}
+
+.chart-large {
+  height: 320px;
+}
+
+@media(max-width: 1100px) {
+  .intro-grid,
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wide-chart {
+    min-height: auto;
+  }
+}
+
+@media(max-width: 860px) {
+  .chart-medium,
+  .chart-large {
+    height: 300px;
+  }
+
+  .compact-hero h1 {
+    font-size: 24px;
+  }
+}
