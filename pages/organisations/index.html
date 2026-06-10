@@ -12,11 +12,8 @@
 
   <aside class="sidebar">
     <div class="sidebar-logo">
-      <img
-        src="../../assets/ocha-logo.png"
-        alt="OCHA"
-        onerror="this.style.display='none';document.getElementById('brandFallbackOrg').style.display='flex';"
-      />
+      <img src="../../assets/ocha-logo.png" alt="OCHA"
+        onerror="this.style.display='none';document.getElementById('brandFallbackOrg').style.display='flex';" />
       <div id="brandFallbackOrg" class="brand-fallback">OCHA</div>
 
       <div>
@@ -36,7 +33,7 @@
 
       <a href="index.html" class="nav-item active">
         <span class="nav-icon" data-ocha-icon="analysis" data-ocha-color="white"></span>
-        <span>Vue d’ensemble</span>
+        <span>Vue synthétique</span>
       </a>
 
       <a href="odf.html" class="nav-item">
@@ -87,18 +84,17 @@
       </nav>
     </header>
 
-    <main class="page-body">
+    <main class="page-body structured-page">
 
-      <section class="page-header organisations">
+      <section class="page-header organisations compact-hero">
         <div class="page-header-inner">
           <div class="page-header-eyebrow">ODF · Coordination · Redevabilité genre</div>
 
           <h1>Analyse des organisations et mécanismes humanitaires</h1>
 
           <p>
-            Cette section analyse le rôle des organisations dirigées par des femmes, leurs contraintes,
-            leur financement, leur participation aux cadres de coordination et l’intégration du genre
-            dans les mécanismes humanitaires.
+            Cette section analyse le rôle des organisations dirigées par des femmes, leurs contraintes, leur financement,
+            leur participation aux cadres de coordination et l’intégration du genre dans les mécanismes humanitaires.
           </p>
 
           <div class="page-header-chips">
@@ -110,7 +106,7 @@
         </div>
       </section>
 
-      <section class="kpi-row c4">
+      <section class="kpi-row c4 compact-kpis">
         <div class="kpi-card">
           <span class="kpi-icon" data-ocha-icon="odf" data-ocha-color="UN-blue"></span>
           <div class="kpi-value">89</div>
@@ -129,45 +125,66 @@
           <span class="kpi-icon" data-ocha-icon="cash" data-ocha-color="UN-blue"></span>
           <div class="kpi-value">89%</div>
           <div class="kpi-label">Fonds propres</div>
-          <div class="kpi-sub">Source principale de financement</div>
+          <div class="kpi-sub">Source principale</div>
         </div>
 
         <div class="kpi-card">
           <span class="kpi-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>
           <div class="kpi-value">84%</div>
-          <div class="kpi-label">Participation coordination</div>
-          <div class="kpi-sub">ODF actives dans des cadres formels</div>
+          <div class="kpi-label">Coordination</div>
+          <div class="kpi-sub">Participation à des cadres formels</div>
         </div>
       </section>
 
-      <section class="section-label">Résultats organisationnels prioritaires</section>
+      <section class="structured-grid intro-grid">
+        <article class="info-card narrative-card">
+          <span class="card-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>
+          <h2>Lecture générale</h2>
+          <p>
+            Les ODF constituent un levier essentiel pour renforcer la localisation, l’ancrage communautaire et l’intégration
+            du genre dans la réponse humanitaire. Elles sont proches des populations affectées et disposent d’une connaissance
+            fine des contraintes rencontrées par les femmes, les filles et les groupes vulnérables.
+          </p>
+          <p>
+            Cependant, leur rôle reste freiné par l’accès limité au financement, l’information irrégulière sur les mécanismes
+            de coordination, la faible participation aux espaces décisionnels et l’insuffisante reconnaissance institutionnelle.
+          </p>
+        </article>
 
-      <section class="grid g3">
-        <div class="insight">
-          <span class="insight-icon" data-ocha-icon="cash" data-ocha-color="UN-blue"></span>
-          <div>
-            <strong>52 %</strong> des ODF n’ont reçu aucun financement humanitaire entre 2023 et 2025.
-          </div>
-        </div>
+        <article class="info-card priority-card">
+          <h2>Messages clés</h2>
 
-        <div class="insight">
-          <span class="insight-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>
-          <div>
-            <strong>18 %</strong> des ODF déclarent ne pas connaître les mécanismes de coordination existants.
-          </div>
-        </div>
+          <div class="mini-list">
+            <div class="mini-item">
+              <span data-ocha-icon="cash" data-ocha-color="UN-blue"></span>
+              <div>
+                <strong>52 % sans financement humanitaire</strong>
+                <small>Une partie importante des ODF n’a reçu aucun financement humanitaire entre 2023 et 2025.</small>
+              </div>
+            </div>
 
-        <div class="insight">
-          <span class="insight-icon" data-ocha-icon="children" data-ocha-color="UN-blue"></span>
-          <div>
-            Seulement <strong>23 %</strong> des mécanismes consultent des organisations dirigées par des adolescentes.
+            <div class="mini-item">
+              <span data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>
+              <div>
+                <strong>18 % ne connaissent pas les mécanismes</strong>
+                <small>Le déficit d’information limite leur participation effective à la coordination.</small>
+              </div>
+            </div>
+
+            <div class="mini-item">
+              <span data-ocha-icon="children" data-ocha-color="UN-blue"></span>
+              <div>
+                <strong>23 % consultent les organisations adolescentes</strong>
+                <small>La consultation des adolescentes reste insuffisante dans les mécanismes humanitaires.</small>
+              </div>
+            </div>
           </div>
-        </div>
+        </article>
       </section>
 
       <section class="section-label">Visualisations analytiques</section>
 
-      <section class="grid g2">
+      <section class="dashboard-grid">
         <article class="chart-card">
           <div class="chart-card-header">
             <div>
@@ -175,7 +192,6 @@
               <div class="chart-card-subtitle">Nombre d’organisations actives par secteur</div>
             </div>
           </div>
-
           <div class="chart-card-body">
             <div class="chart-wrap chart-large">
               <canvas id="sectorChart"></canvas>
@@ -190,7 +206,6 @@
               <div class="chart-card-subtitle">Nombre d’ODF par source déclarée</div>
             </div>
           </div>
-
           <div class="chart-card-body">
             <div class="chart-wrap chart-large">
               <canvas id="fundingChart"></canvas>
@@ -198,14 +213,13 @@
           </div>
         </article>
 
-        <article class="chart-card">
+        <article class="chart-card wide-chart">
           <div class="chart-card-header">
             <div>
               <div class="chart-card-title">Participation à la coordination</div>
               <div class="chart-card-subtitle">Principaux mécanismes fréquentés par les ODF</div>
             </div>
           </div>
-
           <div class="chart-card-body">
             <div class="chart-wrap chart-large">
               <canvas id="coordChart"></canvas>
@@ -213,14 +227,13 @@
           </div>
         </article>
 
-        <article class="chart-card">
+        <article class="chart-card wide-chart">
           <div class="chart-card-header">
             <div>
               <div class="chart-card-title">Redevabilité genre IASC</div>
               <div class="chart-card-subtitle">% des mécanismes atteignant l’indicateur</div>
             </div>
           </div>
-
           <div class="chart-card-body">
             <div class="chart-wrap chart-large">
               <canvas id="iascChart"></canvas>
@@ -236,8 +249,7 @@
           <h3>Localisation</h3>
           <p>
             Les ODF sont proches des communautés et jouent un rôle central dans l’identification des besoins,
-            la remontée d’informations et l’ancrage communautaire de la réponse. Leur potentiel reste toutefois
-            limité par l’accès insuffisant au financement.
+            la remontée d’informations et l’ancrage communautaire de la réponse.
           </p>
         </article>
 
@@ -252,8 +264,8 @@
         <article class="analysis-card">
           <h3>Redevabilité genre</h3>
           <p>
-            Les mécanismes collectent davantage de données ventilées, mais la consultation des organisations
-            de femmes et d’adolescentes reste insuffisante pour orienter une réponse pleinement sensible au genre.
+            Les mécanismes collectent davantage de données ventilées, mais la consultation des organisations de femmes
+            et d’adolescentes reste insuffisante pour orienter une réponse pleinement sensible au genre.
           </p>
         </article>
       </section>
