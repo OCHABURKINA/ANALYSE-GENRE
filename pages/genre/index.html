@@ -12,11 +12,8 @@
 
   <aside class="sidebar">
     <div class="sidebar-logo">
-      <img
-        src="../../assets/ocha-logo.png"
-        alt="OCHA"
-        onerror="this.style.display='none';document.getElementById('brandFallbackGenre').style.display='flex';"
-      />
+      <img src="../../assets/ocha-logo.png" alt="OCHA"
+        onerror="this.style.display='none';document.getElementById('brandFallbackGenre').style.display='flex';" />
       <div id="brandFallbackGenre" class="brand-fallback">OCHA</div>
 
       <div>
@@ -36,7 +33,7 @@
 
       <a href="index.html" class="nav-item active">
         <span class="nav-icon" data-ocha-icon="gender" data-ocha-color="white"></span>
-        <span>Vue d’ensemble</span>
+        <span>Vue synthétique</span>
       </a>
 
       <a href="femmes-hommes.html" class="nav-item">
@@ -86,18 +83,18 @@
       </nav>
     </header>
 
-    <main class="page-body">
+    <main class="page-body structured-page">
 
-      <section class="page-header gender">
+      <section class="page-header gender compact-hero">
         <div class="page-header-inner">
           <div class="page-header-eyebrow">Analyse des populations affectées</div>
 
           <h1>Femmes, Hommes, Filles et Garçons</h1>
 
           <p>
-            Cette section présente une lecture synthétique des effets différenciés de la crise selon le sexe,
-            l’âge et le statut de déplacement. Elle met en évidence les besoins prioritaires, les rôles sociaux,
-            les contraintes économiques, les risques de protection et les enjeux d’accès aux services essentiels.
+            Cette page synthétise les effets différenciés de la crise selon le sexe, l’âge et le statut de déplacement.
+            Elle met en relation les besoins prioritaires, les rôles sociaux, les contraintes économiques, les risques de
+            protection et l’accès aux services essentiels.
           </p>
 
           <div class="page-header-chips">
@@ -111,7 +108,7 @@
         </div>
       </section>
 
-      <section class="kpi-row c4">
+      <section class="kpi-row c4 compact-kpis">
         <div class="kpi-card kpi-gender">
           <span class="kpi-icon" data-ocha-icon="people" data-ocha-color="UN-blue"></span>
           <div class="kpi-value">3 681</div>
@@ -137,38 +134,60 @@
           <span class="kpi-icon" data-ocha-icon="protection" data-ocha-color="UN-blue"></span>
           <div class="kpi-value">3 750</div>
           <div class="kpi-label">Cas VBG pris en charge</div>
-          <div class="kpi-sub">Janvier – septembre 2025</div>
+          <div class="kpi-sub">Janv. – sept. 2025</div>
         </div>
       </section>
 
-      <section class="section-label gender">Résultats prioritaires</section>
+      <section class="structured-grid intro-grid">
+        <article class="info-card narrative-card gender-border">
+          <span class="card-icon" data-ocha-icon="gender" data-ocha-color="UN-blue"></span>
+          <h2>Lecture générale</h2>
+          <p>
+            Les résultats montrent une combinaison de vulnérabilités économiques, sociales et de protection. Les femmes
+            supportent une charge domestique élevée, notamment dans la collecte de l’eau, la cuisine et les soins aux enfants,
+            tandis que les hommes restent davantage associés aux activités productives et aux décisions communautaires.
+          </p>
+          <p>
+            Chez les adolescents, la déscolarisation, les risques de protection, la mobilité contrainte et l’accès limité aux
+            services de santé et de protection constituent des enjeux centraux. Ces résultats appellent une réponse plus ciblée,
+            différenciée par sexe, âge et statut de déplacement.
+          </p>
+        </article>
 
-      <section class="grid g3">
-        <div class="insight warning">
-          <span class="insight-icon" data-ocha-icon="livelihood" data-ocha-color="UN-blue"></span>
-          <div>
-            <strong>64,1 %</strong> des ménages déclarent un déséquilibre entre revenus et besoins essentiels.
-          </div>
-        </div>
+        <article class="info-card priority-card">
+          <h2>Messages clés</h2>
 
-        <div class="insight warning">
-          <span class="insight-icon" data-ocha-icon="water" data-ocha-color="UN-blue"></span>
-          <div>
-            <strong>77 %</strong> des femmes participent à la collecte d’eau contre <strong>26 %</strong> des hommes.
-          </div>
-        </div>
+          <div class="mini-list">
+            <div class="mini-item">
+              <span data-ocha-icon="livelihood" data-ocha-color="UN-blue"></span>
+              <div>
+                <strong>64,1 % revenus insuffisants</strong>
+                <small>Les ménages déclarent un déséquilibre entre revenus et besoins essentiels.</small>
+              </div>
+            </div>
 
-        <div class="insight">
-          <span class="insight-icon" data-ocha-icon="education" data-ocha-color="UN-blue"></span>
-          <div>
-            <strong>26,4 %</strong> des garçons ne sont pas scolarisés contre <strong>18,3 %</strong> des filles.
+            <div class="mini-item">
+              <span data-ocha-icon="water" data-ocha-color="UN-blue"></span>
+              <div>
+                <strong>77 % des femmes collectent l’eau</strong>
+                <small>Contre 26 % des hommes, révélant une charge domestique fortement genrée.</small>
+              </div>
+            </div>
+
+            <div class="mini-item">
+              <span data-ocha-icon="education" data-ocha-color="UN-blue"></span>
+              <div>
+                <strong>26,4 % des garçons non scolarisés</strong>
+                <small>Contre 18,3 % des filles, avec des risques différenciés selon le sexe.</small>
+              </div>
+            </div>
           </div>
-        </div>
+        </article>
       </section>
 
       <section class="section-label gender">Visualisations analytiques</section>
 
-      <section class="grid g2">
+      <section class="dashboard-grid">
         <article class="chart-card">
           <div class="chart-card-header">
             <div>
@@ -176,7 +195,6 @@
               <div class="chart-card-subtitle">Comparaison femmes / hommes</div>
             </div>
           </div>
-
           <div class="chart-card-body">
             <div class="chart-wrap chart-medium">
               <canvas id="needsChart"></canvas>
@@ -191,7 +209,6 @@
               <div class="chart-card-subtitle">Contraintes économiques et protection</div>
             </div>
           </div>
-
           <div class="chart-card-body">
             <div class="chart-wrap chart-medium">
               <canvas id="livelihoodChart"></canvas>
@@ -199,14 +216,13 @@
           </div>
         </article>
 
-        <article class="chart-card">
+        <article class="chart-card wide-chart">
           <div class="chart-card-header">
             <div>
               <div class="chart-card-title gender">Division du travail</div>
               <div class="chart-card-subtitle">Charge domestique et productive des femmes</div>
             </div>
           </div>
-
           <div class="chart-card-body">
             <div class="chart-wrap chart-large">
               <canvas id="rolesChart"></canvas>
@@ -214,14 +230,13 @@
           </div>
         </article>
 
-        <article class="chart-card">
+        <article class="chart-card wide-chart">
           <div class="chart-card-header">
             <div>
               <div class="chart-card-title gender">Contextes de risques VBG</div>
               <div class="chart-card-subtitle">Espaces cités par les répondants</div>
             </div>
           </div>
-
           <div class="chart-card-body">
             <div class="chart-wrap chart-large">
               <canvas id="gbvChart"></canvas>
@@ -244,16 +259,16 @@
         <article class="analysis-card gender">
           <h3>Protection intégrée</h3>
           <p>
-            Les risques de VBG sont liés aux activités quotidiennes : domicile, collecte du bois, points d’eau,
-            marchés, écoles, latrines et accès aux services.
+            Les risques de VBG sont liés aux activités quotidiennes : domicile, collecte du bois, points d’eau, marchés,
+            écoles, latrines et accès aux services.
           </p>
         </article>
 
         <article class="analysis-card gender">
           <h3>Adolescents</h3>
           <p>
-            Les garçons apparaissent particulièrement exposés à la déscolarisation, tandis que les filles restent
-            confrontées aux risques de mariage précoce, de VBG et de restrictions de mobilité.
+            Les garçons apparaissent particulièrement exposés à la déscolarisation, tandis que les filles restent confrontées
+            aux risques de mariage précoce, de VBG et de restrictions de mobilité.
           </p>
         </article>
       </section>
