@@ -1,95 +1,311 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Filles & Garçons | Analyse Genre</title>
-<link rel="stylesheet" href="../../assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Filles & Garçons | Analyse Genre</title>
+  <link rel="stylesheet" href="../../assets/style.css" />
 </head>
+
 <body>
 <div class="app-shell">
 
-<aside class="sidebar">
-  <div class="sidebar-logo">
-    <img src="../../assets/ocha-logo.png" alt="OCHA" onerror="this.style.display='none';document.getElementById('bf2').style.display='flex';">
-    <div id="bf2" class="brand-fallback">OCHA</div>
-    <div><div class="sidebar-logo-title">Analyse Genre</div><div class="sidebar-logo-sub">Filles & Garçons</div></div>
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <img
+        src="../../assets/ocha-logo.png"
+        alt="OCHA"
+        onerror="this.style.display='none';document.getElementById('bf2').style.display='flex';"
+      />
+      <div id="bf2" class="brand-fallback">OCHA</div>
+
+      <div>
+        <div class="sidebar-logo-title">Analyse Genre</div>
+        <div class="sidebar-logo-sub">Filles &amp; Garçons</div>
+      </div>
+    </div>
+
+    <div class="sidebar-badge">
+      <strong>1 864</strong> adolescents<br />
+      <strong>874</strong> filles · <strong>990</strong> garçons
+    </div>
+
+    <nav class="nav-section">
+      <div class="nav-section-label">Analyse Genre</div>
+
+      <a href="index.html" class="nav-item">
+        <span class="nav-icon" data-ocha-icon="gender" data-ocha-color="white"></span>
+        <span>Vue synthétique</span>
+      </a>
+
+      <a href="femmes-hommes.html" class="nav-item">
+        <span class="nav-icon" data-ocha-icon="gender" data-ocha-color="white"></span>
+        <span>Femmes &amp; Hommes</span>
+      </a>
+
+      <a href="filles-garcons.html" class="nav-item active">
+        <span class="nav-icon" data-ocha-icon="children" data-ocha-color="white"></span>
+        <span>Filles &amp; Garçons</span>
+      </a>
+
+      <a href="moyens-subsistance.html" class="nav-item">
+        <span class="nav-icon" data-ocha-icon="livelihood" data-ocha-color="white"></span>
+        <span>Moyens de subsistance</span>
+      </a>
+
+      <a href="protection-vbg.html" class="nav-item">
+        <span class="nav-icon" data-ocha-icon="protection" data-ocha-color="white"></span>
+        <span>Protection &amp; VBG</span>
+      </a>
+    </nav>
+  </aside>
+
+  <div class="main-content">
+
+    <header class="topbar">
+      <div class="topbar-breadcrumb">
+        Analyse Genre <span class="sep">›</span> Filles &amp; Garçons
+      </div>
+
+      <nav class="topbar-nav">
+        <a href="../../index.html">
+          <span class="top-nav-icon" data-ocha-icon="analysis" data-ocha-color="UN-blue"></span>
+          Contexte
+        </a>
+
+        <a href="index.html" class="active">
+          <span class="top-nav-icon" data-ocha-icon="gender" data-ocha-color="UN-blue"></span>
+          Analyse Genre
+        </a>
+
+        <a href="../organisations/index.html">
+          <span class="top-nav-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>
+          Analyse Organisationnelle
+        </a>
+      </nav>
+    </header>
+
+    <main class="page-body structured-page">
+
+      <section class="page-header gender compact-hero">
+        <div class="page-header-inner">
+          <div class="page-header-eyebrow">Adolescents · 12 à 17 ans</div>
+
+          <h1>Filles &amp; Garçons</h1>
+
+          <p>
+            Cette page analyse la situation des adolescentes et adolescents, avec un accent sur la scolarisation,
+            la déscolarisation, le statut de déplacement, le mariage précoce et les risques de protection.
+          </p>
+
+          <div class="page-header-chips">
+            <span class="header-chip">874 filles</span>
+            <span class="header-chip">990 garçons</span>
+            <span class="header-chip">1 864 adolescents</span>
+            <span class="header-chip">632 jeunes PDI</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="kpi-row c4 compact-kpis">
+        <div class="kpi-card kpi-gender">
+          <span class="kpi-icon" data-ocha-icon="education" data-ocha-color="UN-blue"></span>
+          <div class="kpi-value">18,3%</div>
+          <div class="kpi-label">Filles non scolarisées</div>
+          <div class="kpi-sub">Adolescentes 12–17 ans</div>
+        </div>
+
+        <div class="kpi-card kpi-gender">
+          <span class="kpi-icon" data-ocha-icon="education" data-ocha-color="UN-blue"></span>
+          <div class="kpi-value">26,4%</div>
+          <div class="kpi-label">Garçons non scolarisés</div>
+          <div class="kpi-sub">Adolescents 12–17 ans</div>
+        </div>
+
+        <div class="kpi-card kpi-gender">
+          <span class="kpi-icon" data-ocha-icon="children" data-ocha-color="UN-blue"></span>
+          <div class="kpi-value">18,2%</div>
+          <div class="kpi-label">Adolescents déjà mariés</div>
+          <div class="kpi-sub">Mariage précoce déclaré</div>
+        </div>
+
+        <div class="kpi-card kpi-gender">
+          <span class="kpi-icon" data-ocha-icon="pdi" data-ocha-color="UN-blue"></span>
+          <div class="kpi-value">632</div>
+          <div class="kpi-label">Jeunes PDI</div>
+          <div class="kpi-sub">Adolescents déplacés internes</div>
+        </div>
+      </section>
+
+      <section class="structured-grid intro-grid">
+        <article class="info-card narrative-card gender-border">
+          <span class="card-icon" data-ocha-icon="children" data-ocha-color="UN-blue"></span>
+
+          <h2>Lecture comparative</h2>
+
+          <p>
+            Les résultats indiquent que les filles et les garçons ne sont pas exposés aux mêmes vulnérabilités.
+            Les garçons présentent un niveau de déscolarisation plus élevé, tandis que les filles restent particulièrement
+            exposées aux risques de protection, au mariage précoce, aux restrictions de mobilité et aux violences.
+          </p>
+
+          <p>
+            Le déplacement interne accroît ces risques en fragilisant l’accès à l’éducation, aux services de santé,
+            aux dispositifs de protection et aux mécanismes de soutien psychosocial.
+          </p>
+        </article>
+
+        <article class="info-card priority-card">
+          <h2>Messages clés</h2>
+
+          <div class="mini-list">
+            <div class="mini-item">
+              <span data-ocha-icon="education" data-ocha-color="UN-blue"></span>
+              <div>
+                <strong>Déscolarisation plus élevée chez les garçons</strong>
+                <small>26,4 % des garçons ne sont pas scolarisés contre 18,3 % des filles.</small>
+              </div>
+            </div>
+
+            <div class="mini-item">
+              <span data-ocha-icon="protection" data-ocha-color="UN-blue"></span>
+              <div>
+                <strong>Risques spécifiques pour les filles</strong>
+                <small>Mariage précoce, violences, mobilité limitée et accès restreint aux services adaptés.</small>
+              </div>
+            </div>
+
+            <div class="mini-item">
+              <span data-ocha-icon="pdi" data-ocha-color="UN-blue"></span>
+              <div>
+                <strong>Vulnérabilité des jeunes PDI</strong>
+                <small>632 adolescents déplacés internes sont pris en compte dans l’analyse.</small>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-label gender">Scolarisation et couverture régionale</section>
+
+      <section class="dashboard-grid">
+        <article class="chart-card">
+          <div class="chart-card-header">
+            <div>
+              <div class="chart-card-title gender">Niveau d’instruction</div>
+              <div class="chart-card-subtitle">Comparaison filles / garçons</div>
+            </div>
+          </div>
+
+          <div class="chart-card-body">
+            <div class="chart-wrap chart-medium">
+              <canvas id="eduChart"></canvas>
+            </div>
+          </div>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-card-header">
+            <div>
+              <div class="chart-card-title gender">Jeunes par région</div>
+              <div class="chart-card-subtitle">Adolescents enquêtés par région</div>
+            </div>
+          </div>
+
+          <div class="chart-card-body">
+            <div class="chart-wrap chart-medium">
+              <canvas id="regionChart"></canvas>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-label gender">Lecture analytique</section>
+
+      <section class="grid g3">
+        <article class="analysis-card gender">
+          <h3>Déscolarisation</h3>
+          <p>
+            Les garçons présentent un risque plus élevé de déscolarisation, lié aux contraintes économiques,
+            au travail précoce et aux effets cumulés de la crise.
+          </p>
+        </article>
+
+        <article class="analysis-card gender">
+          <h3>Protection des filles</h3>
+          <p>
+            Les filles restent exposées aux risques de mariage précoce, de violences, de mobilité réduite et
+            de restriction d’accès aux services adaptés.
+          </p>
+        </article>
+
+        <article class="analysis-card gender">
+          <h3>Jeunes PDI</h3>
+          <p>
+            Le déplacement accroît les vulnérabilités éducatives, sociales, psychosociales et de protection
+            des adolescentes et adolescents.
+          </p>
+        </article>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <span>Analyse Genre · Filles &amp; Garçons</span>
+      <span>Source : enquête terrain</span>
+    </footer>
+
   </div>
-  <div class="sidebar-badge"><strong>1 864</strong> adolescents<br><strong>874</strong> filles · <strong>990</strong> garçons</div>
-
-  <nav class="nav-section">
-    <div class="nav-section-label">Analyse Genre</div>
-    <a href="index.html" class="nav-item"><span class="nav-icon" data-ocha-icon="gender" data-ocha-color="white"></span><span>Analyse Genre</span></a>
-    <a href="femmes-hommes.html" class="nav-item"><span class="nav-icon" data-ocha-icon="gender" data-ocha-color="white"></span><span>Femmes & Hommes</span></a>
-    <a href="filles-garcons.html" class="nav-item active"><span class="nav-icon" data-ocha-icon="children" data-ocha-color="white"></span><span>Filles & Garçons</span></a>
-    <a href="moyens-subsistance.html" class="nav-item"><span class="nav-icon" data-ocha-icon="livelihood" data-ocha-color="white"></span><span>Moyens de subsistance</span></a>
-    <a href="protection-vbg.html" class="nav-item"><span class="nav-icon" data-ocha-icon="protection" data-ocha-color="white"></span><span>Protection & VBG</span></a>
-  </nav>
-</aside>
-
-<div class="main-content">
-<header class="topbar">
-  <div class="topbar-breadcrumb">Analyse Genre <span class="sep">›</span> Filles & Garçons</div>
-  <nav class="topbar-nav">
-    <a href="../../index.html"><span class="top-nav-icon" data-ocha-icon="analysis" data-ocha-color="UN-blue"></span>Contexte</a>
-    <a href="index.html" class="active"><span class="top-nav-icon" data-ocha-icon="gender" data-ocha-color="UN-blue"></span>Analyse Genre</a>
-    <a href="../organisations/index.html"><span class="top-nav-icon" data-ocha-icon="coordination" data-ocha-color="UN-blue"></span>Analyse Organisationnelle</a>
-  </nav>
-</header>
-
-<main class="page-body">
-<section class="page-header gender">
-  <div class="page-header-inner">
-    <div class="page-header-eyebrow">Adolescents · 12 à 17 ans</div>
-    <h1>Filles & Garçons</h1>
-    <p>Analyse de la scolarisation, de la déscolarisation, du statut de déplacement, du mariage des enfants et des risques de protection chez les adolescents.</p>
-    <div class="page-header-chips"><span class="header-chip">874 filles</span><span class="header-chip">990 garçons</span><span class="header-chip">632 jeunes PDI</span></div>
-  </div>
-</section>
-
-<section class="kpi-row c4">
-  <div class="kpi-card kpi-gender"><span class="kpi-icon" data-ocha-icon="education" data-ocha-color="UN-blue"></span><div class="kpi-value">18,3%</div><div class="kpi-label">Filles non scolarisées</div></div>
-  <div class="kpi-card kpi-gender"><span class="kpi-icon" data-ocha-icon="education" data-ocha-color="UN-blue"></span><div class="kpi-value">26,4%</div><div class="kpi-label">Garçons non scolarisés</div></div>
-  <div class="kpi-card kpi-gender"><span class="kpi-icon" data-ocha-icon="children" data-ocha-color="UN-blue"></span><div class="kpi-value">18,2%</div><div class="kpi-label">Adolescents déjà mariés</div></div>
-  <div class="kpi-card kpi-gender"><span class="kpi-icon" data-ocha-icon="pdi" data-ocha-color="UN-blue"></span><div class="kpi-value">632</div><div class="kpi-label">Jeunes PDI</div></div>
-</section>
-
-<section class="grid g2">
-  <div class="chart-card">
-    <div class="chart-card-header"><div><div class="chart-card-title gender">Niveau d’instruction</div><div class="chart-card-subtitle">Filles vs garçons</div></div></div>
-    <div class="chart-card-body"><div class="chart-wrap" style="height:300px"><canvas id="eduChart"></canvas></div></div>
-  </div>
-
-  <div class="chart-card">
-    <div class="chart-card-header"><div><div class="chart-card-title gender">Jeunes par région</div><div class="chart-card-subtitle">Adolescents enquêtés</div></div></div>
-    <div class="chart-card-body"><div class="chart-wrap" style="height:300px"><canvas id="regionChart"></canvas></div></div>
-  </div>
-</section>
-
-<section class="section-label gender">Lecture analytique</section>
-<section class="grid g3">
-  <div class="analysis-card gender"><h3>Déscolarisation</h3><p>Les garçons présentent un risque plus élevé de déscolarisation, lié aux contraintes économiques, au travail précoce et aux effets de la crise.</p></div>
-  <div class="analysis-card gender"><h3>Protection des filles</h3><p>Les filles restent exposées aux risques de mariage précoce, de violences et de restriction d’accès aux services adaptés.</p></div>
-  <div class="analysis-card gender"><h3>Jeunes PDI</h3><p>Le déplacement accroît les vulnérabilités éducatives, sociales et psychosociales des adolescentes et adolescents.</p></div>
-</section>
-</main>
-
-<footer class="page-footer"><span>Analyse Genre · Filles & Garçons</span><span>Source : enquête terrain</span></footer>
-</div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script src="../../assets/dashboard-data.js"></script>
 <script src="../../assets/charts.js"></script>
 <script src="../../assets/ocha-icons.js"></script>
+
 <script>
-const D=DASHBOARD_DATA;
-createGenderBarChart("eduChart",D.genre.educationAdolescents.labels,D.genre.educationAdolescents.girls,D.genre.educationAdolescents.boys);
-new Chart(document.getElementById("regionChart"),{
-  type:"bar",
-  data:{labels:D.regions.map(r=>r.name),datasets:[{label:"Adolescents",data:D.regions.map(r=>r.adolescents),backgroundColor:OCHA.purple,borderRadius:6}]},
-  options:{responsive:true,maintainAspectRatio:false,plugins:{tooltip:tooltipStyle(),legend:{display:false}},scales:{x:{grid:{display:false},ticks:tickStyle(10)},y:{grid:chartGrid(),ticks:tickStyle()}}}
-});
+  const D = DASHBOARD_DATA;
+
+  createGenderBarChart(
+    "eduChart",
+    D.genre.educationAdolescents.labels,
+    D.genre.educationAdolescents.girls,
+    D.genre.educationAdolescents.boys
+  );
+
+  new Chart(document.getElementById("regionChart"), {
+    type: "bar",
+    data: {
+      labels: D.regions.map(r => r.name),
+      datasets: [
+        {
+          label: "Adolescents",
+          data: D.regions.map(r => r.adolescents),
+          backgroundColor: OCHA.purple,
+          borderRadius: 6
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        tooltip: tooltipStyle(),
+        legend: { display: false }
+      },
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: tickStyle(10)
+        },
+        y: {
+          grid: chartGrid(),
+          ticks: tickStyle()
+        }
+      }
+    }
+  });
 </script>
+
 </body>
 </html>
