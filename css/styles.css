@@ -2,3 +2,105 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}img{max-width:100%}a{text-decoration:none;color:inherit}.topbar{position:fixed;z-index:1000;top:0;left:0;right:0;height:68px;padding:0 4vw;display:flex;align-items:center;justify-content:space-between;color:#fff;background:rgba(8,43,76,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.12)}.brand{display:flex;align-items:center;gap:12px;font-weight:700}.brand-mark{background:var(--ocha);padding:7px 10px;border-radius:6px;letter-spacing:.08em}.topbar nav{display:flex;gap:24px;font-size:.92rem}.topbar nav a{opacity:.82}.topbar nav a:hover{opacity:1}.menu-toggle{display:none;background:none;border:0;color:#fff;font-size:1.5rem}.hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;color:#fff}.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,28,49,.92) 0%,rgba(5,28,49,.68) 50%,rgba(5,28,49,.25) 100%),linear-gradient(0deg,rgba(5,28,49,.45),transparent 45%)}.hero-content{position:relative;z-index:2;width:min(850px,88vw);margin-left:7vw;padding-top:60px}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:800;margin:0 0 12px;color:#b9dcf3}.eyebrow.dark{color:var(--ocha)}h1,h2,h3{line-height:1.12;margin-top:0}.hero h1{font-family:"Roboto Condensed",sans-serif;text-transform:uppercase;font-size:clamp(3.4rem,7vw,7.6rem);letter-spacing:-.035em;margin-bottom:4px}.hero h2{font-size:clamp(1.45rem,2.8vw,2.75rem);font-weight:600;max-width:900px}.hero-lead{font-size:1.08rem;max-width:740px;color:#e7eef3}.hero-actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{display:inline-flex;padding:13px 20px;border-radius:8px;font-weight:700}.btn.primary{background:var(--ocha);color:#fff}.btn.ghost{border:1px solid rgba(255,255,255,.55);color:#fff}.photo-credit{position:absolute;z-index:2;right:28px;bottom:18px;font-size:.72rem;color:#e8eef3}.stats-strip{display:grid;grid-template-columns:repeat(6,1fr);background:var(--navy);color:#fff;padding:26px 5vw;gap:18px}.stat{text-align:center;border-right:1px solid rgba(255,255,255,.15)}.stat:last-child{border-right:0}.stat strong{display:block;font-size:1.8rem}.stat span{font-size:.76rem;color:#bed3e2}.section{padding:92px 6vw}.section.alt{background:var(--bg)}.section-heading{display:flex;align-items:flex-start;gap:22px;margin-bottom:38px}.section-heading>span{font-size:3.8rem;line-height:.9;font-weight:800;color:#d8e0e6}.section-heading h2{font-size:clamp(2rem,4vw,3.6rem);max-width:940px;margin-bottom:0}.section-heading.light h2,.section-heading.light>span{color:#fff}.two-col{display:grid;grid-template-columns:1.4fr .8fr;gap:34px}.lead{font-size:1.22rem}.callout{background:var(--navy);color:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}.objective-grid,.method-grid,.sample-grid,.rec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px}.objective-grid article,.method-grid article,.sample-grid article,.rec-grid article{background:#fff;border:1px solid var(--line);padding:24px;border-radius:var(--radius);box-shadow:0 8px 24px rgba(8,43,76,.06)}.objective-grid strong{font-size:2rem;color:var(--ocha)}.sample-grid{grid-template-columns:repeat(6,1fr)}.sample-grid strong{font-size:1.55rem;display:block;color:var(--ocha)}.sample-grid span{font-size:.78rem;color:var(--muted)}.method-note{margin-top:28px;padding:18px 22px;background:#e7f2f9;border-left:5px solid var(--ocha);border-radius:8px}.chapter-nav{display:flex;gap:10px;overflow:auto;padding-bottom:12px;margin-bottom:34px}.chapter-nav a{min-width:175px;color:#fff;padding:14px 16px;border-radius:10px;font-size:.82rem;font-weight:700}.chapter{margin:0 -6vw;padding:78px 6vw;background:linear-gradient(180deg,var(--chapter-color),#fff 38%);scroll-margin-top:68px}.chapter-header{display:grid;grid-template-columns:1fr 180px;align-items:start;color:#fff;gap:20px}.chapter-number{font-size:10rem;font-weight:800;line-height:.75;text-align:right;color:var(--chapter-accent);opacity:.8}.chapter-header h2{font-size:clamp(2.2rem,4vw,4rem);max-width:900px}.chapter-summary{font-size:1.08rem;max-width:900px;color:#f0ebf4}.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:42px}.kpi-card{background:#fff;border-radius:16px;padding:24px;box-shadow:var(--shadow);border-top:5px solid var(--chapter-accent)}.kpi-card strong{font-size:2.2rem;color:var(--chapter-color);display:block}.kpi-card span{font-size:.86rem;color:var(--muted)}.analysis-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:24px;margin-top:28px}.chart-card,.insight-card,.action-card{background:#fff;border-radius:16px;padding:22px;box-shadow:var(--shadow)}.plot{height:390px}.insight-card h3,.action-card h3{color:var(--chapter-color)}.insight-card ul,.action-card ul{padding-left:20px}.insight-card li,.action-card li{margin-bottom:14px}.partner-block{background:#fff;border:1px solid var(--line);padding:28px;border-radius:var(--radius);margin-bottom:22px;text-align:center}.partner-block img{max-height:240px;object-fit:contain}.recommendations{background:linear-gradient(135deg,#082B4C,#064b79);color:#fff}.rec-grid{grid-template-columns:repeat(3,1fr)}.rec-grid article{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.16);color:#fff;box-shadow:none}.credits{padding-top:58px;padding-bottom:58px}.credit-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px}.credit-grid p{font-size:.9rem;color:var(--muted)}footer{background:#061e34;color:#d5e2eb;padding:28px 6vw;display:flex;justify-content:space-between;gap:20px;font-size:.78rem}
 @media(max-width:900px){.topbar nav{display:none;position:absolute;top:68px;left:0;right:0;background:var(--navy);padding:18px 6vw;flex-direction:column}.topbar nav.open{display:flex}.menu-toggle{display:block}.stats-strip{grid-template-columns:repeat(3,1fr)}.stat:nth-child(3){border-right:0}.two-col,.analysis-grid,.credit-grid{grid-template-columns:1fr}.objective-grid,.method-grid,.rec-grid{grid-template-columns:repeat(2,1fr)}.sample-grid{grid-template-columns:repeat(3,1fr)}.chapter-header{grid-template-columns:1fr}.chapter-number{text-align:left;font-size:6rem}.kpi-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.hero-content{margin-left:6vw}.hero h1{font-size:3.5rem}.stats-strip{grid-template-columns:repeat(2,1fr)}.stat{border-right:0}.section{padding:72px 5vw}.objective-grid,.method-grid,.sample-grid,.rec-grid,.kpi-grid{grid-template-columns:1fr}.chapter{margin:0 -5vw;padding:64px 5vw}.plot{height:320px}.photo-credit{left:20px;right:20px}.section-heading>span{font-size:2.7rem}footer{flex-direction:column}}
+/* Logo OCHA adaptatif */
+.ocha-logo {
+  display: block;
+  width: auto;
+  height: clamp(38px, 4.2vw, 58px);
+  max-width: min(170px, 24vw);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Logo du pied de page */
+.footer-logo {
+  display: block;
+  width: auto;
+  height: clamp(34px, 3.5vw, 50px);
+  max-width: min(150px, 22vw);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Alignement de la marque */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 1.4vw, 18px);
+  min-width: 0;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.country {
+  font-size: clamp(1.1rem, 2vw, 1.9rem);
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+.portal-name {
+  font-size: clamp(0.72rem, 1vw, 0.9rem);
+}
+
+/* Bandeau adaptatif */
+.topbar {
+  min-height: clamp(64px, 7vw, 82px);
+  padding: clamp(8px, 1.2vw, 14px) clamp(16px, 3vw, 32px);
+}
+
+/* Pied de page */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .ocha-logo {
+    height: clamp(34px, 10vw, 46px);
+    max-width: 130px;
+  }
+
+  .footer-logo {
+    height: 36px;
+    max-width: 120px;
+  }
+
+  .country {
+    font-size: 1.15rem;
+  }
+
+  .portal-name {
+    font-size: 0.72rem;
+  }
+
+  .topbar {
+    min-height: 64px;
+    padding: 9px 14px;
+  }
+}
+
+/* Très petits écrans */
+@media (max-width: 420px) {
+  .ocha-logo {
+    height: 34px;
+    max-width: 105px;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .country {
+    font-size: 1rem;
+  }
+
+  .portal-name {
+    display: none;
+  }
+}
