@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Cartographie et analyses des organisations dirigées par des femmes au Burkina Faso" />
+  <title>Cartographie des ODF | OCHA Burkina Faso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQ3uPpi0ZmZFQjMZbP1qQbMZP1QkJrM=" crossorigin="" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="map-page">
+  <header class="topbar">
+    <a class="brand" href="../index.html" aria-label="OCHA Burkina Faso — retour à l’accueil">
+      <img class="brand-logo" src="../assets/logos/ocha-logo-header.png" alt="OCHA" width="81" height="44" />
+      <span class="brand-country">Burkina Faso</span>
+    </a>
+    <a class="back-link" href="../index.html#odf">← Retour à l’analyse</a>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Résultat clé 06</p>
+      <h1>Cartographie et analyses approfondies des ODF</h1>
+      <p>Explorez la présence territoriale, la couverture sectorielle, les populations ciblées, les capacités institutionnelles, l’accès au financement et les partenariats des organisations dirigées par des femmes.</p>
+      <div class="page-actions"><a class="btn secondary" href="#carte">Voir la carte</a><a class="btn ghost" href="#analyses">Voir les analyses</a></div>
+    </section>
+
+    <section class="odf-dashboard">
+      <div class="odf-kpis" id="odf-kpis" aria-label="Indicateurs clés des ODF"></div>
+      <div class="map-layout" id="carte">
+        <aside class="map-filters" aria-label="Filtres cartographiques">
+          <h2>Filtres</h2>
+          <label>Mode d’affichage<select id="map-mode"><option value="points">Localisation des ODF</option><option value="choropleth">Nombre d’ODF par région</option></select></label>
+          <label>Région<select id="filter-region"><option value="">Toutes les régions</option></select></label>
+          <label>Secteur<select id="filter-sector"><option value="">Tous les secteurs</option></select></label>
+          <label>Financement récent<select id="filter-funded"><option value="">Tous les statuts</option><option value="true">Oui</option><option value="false">Non</option></select></label>
+          <label>Partenariat humanitaire<select id="filter-partner"><option value="">Tous les statuts</option><option value="true">Oui</option><option value="false">Non</option></select></label>
+          <button type="button" class="btn primary" id="reset-filters">Réinitialiser</button>
+          <p class="data-note">Les coordonnées de contact ne doivent être publiées qu’après validation du consentement et des règles de protection des données.</p>
+        </aside>
+        <div class="map-panel">
+          <div class="map-status" id="map-status" role="status" aria-live="polite">Chargement des données cartographiques…</div>
+          <div id="odf-map" class="odf-map" role="application" aria-label="Carte interactive des organisations dirigées par des femmes"></div>
+        </div>
+      </div>
+
+      <section class="analysis-panel" id="analyses">
+        <h2>Lectures analytiques territoriales</h2>
+        <div class="analysis-grid-odf">
+          <article><h3>Couverture et zones blanches</h3><ul class="analysis-list" id="coverage-analysis"></ul></article>
+          <article><h3>Financement et partenariats</h3><ul class="analysis-list" id="funding-analysis"></ul></article>
+          <article><h3>Capacités institutionnelles</h3><ul class="analysis-list" id="capacity-analysis"></ul></article>
+          <article><h3>Couverture sectorielle</h3><ul class="analysis-list" id="sector-analysis"></ul></article>
+        </div>
+        <div class="odf-table-wrap"><table class="odf-table"><thead><tr><th>Organisation</th><th>Région</th><th>Commune</th><th>Secteurs</th><th>Financement</th><th>Partenaire</th></tr></thead><tbody id="odf-table-body"></tbody></table></div>
+      </section>
+    </section>
+  </main>
+
+  <footer><p>© 2026 OCHA Burkina Faso · Analyse conjointe genre</p><p>Portail analytique développé avec l’appui de l’Unité de Gestion de l’Information (IMU) – OCHA Burkina Faso.</p></footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script type="module" src="../js/odf/odf-app.js"></script>
+</body>
+</html>
