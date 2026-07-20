@@ -2,99 +2,816 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portail analytique de l'Analyse conjointe genre au Burkina Faso" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
+  <meta
+    name="description"
+    content="Portail analytique de l'Analyse conjointe genre au Burkina Faso"
+  />
+
   <title>Analyse conjointe genre | OCHA Burkina Faso</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Condensed:wght@700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="css/styles.css"
+  />
+
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 </head>
+
 <body>
-  <header class="topbar" id="topbar">
-    <a class="brand" href="#accueil"><span class="brand-mark">OCHA</span><span>Burkina Faso</span></a>
-    <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
-    <nav id="main-nav">
-      <a href="#accueil">Accueil</a><a href="#contexte">Contexte</a><a href="#methodologie">Méthodologie</a><a href="#resultats">Résultats</a><a href="#partenaires">Partenaires</a><a href="#recommandations">Recommandations</a>
+
+  <!-- ======================================================
+       EN-TÊTE PRINCIPAL
+  ======================================================= -->
+
+  <header
+    class="topbar"
+    id="topbar"
+  >
+
+    <a
+      class="brand"
+      href="#accueil"
+      aria-label="Retour à l'accueil du portail OCHA Burkina Faso"
+    >
+
+      <img
+        src="assets/logos/ocha-logo.png"
+        alt="Logo OCHA"
+        class="ocha-logo"
+      />
+
+      <span class="brand-text">
+
+        <span class="country">
+          Burkina Faso
+        </span>
+
+        <span class="portal-name">
+          Portail analytique
+        </span>
+
+      </span>
+
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Ouvrir le menu principal"
+      aria-expanded="false"
+      aria-controls="main-nav"
+    >
+      ☰
+    </button>
+
+    <nav
+      id="main-nav"
+      aria-label="Navigation principale"
+    >
+
+      <a href="#accueil">
+        Accueil
+      </a>
+
+      <a href="#contexte">
+        Contexte
+      </a>
+
+      <a href="#methodologie">
+        Méthodologie
+      </a>
+
+      <a href="#resultats">
+        Résultats
+      </a>
+
+      <a href="#partenaires">
+        Partenaires
+      </a>
+
+      <a href="#recommandations">
+        Recommandations
+      </a>
+
+      <a
+        href="pages/odf.html"
+        class="nav-highlight"
+      >
+        Cartographie ODF
+      </a>
+
     </nav>
+
   </header>
 
+
+  <!-- ======================================================
+       CONTENU PRINCIPAL
+  ======================================================= -->
+
   <main>
-    <section class="hero" id="accueil">
-      <img src="assets/images/cover-photo.png" alt="Femmes déplacées et hôtes participant à une session dans un espace sûr à Kaya" />
-      <div class="hero-overlay"></div>
+
+    <!-- ====================================================
+         PAGE D'ACCUEIL
+    ===================================================== -->
+
+    <section
+      class="hero"
+      id="accueil"
+    >
+
+      <img
+        src="assets/images/cover-photo.png"
+        alt="Femmes déplacées et hôtes participant à une session dans un espace sûr à Kaya"
+      />
+
+      <div
+        class="hero-overlay"
+        aria-hidden="true"
+      ></div>
+
       <div class="hero-content">
-        <p class="eyebrow">Burkina Faso · Mars 2026</p>
-        <h1>Analyse conjointe genre</h1>
-        <h2>Pour une réponse humanitaire et un relèvement inclusif</h2>
-        <p class="hero-lead">Une plateforme interactive pour comprendre les vulnérabilités différenciées, orienter la décision et renforcer une action humanitaire sensible et transformatrice en matière de genre.</p>
-        <div class="hero-actions"><a class="btn primary" href="#resultats">Explorer les résultats</a><a class="btn ghost" href="assets/docs/Rapport_Analyse_Conjointe_Genre_2026.docx" download>Télécharger le rapport</a></div>
-      </div>
-      <p class="photo-credit">Kaya, région des Koulsé · Photo : UNOCHA / Alassane SARR</p>
-    </section>
 
-    <section class="stats-strip" id="headline-stats"></section>
+        <p class="eyebrow">
+          Burkina Faso · Mars 2026
+        </p>
 
-    <section class="section intro" id="contexte">
-      <div class="section-heading"><span>01</span><div><p class="eyebrow dark">Contexte et finalité</p><h2>Comprendre qui est affecté, comment et pourquoi</h2></div></div>
-      <div class="two-col">
-        <div>
-          <p class="lead">Le Burkina Faso traverse une crise sécuritaire et humanitaire complexe et prolongée. Les déplacements, l’insécurité, la dégradation des moyens de subsistance et les barrières d’accès aux services essentiels affectent différemment les femmes, les hommes, les filles, les garçons et les personnes vivant avec un handicap.</p>
-          <p>L’analyse adopte une approche intersectionnelle afin de mettre en évidence les cumuls de vulnérabilités et de produire des recommandations utiles à la planification, au ciblage, à la coordination, au financement et au suivi de la réponse humanitaire.</p>
+        <h1>
+          Analyse conjointe genre
+        </h1>
+
+        <h2>
+          Pour une réponse humanitaire et un relèvement inclusif
+        </h2>
+
+        <p class="hero-lead">
+          Une plateforme interactive pour comprendre les vulnérabilités
+          différenciées, orienter la décision et renforcer une action
+          humanitaire sensible et transformatrice en matière de genre.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="btn primary"
+            href="#resultats"
+          >
+            Explorer les résultats
+          </a>
+
+          <a
+            class="btn ghost"
+            href="pages/odf.html"
+          >
+            Explorer la cartographie des ODF
+          </a>
+
+          <a
+            class="btn ghost"
+            href="assets/docs/Rapport_Analyse_Conjointe_Genre_2026.docx"
+            download
+          >
+            Télécharger le rapport
+          </a>
+
         </div>
-        <aside class="callout"><h3>Objectif général</h3><p>Examiner les enjeux majeurs liés au genre et à l’inclusion dans les communautés hôtes et déplacées, puis proposer des orientations pour améliorer l’accessibilité, la sécurité, la pertinence et l’équité des interventions.</p></aside>
+
       </div>
+
+      <p class="photo-credit">
+        Kaya, région des Koulsé · Photo : UNOCHA / Alassane SARR
+      </p>
+
+    </section>
+
+
+    <!-- ====================================================
+         INDICATEURS CLÉS
+    ===================================================== -->
+
+    <section
+      class="stats-strip"
+      id="headline-stats"
+      aria-label="Principaux indicateurs de l'analyse"
+    ></section>
+
+
+    <!-- ====================================================
+         CONTEXTE
+    ===================================================== -->
+
+    <section
+      class="section intro"
+      id="contexte"
+    >
+
+      <div class="section-heading">
+
+        <span>
+          01
+        </span>
+
+        <div>
+
+          <p class="eyebrow dark">
+            Contexte et finalité
+          </p>
+
+          <h2>
+            Comprendre qui est affecté, comment et pourquoi
+          </h2>
+
+        </div>
+
+      </div>
+
+      <div class="two-col">
+
+        <div>
+
+          <p class="lead">
+            Le Burkina Faso traverse une crise sécuritaire et humanitaire
+            complexe et prolongée. Les déplacements, l’insécurité, la
+            dégradation des moyens de subsistance et les barrières d’accès
+            aux services essentiels affectent différemment les femmes, les
+            hommes, les filles, les garçons et les personnes vivant avec
+            un handicap.
+          </p>
+
+          <p>
+            L’analyse adopte une approche intersectionnelle afin de mettre
+            en évidence les cumuls de vulnérabilités et de produire des
+            recommandations utiles à la planification, au ciblage, à la
+            coordination, au financement et au suivi de la réponse
+            humanitaire.
+          </p>
+
+        </div>
+
+        <aside class="callout">
+
+          <h3>
+            Objectif général
+          </h3>
+
+          <p>
+            Examiner les enjeux majeurs liés au genre et à l’inclusion dans
+            les communautés hôtes et déplacées, puis proposer des orientations
+            pour améliorer l’accessibilité, la sécurité, la pertinence et
+            l’équité des interventions.
+          </p>
+
+        </aside>
+
+      </div>
+
       <div class="objective-grid">
-        <article><strong>01</strong><h3>Analyser les dynamiques</h3><p>Rôles, responsabilités, accès aux ressources et évolution avec la crise.</p></article>
-        <article><strong>02</strong><h3>Identifier les barrières</h3><p>Accès aux services, protection, participation, information et assistance.</p></article>
-        <article><strong>03</strong><h3>Mesurer les inégalités</h3><p>Sexe, âge, handicap, statut de déplacement et territoire.</p></article>
-        <article><strong>04</strong><h3>Orienter l’action</h3><p>Priorités programmatiques, financement, coordination et redevabilité.</p></article>
+
+        <article>
+
+          <strong>
+            01
+          </strong>
+
+          <h3>
+            Analyser les dynamiques
+          </h3>
+
+          <p>
+            Rôles, responsabilités, accès aux ressources et évolution avec
+            la crise.
+          </p>
+
+        </article>
+
+        <article>
+
+          <strong>
+            02
+          </strong>
+
+          <h3>
+            Identifier les barrières
+          </h3>
+
+          <p>
+            Accès aux services, protection, participation, information et
+            assistance.
+          </p>
+
+        </article>
+
+        <article>
+
+          <strong>
+            03
+          </strong>
+
+          <h3>
+            Mesurer les inégalités
+          </h3>
+
+          <p>
+            Sexe, âge, handicap, statut de déplacement et territoire.
+          </p>
+
+        </article>
+
+        <article>
+
+          <strong>
+            04
+          </strong>
+
+          <h3>
+            Orienter l’action
+          </h3>
+
+          <p>
+            Priorités programmatiques, financement, coordination et
+            redevabilité.
+          </p>
+
+        </article>
+
       </div>
+
     </section>
 
-    <section class="section alt" id="methodologie">
-      <div class="section-heading"><span>02</span><div><p class="eyebrow dark">Méthodologie</p><h2>Une démarche mixte, participative et sensible à la protection</h2></div></div>
-      <div class="method-grid" id="method-grid"></div>
-      <div class="sample-grid" id="sample-grid"></div>
-      <p class="method-note">La collecte a combiné questionnaires individuels, consultations en ligne, entretiens semi-structurés, groupes de discussion et revue documentaire. Elle a respecté les principes de consentement éclairé, de confidentialité, d’anonymisation, de prévention des VBG et de protection contre l’exploitation et les abus sexuels.</p>
+
+    <!-- ====================================================
+         MÉTHODOLOGIE
+    ===================================================== -->
+
+    <section
+      class="section alt"
+      id="methodologie"
+    >
+
+      <div class="section-heading">
+
+        <span>
+          02
+        </span>
+
+        <div>
+
+          <p class="eyebrow dark">
+            Méthodologie
+          </p>
+
+          <h2>
+            Une démarche mixte, participative et sensible à la protection
+          </h2>
+
+        </div>
+
+      </div>
+
+      <div
+        class="method-grid"
+        id="method-grid"
+      ></div>
+
+      <div
+        class="sample-grid"
+        id="sample-grid"
+      ></div>
+
+      <p class="method-note">
+        La collecte a combiné questionnaires individuels, consultations
+        en ligne, entretiens semi-structurés, groupes de discussion et
+        revue documentaire. Elle a respecté les principes de consentement
+        éclairé, de confidentialité, d’anonymisation, de prévention des VBG
+        et de protection contre l’exploitation et les abus sexuels.
+      </p>
+
     </section>
 
-    <section class="section" id="resultats">
-      <div class="section-heading"><span>03</span><div><p class="eyebrow dark">Résultats clés</p><h2>Sept dimensions pour lire les inégalités et guider la réponse</h2></div></div>
-      <div class="chapter-nav" id="chapter-nav"></div>
-      <div id="chapter-sections"></div>
+
+    <!-- ====================================================
+         RÉSULTATS
+    ===================================================== -->
+
+    <section
+      class="section"
+      id="resultats"
+    >
+
+      <div class="section-heading">
+
+        <span>
+          03
+        </span>
+
+        <div>
+
+          <p class="eyebrow dark">
+            Résultats clés
+          </p>
+
+          <h2>
+            Sept dimensions pour lire les inégalités et guider la réponse
+          </h2>
+
+        </div>
+
+      </div>
+
+      <div
+        class="chapter-nav"
+        id="chapter-nav"
+      ></div>
+
+      <div
+        id="chapter-sections"
+      ></div>
+
     </section>
 
-    <section class="section alt" id="partenaires">
-      <div class="section-heading"><span>04</span><div><p class="eyebrow dark">Partenaires</p><h2>Une analyse portée par une coalition institutionnelle et opérationnelle</h2></div></div>
-      <div class="partner-block"><h3>Soutien financier et/ou technique</h3><img src="assets/images/partners-financiers-techniques.png" alt="Logos des partenaires financiers et techniques" /></div>
-      <div class="partner-block"><h3>Soutien technique et collecte de données</h3><img src="assets/images/partners-collecte.png" alt="Logos des partenaires techniques et de collecte" /></div>
+
+    <!-- ====================================================
+         ACCÈS RAPIDE À LA CARTOGRAPHIE ODF
+    ===================================================== -->
+
+    <section
+      class="section odf-feature"
+      id="cartographie-odf"
+    >
+
+      <div class="section-heading">
+
+        <span>
+          06
+        </span>
+
+        <div>
+
+          <p class="eyebrow dark">
+            Organisations dirigées par des femmes
+          </p>
+
+          <h2>
+            Explorer la présence, les capacités et la couverture des ODF
+          </h2>
+
+        </div>
+
+      </div>
+
+      <div class="two-col">
+
+        <div>
+
+          <p class="lead">
+            La cartographie interactive des ODF permet d’explorer leur
+            présence territoriale, leurs secteurs d’intervention, leurs
+            populations cibles, leurs capacités institutionnelles, leurs
+            partenariats et leur accès au financement.
+          </p>
+
+          <p>
+            Elle permet également d’identifier les zones insuffisamment
+            couvertes, les territoires où les besoins sont élevés et les
+            organisations nécessitant un appui technique ou financier
+            prioritaire.
+          </p>
+
+          <a
+            class="btn primary"
+            href="pages/odf.html"
+          >
+            Accéder à la cartographie des ODF
+          </a>
+
+        </div>
+
+        <aside class="callout">
+
+          <h3>
+            Analyses disponibles
+          </h3>
+
+          <ul>
+
+            <li>
+              Localisation des ODF
+            </li>
+
+            <li>
+              Couverture régionale, provinciale et communale
+            </li>
+
+            <li>
+              Secteurs d’intervention
+            </li>
+
+            <li>
+              Accès au financement
+            </li>
+
+            <li>
+              Capacités institutionnelles
+            </li>
+
+            <li>
+              Partenariats humanitaires
+            </li>
+
+            <li>
+              Zones blanches et priorités d’appui
+            </li>
+
+          </ul>
+
+        </aside>
+
+      </div>
+
     </section>
 
-    <section class="section recommendations" id="recommandations">
-      <div class="section-heading light"><span>05</span><div><p class="eyebrow">Priorités d’action</p><h2>Passer de l’engagement à une transformation mesurable</h2></div></div>
+
+    <!-- ====================================================
+         PARTENAIRES
+    ===================================================== -->
+
+    <section
+      class="section alt"
+      id="partenaires"
+    >
+
+      <div class="section-heading">
+
+        <span>
+          04
+        </span>
+
+        <div>
+
+          <p class="eyebrow dark">
+            Partenaires
+          </p>
+
+          <h2>
+            Une analyse portée par une coalition institutionnelle et
+            opérationnelle
+          </h2>
+
+        </div>
+
+      </div>
+
+      <div class="partner-block">
+
+        <h3>
+          Soutien financier et/ou technique
+        </h3>
+
+        <img
+          src="assets/images/partners-financiers-techniques.png"
+          alt="Logos des partenaires financiers et techniques"
+          loading="lazy"
+        />
+
+      </div>
+
+      <div class="partner-block">
+
+        <h3>
+          Soutien technique et collecte de données
+        </h3>
+
+        <img
+          src="assets/images/partners-collecte.png"
+          alt="Logos des partenaires techniques et de collecte"
+          loading="lazy"
+        />
+
+      </div>
+
+    </section>
+
+
+    <!-- ====================================================
+         RECOMMANDATIONS
+    ===================================================== -->
+
+    <section
+      class="section recommendations"
+      id="recommandations"
+    >
+
+      <div class="section-heading light">
+
+        <span>
+          05
+        </span>
+
+        <div>
+
+          <p class="eyebrow">
+            Priorités d’action
+          </p>
+
+          <h2>
+            Passer de l’engagement à une transformation mesurable
+          </h2>
+
+        </div>
+
+      </div>
+
       <div class="rec-grid">
-        <article><h3>Financer la transformation</h3><p>Soutenir des programmes qui réduisent les inégalités structurelles et la charge de travail non rémunérée.</p></article>
-        <article><h3>Territorialiser la réponse</h3><p>Prioriser les zones où se cumulent déplacement, pauvreté, handicap, mariage des enfants et exclusion des services.</p></article>
-        <article><h3>Renforcer les ODF</h3><p>Mettre en place des financements directs, flexibles et pluriannuels, avec un accompagnement adapté.</p></article>
-        <article><h3>Rendre la participation influente</h3><p>Mesurer l’influence réelle des femmes et des groupes vulnérables dans les décisions.</p></article>
-        <article><h3>Améliorer les données</h3><p>Institutionnaliser les données désagrégées et leur utilisation dans la planification et le suivi.</p></article>
-        <article><h3>Assurer la redevabilité</h3><p>Déployer des mécanismes sûrs, accessibles, confidentiels et adaptés au genre et au handicap.</p></article>
+
+        <article>
+
+          <h3>
+            Financer la transformation
+          </h3>
+
+          <p>
+            Soutenir des programmes qui réduisent les inégalités structurelles
+            et la charge de travail non rémunérée.
+          </p>
+
+        </article>
+
+        <article>
+
+          <h3>
+            Territorialiser la réponse
+          </h3>
+
+          <p>
+            Prioriser les zones où se cumulent déplacement, pauvreté,
+            handicap, mariage des enfants et exclusion des services.
+          </p>
+
+        </article>
+
+        <article>
+
+          <h3>
+            Renforcer les ODF
+          </h3>
+
+          <p>
+            Mettre en place des financements directs, flexibles et
+            pluriannuels, avec un accompagnement adapté.
+          </p>
+
+        </article>
+
+        <article>
+
+          <h3>
+            Rendre la participation influente
+          </h3>
+
+          <p>
+            Mesurer l’influence réelle des femmes et des groupes vulnérables
+            dans les décisions.
+          </p>
+
+        </article>
+
+        <article>
+
+          <h3>
+            Améliorer les données
+          </h3>
+
+          <p>
+            Institutionnaliser les données désagrégées et leur utilisation
+            dans la planification et le suivi.
+          </p>
+
+        </article>
+
+        <article>
+
+          <h3>
+            Assurer la redevabilité
+          </h3>
+
+          <p>
+            Déployer des mécanismes sûrs, accessibles, confidentiels et
+            adaptés au genre et au handicap.
+          </p>
+
+        </article>
+
       </div>
+
     </section>
+
+
+    <!-- ====================================================
+         CRÉDITS ET AVIS
+    ===================================================== -->
 
     <section class="section credits">
+
       <div class="credit-grid">
-        <div><h3>Avis de non-responsabilité</h3><p>Les opinions exprimées dans cette analyse conjointe genre sont celles des auteur·e·s et ne reflètent pas nécessairement celles des organisations commanditaires, de leurs programmes ou de tout autre partenaire.</p></div>
-        <div><h3>Crédit photo</h3><p>Kaya, région des Koulsé, Burkina Faso. Personnes handicapées et personnes déplacées participant à des sessions de causeries organisées pour les femmes déplacées et hôtes dans un espace sûr. Photo : UNOCHA / Alassane SARR.</p></div>
+
+        <div>
+
+          <h3>
+            Avis de non-responsabilité
+          </h3>
+
+          <p>
+            Les opinions exprimées dans cette analyse conjointe genre sont
+            celles des auteur·e·s et ne reflètent pas nécessairement celles
+            des organisations commanditaires, de leurs programmes ou de tout
+            autre partenaire.
+          </p>
+
+        </div>
+
+        <div>
+
+          <h3>
+            Crédit photo
+          </h3>
+
+          <p>
+            Kaya, région des Koulsé, Burkina Faso. Personnes handicapées et
+            personnes déplacées participant à des sessions de causeries
+            organisées pour les femmes déplacées et hôtes dans un espace sûr.
+            Photo : UNOCHA / Alassane SARR.
+          </p>
+
+        </div>
+
       </div>
+
     </section>
+
   </main>
 
-  <footer><p>© 2026 OCHA Burkina Faso · Analyse conjointe genre</p><p>Portail analytique développé avec l’appui de l’Unité de Gestion de l’Information (IMU) – OCHA Burkina Faso.</p></footer>
+
+  <!-- ======================================================
+       PIED DE PAGE
+  ======================================================= -->
+
+  <footer>
+
+    <div class="footer-brand">
+
+      <img
+        src="assets/logos/ocha-logo.png"
+        alt="Logo OCHA"
+        class="footer-logo"
+      />
+
+      <div>
+
+        <p>
+          © 2026 OCHA Burkina Faso · Analyse conjointe genre
+        </p>
+
+        <p>
+          Portail analytique développé avec l’appui de l’Unité de Gestion
+          de l’Information (IMU) – OCHA Burkina Faso.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ======================================================
+       SCRIPTS
+  ======================================================= -->
 
   <script src="data/portal-data.js"></script>
+
   <script src="js/app.js"></script>
+
 </body>
 </html>
