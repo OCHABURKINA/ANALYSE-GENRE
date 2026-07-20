@@ -1,54 +1,51 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
 
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1"
-  />
+  >
 
   <meta
     name="description"
     content="Portail analytique de l'Analyse conjointe genre au Burkina Faso"
-  />
+  >
 
   <title>Analyse conjointe genre | OCHA Burkina Faso</title>
 
   <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
-  />
+  >
 
   <link
     rel="preconnect"
     href="https://fonts.gstatic.com"
     crossorigin
-  />
+  >
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Condensed:wght@700&display=swap"
     rel="stylesheet"
-  />
+  >
 
   <link
     rel="stylesheet"
     href="css/styles.css"
-  />
+  >
 
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 </head>
 
 <body>
 
-  <!-- ======================================================
-       EN-TÊTE PRINCIPAL
-  ======================================================= -->
+  <!-- =====================================================
+       EN-TÊTE
+  ====================================================== -->
 
-  <header
-    class="topbar"
-    id="topbar"
-  >
+  <header class="topbar" id="topbar">
 
     <a
       class="brand"
@@ -56,11 +53,17 @@
       aria-label="Retour à l'accueil du portail OCHA Burkina Faso"
     >
 
-      <img
-        src="assets/logos/ocha-logo.png"
-        alt="Logo OCHA"
-        class="ocha-logo"
-      />
+      <span class="brand-logo-wrapper">
+
+        <img
+          src="assets/logos/ocha-logo.png"
+          alt="Logo OCHA"
+          class="ocha-logo"
+          width="180"
+          height="72"
+        >
+
+      </span>
 
       <span class="brand-text">
 
@@ -127,25 +130,21 @@
   </header>
 
 
-  <!-- ======================================================
+  <!-- =====================================================
        CONTENU PRINCIPAL
-  ======================================================= -->
+  ====================================================== -->
 
   <main>
 
-    <!-- ====================================================
-         PAGE D'ACCUEIL
-    ===================================================== -->
+    <!-- PAGE D’ACCUEIL -->
 
-    <section
-      class="hero"
-      id="accueil"
-    >
+    <section class="hero" id="accueil">
 
       <img
         src="assets/images/cover-photo.png"
         alt="Femmes déplacées et hôtes participant à une session dans un espace sûr à Kaya"
-      />
+        class="hero-image"
+      >
 
       <div
         class="hero-overlay"
@@ -207,9 +206,7 @@
     </section>
 
 
-    <!-- ====================================================
-         INDICATEURS CLÉS
-    ===================================================== -->
+    <!-- INDICATEURS PRINCIPAUX -->
 
     <section
       class="stats-strip"
@@ -218,14 +215,9 @@
     ></section>
 
 
-    <!-- ====================================================
-         CONTEXTE
-    ===================================================== -->
+    <!-- CONTEXTE -->
 
-    <section
-      class="section intro"
-      id="contexte"
-    >
+    <section class="section intro" id="contexte">
 
       <div class="section-heading">
 
@@ -255,9 +247,9 @@
             Le Burkina Faso traverse une crise sécuritaire et humanitaire
             complexe et prolongée. Les déplacements, l’insécurité, la
             dégradation des moyens de subsistance et les barrières d’accès
-            aux services essentiels affectent différemment les femmes, les
-            hommes, les filles, les garçons et les personnes vivant avec
-            un handicap.
+            aux services essentiels affectent différemment les femmes,
+            les hommes, les filles, les garçons et les personnes vivant
+            avec un handicap.
           </p>
 
           <p>
@@ -291,9 +283,7 @@
 
         <article>
 
-          <strong>
-            01
-          </strong>
+          <strong>01</strong>
 
           <h3>
             Analyser les dynamiques
@@ -308,9 +298,7 @@
 
         <article>
 
-          <strong>
-            02
-          </strong>
+          <strong>02</strong>
 
           <h3>
             Identifier les barrières
@@ -325,9 +313,7 @@
 
         <article>
 
-          <strong>
-            03
-          </strong>
+          <strong>03</strong>
 
           <h3>
             Mesurer les inégalités
@@ -341,9 +327,7 @@
 
         <article>
 
-          <strong>
-            04
-          </strong>
+          <strong>04</strong>
 
           <h3>
             Orienter l’action
@@ -361,14 +345,9 @@
     </section>
 
 
-    <!-- ====================================================
-         MÉTHODOLOGIE
-    ===================================================== -->
+    <!-- MÉTHODOLOGIE -->
 
-    <section
-      class="section alt"
-      id="methodologie"
-    >
+    <section class="section alt" id="methodologie">
 
       <div class="section-heading">
 
@@ -411,14 +390,9 @@
     </section>
 
 
-    <!-- ====================================================
-         RÉSULTATS
-    ===================================================== -->
+    <!-- RÉSULTATS -->
 
-    <section
-      class="section"
-      id="resultats"
-    >
+    <section class="section" id="resultats">
 
       <div class="section-heading">
 
@@ -452,14 +426,9 @@
     </section>
 
 
-    <!-- ====================================================
-         ACCÈS RAPIDE À LA CARTOGRAPHIE ODF
-    ===================================================== -->
+    <!-- CARTOGRAPHIE ODF -->
 
-    <section
-      class="section odf-feature"
-      id="cartographie-odf"
-    >
+    <section class="section odf-feature" id="cartographie-odf">
 
       <div class="section-heading">
 
@@ -515,35 +484,13 @@
           </h3>
 
           <ul>
-
-            <li>
-              Localisation des ODF
-            </li>
-
-            <li>
-              Couverture régionale, provinciale et communale
-            </li>
-
-            <li>
-              Secteurs d’intervention
-            </li>
-
-            <li>
-              Accès au financement
-            </li>
-
-            <li>
-              Capacités institutionnelles
-            </li>
-
-            <li>
-              Partenariats humanitaires
-            </li>
-
-            <li>
-              Zones blanches et priorités d’appui
-            </li>
-
+            <li>Localisation des ODF</li>
+            <li>Couverture régionale, provinciale et communale</li>
+            <li>Secteurs d’intervention</li>
+            <li>Accès au financement</li>
+            <li>Capacités institutionnelles</li>
+            <li>Partenariats humanitaires</li>
+            <li>Zones blanches et priorités d’appui</li>
           </ul>
 
         </aside>
@@ -553,14 +500,9 @@
     </section>
 
 
-    <!-- ====================================================
-         PARTENAIRES
-    ===================================================== -->
+    <!-- PARTENAIRES -->
 
-    <section
-      class="section alt"
-      id="partenaires"
-    >
+    <section class="section alt" id="partenaires">
 
       <div class="section-heading">
 
@@ -589,11 +531,16 @@
           Soutien financier et/ou technique
         </h3>
 
-        <img
-          src="assets/images/partners-financiers-techniques.png"
-          alt="Logos des partenaires financiers et techniques"
-          loading="lazy"
-        />
+        <div class="partner-logo-frame">
+
+          <img
+            src="assets/images/partners-financiers-techniques.png"
+            alt="Logos des partenaires financiers et techniques"
+            class="partner-logo-image"
+            loading="lazy"
+          >
+
+        </div>
 
       </div>
 
@@ -603,20 +550,23 @@
           Soutien technique et collecte de données
         </h3>
 
-        <img
-          src="assets/images/partners-collecte.png"
-          alt="Logos des partenaires techniques et de collecte"
-          loading="lazy"
-        />
+        <div class="partner-logo-frame">
+
+          <img
+            src="assets/images/partners-collecte.png"
+            alt="Logos des partenaires techniques et de collecte"
+            class="partner-logo-image"
+            loading="lazy"
+          >
+
+        </div>
 
       </div>
 
     </section>
 
 
-    <!-- ====================================================
-         RECOMMANDATIONS
-    ===================================================== -->
+    <!-- RECOMMANDATIONS -->
 
     <section
       class="section recommendations"
@@ -728,9 +678,7 @@
     </section>
 
 
-    <!-- ====================================================
-         CRÉDITS ET AVIS
-    ===================================================== -->
+    <!-- CRÉDITS -->
 
     <section class="section credits">
 
@@ -773,30 +721,41 @@
   </main>
 
 
-  <!-- ======================================================
+  <!-- =====================================================
        PIED DE PAGE
-  ======================================================= -->
+  ====================================================== -->
 
-  <footer>
+  <footer class="site-footer">
 
-    <div class="footer-brand">
+    <div class="footer-inner">
 
-      <img
-        src="assets/logos/ocha-logo.png"
-        alt="Logo OCHA"
-        class="footer-logo"
-      />
+      <div class="footer-brand">
 
-      <div>
+        <span class="footer-logo-wrapper">
 
-        <p>
-          © 2026 OCHA Burkina Faso · Analyse conjointe genre
-        </p>
+          <img
+            src="assets/logos/ocha-logo.png"
+            alt="Logo OCHA"
+            class="footer-logo"
+            width="150"
+            height="60"
+            loading="lazy"
+          >
 
-        <p>
-          Portail analytique développé avec l’appui de l’Unité de Gestion
-          de l’Information (IMU) – OCHA Burkina Faso.
-        </p>
+        </span>
+
+        <div class="footer-text">
+
+          <p class="footer-title">
+            © 2026 OCHA Burkina Faso · Analyse conjointe genre
+          </p>
+
+          <p>
+            Portail analytique développé avec l’appui de l’Unité de Gestion
+            de l’Information (IMU) – OCHA Burkina Faso.
+          </p>
+
+        </div>
 
       </div>
 
@@ -805,9 +764,9 @@
   </footer>
 
 
-  <!-- ======================================================
+  <!-- =====================================================
        SCRIPTS
-  ======================================================= -->
+  ====================================================== -->
 
   <script src="data/portal-data.js"></script>
 
