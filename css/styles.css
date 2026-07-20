@@ -1210,3 +1210,18 @@
   }
 
 }
+/* Styles complémentaires de la page ODF. Gardez également votre css/styles.css principal. */
+#odf-map { position:relative; z-index:1; width:100%; min-height:620px; height:min(72vh,760px); background:#dfe8ed; }
+.map-panel { position:relative; overflow:hidden; border-radius:14px; }
+.leaflet-container { width:100%; height:100%; font-family:Inter,Arial,sans-serif; background:#dfe8ed; }
+.map-status[data-status="success"]{color:#317a4c}.map-status[data-status="warning"]{color:#a96012}.map-status[data-status="error"]{color:#b42318}
+.map-error{display:flex;min-height:620px;align-items:center;justify-content:center;flex-direction:column;padding:40px;text-align:center;color:#536170}.map-error strong{color:#b42318}
+.map-info-control,.map-legend{padding:12px 14px;background:rgba(255,255,255,.96);border:1px solid #dfe5ea;border-radius:9px;box-shadow:0 4px 14px rgba(15,39,58,.12)}
+.map-info-control{display:flex;flex-direction:column;min-width:150px}.map-info-control strong{color:#0b304a;font-size:.86rem}.map-info-control span{margin-top:3px;color:#64717d;font-size:.72rem}
+.map-legend h4{margin:0 0 9px;color:#0b304a;font-size:.78rem}.legend-row{display:flex;align-items:center;gap:8px;margin-top:6px;color:#536170;font-size:.7rem}
+.legend-swatch,.legend-area{display:inline-block;width:20px;height:13px;border:1px solid #61717f;border-radius:2px}.legend-area{background:#e6f2f9}.legend-point{display:inline-block;width:13px;height:13px;background:#5a2a84;border:2px solid #fff;border-radius:50%;box-shadow:0 0 0 1px #5a2a84}
+.region-popup h3,.organization-popup h3{margin:0 0 12px;color:#0b304a;font-size:1rem}.popup-stat{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:7px 0;border-bottom:1px solid #e6ebef;color:#536170;font-size:.76rem}
+.popup-filter-button{width:100%;margin-top:14px;padding:9px 12px;background:#1683d8;border:0;border-radius:7px;color:#fff;font:700 .75rem inherit;cursor:pointer}.popup-filter-button:hover{background:#0e659f}
+.popup-eyebrow{margin:0 0 5px;color:#5a2a84;font-size:.65rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}.organization-popup dl{margin:0}.organization-popup dl div{display:grid;grid-template-columns:110px 1fr;gap:10px;padding:7px 0;border-bottom:1px solid #e6ebef}.organization-popup dt{color:#77828d;font-size:.7rem;font-weight:600}.organization-popup dd{margin:0;color:#17212b;font-size:.74rem}
+.status-badge{display:inline-flex;padding:4px 9px;border-radius:999px;font-size:.68rem;font-weight:700}.status-yes{background:#e6f4eb;color:#277442}.status-no{background:#f1f3f5;color:#6b747d}.table-empty{padding:30px!important;color:#77828d;text-align:center!important}
+@media(max-width:780px){#odf-map{min-height:500px;height:62vh}.map-info-control{display:none}}
