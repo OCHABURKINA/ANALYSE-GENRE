@@ -1,0 +1,2643 @@
+[
+  {
+    "id": "ODF-001",
+    "organisation": "Association MoussowYélé pour le Développement et l'émergence de la fille des cascades",
+    "region": "Tannounyan",
+    "regions": [
+      "Tannounyan"
+    ],
+    "commune": "",
+    "adresse_generale": "Banfora secteur 05 à touguena",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Éducation",
+      "Santé",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 10.618886,
+    "longitude": -4.679104,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-002",
+    "organisation": "Association femme population et développement (AFPOD)",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou"
+    ],
+    "commune": "",
+    "adresse_generale": "Province du gourma/ commune de Diabo",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Sécurité alimentaire",
+      "Nutrition",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 11.981003,
+    "longitude": 0.337525,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-003",
+    "organisation": "Association Fratrie - FRATRIE",
+    "region": "Kuilsé",
+    "regions": [
+      "Kuilsé"
+    ],
+    "commune": "",
+    "adresse_generale": "Kaya, secteur 6, cité force vive A",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Eau, hygiène et assainissement",
+      "Autonomisation économique / AGR",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 13.126481,
+    "longitude": -1.038594,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-004",
+    "organisation": "Association pour la Promotion de la Femme et de l'Enfant",
+    "region": "Yaadga",
+    "regions": [
+      "Yaadga"
+    ],
+    "commune": "",
+    "adresse_generale": "Région du Yadga (NORD), Siège social Yako, Province du Passoré",
+    "secteurs": [
+      "VBG / PEAS",
+      "Protection",
+      "Nutrition",
+      "Santé",
+      "Consolidation de la paix / prévention des conflits"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 13.614946,
+    "longitude": -2.432228,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-005",
+    "organisation": "Association féminine pour le développement du Burkina 'AFEDEB'",
+    "region": "Yaadga",
+    "regions": [
+      "Yaadga"
+    ],
+    "commune": "Ouahigouya,gourcy,Yako,titao,Oula,tangaye. la,,",
+    "adresse_generale": "Secteur 8 de ouàhigouya",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 13.655956,
+    "longitude": -2.43599,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-006",
+    "organisation": "Tabital-Lobal",
+    "region": "Bankui",
+    "regions": [
+      "Bankui",
+      "Kadiogo",
+      "Yaadga",
+      "Sourou",
+      "Soum"
+    ],
+    "commune": "Dédougou, Bondokouy, Safané Tcheriba, Douroula Kona Ouarkoye, Boromo, Bagassi, Bana, Fara, Oury, Pâ, Poura, Pompoi, Yaho, Nouna, Kompaoré, Kani, Kassé, Kourou, Hadonou, Dossi, Tougan, Dassa, Didyr, Godyr, Kyon, Réo, Kordié, Pouni, Zawara, Zamo, Nouna, Kompaoré, Kani, Kassé, Kourou, Hadonou, Dossi, Ouagadougou, Ouahigouya, Barga , Kain, Kalsaka, Koumbri, Kossouka, Namissiguima, Oula, Rambo, Séguénéga, Tangaye, Thiou, Zogoré, Yako, Arbollé, Bagaré, Gomponsoum, Kirsi, Latodin, Pilimpikou, Bokin, Samba, Gourcy, Bassi, Boussou, Lèba, Tougou,Titao, Banh, Ouindigui, Sollé",
+    "adresse_generale": "Ouahigouya secteur 01",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.44414,
+    "longitude": -3.485983,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-007",
+    "organisation": "Association beogo yiinga pour la solidarité et le développement du centre nord",
+    "region": "Kuilsé",
+    "regions": [
+      "Kuilsé"
+    ],
+    "commune": "Pissila,tougouri, kongoussi",
+    "adresse_generale": "Pissila secteur 5",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Changements climatiques",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 13.060875,
+    "longitude": -1.077429,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-008",
+    "organisation": "Réseau des Femmes Leaders pour la Tolérance et la Paix du Centre Nord",
+    "region": "Kuilsé",
+    "regions": [
+      "Kuilsé"
+    ],
+    "commune": "Kaya, Barsalogho, Tougouri, Mané, Nassséré et Kongoussi",
+    "adresse_generale": "Kaya secteur 4",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Sécurité alimentaire",
+      "Éducation",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 13.041532,
+    "longitude": -1.113468,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-009",
+    "organisation": "Association Féminine pour le Développement du Burkina (AFEDEB)",
+    "region": "Yaadga",
+    "regions": [
+      "Yaadga"
+    ],
+    "commune": "toutes les communes de la région de yaadga",
+    "adresse_generale": "Secteur 1 de Ouahigouya , région de yaadga , Burkina Faso",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 13.549421,
+    "longitude": -2.466888,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-010",
+    "organisation": "Maïa",
+    "region": "Guiriko",
+    "regions": [
+      "Guiriko",
+      "Soum"
+    ],
+    "commune": "commune de Bobo, BAMA, Soumousso, Péni, Toussiana",
+    "adresse_generale": "Rue780, avenue Dr N'Diaye Malle, secteur 5 Bobo-Dioulasso",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 11.129488,
+    "longitude": -4.318381,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-011",
+    "organisation": "Ensemble Sécurisons le Futur",
+    "region": "Kadiogo",
+    "regions": [
+      "Kadiogo",
+      "Nando",
+      "Goulmou"
+    ],
+    "commune": "Koudougou",
+    "adresse_generale": "Rue N22, à 3km de l'hôpital Paul VI",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 12.428934,
+    "longitude": -1.577446,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-012",
+    "organisation": "ASSOCIATION IQRA",
+    "region": "Bankui",
+    "regions": [
+      "Bankui",
+      "Kadiogo",
+      "Kuilsé",
+      "Yaadga"
+    ],
+    "commune": "Dapelgo , Bousse , loumbila, Zorgho (zones d intervention actuelles )",
+    "adresse_generale": "iqrabf2013@gmail.com",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "Protection",
+      "Sécurité alimentaire",
+      "Éducation",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 12.448714,
+    "longitude": -3.388321,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-013",
+    "organisation": "Association action pour un Monde Meilleur AMM",
+    "region": "Kadiogo",
+    "regions": [
+      "Kadiogo",
+      "Yaadga",
+      "Guiriko"
+    ],
+    "commune": "Bobo Dioulasso",
+    "adresse_generale": "Arrondissement N 03 Ouaga Tampouy",
+    "secteurs": [
+      "Éducation",
+      "Autonomisation économique / AGR",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": false,
+    "financement_recent": true,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "Moyenne",
+    "latitude": 12.400596,
+    "longitude": -1.556832,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-014",
+    "organisation": "Association D'appui et d'Eveil Pugsada",
+    "region": "Bankui",
+    "regions": [
+      "Bankui",
+      "Kadiogo",
+      "Nakambé",
+      "Sourou"
+    ],
+    "commune": "Bitou, Tenkodogo, Koupéla, puytenga, Ouagadougou, Tougan et Nouna",
+    "adresse_generale": "Ouagadougou, quartier Zagtouli, Contact 70263576",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Autonomisation économique / AGR",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.43542,
+    "longitude": -3.478869,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-015",
+    "organisation": "Convergence Santé, Droits et Emergence Economique/Afrique",
+    "region": "Bankui",
+    "regions": [
+      "Bankui",
+      "Kadiogo",
+      "Kuilsé"
+    ],
+    "commune": "Ouagadougou, Bondokuy, Nouna, Boussouma",
+    "adresse_generale": "Ouagadougou, Patte d'oie, Arrondissement 12, secteur 52",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 12.520448,
+    "longitude": -3.45066,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-016",
+    "organisation": "Coopérative Sidlawendé",
+    "region": "Yaadga",
+    "regions": [
+      "Yaadga"
+    ],
+    "commune": "Ouahigouya",
+    "adresse_generale": "Ouahigouya, secteur 15",
+    "secteurs": [
+      "Sécurité alimentaire",
+      "Nutrition",
+      "Autonomisation économique / AGR"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 13.670505,
+    "longitude": -2.437771,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-017",
+    "organisation": "Association femmes et développement au Sahel(FEDES)",
+    "region": "Yaadga",
+    "regions": [
+      "Yaadga"
+    ],
+    "commune": "Yako",
+    "adresse_generale": "Région du Nord, Province du Passoré secteur 4 de la commune de yako",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 13.645533,
+    "longitude": -2.428634,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-018",
+    "organisation": "Association des jeunes ambitieux de Ouahigouya",
+    "region": "Yaadga",
+    "regions": [
+      "Yaadga"
+    ],
+    "commune": "Ouahigouya ,gourcy Yako ,titao",
+    "adresse_generale": "Secteur 2 de ouahigouya",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Santé",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 13.568459,
+    "longitude": -2.476964,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-019",
+    "organisation": "Mouvement citoyen FEMIN -IN",
+    "region": "Kadiogo",
+    "regions": [
+      "Kadiogo",
+      "Nakambé"
+    ],
+    "commune": "ouagadougou; ziniaré ; tenkodogo ; koupela",
+    "adresse_generale": "Ouagadougou Burkina Faso",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Consolidation de la paix / prévention des conflits",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 12.426216,
+    "longitude": -1.482657,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-020",
+    "organisation": "Communities for hope (C4HOPE)",
+    "region": "Bankui",
+    "regions": [
+      "Bankui",
+      "Kadiogo"
+    ],
+    "commune": "Ouagadoudou, Dédougou, Nouna, Toma",
+    "adresse_generale": "01 BP 2139 Ouaga CNTC 2000, Ouaga 2000, Secteur 51, Extension Sud)",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.516084,
+    "longitude": -3.545716,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-021",
+    "organisation": "Association des Femmes Burkinabées-Ouahigouya ( AFBO )",
+    "region": "Yaadga",
+    "regions": [
+      "Yaadga"
+    ],
+    "commune": "Ouahigouya-Gourcy-Titao-Tougou",
+    "adresse_generale": "Ouahigouya secteur 1",
+    "secteurs": [
+      "Égalité de genre",
+      "Éducation",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 13.537796,
+    "longitude": -2.398357,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-022",
+    "organisation": "Association Tel-taaba",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou"
+    ],
+    "commune": "Diapangou,Fada",
+    "adresse_generale": "Fada secteur 2",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 12.077748,
+    "longitude": 0.283567,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-023",
+    "organisation": "AFOD",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou"
+    ],
+    "commune": "Fada Diao ztDiapanfou",
+    "adresse_generale": "Fada secteur 1",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Sécurité alimentaire",
+      "Nutrition",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap",
+      "Culture"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 12.123757,
+    "longitude": 0.436194,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-024",
+    "organisation": "ASSOCIATION YERELON+",
+    "region": "Kadiogo",
+    "regions": [
+      "Kadiogo"
+    ],
+    "commune": "Ouagadougou",
+    "adresse_generale": "Ouagadougou, CSPS secteur 12 DAPOYA",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Nutrition",
+      "Santé",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 12.323047,
+    "longitude": -1.433712,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-025",
+    "organisation": "Association Burkinabé des Femmes Battantes (ABFB)",
+    "region": "Kadiogo",
+    "regions": [
+      "Kadiogo",
+      "Nando",
+      "Nazinon",
+      "Oubri",
+      "Goulmou"
+    ],
+    "commune": "Ouagadougou, Loumbila, Sourgoubila, Poa, Saponé",
+    "adresse_generale": "Ouagadougou, Arrondissement 2 secteur 9",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Eau, hygiène et assainissement",
+      "Autonomisation économique / AGR",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 12.392886,
+    "longitude": -1.491268,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-026",
+    "organisation": "Réseau des Femmes Leaders pour la Tolérance et la Paix au Centre- Nord( RFLTP/CN)",
+    "region": "Kuilsé",
+    "regions": [
+      "Kuilsé",
+      "Yaadga",
+      "Kadiogo"
+    ],
+    "commune": "Kaya( province de Sandbondtenga), (kongoussi( provovince du Bam), Tougouri province du Namatenga)",
+    "adresse_generale": "Kaya/secteur4 à 500m de la grande mosquée de Mouk adam yiirimosquée de",
+    "secteurs": [
+      "Égalité de genre",
+      "Sécurité alimentaire",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles"
+    ],
+    "intervient_reponse_humanitaire": false,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 13.122456,
+    "longitude": -1.095033,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-027",
+    "organisation": "Communities for hope",
+    "region": "Bankui",
+    "regions": [
+      "Bankui",
+      "Kadiogo"
+    ],
+    "commune": "Ouagadougou, Dédougou, Toma, Nouna",
+    "adresse_generale": "01 BP 2139 Ouaga CNTC 2000, Secteur 51, Extension Sud",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.522405,
+    "longitude": -3.476032,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-028",
+    "organisation": "Association VENEGRE NOOMA (AVN)",
+    "region": "Yaadga",
+    "regions": [
+      "Yaadga"
+    ],
+    "commune": "Commune de Ouahigouya et de Tangaye",
+    "adresse_generale": "Ville: Ouahigouya/secteur 01 à 100 mètre avant le lycée syldep",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Nutrition",
+      "Santé"
+    ],
+    "intervient_reponse_humanitaire": false,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 13.55664,
+    "longitude": -2.48064,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-029",
+    "organisation": "Initiative Pananetugri pour le Bien-être de la Femme",
+    "region": "Bankui",
+    "regions": [
+      "Bankui",
+      "Kadiogo",
+      "Nakambé",
+      "Kuilsé",
+      "Goulmou",
+      "Yaadga",
+      "Sirba",
+      "Sourou",
+      "Guiriko",
+      "Nando",
+      "Oubri"
+    ],
+    "commune": "Fada, Tibga, Diabo, Diapangou, Bogandé, Bilanga, Dédougou, Bobo, Nouna, Tougan, Lanfiéra, Tenkodogo, Ouagadougou, Koudougou, Zorgho, Kaya",
+    "adresse_generale": "contact@ongipbf.org",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Nutrition",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.433226,
+    "longitude": -3.44058,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-030",
+    "organisation": "Association action pour un Monde Meilleur",
+    "region": "Kadiogo",
+    "regions": [
+      "Kadiogo",
+      "Yaadga",
+      "Guiriko"
+    ],
+    "commune": "Ouagadougou, ouahigouya, Bobo Dioulasso",
+    "adresse_generale": "Ouagadougou, Tampouy",
+    "secteurs": [
+      "Égalité de genre",
+      "Éducation",
+      "Autonomisation économique / AGR",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "Moyenne",
+    "latitude": 12.286797,
+    "longitude": -1.515487,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-031",
+    "organisation": "Association Cri de Cœur pour l'Equité et le Développement (ACCED)",
+    "region": "Bankui",
+    "regions": [
+      "Bankui",
+      "Nakambé",
+      "Kuilsé",
+      "Goulmou"
+    ],
+    "commune": "Zorgho, Ziniare, Loumbila, Boudry, Mogtedo, Méguet, Kando, Pouytenga, Baskouré, Kaya, Kongoussi, Boulsa, Pissila, Boussouma, Korsimoro, Tougouri, Pensa, Barsalogho, Dedougou, Fada, Koupéla, Zoungou, Zitenga, ,",
+    "adresse_generale": "Zorgho secteur 6",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.40658,
+    "longitude": -3.479049,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-032",
+    "organisation": "Association Dewral et Fayda pour un Développement Durable",
+    "region": "Liptako",
+    "regions": [
+      "Liptako",
+      "Soum"
+    ],
+    "commune": "Dori et Djibo",
+    "adresse_generale": "Djibo secteur 04",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Nutrition",
+      "Santé",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 13.981974,
+    "longitude": -0.038224,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-033",
+    "organisation": "Coordination Provinciale des Organisations Féminines du Soul(CPOFS)",
+    "region": "Soum",
+    "regions": [
+      "Soum"
+    ],
+    "commune": "Djibo, Arbinda et Kelbo",
+    "adresse_generale": "Djibo secteur 4",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Sécurité alimentaire",
+      "Nutrition",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 14.063007,
+    "longitude": -1.611384,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-034",
+    "organisation": "Coordination Provinciale des Organisations Féminines du Soum",
+    "region": "Soum",
+    "regions": [
+      "Soum"
+    ],
+    "commune": "Djibo, Kelbo et Arbinda",
+    "adresse_generale": "Djibo secteur 4",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Sécurité alimentaire",
+      "Nutrition",
+      "Consolidation de la paix / prévention des conflits",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 14.144865,
+    "longitude": -1.631049,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-035",
+    "organisation": "Association Tin Buaba pour la promotion et l'autonomisation de la femme rurale",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou"
+    ],
+    "commune": "Diapangou, Fada,",
+    "adresse_generale": "Diapangou région de l'Est",
+    "secteurs": [
+      "VBG / PEAS",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.076712,
+    "longitude": 0.268321,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-036",
+    "organisation": "Pag-la-laafi",
+    "region": "Yaadga",
+    "regions": [
+      "Yaadga"
+    ],
+    "commune": "Gourcy",
+    "adresse_generale": "B p 04 Gourcy",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Sécurité alimentaire",
+      "Nutrition",
+      "Éducation",
+      "Santé",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 13.63966,
+    "longitude": -2.407789,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-037",
+    "organisation": "CAPSSR-BF",
+    "region": "Bankui",
+    "regions": [
+      "Bankui",
+      "Kadiogo",
+      "Nakambé",
+      "Kuilsé",
+      "Yaadga",
+      "Guiriko",
+      "Djôrô",
+      "Goulmou"
+    ],
+    "commune": "Dédougou, Bobo-Dioulasso, Kaya, Ouahigouya, Yako, Tenkodogo, Tanghin Dassouri, Pabré, Komsilga, Ouagadougou, Diebougou",
+    "adresse_generale": "Rue des écoles Paspanga. 01 BP 4686 Ouagadougou 01",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": false,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 12.434391,
+    "longitude": -3.469957,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-038",
+    "organisation": "Soeurs Pour Soeurs/Tond Laa Taaba",
+    "region": "Bankui",
+    "regions": [
+      "Bankui",
+      "Kadiogo",
+      "Nakambé",
+      "Goulmou",
+      "Yaadga"
+    ],
+    "commune": "GUIRIKO (Ex: Hauts Bassins)",
+    "adresse_generale": "9GF3+M6Q, 1200 Logements, Ouagadougou",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Autonomisation économique / AGR",
+      "Santé sexuelle et reproductive",
+      "Santé mentale"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "Moyenne",
+    "latitude": 12.436284,
+    "longitude": -3.544291,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-039",
+    "organisation": "Club des jeunes filles leaders du mouhoun",
+    "region": "Bankui",
+    "regions": [
+      "Bankui"
+    ],
+    "commune": "Dédougou",
+    "adresse_generale": "Dédougou secteur 2",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Santé",
+      "Consolidation de la paix / prévention des conflits",
+      "Leadership des femmes et filles",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "Moyenne",
+    "latitude": 12.427642,
+    "longitude": -3.458874,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-040",
+    "organisation": "ASSOCIATION BUAMINYABA",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou",
+      "Sirba",
+      "Tapoa"
+    ],
+    "commune": "Fada, Diapangou, Diabo, Tibga, Yamba, Piela, Bogande, Manni, Diapaga, Pama, Bilanga, Kantchari,",
+    "adresse_generale": "Fada N'Gourma sise au secteur 1",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Sécurité alimentaire",
+      "Nutrition",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.109224,
+    "longitude": 0.327327,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-041",
+    "organisation": "REPAFER",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou",
+      "Yaadga",
+      "Nazinon",
+      "Oubri"
+    ],
+    "commune": "Manga, Béré, Gonbiussougou, Bindé, Guiba, Gogo, Nobere, Boussé, Niou, Laye, Sourgoubila, Toeghin",
+    "adresse_generale": "repafer2020@gmail.com",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Sécurité alimentaire",
+      "Éducation",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.079961,
+    "longitude": 0.320949,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-042",
+    "organisation": "Association Koom pour l'Auto Promotion des Femmes du Burkina Faso : A.K.A.FEM/BF",
+    "region": "Kadiogo",
+    "regions": [
+      "Kadiogo",
+      "Kuilsé",
+      "Yaadga"
+    ],
+    "commune": "ouahigouya, gourcy, titao , ouagadougou, nagbingou,",
+    "adresse_generale": "Ouahigouya secteur 8",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Sécurité alimentaire",
+      "Nutrition",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap",
+      "Alphabétisation et Formations techniques spécifiques"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 12.29462,
+    "longitude": -1.526452,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-043",
+    "organisation": "Association Tin Seri",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou"
+    ],
+    "commune": "27 communes de la région",
+    "adresse_generale": "S/C BP 205 Fada N’Gourma secteur 11",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles"
+    ],
+    "intervient_reponse_humanitaire": false,
+    "financement_recent": true,
+    "partenariat_humanitaire": false,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.025093,
+    "longitude": 0.326012,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-044",
+    "organisation": "Initiative de Jeunes pour le Développement",
+    "region": "Nando",
+    "regions": [
+      "Nando"
+    ],
+    "commune": "Réo, Tenado, Dassa, Kyon, Godyr, Didyr, Kordié,",
+    "adresse_generale": "Réo/ Sanguié",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": false,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 12.197024,
+    "longitude": -2.339274,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-045",
+    "organisation": "Association Tin Hinan",
+    "region": "Kadiogo",
+    "regions": [
+      "Kadiogo",
+      "Liptako"
+    ],
+    "commune": "Gorom gorom, Dori, Ouagadougou (SAKOULA, TANGUIN, TULWEGO",
+    "adresse_generale": "SOMGANDE",
+    "secteurs": [
+      "Égalité de genre",
+      "Protection",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 12.413468,
+    "longitude": -1.528088,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-046",
+    "organisation": "Réseau des Femmes Leaders pour la Tolérance et la Paix au Centre Nord ( RFLTP/CN)",
+    "region": "Kuilsé",
+    "regions": [
+      "Kuilsé"
+    ],
+    "commune": "Commune de Kaya",
+    "adresse_generale": "Kaya/secteur 4, situé à 500m de la mosquée de Moukadamyiiri",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Nutrition",
+      "Éducation",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 13.093394,
+    "longitude": -1.051897,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-047",
+    "organisation": "Réseau de Communication d’Informations et de Formation des Femmes dans les ONG du Burkina Faso (RECIF/ONG6BF+))",
+    "region": "Kadiogo",
+    "regions": [
+      "Kadiogo"
+    ],
+    "commune": "RAS",
+    "adresse_generale": "Ouagadougou, avenue Houari Boumedienne, quartier ex Koulouba",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": false,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 12.352091,
+    "longitude": -1.481102,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-048",
+    "organisation": "Action in the Service of Humanitarian and Development",
+    "region": "Kuilsé",
+    "regions": [
+      "Kuilsé"
+    ],
+    "commune": "Kaya, Pissila, Kongoussi, Tikaré, Rouko",
+    "adresse_generale": "17 BP 475 Pissy Ouagadougou 17",
+    "secteurs": [
+      "Protection de l'enfance",
+      "VBG / PEAS",
+      "Eau, hygiène et assainissement",
+      "Autonomisation économique / AGR",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 13.080401,
+    "longitude": -0.998035,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-049",
+    "organisation": "Association pour l'Intégration Economique et Sociale des Femmes dans le développement (IES FEMMES)",
+    "region": "Kadiogo",
+    "regions": [
+      "Kadiogo",
+      "Nakambé"
+    ],
+    "commune": "Ouagadougou, Saaba, Koubri, Pouytenga",
+    "adresse_generale": "Ouagadougou, secteur 51",
+    "secteurs": [
+      "VBG / PEAS",
+      "Nutrition",
+      "Santé",
+      "Autonomisation économique / AGR",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": false,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 12.35196,
+    "longitude": -1.492065,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-050",
+    "organisation": "Association aucune Grossesse en Milieu Scolaire",
+    "region": "Nazinon",
+    "regions": [
+      "Nazinon"
+    ],
+    "commune": "Toutes les communes de la région du Nazinon",
+    "adresse_generale": "Région du Nazinon, Province du Bazèga, Commune de Ipelcé",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Éducation",
+      "Santé"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 11.611271,
+    "longitude": -1.145952,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-051",
+    "organisation": "Association Femmes et Défis pour le Bien etre",
+    "region": "Kadiogo",
+    "regions": [
+      "Kadiogo",
+      "Nazinon",
+      "Oubri"
+    ],
+    "commune": "Doulougou, Saponé, Ipelcé, Zitenga, Mané",
+    "adresse_generale": "BAZEGA , ville de IPELCE",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 12.342085,
+    "longitude": -1.429837,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-052",
+    "organisation": "Hamsoagni des femmes handicapés du Gourma",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou"
+    ],
+    "commune": "Gourma",
+    "adresse_generale": "Fada N'Gourma",
+    "secteurs": [
+      "Nutrition",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": false,
+    "financement_recent": true,
+    "partenariat_humanitaire": false,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.095988,
+    "longitude": 0.301041,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-053",
+    "organisation": "ASSOCIATION FEMININE NABONSWENDE DU BURKINA",
+    "region": "Kuilsé",
+    "regions": [
+      "Kuilsé"
+    ],
+    "commune": "BARSALOGHO, KAYA, YALGO, TOUGOURI, DABLO, PENSA, KONGOUSSI, BOURZANGA ET BOUROUM",
+    "adresse_generale": "BARSALOGHO - SECTEUR N°3",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Autonomisation économique / AGR",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 13.142193,
+    "longitude": -1.106498,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-054",
+    "organisation": "Association pour le développement durable des femmes personnes déplacées interne réfugiés et hôte du yatenga",
+    "region": "Yaadga",
+    "regions": [
+      "Yaadga"
+    ],
+    "commune": "Ouahigouya,groucy, TIATO",
+    "adresse_generale": "Ouahigouya secteur n°11",
+    "secteurs": [
+      "Égalité de genre",
+      "Sécurité alimentaire",
+      "Eau, hygiène et assainissement",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 13.613613,
+    "longitude": -2.428696,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-055",
+    "organisation": "Association femme population et développement (AFPOD)",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou"
+    ],
+    "commune": "",
+    "adresse_generale": "Siége sociale dans la commune de Diabo/province du gourma /region de l'EST",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Sécurité alimentaire",
+      "Nutrition",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.120695,
+    "longitude": 0.299669,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-056",
+    "organisation": "Association nabons Wende des femmes de diabo",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou"
+    ],
+    "commune": "Commune de diabo",
+    "adresse_generale": "A l'est de la maison des jeunes de diabo en face du cm",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Sécurité alimentaire",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 12.015485,
+    "longitude": 0.272046,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-057",
+    "organisation": "AWLA Burkina Faso",
+    "region": "Kadiogo",
+    "regions": [
+      "Kadiogo",
+      "Sourou"
+    ],
+    "commune": "Ouagadougou et Bobo Dioulasso",
+    "adresse_generale": "Dassasgho Secteur 22 Ouagadougou",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Santé",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap",
+      "Prévention de la radicalisation et la lutte contre l'Extrémisme Violent"
+    ],
+    "intervient_reponse_humanitaire": false,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 12.292841,
+    "longitude": -1.47817,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-058",
+    "organisation": "Association femme et développement durable Gadogou",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou"
+    ],
+    "commune": "Fada",
+    "adresse_generale": "Fada , siège à l'intérieur de la gare de TSR",
+    "secteurs": [
+      "Égalité de genre",
+      "Éducation",
+      "Santé"
+    ],
+    "intervient_reponse_humanitaire": false,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 12.039417,
+    "longitude": 0.337064,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-059",
+    "organisation": "Association des veuves et orphelins/Dorcas",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou",
+      "Tapoa"
+    ],
+    "commune": "Nous avons la ville de fada n'gourma, la ville de bogande ,la ville de pama,la ville de gayeri",
+    "adresse_generale": "Fada n'gourma/ secteur 7/ jusqu'à a côté de la pharmacie Theresa",
+    "secteurs": [
+      "Protection de l'enfance",
+      "VBG / PEAS",
+      "Sécurité alimentaire",
+      "Éducation",
+      "Santé"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.09602,
+    "longitude": 0.337731,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-060",
+    "organisation": "Dawla Rewbe",
+    "region": "Yaadga",
+    "regions": [
+      "Yaadga"
+    ],
+    "commune": "Ouahigouya",
+    "adresse_generale": "Ouahigouya au nord du Burkina Faso",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Consolidation de la paix / prévention des conflits",
+      "Leadership des femmes et filles"
+    ],
+    "intervient_reponse_humanitaire": false,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 13.638517,
+    "longitude": -2.486931,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-061",
+    "organisation": "Association Bienfaits de la Nature",
+    "region": "Bankui",
+    "regions": [
+      "Bankui"
+    ],
+    "commune": "National",
+    "adresse_generale": "Bobo Dioulasso",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Santé",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "Moyenne",
+    "latitude": 12.461882,
+    "longitude": -3.398097,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-062",
+    "organisation": "Les femmes veuves et orphelins.",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou",
+      "Tapoa"
+    ],
+    "commune": "Fada n'gourma,pama,gayeri,Boganda, Diapaga.",
+    "adresse_generale": "Fada n'gourma, secteur 7",
+    "secteurs": [
+      "Protection",
+      "Sécurité alimentaire",
+      "Abris et articles ménagers essentiels",
+      "Éducation",
+      "Santé"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.072031,
+    "longitude": 0.389674,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-063",
+    "organisation": "Association des Femmes Éducatrices du Nord",
+    "region": "Yaadga",
+    "regions": [
+      "Yaadga"
+    ],
+    "commune": "Ouahigouya",
+    "adresse_generale": "Ouahigouya secteur 11",
+    "secteurs": [
+      "VBG / PEAS",
+      "Éducation",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 13.652121,
+    "longitude": -2.383252,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-064",
+    "organisation": "Association des femmes patriotes du goulmou",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou"
+    ],
+    "commune": "Fada tibga Diapangou",
+    "adresse_generale": "Fada secteur 6nord",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Protection",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Patriotisme"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 12.048411,
+    "longitude": 0.419755,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-065",
+    "organisation": "Cri de cœur pour les veuves,les orphelins et les démunis",
+    "region": "Sirba",
+    "regions": [
+      "Sirba"
+    ],
+    "commune": "Bogandé piela bilanga",
+    "adresse_generale": "Fada",
+    "secteurs": [
+      "Protection de l'enfance",
+      "VBG / PEAS",
+      "Nutrition",
+      "Éducation",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 13.022868,
+    "longitude": 0.129497,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-066",
+    "organisation": "Association Tin Buaba pour la promotion et l'autonomisation de la femme rurale",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou"
+    ],
+    "commune": "Fada Diapangou",
+    "adresse_generale": "706834444/67818187",
+    "secteurs": [
+      "VBG / PEAS",
+      "Sécurité alimentaire",
+      "Nutrition",
+      "Eau, hygiène et assainissement",
+      "Autonomisation économique / AGR"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "Moyenne",
+    "latitude": 12.037847,
+    "longitude": 0.440779,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-067",
+    "organisation": "Convergence Pour la Santé, les Droits et l'Emergence Economique/Afrique",
+    "region": "Bankui",
+    "regions": [
+      "Bankui",
+      "Kadiogo",
+      "Kuilsé"
+    ],
+    "commune": "Kona, Nouna, Solenzo, Dédougou, Tougan, Ouagadougou, Kaya",
+    "adresse_generale": "Ouagadougou,Patte d’oie, Arrondissement 12 secteur 52",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Nutrition",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 12.422258,
+    "longitude": -3.394143,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-068",
+    "organisation": "Association de Bienfaisance et de Secours aux Sinistrés et Réfugiés (ABSSR)",
+    "region": "Bankui",
+    "regions": [
+      "Bankui",
+      "Kadiogo",
+      "Nakambé",
+      "Kuilsé",
+      "Goulmou",
+      "Yaadga",
+      "Sourou"
+    ],
+    "commune": "- Ouagadougou (Kadiogo) - Toma (Bankui) - Kaya (Kuilsé) - Fada N’Gourma (Goulmou) - Yako (Yaadga) - Tenkodogo (Nakambé)",
+    "adresse_generale": "Siège : Arrondissement N°3, Ouagadougou, Secteur 15, Quartier Kilwin, Burkina Faso, Adresse postale : 01 BP 2351 Ouagadougou 01",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Sécurité alimentaire",
+      "Gestion des sites temporaires",
+      "Abris et articles ménagers essentiels",
+      "Nutrition",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 12.515456,
+    "longitude": -3.484264,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-069",
+    "organisation": "Association songtaaba des jeunes pour l'enfant ASJE",
+    "region": "Kadiogo",
+    "regions": [
+      "Kadiogo",
+      "Nakambé",
+      "Oubri",
+      "Goulmou"
+    ],
+    "commune": "Zorgho",
+    "adresse_generale": "Ouagadougou, secteur 44 14 Yarre Dassasgo",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Nutrition",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 12.35045,
+    "longitude": -1.425172,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-070",
+    "organisation": "Association pour la Protection des Droits de la Jeune Fille et de l'Enfant au Burkina Faso",
+    "region": "Guiriko",
+    "regions": [
+      "Guiriko"
+    ],
+    "commune": "Bobo-Dioulasso orodara et Houndé",
+    "adresse_generale": "Bobo-Dioulasso secteur 02",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "Moyenne",
+    "latitude": 11.161764,
+    "longitude": -4.234786,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-071",
+    "organisation": "UNION DES FEMMES LEADERS D’AFRIQUE UFL A",
+    "region": "Bankui",
+    "regions": [
+      "Bankui",
+      "Kadiogo",
+      "Nakambé",
+      "Goulmou"
+    ],
+    "commune": "Points focaux dans 13 regions",
+    "adresse_generale": "Siège: roumtenga Ouagadougou01 BP 3036",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Éducation",
+      "Santé",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 12.44507,
+    "longitude": -3.430004,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-072",
+    "organisation": "Association des Jeunes pour le Développement Durable et Inclusif des Koulsé",
+    "region": "Kuilsé",
+    "regions": [
+      "Kuilsé"
+    ],
+    "commune": "Kaya",
+    "adresse_generale": "+226 72417241",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Sécurité alimentaire",
+      "Nutrition",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 13.112964,
+    "longitude": -1.110536,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-073",
+    "organisation": "Association TODI YABA",
+    "region": "Nakambé",
+    "regions": [
+      "Nakambé",
+      "Goulmou",
+      "Liptako",
+      "Sirba",
+      "Tapoa"
+    ],
+    "commune": "Koupela, Dialgaye, Gounghin, Tensobtenga, Yargo, Fada N'Gourma, Tibga, Diabo, Diapangou, Matiacoali, Dori, Gorgadji, Bogandé, Piéla, Bilanga, Kantchari",
+    "adresse_generale": "Fada N'Gourma, Secteur 3, premier six mètres après la nouvelle station en face de la SONABEL et avant le service des impôts (domaine)",
+    "secteurs": [
+      "Protection",
+      "Sécurité alimentaire",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 11.818695,
+    "longitude": -0.339709,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-074",
+    "organisation": "Association pour la Promotion de la Femme et de l’Enfant dans les pays du Sahel ( APFES)",
+    "region": "Liptako",
+    "regions": [
+      "Liptako"
+    ],
+    "commune": "Dori, Gorgadji, Bani",
+    "adresse_generale": "Siège est situé au secteur 1 à Dori dans le seno région du liptako",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Santé",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 14.005245,
+    "longitude": -0.005201,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-075",
+    "organisation": "Association Pour l'Entraide et le Développement de la Femme et de la Jeune Fille",
+    "region": "Guiriko",
+    "regions": [
+      "Guiriko"
+    ],
+    "commune": "",
+    "adresse_generale": "Bobo Dioulasso, secteur 05",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Éducation",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 11.150265,
+    "longitude": -4.382914,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-076",
+    "organisation": "Association Cri de Coeur pour le Soutien des Orphelins, des Veuves et des Démunis du Centre-Nord ( ACC/SOVD-CN)",
+    "region": "Kuilsé",
+    "regions": [
+      "Kuilsé"
+    ],
+    "commune": "Kaya, Boussouma, Pibaoré, Pissila, Boulsa, Nasseré, zimtanga",
+    "adresse_generale": "Kaya, secteur 4, région des Koulsé",
+    "secteurs": [
+      "Protection de l'enfance",
+      "VBG / PEAS",
+      "Protection",
+      "Sécurité alimentaire",
+      "Éducation",
+      "Santé",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 13.10504,
+    "longitude": -1.118143,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-077",
+    "organisation": "Association Burkinabè pour la Survie de l'Enfance",
+    "region": "Bankui",
+    "regions": [
+      "Bankui",
+      "Kadiogo",
+      "Kuilsé",
+      "Yaadga",
+      "Sourou"
+    ],
+    "commune": "Dédougou, Réo, Koudougou, Tougan, Ouahigouya, Ouagadougou. Tanghin-Dassouri, Léo, Yako, Zamo",
+    "adresse_generale": "fzongoabseburkina.org",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Sécurité alimentaire",
+      "Nutrition",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 12.392024,
+    "longitude": -3.511861,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-078",
+    "organisation": "Association Munyu des Femmes",
+    "region": "Tannounyan",
+    "regions": [
+      "Tannounyan"
+    ],
+    "commune": "Niankorodougou, Konadougou, Soubakaniedougou, Kangoura, Kaniagara, Oueleni,",
+    "adresse_generale": "Siège social, Banfora, secteur 1, région des Tannouyan, province de la Comoé",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Leadership des femmes et filles"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 10.685409,
+    "longitude": -4.771397,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-079",
+    "organisation": "Association Fratrie",
+    "region": "Kuilsé",
+    "regions": [
+      "Kuilsé"
+    ],
+    "commune": "Kongoussi dans la province de Bam; Boulsa dans le Namentenga et Barsalogho, Kaya et Pissila dans le Namentenga.",
+    "adresse_generale": "Secteur 6 de Kaya, Province de Sanbondtenga, Région des Koulsé",
+    "secteurs": [
+      "Protection de l'enfance",
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 13.069227,
+    "longitude": -1.059477,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-080",
+    "organisation": "Association Voisins Solidaires du Centre-Nord (AVS/CN)",
+    "region": "Kuilsé",
+    "regions": [
+      "Kuilsé"
+    ],
+    "commune": "Kaya, Boussouma, Barsalogho, Pissila, Tougouri, Yalgo, Mané",
+    "adresse_generale": "Kaya, région des Koulsé, BURKINA FASO",
+    "secteurs": [
+      "VBG / PEAS",
+      "Protection",
+      "Santé",
+      "Consolidation de la paix / prévention des conflits",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": false,
+    "financement_recent": false,
+    "partenariat_humanitaire": false,
+    "participation_coordination": false,
+    "capacite": "À renforcer",
+    "latitude": 13.047924,
+    "longitude": -1.138698,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-081",
+    "organisation": "Association pour la Sauvegarde de l'Environnement et le Développement Durable (ASEDD)",
+    "region": "Nazinon",
+    "regions": [
+      "Nazinon",
+      "Kuilsé",
+      "Kadiogo"
+    ],
+    "commune": "Doulougou, Gaongo, Ipelcé, Kayao, Kombissiri, Saponé et Toécé",
+    "adresse_generale": "Kombissiri,Secteur 5",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Sécurité alimentaire",
+      "Nutrition",
+      "Éducation",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Changements climatiques",
+      "Santé sexuelle et reproductive",
+      "Inclusion / handicap",
+      "protection de l'environnement"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 11.586546,
+    "longitude": -1.0619,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-082",
+    "organisation": "ABGDL Tapoa",
+    "region": "Tapoa",
+    "regions": [
+      "Tapoa"
+    ],
+    "commune": "Diapaga, Logobou, Tambaga, Partiaga, Tansarga, Namounou Kantchari et Botou",
+    "adresse_generale": "Diapaga secteur 1",
+    "secteurs": [
+      "VBG / PEAS",
+      "Nutrition",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 12.105755,
+    "longitude": 1.848313,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-083",
+    "organisation": "Association Dawla Séno (ADS",
+    "region": "Liptako",
+    "regions": [
+      "Liptako"
+    ],
+    "commune": "Dori, Bani",
+    "adresse_generale": "dawla@_yahoo.fr",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Leadership des femmes et filles",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 13.940948,
+    "longitude": -0.061936,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-084",
+    "organisation": "Association Éducation pour le Développement (EDU4DEV)",
+    "region": "Kadiogo",
+    "regions": [
+      "Kadiogo",
+      "Kuilsé"
+    ],
+    "commune": "Ouagadougou, Kaya",
+    "adresse_generale": "Ouagadougou, somgandé",
+    "secteurs": [
+      "Égalité de genre",
+      "VBG / PEAS",
+      "Éducation",
+      "Consolidation de la paix / prévention des conflits",
+      "Autonomisation économique / AGR",
+      "Leadership des femmes et filles",
+      "Inclusion / handicap"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 12.366345,
+    "longitude": -1.557865,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-085",
+    "organisation": "Groupe de Réflexion et d'Action pour le Développement en Afrique",
+    "region": "Bankui",
+    "regions": [
+      "Bankui",
+      "Kadiogo",
+      "Yaadga",
+      "Nando",
+      "Nazinon"
+    ],
+    "commune": "Komsilga, Zawara, Pouni, Zamo, Biéha, Kokologho, Séguénéga, Ouahigouya, Kossouka, Yako, Gourcy, Samba, Pa, Doulougou",
+    "adresse_generale": "Ouagadougou, Arrondissement N°1, Secteur 05, Quartier Paglayiri, Rue Sundo, parcelle 16",
+    "secteurs": [
+      "VBG / PEAS",
+      "Sécurité alimentaire",
+      "Eau, hygiène et assainissement",
+      "Autonomisation économique / AGR",
+      "Changements climatiques"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.415696,
+    "longitude": -3.47467,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-086",
+    "organisation": "Association femme population et développement",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou"
+    ],
+    "commune": "Diabo, tibga",
+    "adresse_generale": "Commune de diabo village guilghin",
+    "secteurs": [
+      "Protection",
+      "Éducation",
+      "Santé",
+      "Autonomisation économique / AGR",
+      "Changements climatiques"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": false,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Moyenne",
+    "latitude": 12.113057,
+    "longitude": 0.36747,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-087",
+    "organisation": "Association pour la Promotion de la Santé Communautaire (APSC)",
+    "region": "Yaadga",
+    "regions": [
+      "Yaadga"
+    ],
+    "commune": "Ouahigouya, Oula, Zogore, Tangaye, Namissiguima",
+    "adresse_generale": "Ouahigouya, Entre les Banques Vista Banques et UBA, à l'immeuble du studio soul photo",
+    "secteurs": [
+      "VBG / PEAS",
+      "Nutrition",
+      "Santé",
+      "Eau, hygiène et assainissement",
+      "Santé sexuelle et reproductive"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 13.642726,
+    "longitude": -2.421071,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-088",
+    "organisation": "Association TODI YABA",
+    "region": "Goulmou",
+    "regions": [
+      "Goulmou",
+      "Sirba"
+    ],
+    "commune": "Bogandé, Diapangou, Bilanga, gayeri,Fada N'gourma",
+    "adresse_generale": "Fada N'Gourma, Secteur 3",
+    "secteurs": [
+      "Protection de l'enfance",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Eau, hygiène et assainissement"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 12.143541,
+    "longitude": 0.319043,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  },
+  {
+    "id": "ODF-089",
+    "organisation": "Association TODI YABA",
+    "region": "Nakambé",
+    "regions": [
+      "Nakambé",
+      "Goulmou",
+      "Sirba",
+      "Tapoa"
+    ],
+    "commune": "Fada N'Gourma, Diapangou, Diabo, Matchiacoali, Partiaga, Diapaga, Kantchari, Bogande, Piela, Manni, Dialgaye, Tensoabtenga, Koupela",
+    "adresse_generale": "Fada N'Gourma, secteur 3",
+    "secteurs": [
+      "Protection de l'enfance",
+      "VBG / PEAS",
+      "Protection",
+      "Éducation",
+      "Eau, hygiène et assainissement"
+    ],
+    "intervient_reponse_humanitaire": true,
+    "financement_recent": true,
+    "partenariat_humanitaire": true,
+    "participation_coordination": true,
+    "capacite": "Élevée",
+    "latitude": 11.802769,
+    "longitude": -0.410087,
+    "geolocalisation": "centroïde régional approximatif",
+    "source": "Dataset_Organisations.xlsx"
+  }
+]
