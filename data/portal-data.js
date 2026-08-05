@@ -3,7 +3,7 @@ window.PORTAL_DATA = {
     title: "Analyse conjointe genre",
     subtitle: "Pour une réponse humanitaire et un relèvement inclusif",
     year: 2026,
-    respondents: 3681,
+    respondents: 3691,
     regions: 7,
     adolescents: 1864,
     adults: 1827,
@@ -21,8 +21,8 @@ window.PORTAL_DATA = {
     pillars: [
       {title:"Revue documentaire", text:"Analyse des sources institutionnelles, évaluations sectorielles et travaux antérieurs sur le genre et l’inclusion."},
       {title:"Enquête quantitative", text:"Questionnaires individuels administrés aux adultes et aux adolescent·e·s, auprès des PDI et des communautés hôtes."},
-      {title:"Approche qualitative", text:"54 entretiens individuels et 66 groupes de discussion avec femmes, hommes, filles, garçons et personnes ressources."},
-      {title:"Consultations en ligne", text:"Sondages auprès de 148 acteurs humanitaires et de 89 organisations dirigées par des femmes."},
+      {title:"Approche qualitative", text:"54 entretiens individuels avec les personnes ressources et 66 groupes de discussion avec femmes, hommes, filles, garçons, les communautés affectées et 7 mini ateliers avec 75 ODF/ODDF au niveau local."},
+      {title:"Consultations en ligne", text:"Sondages auprès de 148 acteurs humanitaires et de 89 organisations dirigées par des femmes et de défense des droits des femmes/filles."},
       {title:"Protection et éthique", text:"Consentement éclairé, confidentialité, anonymisation, prévention VBG/PEAS et mécanismes de référencement."}
     ]
   },
@@ -116,17 +116,17 @@ window.PORTAL_DATA = {
     },
     {
       id:"odf", number:6, color:"#252D80", accent:"#4856E8",
-      title:"Des ODF au potentiel sous-exploité",
-      summary:"Les organisations dirigées par des femmes disposent d’un fort ancrage communautaire et d’un leadership élevé, mais leur potentiel reste limité par le sous-financement, l’accès inégal à l’information et une participation souvent peu influente aux mécanismes de coordination.",
+      title:"Des ODF/ODDF au potentiel sous-exploité",
+      summary:"Les organisations dirigées par des femmes et celles de défense de droits des femmes/filles disposent d’un fort ancrage communautaire et d’un leadership élevé, mais leur potentiel reste limité par le sous-financement, l’accès inégal à l’information et une participation souvent peu influente aux mécanismes de coordination.",
       kpis:[
-        {value:"98 %", label:"des ODF affectées par la crise humanitaire"},
+        {value:"98 %", label:"des ODF/ODDF affectées par la crise humanitaire"},
         {value:"52 %", label:"sans financement humanitaire entre 2023 et 2025"},
         {value:"89 %", label:"fonctionnent sur fonds propres ou appuis ponctuels"},
         {value:"84 %", label:"participent à au moins un cadre de coordination"}
       ],
       charts:[
-        {type:"bar", title:"Contraintes majeures exprimées par les ODF", labels:["Manque de financement","Insuffisance des ressources","Faible accès à l’information","Compétences limitées"], values:[90,78,40,37], suffix:"%"},
-        {type:"bar", title:"Besoins prioritaires des ODF", labels:["Mobilisation de ressources","Renforcement de capacités","Accès à l’information","Réseautage","Participation aux mécanismes"], values:[93,92,72,72,52], suffix:"%"}
+        {type:"bar", title:"Contraintes majeures exprimées par les ODF/ODDF", labels:["Manque de financement","Insuffisance des ressources","Faible accès à l’information","Compétences limitées"], values:[90,78,40,37], suffix:"%"},
+        {type:"bar", title:"Besoins prioritaires des ODF/ODDF", labels:["Mobilisation de ressources","Renforcement de capacités","Accès à l’information","Réseautage","Participation aux mécanismes"], values:[93,92,72,72,52], suffix:"%"}
       ],
       insights:["Le déficit de financement est structurel : il affecte directement la continuité des activités et la capacité de déploiement dans les zones difficiles d’accès.","La participation aux cadres de coordination reste élevée en apparence, mais l’accès à l’information et le pouvoir d’influence demeurent limités.","Les ODF peuvent améliorer le ciblage, la confiance communautaire et la redevabilité, à condition d’être financées comme partenaires stratégiques."],
       actions:["Créer des guichets de financement direct, souples et pluriannuels.","Simplifier les exigences administratives et accompagner la conformité.","Institutionnaliser la représentation des ODF dans les mécanismes de décision."]
