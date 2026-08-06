@@ -1,42 +1,35 @@
-# Portail analytique — Analyse conjointe genre
+# ANALYSE-GENRE — révision complète
 
-Portail statique déployable directement sur GitHub Pages.
+Ce paquet contient la réécriture des fichiers transmis :
 
-## Déploiement rapide
+- `index.html`
+- `pages/odf.html`
+- `js/app.js`
+- `js/odf/odf-app.js`
+- `css/styles.css`
+- `css/odf-map.css`
+- `.github/workflows/pages.yml`
 
-1. Remplacer le contenu de votre dépôt `ANALYSE-GENRE` par les fichiers de ce dossier.
-2. Exécuter :
+## Fichiers à conserver ou ajouter
 
-```bash
-git add .
-git commit -m "Reconstruction complète du portail Analyse Genre"
-git push origin main
+Les fichiers suivants n’étaient pas inclus dans la dernière série transmise et doivent être placés aux mêmes emplacements :
+
+```text
+data/portal-data.js
+data/geodata/bfa_admin1.json
+data/odf/odf-organizations.json
+assets/logos/ocha-logo.png
+assets/images/cover-photo.png
+assets/images/partners-financiers-techniques.png
+assets/images/partners-collecte.png
 ```
 
-3. Dans GitHub : **Settings > Pages > Source > GitHub Actions**.
-4. Le workflow `.github/workflows/pages.yml` publiera automatiquement le site.
+## Déploiement
 
-## Test local
+1. Copier le contenu à la racine du nouveau dépôt.
+2. Ajouter les données et images listées ci-dessus.
+3. Dans GitHub : `Settings → Pages → Source : GitHub Actions`.
+4. Envoyer les fichiers sur la branche `main`.
+5. Attendre la fin du workflow `Deploy GitHub Pages`.
 
-```bash
-python -m http.server 8000
-```
-
-Puis ouvrir `http://localhost:8000`.
-
-## Structure
-
-- `index.html` : structure éditoriale complète.
-- `css/styles.css` : identité visuelle, responsive design et palettes thématiques.
-- `js/app.js` : génération dynamique des chapitres, KPI et graphiques Plotly.
-- `data/portal-data.js` : chiffres, narratifs, analyses et recommandations.
-- `assets/images/` : photo de couverture et logos des partenaires.
-- `assets/docs/` : rapport narratif téléchargeable.
-
-## Mise à jour des données
-
-Modifier uniquement `data/portal-data.js`. Les cartes KPI, graphiques, narratifs et recommandations sont régénérés automatiquement.
-
-## Crédit
-
-Portail analytique développé avec l’appui de l’Unité de Gestion de l’Information (IMU) — OCHA Burkina Faso.
+La page d’accueil et la page cartographique utilisent désormais des vues par onglets afin d’éviter un long défilement vertical.
