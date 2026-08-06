@@ -1,18 +1,36 @@
-# ANALYSE-GENRE — révision complète
+# ANALYSE-GENRE — mise à jour analyses et documents
 
-Ce paquet contient la réécriture des fichiers transmis :
+Cette mise à jour ajoute :
 
-- `index.html`
-- `pages/odf.html`
-- `js/app.js`
-- `js/odf/odf-app.js`
-- `css/styles.css`
-- `css/odf-map.css`
-- `.github/workflows/pages.yml`
+- des graphiques complémentaires dans chacun des sept résultats ;
+- des comparaisons femmes-hommes ;
+- des comparaisons filles-garçons ;
+- des comparaisons PDI-communautés hôtes ;
+- des lectures analytiques transversales ;
+- une page `pages/documents.html` ;
+- le résumé exécutif et le plan opérationnel téléchargeables.
 
-## Fichiers à conserver ou ajouter
+## Fichiers nouveaux
 
-Les fichiers suivants n’étaient pas inclus dans la dernière série transmise et doivent être placés aux mêmes emplacements :
+```text
+data/extended-analysis.js
+data/documents.json
+pages/documents.html
+js/documents.js
+css/documents.css
+assets/documents/resume-analyse-conjointe-genre-burkina-faso-2026.pdf
+assets/documents/plan-operationnel-analyse-conjointe-genre-2026-2028.pdf
+```
+
+## Fichiers modifiés
+
+```text
+index.html
+js/app.js
+css/styles.css
+```
+
+## Données existantes à conserver
 
 ```text
 data/portal-data.js
@@ -26,10 +44,9 @@ assets/images/partners-collecte.png
 
 ## Déploiement
 
-1. Copier le contenu à la racine du nouveau dépôt.
-2. Ajouter les données et images listées ci-dessus.
-3. Dans GitHub : `Settings → Pages → Source : GitHub Actions`.
-4. Envoyer les fichiers sur la branche `main`.
-5. Attendre la fin du workflow `Deploy GitHub Pages`.
-
-La page d’accueil et la page cartographique utilisent désormais des vues par onglets afin d’éviter un long défilement vertical.
+1. Copier tous les fichiers de cette archive dans le dépôt existant.
+2. Accepter le remplacement de `index.html`, `js/app.js` et `css/styles.css`.
+3. Conserver vos fichiers de données existants aux emplacements indiqués.
+4. Envoyer les changements sur la branche `main`.
+5. Attendre la fin du workflow GitHub Pages.
+6. Recharger la page avec `Ctrl + F5`.
