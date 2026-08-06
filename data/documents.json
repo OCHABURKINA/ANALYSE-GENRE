@@ -1,0 +1,24 @@
+[
+  {
+    "id": "resume-analyse-genre",
+    "title": "Résumé exécutif de l’Analyse conjointe genre",
+    "subtitle": "Pour une réponse humanitaire et un relèvement inclusif",
+    "description": "Synthèse des résultats clés, analyses, implications et recommandations de l’Analyse conjointe genre au Burkina Faso.",
+    "category": "Analyse",
+    "date": "Janvier 2026",
+    "format": "PDF",
+    "pages": 16,
+    "file": "../assets/documents/resume-analyse-conjointe-genre-burkina-faso-2026.pdf"
+  },
+  {
+    "id": "plan-operationnel",
+    "title": "Plan opérationnel de mise en œuvre des recommandations",
+    "subtitle": "Analyse conjointe genre 2026–2028",
+    "description": "Feuille de route pour l’intégration stratégique du genre, la mobilisation de ressources, l’amélioration du ciblage et le leadership des ODF/ODDF.",
+    "category": "Plan opérationnel",
+    "date": "Juillet 2026",
+    "format": "PDF",
+    "pages": 9,
+    "file": "../assets/documents/plan-operationnel-analyse-conjointe-genre-2026-2028.pdf"
+  }
+]
